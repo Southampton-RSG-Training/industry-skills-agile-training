@@ -1,5 +1,5 @@
 ---
-title: "Day 5: Deliver to Clients"
+title: "5.1 Prepare to Delivery"
 teaching: 0
 exercises: 0
 ---
