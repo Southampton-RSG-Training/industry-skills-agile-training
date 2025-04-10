@@ -1,5 +1,5 @@
 ---
-title: "Version Control Collaboration Workflow "
+title: "2.1 Version Control Collaboration Workflow "
 teaching: 0
 exercises: 0
 ---

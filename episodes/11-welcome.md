@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the Course"
+title: "1.1 Welcome to the Course"
 teaching: 0
 exercises: 0
 ---
