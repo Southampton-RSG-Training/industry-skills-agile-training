@@ -1,5 +1,5 @@
 ---
-title: "Stakeholder management and project requirements"
+title: "1.3 Stakeholder management and project requirements"
 teaching: 0
 exercises: 0
 ---
