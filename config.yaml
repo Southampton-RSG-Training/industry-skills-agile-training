@@ -8,7 +8,7 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor training for instance)
 # incubator: The Carpentries Incubator
-# 
+#
 # This option supports custom types so lessons can be branded
 # and themed with your own logo and alt-text (see `carpentry_description`)
 # See https://carpentries.github.io/sandpaper-docs/editing.html#adding-a-custom-logo
@@ -69,6 +69,16 @@ disable_sidebar_numbering: true
 
 # Order of episodes in your lesson
 episodes:
+- 10-day1-intro.md
+- 11-welcome.md
+- 12-software-development-landscape.md
+- 13-stakeholder-management.md
+- 14-version-control.md
+- 20-day2-intro.md
+- 21-collaboration-workflow.md
+- 22-testing-code.md
+- 23-agile-development-process.md
+- 24-anatomy-of-an-agile-sprint.md
 - 30-day3-intro.md
 - 31-first-sprint.md
 - 32-sprint-1-review-meeting.md
@@ -87,13 +97,13 @@ episodes:
 - 53-reflection.md
 
 # Information for Learners
-learners: 
+learners:
 
 # Information for Instructors
-instructors: 
+instructors:
 
 # Learner Profiles
-profiles: 
+profiles:
 
 # Customisation ---------------------------------------------
 #
