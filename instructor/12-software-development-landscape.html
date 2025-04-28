@@ -224,12 +224,23 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         1.2 Software Development Process and the Landscape of Approaches
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#the-stages-of-a-typical-software-development-process">The Stages of a Typical Software Development Process</a></li>
+<li><a href="#waterfall-iterative-and-v-model-approaches-to-software-development">Waterfall, Iterative, and V-Model Approaches to Software
+Development</a></li>
+<li><a href="#agile-software-development">Agile Software Development</a></li>
+<li><a href="#references">References</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -499,7 +510,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>1.2 Software Development Process and the Landscape of Approaches</h1>
-        <p>Last updated on 2025-04-10 |
+        <p>Last updated on 2025-04-28 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/12-software-development-landscape.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -520,7 +531,13 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>FIXME</li>
+<ul><li>What are the main stages in a typical software development
+process?</li>
+<li>What are waterfall, iterative, and V-Model approaches to software
+development?</li>
+<li>What is Agile and how does it compare to project management?</li>
+<li>How does Scrum compare and relate to project management
+frameworks?</li>
 </ul></div>
 </div>
 </div>
@@ -542,7 +559,254 @@ approaches</li>
 </div>
 </div>
 </div>
-<div id="keypoints1" class="callout keypoints">
+<section><h2 class="section-heading" id="the-stages-of-a-typical-software-development-process">The Stages of a Typical Software Development Process<a class="anchor" aria-label="anchor" href="#the-stages-of-a-typical-software-development-process"></a></h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="writing-code-vs-engineering-software">Writing Code vs Engineering Software<a class="anchor" aria-label="anchor" href="#writing-code-vs-engineering-software"></a></h3>
+<p>Traditionally in academia, software - and the process of writing it -
+is often seen as a necessary but throwaway artefact in research. For
+example, there may be research questions for a given research project,
+code is created to answer those questions, the code is run over some
+data and analysed, and finally a publication is written based on those
+results. These steps are often taken informally.</p>
+<p>The terms <em>programming</em> (or even <em>coding</em>) and
+<em>software engineering</em> are often used interchangeably. They are
+not. Programmers or coders tend to focus on one part of software
+development: implementation, more than any other. In academic research,
+often they are writing software for themselves, where they are their own
+stakeholders. And ideally, they write software from a design, that
+fulfils a research goal to publish research papers.</p>
+<p>Someone who is engineering software takes a wider view:</p>
+<ul><li>The <em>lifecycle</em> of software: recognises that software
+development is a <em>process</em> that proceeds from understanding what
+is needed, to writing the software and using/releasing it, to what
+happens afterwards.</li>
+<li>Who will (or may) be involved: software is written for
+<em>stakeholders</em>. This may only be the researcher initially, but
+there is an understanding that others may become involved later (even if
+that is not evident yet). A good rule of thumb is to always assume that
+code will be read and used by others later on, which includes
+yourself!</li>
+<li>Software (or code) is an asset: software inherently contains value -
+for example, in terms of what it can do, the lessons learned throughout
+its development, and as an implementation of a research approach (i.e. a
+particular research algorithm, process, or technical approach).</li>
+<li>As an asset, it could be reused: again, it may not be evident
+initially that the software will have use beyond its initial purpose or
+project, but there is an assumption that the software - or even just a
+part of it - could be reused in the future.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="software-development-process">Software Development Process<a class="anchor" aria-label="anchor" href="#software-development-process"></a></h3>
+<p>The typical stages of a software development process can be
+categorised as follows:</p>
+<ul><li>
+<strong>Requirements gathering:</strong> the process of identifying
+and recording the exact requirements for a software project before it
+begins. This helps maintain a clear direction throughout development,
+and sets clear targets for what the software needs to do.</li>
+<li>
+<strong>Design:</strong> where the requirements are translated into
+an overall design for the software. It covers what will be the basic
+software ‘components’ and how they will fit together, as well as the
+tools and technologies that will be used, which will together address
+the requirements identified in the first stage.</li>
+<li>
+<strong>Implementation:</strong> the software is developed according
+to the design, implementing the solution that meets the requirements set
+out in the requirements gathering stage.</li>
+<li>
+<strong>Testing:</strong> the software is tested with the intent to
+discover and rectify any defects, and also to ensure that the software
+meets its defined requirements, i.e. does it actually do what it should
+do reliably?</li>
+<li>
+<strong>Deployment:</strong> where the software is deployed or in
+some way released, and used for its intended purpose within its intended
+environment.</li>
+<li>
+<strong>Maintenance:</strong> where updates are made to the software
+to ensure it remains fit for purpose, which typically involves fixing
+any further discovered issues and evolving it to meet new or changing
+requirements.</li>
+</ul><p>Whether projects or people that develop software are aware of them or
+not, these stages are followed implicitly or explicitly in every
+software project. What is required for a project (during requirements
+gathering) is always considered, for example, even if it is not explored
+sufficiently or well understood.</p>
+<p>Following a <strong>process</strong> of development offers some major
+benefits:</p>
+<ul><li>
+<strong>Stage gating:</strong> a quality <em>gate</em> at the end of
+each stage, where stakeholders review the stage’s outcomes to decide if
+that stage has completed successfully before proceeding to the next one
+(and even if the next stage is not warranted at all - for example, it
+may be discovered during requirements of design that development of the
+software is not practical or even required).</li>
+<li>
+<strong>Predictability:</strong> each stage is given attention in a
+logical sequence; the next stage should not begin until prior stages
+have completed. Returning to a prior stage is possible and may be
+needed, but may prove expensive, particularly if an implementation has
+already been attempted. However, at least this is an explicit and
+planned action.</li>
+<li>
+<strong>Transparency:</strong> essentially, each stage generates
+output(s) into subsequent stages, which presents opportunities for them
+to be published as part of an open development process.</li>
+<li>
+<strong>Time saving:</strong> a well-known result from <a href="https://web.archive.org/web/20160731150816/http://superwebdeveloper.com/2009/11/25/the-incredible-rate-of-diminishing-returns-of-fixing-software-bugs/" class="external-link">empirical
+software engineering studies</a> is that fixing software mistakes is
+exponentially more expensive in later software development stages. For
+example, if a mistake takes 1 hour to fix in the requirements stage, it
+may take 5 times that during design, and perhaps as much as 20 times
+that to fix if discovered during testing.</li>
+</ul></div>
+</section><section><h2 class="section-heading" id="waterfall-iterative-and-v-model-approaches-to-software-development">Waterfall, Iterative, and V-Model Approaches to Software
+Development<a class="anchor" aria-label="anchor" href="#waterfall-iterative-and-v-model-approaches-to-software-development"></a></h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="waterfall">Waterfall<a class="anchor" aria-label="anchor" href="#waterfall"></a></h3>
+<p>The Waterfall Model is a traditional software development methodology
+in which the typical stages of the software development process (that we
+outlined above) are followed step-by-step in a set, sequential
+order.</p>
+<p>The Waterfall Model can be effective when used for projects where the
+requirements are clearly defined from the outset. It is ideal for
+projects with long timelines and minimal tolerance for errors, where
+stakeholders require high confidence in the final outcome.</p>
+<p>However, there are some disadvantages to the Waterfall Model:</p>
+<ul><li>The model is relatively inflexible. Once a phase is completed, the
+model does not account for going back to make changes and therefore
+there is no mechanism for error correction.</li>
+<li>The model assumes that project requirements are fully defined from
+the beginning, which is rarely the case for real-world projects.</li>
+<li>The software is not seen by the client until late in the project
+timeline, which increases the risk of it not meeting the client’s
+expectations.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="v-model">V-Model<a class="anchor" aria-label="anchor" href="#v-model"></a></h3>
+<p>The V-Model is an extension of the traditional Software Development
+Life Cycle model, structured in the shape of a “V.” It emphasises the
+importance of testing and validation at each development stage, running
+parallel to the corresponding development activity. This approach
+ensures that verification (checking work during development) and
+validation (checking final products against requirements) are
+systematically integrated throughout the process.</p>
+<p>The two sides of the “V” represent:</p>
+<ul><li>Verification phases (requirements gathering, system design,
+architectural design, module design, and coding) on the left side.</li>
+<li>Validation phases (unit testing, integration testing, system
+testing, and user acceptance testing) on the right side.</li>
+</ul><p>Verification Phases</p>
+<ul><li>Business Requirement Analysis: Involves gathering and understanding
+customer needs, with acceptance test planning beginning early.</li>
+<li>System Design: Outlines the overall architecture and structure based
+on the requirements.</li>
+<li>Architectural Design: Focuses on high-level design, identifying how
+modules interact internally and externally.</li>
+<li>Module Design (Low-Level Design): Specifies detailed designs for
+individual modules, enabling early unit test preparation.</li>
+<li>Coding: Developers write code according to design standards,
+ensuring performance and maintainability through code reviews.</li>
+</ul><p>Validation Phases</p>
+<ul><li>Unit Testing: Verifies each module’s functionality individually,
+based on test plans from the module design phase.</li>
+<li>Integration Testing: Ensures that modules work together correctly,
+guided by architectural design documentation.</li>
+<li>System Testing: Tests the entire system for functional and
+non-functional requirements.</li>
+<li>User Acceptance Testing: Conducted in an environment resembling
+real-world usage to confirm the software meets user needs.</li>
+</ul><p>Advantages</p>
+<ul><li>Simple to understand and apply</li>
+<li>Focus on quality through early and continuous testing</li>
+<li>Strong links between requirements and final product improve
+traceability of software changes.</li>
+<li>Clear structure makes it easier to track progress and communicate
+progress with stakeholders.</li>
+</ul><p>Disadvantages</p>
+<ul><li>Not flexible so struggles to deal with changing requirements.</li>
+<li>Time-consuming due to extensive documentation and testing.</li>
+<li>No support for development activities to occur concurrently or to
+iterate.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="iterative">Iterative<a class="anchor" aria-label="anchor" href="#iterative"></a></h3>
+<p>In practice, software development is rarely linear. There are a
+number of reasons for this:</p>
+<ul><li>You often find that a group has been building on the same project
+for years, adding more complexity</li>
+<li>The research questions change</li>
+<li>The design of a key algorithm needs changing, leading to a need to
+change the implementation</li>
+<li>A mistake is found during data analysis and a bug needs to be
+fixed</li>
+<li>And what happens when a follow-on project crops up, perhaps some
+time later?</li>
+<li>How about other collaborators come on board an existing
+project?</li>
+<li>Someone wants to reproduce your results by running your software
+themselves?</li>
+</ul><p>Modern software engineering often favours iterative approaches, which
+allow for continuous feedback, adaptation, and improvement throughout
+the project’s lifecycle.</p>
+<p>Iterative Development is a software development approach where a
+large application is built in smaller, manageable parts called
+iterations. Each iteration includes planning, design, development, and
+testing, and produces a working version of the product. Unlike the
+Waterfall model, where the entire product is developed at once,
+iterative development adds features incrementally, with each cycle
+enhancing the functionality of the product.</p>
+<p>Advantages of Iterative Development:</p>
+<ul><li>Early Defect Identification: Defects can be found and corrected
+early, preventing them from affecting later stages.</li>
+<li>Continuous User Feedback: After each iteration, feedback can be
+gathered from users, allowing for adjustments and improvements to meet
+their expectations.</li>
+<li>Reduced Documentation: Unlike Waterfall, which requires extensive
+documentation, iterative development focuses more on design and
+functionality.</li>
+</ul><p>Disadvantages of Iterative Development:</p>
+<ul><li>Rigid Phases: While the overall process is flexible, each iteration
+phase must be followed carefully.</li>
+<li>Unpredictable Changes: Since not all requirements are defined from
+the start, unforeseen changes may arise during the development
+process.</li>
+</ul><p>Examples of iterative development approaches include Agile, Scrum,
+Kanban, and Extreme Programming. Agile, for instance, promotes working
+in short cycles called “sprints,” where teams regularly reassess project
+goals and adapt to changes. Scrum provides a structured framework for
+iterative work, with defined roles, ceremonies, and deliverables. Kanban
+emphasizes visualising work, limiting work in progress, and continuously
+improving flow, making it ideal for projects with shifting priorities.
+Extreme Programming encourages frequent releases and rigorous testing to
+improve software quality and responsiveness to changing
+requirements.</p>
+<p>Let’s look more closely at Agile and Scrum because you will use these
+methods for your project throughout this course.</p>
+</div>
+</section><section><h2 class="section-heading" id="agile-software-development">Agile Software Development<a class="anchor" aria-label="anchor" href="#agile-software-development"></a></h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="differences-agile-compared-to-project-management">Differences Agile Compared to Project Management<a class="anchor" aria-label="anchor" href="#differences-agile-compared-to-project-management"></a></h3>
+</div>
+<div class="section level3">
+<h3 id="scrum">Scrum<a class="anchor" aria-label="anchor" href="#scrum"></a></h3>
+</div>
+</section><section><h2 class="section-heading" id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
+<hr class="half-width"><ul><li>Stages of Software Development from <a href="https://carpentries-incubator.github.io/python-intermediate-development/30-section3-intro.html" class="external-link">Python
+Intermediate Development Carpentries Training</a>
+</li>
+<li>Waterfall Method ideas from <a href="https://www.geeksforgeeks.org/waterfall-model/" class="external-link">geeksforgeeks</a>
+</li>
+<li>V-Model ideas from <a href="https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/" class="external-link">geeksforgeeks</a>
+</li>
+<li>Iterative from <a href="https://docs.google.com/presentation/d/1xR3CVxMSiUsbMMwoLwBeI85w9dxpIgX7-gEO7MTWUkQ/edit?slide=id.g63043845db_0_149#slide=id.g63043845db_0_149" class="external-link">SABS
+slides</a>
+</li>
+<li>Iterative ideas from from <a href="https://easternpeak.com/definition/iterative-development/#:~:text=Iterative%20development%20is%20a%20software,%2C%20development%2C%20and%20testing%20steps." class="external-link">Eastern
+Peak</a>
+</li>
+</ul><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -557,10 +821,7 @@ approaches</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/11-welcome.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/13-stakeholder-management.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -617,9 +878,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/12-software-development-landscape.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/12-software-development-landscape.html",
-  "dateCreated": "2025-04-10",
-  "dateModified": "2025-04-10",
-  "datePublished": "2025-04-22"
+  "dateCreated": "2025-04-28",
+  "dateModified": "2025-04-28",
+  "datePublished": "2025-04-28"
 }
 
   </script><script>
