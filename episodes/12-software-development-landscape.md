@@ -129,11 +129,41 @@ Iterative methods are also widely used in prototyping, where quick development a
 Agile is one well-known example of an iterative methodology.
 In this course, we will focus on Agile, as it will form the foundation for the processes used in the team project.
 
-## Agile Software Development
+## Overview of Agile Software Development
 
-### Differences Agile Compared to Project Management
+### What is Agile?
+
+Agile software development is a phrase used to describe any method which broadly follows a set of principles determined by a group of 17 software developers, called the Agile Alliance, at a meeting in Utah in 2001.
+These principles, outlined in the Manifesto for Agile Software Development, are as follows:
+
+-   Individuals and interactions over processes and tools
+
+-   Working software over comprehensive documentation
+
+-   Customer collaboration over contract negotiation
+
+-   Responding to change over following a plan
+
+The Agile Manifesto was inspired by the desire for a more rapid and lightweight approach to software development, as an alternative to the more heavyweight processes such as Waterfall and V-Model.
+It drew on ideas from existing lightweight software development methods such as rapid application development, the unified process, dynamic systems development method, scrum, extreme programming and feature driven development.
+Although these methods were developed in the 1990s, before the Agile Manifesto, they are now all referred to under the umbrella term 'Agile'.
+
+### Agile vs Project Management
+
+Agile is a methodology or mindset focused on iterative development, flexibility, collaboration, and customer feedback.
+Agile is a way of running a project.
+
+Project management is a discipline or function concerned with planning, executing, and closing projects.
+It ensures that a project meets its goals, timeline, and budget.
+Project management is concerned with planning a project but is not concerned about how a project is run.
+
+There are lots of project management frameworks.
+
+To avoid confusion we should distinguish between Agile software development and AgilePM (Agile Project Management).
 
 ### Scrum
+
+Scrum is one of the most popular Agile frameworks.
 
 ## References
 
@@ -142,6 +172,10 @@ In this course, we will focus on Agile, as it will form the foundation for the p
 -   V-Model ideas from [geeksforgeeks](https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/)
 -   Iterative from [SABS slides](https://docs.google.com/presentation/d/1xR3CVxMSiUsbMMwoLwBeI85w9dxpIgX7-gEO7MTWUkQ/edit?slide=id.g63043845db_0_149#slide=id.g63043845db_0_149)
 -   Iterative ideas from from [Eastern Peak](https://easternpeak.com/definition/iterative-development/#:~:text=Iterative%20development%20is%20a%20software,%2C%20development%2C%20and%20testing%20steps.)
+-   [Agile Manifesto](https://agilemanifesto.org/)
+-   [Scrum Guide](https://scrumguides.org/)
+-   [Agile wikipedia](https://en.wikipedia.org/wiki/Agile_software_development)
+-   [Agile Project Management vs Agile Software Development: A Comparative Analysis] (https://teamhub.com/blog/agile-project-management-vs-agile-software-development-a-comparative-analysis/)
 
 ::: keypoints
 -   FIXME
