@@ -123,11 +123,11 @@ Disadvantages of Iterative Development:
 -   Without fully determined requirements and design, software can become messy or 'hacky'
 -   Since not all requirements are defined from the start, unforeseen changes may arise during the development process which require revision of the software architecture.
 
-With iterative approaches there is the possibility for fast software development but with lower quality control and assurances.
-Therefore, iterative approaches are often used for the development of non-critical software.
-For example, iterative methods are commonly used in prototyping, where developers quickly build and refine early versions of a system based on user feedback, and in research software development, where evolving requirements and experimental goals require flexibility.
-Agile is one example of an iterative approach.
-Let's look more closely at Agile because this is the approach you will use for the project throughout this course.
+Iterative approaches allow for rapid software development, though often with less emphasis on strict quality control or formal assurance processes.
+For this reason, they are typically used in the development of non-critical systems, where flexibility and speed are more important than absolute reliability.
+Iterative methods are also widely used in prototyping, where quick development and user feedback help shape early versions of a system, and in research software, where evolving requirements and experimental objectives demand adaptability.
+Agile is one well-known example of an iterative methodology.
+In this course, we will focus on Agile, as it will form the foundation for the processes used in the team project.
 
 ## Agile Software Development
 
