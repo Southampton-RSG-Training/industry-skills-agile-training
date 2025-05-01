@@ -52,24 +52,30 @@ The typical stages of a software development process are:
 -   **Maintenance:** where updates are made to the software to ensure it remains fit for purpose, which typically involves fixing any further discovered issues and evolving it to meet new or changing requirements.
 
 These stages are followed implicitly or explicitly in every software project but there are many different ways to arrange them.
-The order in which these stages are arranged depends on factors including the scale, use case, and criticality of the software project.
-The stages may be arranged according to an established model of software development such as the Waterfall Model, V-Model, or an iterative approach such as Agile.
+The stages may be arranged according to an established model of software development.
 
-## Waterfall, V-Model and Iterative Models of Software Development
+## Models of Software Development
 
 ### Waterfall
 
 The Waterfall Model is a software development methodology in which the typical stages of the software development process (that we outlined above) are followed step-by-step in a set, sequential order.
 
+MIL-STD 498
+
+DOD-STD 2167A
+
+MIL-STD 1521B
+
 The Waterfall Model is effective when used for projects where the requirements are clearly defined from the outset.
 It is ideal for projects with long timelines and minimal tolerance for errors, where stakeholders require high confidence in the final outcome.
-For example, software for military applications may use the Waterfall Model as it is likely to be meticulously planned, analysed and tested.
 
 However, there are some disadvantages to the Waterfall Model:
 
 -   The model is relatively inflexible. Once a phase is completed, the model does not account for going back to make changes and therefore there is no mechanism for error correction.
 -   The model assumes that project requirements are fully defined from the beginning, which is rarely the case for smaller, non-critical software projects, particularly in research.
 -   The software is not seen by the client until late in the project timeline, which may increase the risk of it not meeting the client's expectations.
+
+Boehm's Spiral
 
 ### V-Model
 
@@ -80,8 +86,6 @@ The two sides of the "V" represent:
 
 -   Verification phases (requirements gathering, system design, architectural design, module design, and coding) on the left side.
 -   Validation phases (unit testing, integration testing, system testing, and user acceptance testing) on the right side.
-
-Due to the emphasis on verification and validation, the V-Model is often used for mission-critical software in fields such as medical imaging and railway signalling.
 
 Advantages
 
@@ -98,14 +102,13 @@ Disadvantages
 
 ### Iterative
 
-Sometimes it doesn't make sense for software development to follow a linear process such as the Waterfall or V model for a number of reasons:
+In many cases, it doesn't make sense for software development to follow a linear process such as the Waterfall or V model for a number of reasons.
+For example:
 
--   A group may build on the same project for years, adding more complexity
--   The research questions change
--   The design of a key algorithm needs changing, leading to a need to change the implementation
--   A mistake is found during data analysis and a bug needs to be fixed
--   And what happens when a follow-on project crops up, perhaps some time later?
--   How about other collaborators come on board an existing project?
+-   Changes to a design mean that the requirements must be adjusted
+-   A company may build on the same project for years, adding more complexity
+-   The design of a key algorithm may need changing, leading to a need to change the implementation
+-   A mistake is could be found during deployment which requires changes to the implementation
 
 In iterative development, a large application is built in smaller, manageable parts called iterations.
 Each iteration includes planning, design, development, and testing, and produces a working version of the product.
@@ -120,14 +123,21 @@ Advantages of Iterative Development:
 
 Disadvantages of Iterative Development:
 
--   Without fully determined requirements and design, software can become messy or 'hacky'
--   Since not all requirements are defined from the start, unforeseen changes may arise during the development process which require revision of the software architecture.
+-   Without fully determined requirements and design, software can become messy or 'hacky' if quality control standards are not maintained
+-   Since not all requirements are defined from the start, unforeseen changes may arise during the development process which require revision of the software architecture, costing more time in the long run.
 
-Iterative approaches allow for rapid software development, though often with less emphasis on strict quality control or formal assurance processes.
-For this reason, they are typically used in the development of non-critical systems, where flexibility and speed are more important than absolute reliability.
-Iterative methods are also widely used in prototyping, where quick development and user feedback help shape early versions of a system, and in research software, where evolving requirements and experimental objectives demand adaptability.
-Agile is one well-known example of an iterative methodology.
-In this course, we will focus on Agile, as it will form the foundation for the processes used in the team project.
+### Which Model to Choose?
+
+Any model can be used for any software development project.
+Waterfall and V-Model and more likely to be used when all the requirements are known at the start of the project.
+Iterative methods are particularly suited to prototyping, where quick development and user feedback help shape early versions of a system, and to research software, where evolving requirements and experimental objectives demand adaptability.
+However, iterative approaches can be used on any project including those which are large scale and safety critical.
+
+It's also worth noting that, to some extent, linear approaches become iterative in reality, as it is nearly always necessary to return to previous stages throughout the software development process.
+For example, knowing 100% of the requirements from the start is nearly always impossible.
+Even if a waterfall approach is applied, changes will most likely be made at each of the stages, requiring revision of an earlier stage.
+
+In this course, we will focus on an iterative method called Agile, as it is currently a commonly used method for software engineering across sectors, and it suits the project that you'll be working on throughout this course.
 
 ## Overview of Agile Software Development
 
@@ -145,25 +155,44 @@ These principles, outlined in the Manifesto for Agile Software Development, are 
 -   Responding to change over following a plan
 
 The Agile Manifesto was inspired by the desire for a more rapid and lightweight approach to software development, as an alternative to the more heavyweight processes such as Waterfall and V-Model.
-It drew on ideas from existing lightweight software development methods such as rapid application development, the unified process, dynamic systems development method, scrum, extreme programming and feature driven development.
-Although these methods were developed in the 1990s, before the Agile Manifesto, they are now all referred to under the umbrella term 'Agile'.
+It drew on ideas from existing lightweight software development methods such as rapid application development, the (rational) unified process aka RUP, dynamic systems development method, scrum, extreme programming and feature driven development.
+Although these methods were developed in the 1990s, before the Agile Manifesto, they are now all referred to under the umbrella term 'Agile' and, with the exception of Scrum, these methods have now gone out of fashion.
 
-### Agile vs Project Management
+rapid application development
 
-Agile is a methodology or mindset focused on iterative development, flexibility, collaboration, and customer feedback.
-Agile is a way of running a project.
+rational unified process aka RUP
 
-Project management is a discipline or function concerned with planning, executing, and closing projects.
-It ensures that a project meets its goals, timeline, and budget.
-Project management is concerned with planning a project but is not concerned about how a project is run.
+dynamic systems development method
+
+extreme programming
+
+feature driven development.
+
+Scaled Agile Framework (SAFE)
+
+### Agile Software Development vs Project Management
+
+Agile software development is a methodology and mindset that guides the actual software development process.
+It is concerned with delivering a project i.e. doing the actual software engineering.
+
+Project management is concerned with all aspects of a project including planning, executing, and closing projects, as well as managing change and risk within a project.
+Project management may contain Agile Software Development but will also cover the wider project aspects including It ensuring that a project meets its goals, timeline, and budget.
 
 There are lots of project management frameworks.
 
-To avoid confusion we should distinguish between Agile software development and AgilePM (Agile Project Management).
+To avoid confusion we should distinguish between Agile Software Development and Agile Project Management (AgilePM), which involves the application of Agile principles to managing projects.
+It emphasises transparency, flexibility and meeting customer need, as well as allowing teams to have autonomy, make shared decisions and self-organise.
+
+Another popular project management framework is PRINCE2 (PRojects IN Controlled Environments), which was developed by the UK government, and outlines seven principles, seven themes and seven processes to guide how a project should be managed.
+It is a more heavyweight project management framework than Agile Project Management and so is often used in sectors where governance and documentation are priorities.
 
 ### Scrum
 
 Scrum is one of the most popular Agile frameworks.
+Scrum is defined as 'a lightweight framework that helps people, teams and organisations generate value through adaptive solutions for complex problems'.
+The core philosophy of Scrum is to make incremental progress toward a goal through repeated iterations.
+
+Sections on Scrum from the Scrum alliance or another company that offers a Scrum certification.
 
 ## References
 
@@ -175,7 +204,19 @@ Scrum is one of the most popular Agile frameworks.
 -   [Agile Manifesto](https://agilemanifesto.org/)
 -   [Scrum Guide](https://scrumguides.org/)
 -   [Agile wikipedia](https://en.wikipedia.org/wiki/Agile_software_development)
--   [Agile Project Management vs Agile Software Development: A Comparative Analysis] (https://teamhub.com/blog/agile-project-management-vs-agile-software-development-a-comparative-analysis/)
+-   [PRINCE2 wikipedia](https://en.wikipedia.org/wiki/PRINCE2)
+-   ISO - International Standard on Software Processes
+-   SWEBOK - Software Body of Knowledge
+-   Software Engineering by Ian Sommerville
+-   Software Engineering: Theory and Practice by Shari Lawrence Pfleeger
+-   [British Standards Online](https://library.soton.ac.uk/techinfo/standards)
+-   ISO/IEC/IEEE 12207 Systems and software engineering – Software life cycle processes
+-   ISO/IEC/IEEE 15288 Systems and software engineering – System life cycle processes
+-   ISO/IEC 29110-1-1 Systems and software engineering – Lifecycle profiles for very small entities (VSEs) Part 1-1: Overview
+-   ISO/IEC 29110-5-4 Systems and software engineering – Lifecycle profiles for very small entities (VSEs) Part 5-4: Agile software development guidelines
+-   TickITplus Base Process Library: ORG.10 Lifecycle Model Management
+-   IEEE SWEBOK Software Engineering Body of Knowledge
+
 
 ::: keypoints
 -   FIXME
