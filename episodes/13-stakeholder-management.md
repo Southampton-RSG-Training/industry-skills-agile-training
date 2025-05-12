@@ -7,6 +7,7 @@ exercises: 0
 :::::::::::::::::::::::::::::::::::::: questions
  
 - What types of requirements should be captured for a project?
+- What is a non-functional requirement?
 - How do I describe and ensure how desired features will provide value to the end user?
 - How should I capture, manage, and prioritise requirements for change?
 - What methods help to clarify requirements with stakeholders?
@@ -27,17 +28,33 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## What is a Requirement?
+## What is a Requirement, and Why are they Important?
 
-In general, a requirement is a *capability or condition that must be met for software to solve a problem or address a need*. They form the foundation of our project and drive what will be developed. So if we do not properly explore and understand what is required, the software will not be suitable for it's intended purpose.
+In general, a requirement is a *capability or condition that must be met for software to solve a problem or address a need*. They form the foundation of our project and drive what will be developed, so if we do not properly explore and understand what is required, the software will not be suitable for it's intended purpose.
 
 FIXME: add in SWC slide references to importance of reqs and stats for failure, with examples (e.g. galileo probe)
 
-When considering software requirements, it is very tempting to just think about the features users need. However, many design choices in a software project quite rightly depend on the users themselves and the environment in which the software is expected to run (as well as *how* the software should run), and these aspects should be considered as part of the software’s *non-functional* requirements
-
-[levels of requirements]
-
 However, it is unlikely that we will be able to determine all of the requirements correctly and completely upfront. Especially when working in a research context, requirements are flexible and may change as the project evolves, so we need to ensure we are able to accommodate any agreed changes.
+
+## Requirements are More than just Features
+
+When considering software requirements, it is very tempting to just think about the features users need. However, many design choices in a software project depend on the users themselves and the environment in which the software is expected to run (as well as *how* the software should run), and these aspects should be considered as part of the software’s *non-functional* requirements.
+
+To explore the importance of this aspect, let's consider two software types, mobile applications and embedded software. They may appear similar, but examining the environments in which they are developed and operate uncovers many differences that need to be accounted for in order for the software to be fit for purpose.
+
+| Concern   | Mobile Apps | Embedded Software
+|-----------|-------------|------------------
+| Platform | Work on range of mobile hardware and iOS/Android operating systems | Exact specification of hardware is known - often not necessary to support multiple devices; typically low power
+| Development Language | Typically written in one of the higher-level platform preferred languages (e.g. Java, Kotlin, Swift) | Typically lower-level language (e.g. C) for better control of resources
+| Compilation | Users will not (usually) modify / compile the software | Users will not (usually) modify / compile the software
+| Installation | Usually distributed via a controlled app store | Usually distributed pre-installed on a physical device
+| Interface | Must have graphical interface suitable for a touch display | May have no user interface, or interface may be physical buttons
+| Documentation | Probably in the software itself or on a Web page | Documentation probably in a technical manual with a separate user manual
+| Uptime | May not run continuously due to restarts | May need to run continuously for the lifetime of the device
+
+Therefore, whilst a single piece of software may provide the same *functionality* on a mobile app or embedded device (for example, a photo frame application),
+the other *non-functional* considerations affect many facets of how the software must be developed and how it must operate,
+and we must account for them in our requirements.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -49,34 +66,11 @@ and how the environment it is used in have affected its design or development.
 Here are some examples of questions you can use to get started:
 
 - What environment does the software run in?
-- How do people interact with it?
 - Why do people use it?
+- How do people interact with it?
 - What features of the software have been affected by these factors?
 - If the software needed to be used in a different environment,
   what difficulties might there be?
-
-Some examples of design / development choices constrained by environment might be:
-
-- Mobile Apps
-  - Must have graphical interface suitable for a touch display
-  - Usually distributed via a controlled app store
-  - Users will not (usually) modify / compile the software themselves
-  - Should work on a range of hardware specifications
-    with a range of Operating System (OS) versions
-    - But OS is unlikely to be anything other than Android or iOS
-  - Documentation probably in the software itself or on a Web page
-  - Typically written in one of the platform preferred languages
-    (e.g. Java, Kotlin, Swift)
-- Embedded Software
-  - May have no user interface - user interface may be physical buttons
-  - Usually distributed pre-installed on a physical device
-  - Often runs on low power device with limited memory and CPU performance -
-    must take care to use these resources efficiently
-  - Exact specification of hardware is known -
-    often not necessary to support multiple devices
-  - Documentation probably in a technical manual with a separate user manual
-  - May need to run continuously for the lifetime of the device
-  - Typically written in a lower-level language (e.g. C) for better control of resources
 
 :::::::::::::::  solution
 
@@ -113,7 +107,48 @@ Some examples of design / development choices constrained by environment might b
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+There are many categories of non-functional requirements,
+but some popular examples include:
+
+- Security: how do we ensure a user is authenticated and authorised to conduct a particular action?
+- Performance: what performance goals will the software be required to satisfy?
+- Usability: how will the user interact with the software?
+- Portability: to what extent should the software be able to run on different systems with minimal changes?
+- Reliability: to what extent should the software we able to operate without failures and remain available for use when needed?
+
+FIXME: consider levels of requirements? e.g. business/solution/technical? Maybe include this within user stories section?
+
+
 ## User Stories: Understanding Requirements from the User Perspective
+
+Capturing requirements is pivotal to understanding what needs to be built,
+but whilst they state what is required, they lack the end-user context of what they are and why they are important.
+User stories aim to capture this perspective, being short and simple descriptions of new features or functionality from the perspective of the end user themselves.
+
+They typically follow the following template,
+to ensure user stories are clear and concise:
+
+> As a *[type of user]*, I want *[an action]* so that *[benefit]*.
+
+Some examples of user stories include:
+
+- E-commerce site: as a shopper, I want to add items to my cart so that I can purchase multiple products at once
+- Mobile application: as a user, I want to receive push notifications for important updates so that I stay informed when I'm not using the app
+
+FIXME: acceptance criteria for functional and non-functional requirements
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## User Stories
+
+FIXME: add brief exercise
+
+:::::::::::::::  solution
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ## Capturing Requirements in a Product Backlog
@@ -160,9 +195,13 @@ how can we know if we can include other less important ones?
 It is often not the reality in practice,
 but estimation should ideally be done by the people likely to do the actual work:
 the developers themselves.
-It shouldn't be done by project managers or PIs
+It shouldn't be done by project managers or those otherwise not involved in development,
 simply because they are not best placed to estimate,
 and those doing the work are the ones who are effectively committing to these figures.
+As well as lacking the inherent technical skills required to estimate,
+having senior non-development roles dictating estimates is that they are at risk of non-development biases such as idealised project timelines and goals which may not be achievable.
+
+FIXME: add 5-min estimation exercise
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -246,6 +285,8 @@ The idea is that as a project progresses,
 even if it becomes clear that you are only able to
 deliver the Must Haves for a particular time period,
 you have still delivered it *successfully*.
+
+FIXME: 10 min exercise of prioritising some small list of requirements on a noddy project using moscow (close to a 60/20/20 split). Have some obvious bikeshedding-level reqs
 
 :::::::::::::::::::::::::::::::::::::: keypoints
  
