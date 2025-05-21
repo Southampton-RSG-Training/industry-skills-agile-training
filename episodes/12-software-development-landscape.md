@@ -66,12 +66,6 @@ The stages may be arranged according to an established model of software develop
 
 The Waterfall Model is a software development methodology in which the typical stages of the software development process (that we outlined above) are followed step-by-step in a set, sequential order.
 
-MIL-STD 498
-
-DOD-STD 2167A
-
-MIL-STD 1521B
-
 The Waterfall Model is effective when used for projects where the requirements are clearly defined from the outset.
 It is ideal for projects with long timelines and minimal tolerance for errors, where stakeholders require high confidence in the final outcome.
 
@@ -80,15 +74,6 @@ However, there are some disadvantages to the Waterfall Model:
 -   The model is relatively inflexible. Once a phase is completed, the model does not account for going back to make changes and therefore there is no mechanism for error correction.
 -   The model assumes that project requirements are fully defined from the beginning, which is rarely the case for smaller, non-critical software projects, particularly in research.
 -   The software is not seen by the client until late in the project timeline, which may increase the risk of it not meeting the client's expectations.
-
-### Spiral Model
-
-The Spiral Model, sometimes known as Boehm's Spiral, is a risk-driven approach to software development.
-The approach allows for any mixture of software development approaches depending on the pattern of risk present in the project.
-The model guides users to first determine objectives, second identify and resolve risks, third develop and test, and fourth plan the next iteration.
-More recently, the spiral model has been thought of as a 'process model generator' because Boehm argues that choices based on a project's risks generate an appropriate process model for the project.
-
-Decisions about how much effort should be directed into each element of the project is guided by the goal of minimising the overall risk.
 
 ### V-Model
 
@@ -139,24 +124,18 @@ Disadvantages of Iterative Development:
 -   Without fully determined requirements and design, software can become messy or 'hacky' if quality control standards are not maintained
 -   Since not all requirements are defined from the start, unforeseen changes may arise during the development process which require revision of the software architecture, costing more time in the long run.
 
-### Which Model to Choose?
+#### Spiral Model
 
-Any model can be used for any software development project.
-Waterfall and V-Model and more likely to be used when all the requirements are known at the start of the project.
-Iterative methods are particularly suited to prototyping, where quick development and user feedback help shape early versions of a system, and to research software, where evolving requirements and experimental objectives demand adaptability.
-However, iterative approaches can be used on any project including those which are large scale and safety critical.
+The Spiral Model, sometimes known as Boehm's Spiral, is an iterative, risk-driven approach to software development.
+The approach allows for any mixture of software development approaches depending on the pattern of risk present in the project.
+The model guides users to first determine objectives, second identify and resolve risks, third develop and test, and fourth plan the next iteration.
+More recently, the spiral model has been thought of as a 'process model generator' because Boehm argues that choices based on a project's risks generate an appropriate process model for the project.
 
-It's also worth noting that, to some extent, linear approaches become iterative in reality, as it is nearly always necessary to return to previous stages throughout the software development process.
-For example, knowing 100% of the requirements from the start is nearly always impossible.
-Even if a waterfall approach is applied, changes will most likely be made at each of the stages, requiring revision of an earlier stage.
+Decisions about how much effort should be directed into each element of the project is guided by the goal of minimising the overall risk.
 
-In this course, we will focus on an iterative method called Agile, as it is currently a commonly used method for software engineering across sectors, and it suits the project that you'll be working on throughout this course.
+#### Agile
 
-## Overview of Agile Software Development
-
-### What is Agile?
-
-Agile software development is a phrase used to describe any method which broadly follows a set of principles determined by a group of 17 software developers, called the Agile Alliance, at a meeting in Utah in 2001.
+Agile software development is a phrase used to describe any iterative method which broadly follows a set of principles determined by a group of 17 software developers, called the Agile Alliance, at a meeting in Utah in 2001.
 These principles, outlined in the Manifesto for Agile Software Development, are as follows:
 
 -   Individuals and interactions over processes and tools
@@ -168,36 +147,22 @@ These principles, outlined in the Manifesto for Agile Software Development, are 
 -   Responding to change over following a plan
 
 The Agile Manifesto was inspired by the desire for a more rapid and lightweight approach to software development, as an alternative to the more heavyweight processes such as Waterfall and V-Model.
-It drew on ideas from existing lightweight software development methods such as rapid application development, the (rational) unified process aka RUP, dynamic systems development method, scrum, extreme programming and feature driven development.
+It drew on ideas from existing lightweight software development methods such as rapid application development, the rational unified process aka RUP, dynamic systems development method, scrum, extreme programming and feature driven development.
 Although these methods were developed in the 1990s, before the Agile Manifesto, they are now all referred to under the umbrella term 'Agile' and, with the exception of Scrum, these methods have now gone out of fashion.
 
-rapid application development
+### Which Model to Choose?
 
-rational unified process aka RUP
+Any model can be used for any software development project.
+Waterfall and V-Model and more likely to be used when all the requirements are known at the start of the project.
+Iterative methods are particularly suited to prototyping, where quick development and user feedback help shape early versions of a system, and to research software, where evolving requirements and experimental objectives demand adaptability.
+However, iterative approaches can be used on any project including those which are large scale and safety critical.
 
-dynamic systems development method
+It's also worth noting that, to some extent, linear approaches become iterative in reality, as it is nearly always necessary to return to previous stages throughout the software development process.
+For example, knowing 100% of the requirements from the start is nearly always impossible.
+Even if a waterfall approach is applied, changes will most likely be made at each of the stages, requiring revision of an earlier stage.
 
-extreme programming
-
-feature driven development.
-
-Scaled Agile Framework (SAFE)
-
-### Agile Software Development vs Project Management
-
-Agile software development is a methodology and mindset that guides the actual software development process.
-It is concerned with delivering a project i.e. doing the actual software engineering.
-
-Project management is concerned with all aspects of a project including planning, executing, and closing projects, as well as managing change and risk within a project.
-Project management may contain Agile Software Development but will also cover the wider project aspects including It ensuring that a project meets its goals, timeline, and budget.
-
-There are lots of project management frameworks.
-
-To avoid confusion we should distinguish between Agile Software Development and Agile Project Management (AgilePM), which involves the application of Agile principles to managing projects.
-It emphasises transparency, flexibility and meeting customer need, as well as allowing teams to have autonomy, make shared decisions and self-organise.
-
-Another popular project management framework is PRINCE2 (PRojects IN Controlled Environments), which was developed by the UK government, and outlines seven principles, seven themes and seven processes to guide how a project should be managed.
-It is a more heavyweight project management framework than Agile Project Management and so is often used in sectors where governance and documentation are priorities.
+In this course, we will focus on Agile, as it is currently a commonly used method for software engineering across sectors, and it suits the project that you'll be working on throughout this course.
+In particular, we will focus on a an Agile framework called 'Scrum'.
 
 ### Scrum
 
@@ -217,76 +182,21 @@ In Scrum:
 
 Later in this course we will talk more about Scrum so that you are able to use it to run your own Sprints on a project.
 
-Scrum Theory is based on empiricism and lean thinking.
-Empiricism - knowledge comes from experience and making decisions based on what is observed.
-Lean thinking - reduce wastes and focus on the essentials.
+### Agile Software Development vs Project Management
 
-Scrum Pillars - transparency, inspection and adaptation.
+Agile software development is a methodology and mindset that guides the actual software development process.
+It is concerned with delivering a project i.e. doing the actual software engineering.
 
--   Transparency - process and work must be visible to those performing the work and stakeholders
+Project management is concerned with all aspects of a project including planning, executing, and closing projects, as well as managing change and risk within a project.
+Project management may contain Agile Software Development but will also cover the wider project aspects including It ensuring that a project meets its goals, timeline, and budget.
 
--   Inspection - Scrum artifacts and the progress toward agreed goals must be inspected to detect problems.
-    Scrum provides five events to help with inspection.
+There are lots of project management frameworks.
 
--   Adaptation - When any aspects of the process or product deviate outside acceptable limits, the Scrum Team must adapt to minimise any further deviation.
+To avoid confusion we should distinguish between Agile Software Development and Agile Project Management (AgilePM), which involves the application of Agile principles to managing projects.
+It emphasises transparency, flexibility and meeting customer need, as well as allowing teams to have autonomy, make shared decisions and self-organise.
 
-Scrum Values - commitment, focus, openness, respect, courage.
-These guide the Scrum Team's work, actions and behvaiour.
-
--   Commitment - the Scrum Team commits to achieving its goals and supporting each other
-
--   Focus - their primary focus is on the work of the sprint to make the best possible progress toward these goals
-
--   Openness - the Scrum Team and its stakeholders are open about the work and the challenges
-
--   Respect - Scrum Team members respect each other to be capable, independent people
-
--   Courage - Scrum Team members have the courage to do the right thing, to work on tough problems
-
-Scrum Team - one Scrum Master, one Product Owner, and Developers.
-No sub-teams or hierarchies.
-Teams are self-organising.
-Typically 10 or fewer people
-
--   Developers - people in the Scrum Team committed to creating any aspect of a usable Increment each Sprint.
-
--   Product Owner - responsible for maximising the value of the product that results from the work of the Scrum Team.
-    Also responsible for effective Product Backlog management.
-
--   Scrum Master - responsible for establishing Scrum according to the Scrum Guide and accountable for the Scrum Team's effectiveness.
-    The Scrum Master is a servant leader, serving the Scrum Team, Product Owner and Organisation to achieve the goals of the project.
-
-Scrum Events - designed to enable transparency and gives formal opportunities to inspect and adapt Scrum artifacts.
-
--   The Sprint - Fixed-length events of one month or less.
-    All work necessary to achieve the Product Goal (all other Scrum Events) happen within Sprints.
-
--   Sprint Planning - Why is this Sprint valuable?
-    What can be Done this Sprint?
-    How will the chosen work get done?
-
--   Daily Scrum - Inspect progress toward the Sprint Goal, what has changed in their environment, and adapt the Sprint Backlog if necessary.
-
--   Sprint Review - Inspect the outcome of the Sprint and determine future adaptations
-
--   Sprint Retrospective - Scrum Team inspects how the last Sprint went and plans ways to increase quality and effectiveness.
-
-Scrum Artifacts - Product Backlog, Sprint Backlog, Increment.
-Each has a commitment against which progress is measured (Product Goal, Sprint Goal, and Definition of Done respectively).
-
--   Product Backlog - Ordered list of what is needed to improve the product.
-
-    -   Commitment: Product Goal - the future state of the product to serve as a target for the Scrum Team to plan against.
-
--   Sprint Backlog - the Sprint Goal, the set of Product Backlog items selected for the Sprint and an actionable plan for delivering the Increment.
-
-    -   Commitment: Sprint Goal - the single objective of the Sprint
-
--   Increment - a concrete stepping stone toward the Product Goal
-
-    -   Commitment: Definition of Done - a formal description of the state of the Increment when it meets the quality measures required for the product
-
-Scrum certification is available through several companies including the Scrum Alliance.
+Another popular project management framework is PRINCE2 (PRojects IN Controlled Environments), which was developed by the UK government, and outlines seven principles, seven themes and seven processes to guide how a project should be managed.
+It is a more heavyweight project management framework than Agile Project Management and so is often used in sectors where governance and documentation are priorities.
 
 ## References
 
