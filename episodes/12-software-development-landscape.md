@@ -51,8 +51,41 @@ The typical stages of a software development process are:
 -   **Deployment:** where the software is deployed or in some way released, and used for its intended purpose within its intended environment.
 -   **Maintenance:** where updates are made to the software to ensure it remains fit for purpose, which typically involves fixing any further discovered issues and evolving it to meet new or changing requirements.
 
+::: challenge
+Think about a project you've completed in the past.
+This doesn’t have to be a software project.  It could be anything from organizing an event to completing a personal goal or managing a work task.
+
+Now, reflect on the steps you took from start to finish.
+
+Can you identify stages in your project that correspond to the typical software development process?
+These stages include:
+
+-   Requirements gathering (clarifying what needed to be achieved)
+
+-   Design (planning how to approach it)
+
+-   Implementation (doing the work)
+
+-   Testing (checking if it worked as intended)
+
+-   Deployment (delivering or using the result)
+
+-   Maintenance (making adjustments or improvements after completion)
+
+Which of these stages did you go through, and what did each look like in your project?
+:::
+
 These stages are followed implicitly or explicitly in every software project but there are many different ways to arrange them.
 The stages may be arranged according to an established model of software development.
+
+::: challenge
+Create a simple diagram that shows how the stages of your project were arranged.
+Think about the sequence in which things happened.
+Did you follow the stages one after the other, go back and repeat some, or work on multiple stages at the same time?
+
+Your diagram doesn’t need to be complex - boxes and arrows are enough.
+The goal is to show the flow of your project from start to finish, based on the stages you identified in Exercise 1.
+:::
 
 ## Models of Software Development
 
@@ -155,6 +188,28 @@ It's also worth noting that, to some extent, linear approaches become iterative 
 For example, knowing 100% of the requirements from the start is nearly always impossible.
 Even if a waterfall approach is applied, changes will most likely be made at each of the stages, requiring revision of an earlier stage.
 
+::: challenge
+Imagine you've been hired to develop a web-based system for managing applications for public research grants.
+The portal will be used by applicants, reviewers and administrators.
+
+-   The government has already defined **detailed and fixed requirements.**
+
+-   There is **no flexibility in the deadline**, as it must go live before the start of the next fiscal year.
+
+-   The system must be **fully tested and reliable on day one**, as errors could affect funding decisions.
+
+-   Stakeholder involvement is minimal after the requirements have been approved.
+
+
+**Your task:**
+
+-   Discuss the project as a group and decide which software development model would be most suitable for delivering
+
+-   Consider factors such as the nature of the project, clarity of requirements, timeline, risk, and the need for flexibility
+
+-   Be prepared to **justify your choice** - why is this model a good fit for the scenario?
+:::
+
 In this course, we will focus on Agile, as it is currently a commonly used method for software engineering across sectors, and it suits the project that you'll be working on throughout this course.
 In particular, we will focus on a an Agile framework called 'Scrum'.
 
@@ -174,6 +229,8 @@ In Scrum:
 
 4.  Repeat
 
+(The Scrum Guide, 2020)
+
 Later in this course we will talk more about Scrum so that you are able to use it to run your own Sprints on a project.
 
 ### Agile Software Development vs Project Management
@@ -190,14 +247,35 @@ To avoid confusion we should distinguish between Agile Software Development and 
 It emphasises transparency, flexibility and meeting customer need, as well as allowing teams to have autonomy, make shared decisions and self-organise.
 
 Another popular project management framework is PRINCE2 (PRojects IN Controlled Environments), which was developed by the UK government, and outlines seven principles, seven themes and seven processes to guide how a project should be managed.
-It is a more heavyweight project management framework than Agile Project Management and so is often used in sectors where governance and documentation are priorities.
+It is a more heavyweight project management framework than Agile Project Management and so is often used in sectors where governance and documentation are priorities
+
+::: discussion
+Below is a list of tasks, discuss whether each task belongs in software development models or project management models:
+
+1.  Writing and testing code for a new feature
+2.  Creating a Gantt chart to map out project timelines
+3.  Designing the software architecture for a system
+4.  Managing changes to the project scope
+5.  Holding a daily stand-up meeting to track team progress
+6.  Planning user stories and prioritising the product backlog
+7.  Ensuring project documentation meets governance standards
+8.  Reviewing whether the project is on track to meet its deadline and budget
+9.  Refactoring code to improve performance
+10. Facilitating a retrospective meeting to reflect on team performance
+11. Performing risk analysis before the project starts
+12. Approving and tracking project milestones
+13. Collaborating on test-driven development (TDD)
+14. Allocating resources across multiple projects
+15. Setting up a version control system (e.g. Git)
+
+:::
 
 ## References
 
 -   Stages of Software Development from [Python Intermediate Development Carpentries Training](https://carpentries-incubator.github.io/python-intermediate-development/30-section3-intro.html)
 -   Iterative from [SABS slides](https://docs.google.com/presentation/d/1xR3CVxMSiUsbMMwoLwBeI85w9dxpIgX7-gEO7MTWUkQ/edit?slide=id.g63043845db_0_149#slide=id.g63043845db_0_149)
 -   [Agile Manifesto](https://agilemanifesto.org/)
--   [Scrum Guide](https://scrumguides.org/)
+-   [The Scrum Guide](https://scrumguides.org/)
 -   ISO - International Standard on Software Processes
 -   SWEBOK - Software Body of Knowledge
 -   Software Engineering by Ian Sommerville
