@@ -17,3 +17,5 @@ StripTrailingWhitespace: Yes
 LineEndingConversion: Posix
 
 BuildType: Website
+
+MarkdownWrap: Sentence

@@ -19,6 +19,12 @@ exercises: 0
 -   Order and describe the stages within a typical software development process and how these apply within waterfall and iterative approaches
 :::
 
+Other things that people have suggested we include:
+
+-   Fagan inspection
+
+-   Z-notation
+
 ## The Stages of a Typical Software Development Process
 
 ### Writing Code vs Engineering Software
@@ -75,7 +81,14 @@ However, there are some disadvantages to the Waterfall Model:
 -   The model assumes that project requirements are fully defined from the beginning, which is rarely the case for smaller, non-critical software projects, particularly in research.
 -   The software is not seen by the client until late in the project timeline, which may increase the risk of it not meeting the client's expectations.
 
-Boehm's Spiral
+### Spiral Model
+
+The Spiral Model, sometimes known as Boehm's Spiral, is a risk-driven approach to software development.
+The approach allows for any mixture of software development approaches depending on the pattern of risk present in the project.
+The model guides users to first determine objectives, second identify and resolve risks, third develop and test, and fourth plan the next iteration.
+More recently, the spiral model has been thought of as a 'process model generator' because Boehm argues that choices based on a project's risks generate an appropriate process model for the project.
+
+Decisions about how much effort should be directed into each element of the project is guided by the goal of minimising the overall risk.
 
 ### V-Model
 
@@ -189,10 +202,91 @@ It is a more heavyweight project management framework than Agile Project Managem
 ### Scrum
 
 Scrum is one of the most popular Agile frameworks.
-Scrum is defined as 'a lightweight framework that helps people, teams and organisations generate value through adaptive solutions for complex problems'.
+Scrum is defined in the Scrum Guide as 'a lightweight framework that helps people, teams and organisations generate value through adaptive solutions for complex problems'.
 The core philosophy of Scrum is to make incremental progress toward a goal through repeated iterations.
 
-Sections on Scrum from the Scrum alliance or another company that offers a Scrum certification.
+In Scrum:
+
+1.  A product owner orders the work into a Product Backlog
+
+2.  The Scrum Team turns a subset of the work into an Increment of Value during a Sprint
+
+3.  The Scrum Team and its stakeholders inspect the results and adjust for the next sprint
+
+4.  Repeat
+
+Later in this course we will talk more about Scrum so that you are able to use it to run your own Sprints on a project.
+
+Scrum Theory is based on empiricism and lean thinking.
+Empiricism - knowledge comes from experience and making decisions based on what is observed.
+Lean thinking - reduce wastes and focus on the essentials.
+
+Scrum Pillars - transparency, inspection and adaptation.
+
+-   Transparency - process and work must be visible to those performing the work and stakeholders
+
+-   Inspection - Scrum artifacts and the progress toward agreed goals must be inspected to detect problems.
+    Scrum provides five events to help with inspection.
+
+-   Adaptation - When any aspects of the process or product deviate outside acceptable limits, the Scrum Team must adapt to minimise any further deviation.
+
+Scrum Values - commitment, focus, openness, respect, courage.
+These guide the Scrum Team's work, actions and behvaiour.
+
+-   Commitment - the Scrum Team commits to achieving its goals and supporting each other
+
+-   Focus - their primary focus is on the work of the sprint to make the best possible progress toward these goals
+
+-   Openness - the Scrum Team and its stakeholders are open about the work and the challenges
+
+-   Respect - Scrum Team members respect each other to be capable, independent people
+
+-   Courage - Scrum Team members have the courage to do the right thing, to work on tough problems
+
+Scrum Team - one Scrum Master, one Product Owner, and Developers.
+No sub-teams or hierarchies.
+Teams are self-organising.
+Typically 10 or fewer people
+
+-   Developers - people in the Scrum Team committed to creating any aspect of a usable Increment each Sprint.
+
+-   Product Owner - responsible for maximising the value of the product that results from the work of the Scrum Team.
+    Also responsible for effective Product Backlog management.
+
+-   Scrum Master - responsible for establishing Scrum according to the Scrum Guide and accountable for the Scrum Team's effectiveness.
+    The Scrum Master is a servant leader, serving the Scrum Team, Product Owner and Organisation to achieve the goals of the project.
+
+Scrum Events - designed to enable transparency and gives formal opportunities to inspect and adapt Scrum artifacts.
+
+-   The Sprint - Fixed-length events of one month or less.
+    All work necessary to achieve the Product Goal (all other Scrum Events) happen within Sprints.
+
+-   Sprint Planning - Why is this Sprint valuable?
+    What can be Done this Sprint?
+    How will the chosen work get done?
+
+-   Daily Scrum - Inspect progress toward the Sprint Goal, what has changed in their environment, and adapt the Sprint Backlog if necessary.
+
+-   Sprint Review - Inspect the outcome of the Sprint and determine future adaptations
+
+-   Sprint Retrospective - Scrum Team inspects how the last Sprint went and plans ways to increase quality and effectiveness.
+
+Scrum Artifacts - Product Backlog, Sprint Backlog, Increment.
+Each has a commitment against which progress is measured (Product Goal, Sprint Goal, and Definition of Done respectively).
+
+-   Product Backlog - Ordered list of what is needed to improve the product.
+
+    -   Commitment: Product Goal - the future state of the product to serve as a target for the Scrum Team to plan against.
+
+-   Sprint Backlog - the Sprint Goal, the set of Product Backlog items selected for the Sprint and an actionable plan for delivering the Increment.
+
+    -   Commitment: Sprint Goal - the single objective of the Sprint
+
+-   Increment - a concrete stepping stone toward the Product Goal
+
+    -   Commitment: Definition of Done - a formal description of the state of the Increment when it meets the quality measures required for the product
+
+Scrum certification is available through several companies including the Scrum Alliance.
 
 ## References
 
@@ -216,7 +310,6 @@ Sections on Scrum from the Scrum alliance or another company that offers a Scrum
 -   ISO/IEC 29110-5-4 Systems and software engineering – Lifecycle profiles for very small entities (VSEs) Part 5-4: Agile software development guidelines
 -   TickITplus Base Process Library: ORG.10 Lifecycle Model Management
 -   IEEE SWEBOK Software Engineering Body of Knowledge
-
 
 ::: keypoints
 -   FIXME
