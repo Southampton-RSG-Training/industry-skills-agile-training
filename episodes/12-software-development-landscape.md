@@ -19,12 +19,6 @@ exercises: 0
 -   Order and describe the stages within a typical software development process and how these apply within waterfall and iterative approaches
 :::
 
-Other things that people have suggested we include:
-
--   Fagan inspection
-
--   Z-notation
-
 ## The Stages of a Typical Software Development Process
 
 ### Writing Code vs Engineering Software
@@ -201,14 +195,9 @@ It is a more heavyweight project management framework than Agile Project Managem
 ## References
 
 -   Stages of Software Development from [Python Intermediate Development Carpentries Training](https://carpentries-incubator.github.io/python-intermediate-development/30-section3-intro.html)
--   Waterfall Method ideas from [geeksforgeeks](https://www.geeksforgeeks.org/waterfall-model/)
--   V-Model ideas from [geeksforgeeks](https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/)
 -   Iterative from [SABS slides](https://docs.google.com/presentation/d/1xR3CVxMSiUsbMMwoLwBeI85w9dxpIgX7-gEO7MTWUkQ/edit?slide=id.g63043845db_0_149#slide=id.g63043845db_0_149)
--   Iterative ideas from from [Eastern Peak](https://easternpeak.com/definition/iterative-development/#:~:text=Iterative%20development%20is%20a%20software,%2C%20development%2C%20and%20testing%20steps.)
 -   [Agile Manifesto](https://agilemanifesto.org/)
 -   [Scrum Guide](https://scrumguides.org/)
--   [Agile wikipedia](https://en.wikipedia.org/wiki/Agile_software_development)
--   [PRINCE2 wikipedia](https://en.wikipedia.org/wiki/PRINCE2)
 -   ISO - International Standard on Software Processes
 -   SWEBOK - Software Body of Knowledge
 -   Software Engineering by Ian Sommerville
@@ -220,6 +209,11 @@ It is a more heavyweight project management framework than Agile Project Managem
 -   ISO/IEC 29110-5-4 Systems and software engineering – Lifecycle profiles for very small entities (VSEs) Part 5-4: Agile software development guidelines
 -   TickITplus Base Process Library: ORG.10 Lifecycle Model Management
 -   IEEE SWEBOK Software Engineering Body of Knowledge
+-   Waterfall Method ideas from [geeksforgeeks](https://www.geeksforgeeks.org/waterfall-model/)
+-   V-Model ideas from [geeksforgeeks](https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/)
+-   Iterative ideas from from [Eastern Peak](https://easternpeak.com/definition/iterative-development/#:~:text=Iterative%20development%20is%20a%20software,%2C%20development%2C%20and%20testing%20steps.)
+-   [Agile wikipedia](https://en.wikipedia.org/wiki/Agile_software_development)
+-   [PRINCE2 wikipedia](https://en.wikipedia.org/wiki/PRINCE2)
 
 ::: keypoints
 -   FIXME
