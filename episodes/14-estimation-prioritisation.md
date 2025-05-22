@@ -1,5 +1,5 @@
 ---
-title: "1.3 Stakeholder management and project requirements"
+title: "1.3 Estimation, Prioritisation, and Stakeholder Management"
 teaching: 0
 exercises: 0
 ---
@@ -24,7 +24,6 @@ exercises: 0
 ## Estimation: the Foundation for Prioritisation
 
 Once we have an initial set of requirements captured,
-but before we assign and begin the work,
 we need to understand their importance in relation to each other:
 essentially we need to prioritise them.
 
@@ -60,7 +59,18 @@ and those doing the work are the ones who are effectively committing to these fi
 As well as lacking the inherent technical skills required to estimate,
 having senior non-development roles dictating estimates is that they are at risk of non-development biases such as idealised project timelines and goals which may not be achievable.
 
-FIXME: add 5-min estimation exercise
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## T-Shirt Estimation
+
+FIXME: short solo exercise to add t-shirt estimations to some small list of requirements for a toy example project
+
+:::::::::::::::  solution
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -87,7 +97,21 @@ and bring in other sanity checks and their own development experience.
 Just talking things through can help uncover other complexities and pitfalls,
 and raise crucial questions to clarify ambiguities.
 
-## Prioritising our Backlog
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Add Estimates to our Product Backlog
+
+FIXME: add estimates to our backlog items as a team
+
+:::::::::::::::  solution
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+## Prioritisation
 
 FIXME: when to prioritise? essentially at a number of levels within the project
 
@@ -97,10 +121,10 @@ This should be decided by the project stakeholders;
 those - or their representatives -
 who have a stake in the success of the project
 and are either directly affected or affected by the project,
-e.g. Principle Investigators,
-researchers,
-Research Software Engineers,
-collaborators, etc.
+e.g. clients,
+end-users,
+collaborators,
+etc.
 
 To prioritise these requirements we can use a method called **MoSCoW**,
 a way to reach a common understanding with stakeholders
@@ -145,7 +169,33 @@ even if it becomes clear that you are only able to
 deliver the Must Haves for a particular time period,
 you have still delivered it *successfully*.
 
-FIXME: 10 min exercise of prioritising some small list of requirements on a noddy project using moscow (close to a 60/20/20 split). Have some obvious bikeshedding-level reqs
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Prioritise!
+
+FIXME: 10 min solo exercise of prioritising above toy example requirements using moscow (close to a 60/20/20 split). Have some obvious bikeshedding-level reqs
+
+:::::::::::::::  solution
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Prioritise our Product Backlog
+
+FIXME: do prioritisation for our backlog as a team
+
+:::::::::::::::  solution
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::: keypoints
  

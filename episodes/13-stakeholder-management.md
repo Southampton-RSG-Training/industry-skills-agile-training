@@ -1,5 +1,5 @@
 ---
-title: "1.3 Capturing project requirements"
+title: "1.3 User Stories and Capturing Project Requirements"
 teaching: 0
 exercises: 0
 ---
@@ -15,11 +15,12 @@ exercises: 0
  
 ::::::::::::::::::::::::::::::::::::: objectives
  
+- Describe the key features of writing user stories
 - Highlight the characteristics and differences between functional and non-functional requirements
-- Describe the key features of, types of, and approaches to writing user stories
 - Describe the purpose and composition of the product backlog
 - Describe what makes a good product requirement
-- Create an initial product backlog with approximate effort estimates
+- Describe the purpose of a product backlog and what it contains
+- Create an initial product backlog from a given scenario
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -28,9 +29,47 @@ FIXME: or:
 FIXME: lesson 1: user stories, intro to project brief, coming up with questions for client, meeting with client to capture user stories
 FIXME: lesson 2: project requirements derived from user stories, SteveP video on importance of reqs (and user stories), adding to github, estimation, prioritisation
 
-FIXME: reorder user stories with requirements, summary with process of us, reqs, prod. backlog
+## User Stories: Understanding Requirements from the User Perspective
 
-## What is a Requirement, and Why are they Important?
+Capturing requirements is pivotal to understanding what needs to be built,
+but whilst they state what is required, they lack the end-user context of what they are and why they are important.
+User stories aim to capture this perspective, being short and simple descriptions of new features or functionality from the perspective of the end user themselves.
+Therefore, user stories help:
+
+- The project remains *user-centered* and *focused on real needs*,
+rather than jumping prematurely to solution or technical requirements
+- To clarify the the *value* behind a feature,
+and anchor development in *user outcomes*, not just functionality
+- Prevent requirements ballooning, if not guided by real user goals
+- Prioritise what matters to users
+
+They typically follow the following template,
+to ensure user stories are clear and concise:
+
+> As a *[type of user]*, I want *[an action]* so that *[benefit]*.
+
+Some examples of user stories include:
+
+- E-commerce site: as a shopper, I want to add items to my cart so that I can purchase multiple products at once
+- Mobile application: as a user, I want to receive push notifications for important updates so that I stay informed when I'm not using the app
+
+FIXME: acceptance criteria for functional and non-functional requirements
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## User Stories
+
+FIXME: add brief exercise
+
+:::::::::::::::  solution
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+## What Exactly is a Requirement, and Why are they Important?
 
 In general, a requirement is a *capability or condition that must be met for software to solve a problem or address a need*. They form the foundation of our project and drive what will be developed, so if we do not properly explore and understand what is required, the software will not be suitable for it's intended purpose.
 
@@ -120,32 +159,24 @@ but some popular examples include:
 
 FIXME: consider levels of requirements? e.g. business/solution/technical? Maybe include this within user stories section?
 
+## An Industrial Perspective
 
-## User Stories: Understanding Requirements from the User Perspective
+FIXME: link to industry video here with a bit of intro text, and text highlighting key points
 
-FIXME: consider reordering reqs and user stories (so narratively, user stories flow into derived requirements)
+## The Coffee Beans Analysis Project
 
-Capturing requirements is pivotal to understanding what needs to be built,
-but whilst they state what is required, they lack the end-user context of what they are and why they are important.
-User stories aim to capture this perspective, being short and simple descriptions of new features or functionality from the perspective of the end user themselves.
+FIXME: change name!
+FIXME: add link to brief, summarise the project here
 
-They typically follow the following template,
-to ensure user stories are clear and concise:
+## Capturing Requirements in a Product Backlog
 
-> As a *[type of user]*, I want *[an action]* so that *[benefit]*.
-
-Some examples of user stories include:
-
-- E-commerce site: as a shopper, I want to add items to my cart so that I can purchase multiple products at once
-- Mobile application: as a user, I want to receive push notifications for important updates so that I stay informed when I'm not using the app
-
-FIXME: acceptance criteria for functional and non-functional requirements
+FIXME: overview of a product backlog: purpose, what they contain, how to build one
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## User Stories
+## Create a Product Repository
 
-FIXME: add brief exercise
+FIXME: create example template repo with initial code, participants copy that
 
 :::::::::::::::  solution
 
@@ -154,16 +185,23 @@ FIXME: add brief exercise
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-
-## Capturing Requirements in a Product Backlog
-
-
-
 :::::::::::::::::::::::::::::::::::::::: callout
 
 ## What Makes a Good Requirement?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Create a Product Backlog
+
+:::::::::::::::  solution
+
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 
 
