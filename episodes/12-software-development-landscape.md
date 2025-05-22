@@ -102,6 +102,8 @@ However, there are some disadvantages to the Waterfall Model:
 -   The model assumes that project requirements are fully defined from the beginning, which is rarely the case for smaller, non-critical software projects, particularly in research.
 -   The software is not seen by the client until late in the project timeline, which may increase the risk of it not meeting the client's expectations.
 
+![](fig/waterfall.png){alt='diagram of the waterfall model'}
+
 ### V-Model
 
 The V-Model emphasises the importance of testing and validation at each development stage, running parallel to the corresponding development activity.
@@ -111,6 +113,8 @@ The two sides of the "V" represent:
 
 -   Verification phases (requirements gathering, system design, architectural design, module design, and coding) on the left side.
 -   Validation phases (unit testing, integration testing, system testing, and user acceptance testing) on the right side.
+
+![(Designed by Freepik)](fig/v-model.png){alt='image of the v-model of software development'}
 
 Advantages
 
@@ -139,6 +143,8 @@ In iterative development, a large application is built in smaller, manageable pa
 Each iteration includes planning, design, development, and testing, and produces a working version of the product.
 Unlike the Waterfall and V models, where the entire product is developed at once, iterative development adds features incrementally, with each cycle enhancing the functionality of the product.
 
+![(Image from The Carpentries Intermediate Research Software Development)](fig/iterative.png){alt='image of iterative software development'}
+
 Advantages of Iterative Development:
 
 -   Progress on the software product can initially be faster as less time is spent on the requirements and design stages before starting implementation
@@ -159,6 +165,8 @@ The model guides users to first determine objectives, second identify and resolv
 More recently, the spiral model has been thought of as a 'process model generator' because Boehm argues that choices based on a project's risks generate an appropriate process model for the project.
 
 Decisions about how much effort should be directed into each element of the project is guided by the goal of minimising the overall risk.
+
+![(Boehm, 1987)](fig/spiral.png){alt='image of the spiral model of software development'}
 
 #### Agile
 
@@ -230,6 +238,8 @@ In Scrum:
 4.  Repeat
 
 (The Scrum Guide, 2020)
+
+![](fig/scrum.png){alt='diagram of scrum'}
 
 Later in this course we will talk more about Scrum so that you are able to use it to run your own Sprints on a project.
 
