@@ -165,7 +165,7 @@ The Agile Manifesto was inspired by the desire for a more rapid and lightweight 
 It drew on ideas from existing lightweight software development methods such as rapid application development, the rational unified process aka RUP, dynamic systems development method, scrum, extreme programming and feature driven development.
 Although these methods were developed in the 1990s, before the Agile Manifesto, they are now all referred to under the umbrella term 'Agile' and, with the exception of Scrum, these methods have now gone out of fashion.
 
-### Which Model to Choose?
+## Which Model to Choose?
 
 Any model can be used for any software development project.
 Waterfall and V-Model and more likely to be used when all the requirements are known at the start of the project.
@@ -203,7 +203,7 @@ The portal will be used by applicants, reviewers and administrators.
 In this course, we will focus on Agile, as it is currently a commonly used method for software engineering across sectors, and it suits the project that you'll be working on throughout this course.
 In particular, we will focus on a an Agile framework called 'Scrum'.
 
-### Scrum
+## Scrum
 
 Scrum is one of the most popular Agile frameworks.
 Scrum is defined in the Scrum Guide as 'a lightweight framework that helps people, teams and organisations generate value through adaptive solutions for complex problems'.
@@ -235,7 +235,7 @@ In Scrum:
 
 Later in this course we will talk more about Scrum so that you are able to use it to run your own Sprints on a project.
 
-### Agile Software Development vs Project Management
+## Agile Software Development vs Project Management
 
 Agile software development is a methodology and mindset that guides the actual software development process.
 It is concerned with delivering a project i.e. doing the actual software engineering.
@@ -255,6 +255,7 @@ It is a more heavyweight project management framework than Agile Project Managem
 
 ## Software Development or Project Management?
 **Group Challenge**
+
 Below is a list of tasks, discuss whether each task belongs in software development models or project management models:
 
 1. Writing and testing code for a new feature
@@ -290,11 +291,7 @@ Below is a list of tasks, discuss whether each task belongs in software developm
 ## References
 
 -   Stages of Software Development from [Python Intermediate Development Carpentries Training](https://carpentries-incubator.github.io/python-intermediate-development/30-section3-intro.html)
--   Iterative from [SABS slides](https://docs.google.com/presentation/d/1xR3CVxMSiUsbMMwoLwBeI85w9dxpIgX7-gEO7MTWUkQ/edit?slide=id.g63043845db_0_149#slide=id.g63043845db_0_149)
--   [Agile Manifesto](https://agilemanifesto.org/)
 -   [The Scrum Guide](https://scrumguides.org/)
--   ISO - International Standard on Software Processes
--   SWEBOK - Software Body of Knowledge
 -   Software Engineering by Ian Sommerville
 -   Software Engineering: Theory and Practice by Shari Lawrence Pfleeger
 -   [British Standards Online](https://library.soton.ac.uk/techinfo/standards)
