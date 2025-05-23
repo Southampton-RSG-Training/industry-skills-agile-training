@@ -13,10 +13,10 @@ exercises: 0
 
 ::: objectives
 -   Highlight the main stages in a software development process
+-   Order and describe the stages within a typical software development process and how these apply within waterfall and iterative approaches
+-   Summarise the V-Model approach to software development
 -   Demystify, compare and contrast agile approaches against project management
 -   Describe how Scrum compares and relates to project management frameworks [AgilePM, PRINCE2]
--   Summarise the V-Model approach to software development
--   Order and describe the stages within a typical software development process and how these apply within waterfall and iterative approaches
 :::
 
 ## The Stages of a Typical Software Development Process
@@ -241,7 +241,7 @@ Agile software development is a methodology and mindset that guides the actual s
 It is concerned with delivering a project i.e. doing the actual software engineering.
 
 Project management is concerned with all aspects of a project including planning, executing, and closing projects, as well as managing change and risk within a project.
-Project management may contain Agile Software Development but will also cover the wider project aspects including It ensuring that a project meets its goals, timeline, and budget.
+Project management may contain Agile Software Development but will also cover the wider project aspects including ensuring that a project meets its goals, timeline, and budget.
 
 There are lots of project management frameworks.
 
@@ -311,5 +311,14 @@ Below is a list of tasks, discuss whether each task belongs in software developm
 -   [PRINCE2 wikipedia](https://en.wikipedia.org/wiki/PRINCE2)
 
 ::: keypoints
--   FIXME
+-   The typical stages of a software development process are: requirements gathering, design, implementation, testing, deployment and maintenance
+-   These stages are arranged differently in different models of software development
+-   The Waterfall model follows the stages in a set, sequential order
+-   The V-Model emphasises the importance of testing and validation at each stage
+-   In iterative development, a large application is built in smaller, manageable parts called iterations.
+-   Boehm’s Spiral is an iterative, risk-driven approach to software development
+-   Agile software development is any iterative method that follows a set of Agile principles: Individuals and interactions over processes and tools; Working software over comprehensive documentation; Customer collaboration over contract negotiation; Responding to change over following a plan.
+-   Any model can be used for any software development project but some may suit particular types of projects better than others
+-   Scrum is one of the most popular Agile frameworks. Later in this course we will talk more about Scrum so that you are able to use it to run your own Sprints on a project.
+-   Software development is concerned with delivering a project whereas project management will also cover the wider project aspects.
 :::
