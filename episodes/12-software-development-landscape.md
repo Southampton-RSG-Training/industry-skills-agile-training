@@ -40,6 +40,18 @@ Someone who is engineering software takes a wider view:
 -   Software (or code) is an asset: software inherently contains value - for example, in terms of what it can do, the lessons learned throughout its development, and as an implementation of a research approach (i.e. a particular research algorithm, process, or technical approach).
 -   As an asset, it could be reused: again, it may not be evident initially that the software will have use beyond its initial purpose or project, but there is an assumption that the software - or even just a part of it - could be reused in the future.
 
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+## Let's Break it Down 
+**Solo Challenge**
+
+Think about a project you've completed in the past.
+This could be a software project but it doesn't have to be.
+It could be anything from organising an event to completing a personal goal or managing a work task.
+
+If you were to break down that project into stages, what would the stages be?
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ### Software Development Process
 
 The typical stages of a software development process are:
@@ -51,41 +63,9 @@ The typical stages of a software development process are:
 -   **Deployment:** where the software is deployed or in some way released, and used for its intended purpose within its intended environment.
 -   **Maintenance:** where updates are made to the software to ensure it remains fit for purpose, which typically involves fixing any further discovered issues and evolving it to meet new or changing requirements.
 
-::: challenge
-Think about a project you've completed in the past.
-This doesn’t have to be a software project.  It could be anything from organizing an event to completing a personal goal or managing a work task.
-
-Now, reflect on the steps you took from start to finish.
-
-Can you identify stages in your project that correspond to the typical software development process?
-These stages include:
-
--   Requirements gathering (clarifying what needed to be achieved)
-
--   Design (planning how to approach it)
-
--   Implementation (doing the work)
-
--   Testing (checking if it worked as intended)
-
--   Deployment (delivering or using the result)
-
--   Maintenance (making adjustments or improvements after completion)
-
-Which of these stages did you go through, and what did each look like in your project?
-:::
-
 These stages are followed implicitly or explicitly in every software project but there are many different ways to arrange them.
 The stages may be arranged according to an established model of software development.
 
-::: challenge
-Create a simple diagram that shows how the stages of your project were arranged.
-Think about the sequence in which things happened.
-Did you follow the stages one after the other, go back and repeat some, or work on multiple stages at the same time?
-
-Your diagram doesn’t need to be complex - boxes and arrows are enough.
-The goal is to show the flow of your project from start to finish, based on the stages you identified in Exercise 1.
-:::
 
 ## Models of Software Development
 
@@ -102,7 +82,7 @@ However, there are some disadvantages to the Waterfall Model:
 -   The model assumes that project requirements are fully defined from the beginning, which is rarely the case for smaller, non-critical software projects, particularly in research.
 -   The software is not seen by the client until late in the project timeline, which may increase the risk of it not meeting the client's expectations.
 
-![](fig/waterfall.png){alt='diagram of the waterfall model'}
+![](fig/waterfall.png){alt="diagram of the waterfall model"}
 
 ### V-Model
 
@@ -143,7 +123,7 @@ In iterative development, a large application is built in smaller, manageable pa
 Each iteration includes planning, design, development, and testing, and produces a working version of the product.
 Unlike the Waterfall and V models, where the entire product is developed at once, iterative development adds features incrementally, with each cycle enhancing the functionality of the product.
 
-![(Image from The Carpentries Intermediate Research Software Development)](fig/iterative.png){alt='image of iterative software development'}
+![(From The Carpentries Intermediate Research Software Development)](fig/iterative.png){alt='image of iterative software development'}
 
 Advantages of Iterative Development:
 
@@ -196,7 +176,10 @@ It's also worth noting that, to some extent, linear approaches become iterative 
 For example, knowing 100% of the requirements from the start is nearly always impossible.
 Even if a waterfall approach is applied, changes will most likely be made at each of the stages, requiring revision of an earlier stage.
 
-::: challenge
+:::::::::::::::::::::::::::::::::::::::  challenge
+## Model Matchmaking: What’s the Best Fit?
+**Group Challenge**
+
 Imagine you've been hired to develop a web-based system for managing applications for public research grants.
 The portal will be used by applicants, reviewers and administrators.
 
@@ -208,7 +191,6 @@ The portal will be used by applicants, reviewers and administrators.
 
 -   Stakeholder involvement is minimal after the requirements have been approved.
 
-
 **Your task:**
 
 -   Discuss the project as a group and decide which software development model would be most suitable for delivering
@@ -216,7 +198,7 @@ The portal will be used by applicants, reviewers and administrators.
 -   Consider factors such as the nature of the project, clarity of requirements, timeline, risk, and the need for flexibility
 
 -   Be prepared to **justify your choice** - why is this model a good fit for the scenario?
-:::
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 In this course, we will focus on Agile, as it is currently a commonly used method for software engineering across sectors, and it suits the project that you'll be working on throughout this course.
 In particular, we will focus on a an Agile framework called 'Scrum'.
@@ -229,17 +211,27 @@ The core philosophy of Scrum is to make incremental progress toward a goal throu
 
 In Scrum:
 
-1.  A product owner orders the work into a Product Backlog
+1.  A **Product Owner** orders the work into a **Product Backlog**
 
-2.  The Scrum Team turns a subset of the work into an Increment of Value during a Sprint
+2.  The **Scrum Team** turns a subset of the work (the **Sprint Backlog**) into an **Increment of Value** during a **Sprint**
 
-3.  The Scrum Team and its stakeholders inspect the results and adjust for the next sprint
+3.  The Scrum Team and its stakeholders inspect the results and adjust for the next Sprint.
 
 4.  Repeat
 
 (The Scrum Guide, 2020)
 
-![](fig/scrum.png){alt='diagram of scrum'}
+![](fig/scrum_simplified.png){alt='simplified diagram of scrum with arrows showing that the product backlog is broken down into sprint backlogs and these are worked on throughout a sprint to create an increment of value'}
+
+:::::::::::::::::::::::::::::::::::::::  callout
+## Scrum Buzzwords Decoded
+- Product Owner - responsible for maximising the value of the product.
+- Product Backlog - Ordered list of what is needed to improve the product.
+- Increment of Value - a concrete stepping stone toward the Product Goal.
+- Scrum Team - one Scrum Master, one Product Owner, and Developers (we'll discuss what each of these roles does later in the course).
+- Sprint Backlog - the set of Product Backlog items selected for the Sprint. 
+- Sprint - Fixed-length events of one month or less in which the work gets done.
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Later in this course we will talk more about Scrum so that you are able to use it to run your own Sprints on a project.
 
@@ -257,28 +249,43 @@ To avoid confusion we should distinguish between Agile Software Development and 
 It emphasises transparency, flexibility and meeting customer need, as well as allowing teams to have autonomy, make shared decisions and self-organise.
 
 Another popular project management framework is PRINCE2 (PRojects IN Controlled Environments), which was developed by the UK government, and outlines seven principles, seven themes and seven processes to guide how a project should be managed.
-It is a more heavyweight project management framework than Agile Project Management and so is often used in sectors where governance and documentation are priorities
+It is a more heavyweight project management framework than Agile Project Management and so is often used in sectors where governance and documentation are priorities.
 
-::: discussion
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Software Development or Project Management?
+**Group Challenge**
 Below is a list of tasks, discuss whether each task belongs in software development models or project management models:
 
-1.  Writing and testing code for a new feature
-2.  Creating a Gantt chart to map out project timelines
-3.  Designing the software architecture for a system
-4.  Managing changes to the project scope
-5.  Holding a daily stand-up meeting to track team progress
-6.  Planning user stories and prioritising the product backlog
-7.  Ensuring project documentation meets governance standards
-8.  Reviewing whether the project is on track to meet its deadline and budget
-9.  Refactoring code to improve performance
-10. Facilitating a retrospective meeting to reflect on team performance
-11. Performing risk analysis before the project starts
-12. Approving and tracking project milestones
-13. Collaborating on test-driven development (TDD)
-14. Allocating resources across multiple projects
-15. Setting up a version control system (e.g. Git)
+1. Writing and testing code for a new feature
+2. Designing the software architecture for a system
+3. Creating a risk mitigation plan for project delivery
+4. Allocating team members across multiple concurrent projects
+5. Refactoring legacy code to improve maintainability
+6. Tracking project progress against the Gantt chart
+7. Setting up a version control system (e.g. Git)
+8. Reviewing whether the project is on track to meet its deadline and budget
+9. Leading a daily stand-up meeting
+10. Leading a group retrospective to reflect on project outcomes and team performance
 
-:::
+:::::::::::::::  solution
+
+1. Software development
+2. Software development
+3. Project management
+4. Project management
+5. Software development
+6. Project management
+7. Software development
+8. Project management
+9. Could be either
+10. Could be either
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 
 ## References
 
