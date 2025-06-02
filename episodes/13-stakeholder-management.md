@@ -59,7 +59,7 @@ FIXME: mention acceptance criteria for functional and non-functional requirement
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## User Stories
+## Solo Exercise: User Stories
 
 Consider this scenario:
 
@@ -105,13 +105,17 @@ Business customer:
 ## What Exactly is a Requirement, and Why are they Important?
 
 In general, a requirement is a *capability or condition that must be met for software to solve a problem or address a need*.
-Building on user stories, they form the foundation of our project and drive what will be developed,
+They form the foundation of our project and drive what will be developed,
 so if we do not properly explore and understand what is required, the software will not be suitable for it's intended purpose.
+Whilst user stories focus purely on the user perspective,
+requirements concentrate on the technical aspects of building a product that meets these needs.
+For this reason, it's common to develop user stories first (to understand the user),
+then from those stories, derive requirements (to understand what needs to be built).
 
 FIXME: add in SWC slide references to importance of reqs and stats for failure, with examples (e.g. galileo probe)
 
 However, it is unlikely that we will be able to determine all of the requirements correctly and completely upfront.
-Especially when working in a research context, requirements are flexible and may change as the project evolves, so we need to ensure we are able to accommodate any agreed changes.
+In practice, very often requirements may need be flexible to some extent and may change as the project evolves, so we need to ensure we are able to accommodate any agreed changes.
 
 ## Requirements are More than just Features
 
@@ -138,50 +142,50 @@ and we must account for them in our requirements.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Exercise: Types of Software
+## Solo Exercise: Types of Software
 
 Think about some software you are familiar with
 (could be software you have written yourself or by someone else)
-and how the environment it is used in have affected its design or development.
+and how the environment it is used in has affected its design or development.
 Here are some examples of questions you can use to get started:
 
 - What environment does the software run in?
-- Why do people use it?
 - How do people interact with it?
 - What features of the software have been affected by these factors?
-- If the software needed to be used in a different environment,
-  what difficulties might there be?
 
 :::::::::::::::  solution
 
-## Some More Examples
+## Some Examples
 
-- Desktop Application
-  - Has a graphical interface for use with mouse and keyboard
-  - May need to work on multiple, very different operating systems
-  - May be intended for users to modify / compile themselves
-  - Should work on a wide range of hardware configurations
-  - Documentation probably either in a manual or in the software itself
-- Command-line Application - UNIX Tool
-  - User interface is text based, probably via command-line arguments
-  - Intended to be modified / compiled by users - though most will choose not to
-  - Documentation has standard formats - also accessible from the command line
-  - Should be usable as part of a pipeline
-- Command-line Application - High Performance Computing
-  - Similar to a UNIX Tool
-  - Usually supports running across multiple networked machines simultaneously
-  - Usually operated via a scheduler - interface should be scriptable
-  - May need to run on a wide range of hardware
-    (e.g. different CPU architectures)
-  - May need to process large amounts of data
-  - Often entirely or partially written in a lower-level language for performance
-    (e.g. C, C++, Fortran)
-- Web Application
-  - Usually has components which run on server and components which run on the user's device
-  - Graphical interface should usually support both Desktop and Mobile devices
-  - Client-side component should run on a range of browsers and operating systems
-  - Documentation probably part of the software itself
-  - Client-side component typically written in JavaScript
+Desktop Application
+- Has a graphical interface for use with mouse and keyboard
+- May need to work on multiple, very different operating systems
+- May be intended for users to modify / compile themselves
+- Should work on a wide range of hardware configurations
+- Documentation probably either in a manual or in the software itself
+
+Command-line Application - Linux Tool
+- User interface is text based, probably via command-line arguments
+- Intended to be modified / compiled by users - though most will choose not to
+- Documentation has standard formats - also accessible from the command line
+- Should be usable as part of a pipeline
+
+Command-line Application - High Performance Computing
+- Similar to a UNIX Tool
+- Usually supports running across multiple networked machines simultaneously
+- Usually operated via a scheduler - interface should be scriptable
+- May need to run on a wide range of hardware
+  (e.g. different CPU architectures)
+- May need to process large amounts of data
+- Often entirely or partially written in a lower-level language for performance
+  (e.g. C, C++, Fortran)
+
+Web Application
+- Usually has components which run on server and components which run on the user's device
+- Graphical interface should usually support both Desktop and Mobile devices
+- Client-side component should run on a range of browsers and operating systems
+- Documentation probably part of the software itself
+- Client-side component typically written in JavaScript
 
 :::::::::::::::::::::::::
 
@@ -194,7 +198,8 @@ but some popular examples include:
 - Performance: what performance goals will the software be required to satisfy?
 - Usability: how will the user interact with the software?
 - Portability: to what extent should the software be able to run on different systems with minimal changes?
-- Reliability: to what extent should the software we able to operate without failures and remain available for use when needed?
+- Reliability: to what extent should the software we able to operate without errors and unexpected failures?
+- Availability: to what extent should the software remain accessible and operational when needed?
 
 
 ## The Coffee Beans Analysis Project
