@@ -24,11 +24,6 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-FIXME: keep this episode focused on requirements, intro to project brief, coming up with questions for client, capture from client? Move product backlog creation to next episode?
-FIXME: or:
-FIXME: lesson 1: user stories, intro to project brief, coming up with questions for client, meeting with client to capture user stories
-FIXME: lesson 2: project requirements derived from user stories, SteveP video on importance of reqs (and user stories), adding to github, estimation, prioritisation
-
 ## User Stories: Understanding Requirements from the User Perspective
 
 Capturing requirements is pivotal to understanding what needs to be built,
@@ -48,21 +43,59 @@ to ensure user stories are clear and concise:
 
 > As a *[type of user]*, I want *[an action]* so that *[benefit]*.
 
+Breaking each of these three aspects down:
+
+- "As a *[type of user]*": who are we building this for? There may be more than one type of user, but in any case we need to think about this from the user's perspective.
+- "I want *[an action]*": this describes the intent of this type of user, not the features of the system. What do they want to achieve?
+- "so that *[benefit]*": what is the benefit they are trying to realise? How will it help them directly, solve a problem for them?
+
 Some examples of user stories include:
 
 - E-commerce site: as a shopper, I want to add items to my cart so that I can purchase multiple products at once
 - Mobile application: as a user, I want to receive push notifications for important updates so that I stay informed when I'm not using the app
 
-FIXME: acceptance criteria for functional and non-functional requirements
+
+FIXME: mention acceptance criteria for functional and non-functional requirements
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
 ## User Stories
 
-FIXME: add brief exercise
+Consider this scenario:
+
+*"A small town cheese-making business has received many enquiries about being able to make online purchases delivered to their homes or place of business,
+and so now want to also sell their many types of cheeses using an online store.
+Online customers are looking to be able to search the store, select cheeses to purchase,
+and when ready, add payment and shipping details and confirm the order.
+There is some evidence that some online customers are environmentally and ecologically conscious,
+so are interested in the environmental impacts of products.
+In order to schedule their supply chains efficiently, business customers are keen to have updates on shipping.
+From the perspective of the business owner, they want to able to manage available stock inventory on the online store."
+
+Identify at least two types of user - also known as *personas* - that would use the store.
+From the above scenario, create at least four user stories using this format:
+
+> As a *[type of user]*, I want *[an action]* so that *[benefit]*.
+
+Hint: focus on the user needs, not what may be implementated.
 
 :::::::::::::::  solution
 
+Here are some example user stories:
+
+Business owner:
+- As a business owner, I want to add new stock to the sit,e so that customers can purchase it.
+- As a business owner, I want to remove old stock from the site, so that customers cannot purchase expired stock.
+
+Personal customer:
+- As a customer, I want to search available cheeses by name, so I can find the ones I want easily.
+- As a customer, I want to add cheeses to a basket, so I can continue to shop and purchase them all later.
+
+Eco-conscious customer:
+- As an eco-conscious customer, I want to view the environmental impact details of products, so I can make environmentally-informed purchasing choices.
+
+Business customer:
+- As a business customer, I want to have real-time updates of orders that have been shipped, so I can organise my supply chains efficiently.
 
 :::::::::::::::::::::::::
 
@@ -71,17 +104,23 @@ FIXME: add brief exercise
 
 ## What Exactly is a Requirement, and Why are they Important?
 
-In general, a requirement is a *capability or condition that must be met for software to solve a problem or address a need*. They form the foundation of our project and drive what will be developed, so if we do not properly explore and understand what is required, the software will not be suitable for it's intended purpose.
+In general, a requirement is a *capability or condition that must be met for software to solve a problem or address a need*.
+Building on user stories, they form the foundation of our project and drive what will be developed,
+so if we do not properly explore and understand what is required, the software will not be suitable for it's intended purpose.
 
 FIXME: add in SWC slide references to importance of reqs and stats for failure, with examples (e.g. galileo probe)
 
-However, it is unlikely that we will be able to determine all of the requirements correctly and completely upfront. Especially when working in a research context, requirements are flexible and may change as the project evolves, so we need to ensure we are able to accommodate any agreed changes.
+However, it is unlikely that we will be able to determine all of the requirements correctly and completely upfront.
+Especially when working in a research context, requirements are flexible and may change as the project evolves, so we need to ensure we are able to accommodate any agreed changes.
 
 ## Requirements are More than just Features
 
-When considering software requirements, it is very tempting to just think about the features users need. However, many design choices in a software project depend on the users themselves and the environment in which the software is expected to run (as well as *how* the software should run), and these aspects should be considered as part of the software’s *non-functional* requirements.
+When considering software requirements, it is very tempting to just think about the features users need. 
+However, many design choices in a software project depend on the users themselves and the environment in which the software is expected to run (as well as *how* the software should run),
+and these aspects should be considered as part of the software’s *non-functional* requirements.
 
-To explore the importance of this aspect, let's consider two software types, mobile applications and embedded software. They may appear similar, but examining the environments in which they are developed and operate uncovers many differences that need to be accounted for in order for the software to be fit for purpose.
+To explore the importance of this aspect, let's consider two software types, mobile applications and embedded software.
+They may appear similar, but examining the environments in which they are developed and operate uncovers many differences that need to be accounted for in order for the software to be fit for purpose.
 
 | Concern   | Mobile Apps | Embedded Software
 |-----------|-------------|------------------
@@ -157,11 +196,6 @@ but some popular examples include:
 - Portability: to what extent should the software be able to run on different systems with minimal changes?
 - Reliability: to what extent should the software we able to operate without failures and remain available for use when needed?
 
-FIXME: consider levels of requirements? e.g. business/solution/technical? Maybe include this within user stories section?
-
-## An Industrial Perspective
-
-FIXME: link to industry video here with a bit of intro text, and text highlighting key points
 
 ## The Coffee Beans Analysis Project
 
