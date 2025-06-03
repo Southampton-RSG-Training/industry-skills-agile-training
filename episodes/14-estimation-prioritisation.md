@@ -59,11 +59,34 @@ and those doing the work are the ones who are effectively committing to these fi
 As well as lacking the inherent technical skills required to estimate,
 having senior non-development roles dictating estimates is that they are at risk of non-development biases such as idealised project timelines and goals which may not be achievable.
 
+### T-Shirt Estimation
+
+One method typically used in agile for estimation is *t-shirt estimation*.
+Instead of applying specific estimates of time to complete each requirement or task,
+you instead assign a t-shirt size to each in order to estimate their size *relative to each other*.
+T-shirt estimation is a far simpler method that emphasises simplicity, speed, and collaboration
+in early stages of a project where details are often vague.
+
+Some example sizes might be:
+
+| Size | Description | Rough time estimate |
+|----- |-------------|---------------------|
+| XS | Very quick and easy | < 1 day  |
+| S  | Small effort        | 1-2 days |
+| M  | Medium effort       | 2-4 days |
+| L  | Large effort        | 5-7 days |
+| XL | Very large or unclear | - |
+
+So for any tasks judged to be `XL`,
+this implies it needs to be clarified and/or broken down into further tasks.
+
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## T-Shirt Estimation
+## Solo Exercise: T-Shirt Estimate!
 
-FIXME: short solo exercise to add t-shirt estimations to some small list of requirements for a toy example project
+Apply a t-shirt size estimation to each of the following requirements:
+
+FIXME: add example requirements
 
 :::::::::::::::  solution
 
@@ -100,15 +123,49 @@ and raise crucial questions to clarify ambiguities.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Add Estimates to our Product Backlog
+## Solo Exercise: Apply T-shirt Estimates to your Product Backlog
 
-FIXME: add estimates to our backlog items as a team
+5 mins.
 
-:::::::::::::::  solution
+On your own, quickly apply the t-shirt estimation technique to the issues in your product backlog,
+noting down your estimates.
+Use the following categories, which have a greatly reduced time scale:
 
-:::::::::::::::::::::::::
+| Size | Description | Rough time estimate |
+|----- |-------------|---------------------|
+| XS | Very quick and easy | < 5 mins  |
+| S  | Small effort        | 5-10 mins |
+| M  | Medium effort       | 10-20 mins |
+| L  | Large effort        | 1 hour |
+| XL | Very large or unclear | - |
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Group Exercise: Collate your Estimates!
+
+As a group, reveal all your individual estimates  - which may be wildly different! -
+for each of the requirements and decide the final size based on the majority size.
+For those that have equal votes, decide quickly as a group on the final size.
+
+Once you have a list of final sizes,
+add each agreed size as a comment to its corresponding issue in your product backlog.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+:::::::::::::::::::::::::::::::::::::::: callout
+
+## General Tips for a Successful Estimation Session
+
+- Avoid mapping sizes to exact hours/days too early
+- Focus on relative sizing between stories
+- Discuss outliers - why does someone see it as an XL when others see M?
+- Use the discussion to uncover unknowns or assumptions about the requirements,
+and clarify them in the product backlog
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ## Prioritisation
