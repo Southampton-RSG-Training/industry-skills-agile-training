@@ -1,5 +1,5 @@
 ---
-title: "1.4 Version Control within the Agile Way of Working"
+title: "1.5 Version Control within the Agile Way of Working"
 teaching: 0
 exercises: 0
 ---

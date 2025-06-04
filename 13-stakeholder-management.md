@@ -24,10 +24,20 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## User Stories: Understanding Requirements from the User Perspective
+In this section, we'll introduce two established key concepts for capturing the needs of a project,
 
-Capturing requirements is pivotal to understanding what needs to be built,
-but whilst they state what is required, they lack the end-user context of what they are and why they are important.
+- *User stories*, which capture what is needed from solely the perspective of the client
+- *Requirements*, which state what needs to be built (or what needs to change) by the development team 
+
+So whilst they both capture what the software will do,
+each reflects one side of the client/developer perspective.
+
+
+## User Stories: Understanding what is Needed from the User Perspective
+
+Capturing "requirements" is pivotal to understanding what needs to be built,
+but whilst they state what is technically required,
+they lack the end-user context of what they are and why they are important.
 User stories aim to capture this perspective, being short and simple descriptions of new features or functionality from the perspective of the end user themselves.
 Therefore, user stories help:
 
@@ -107,12 +117,19 @@ Business customer:
 In general, a requirement is a *capability or condition that must be met for software to solve a problem or address a need*.
 They form the foundation of our project and drive what will be developed,
 so if we do not properly explore and understand what is required, the software will not be suitable for it's intended purpose.
-Whilst user stories focus purely on the user perspective,
-requirements concentrate on the technical aspects of building a product that meets these needs.
-For this reason, it's common to develop user stories first (to understand the user),
-then from those stories, derive requirements (to understand what needs to be built).
 
-FIXME: add in SWC slide references to importance of reqs and stats for failure, with examples (e.g. galileo probe)
+Whilst user stories focus purely on the user perspective,
+requirements concentrate on what technically needs to change.
+For this reason, it's common to develop user stories first (to understand the user),
+then from those stories,
+derive requirements (to understand what needs to be built).
+Therefore, they typically address technical aspects of software functionality and features,
+and are more numerous than the collection of user stories,
+with each user story often being addressed by more than one requirement.
+
+There is repeated evidence that most errors aren't actually introduced during the software development stage,
+but during requirements analysis and design.
+For example, [one analysis](https://doi.org/10.1109/ISRE.1993.324825) of the software errors uncovered during integration and testing and the Voyager (1977) and Galileo (1989) probes discovered that 79% of these errors were due to a poor understanding of requirements.
 
 However, it is unlikely that we will be able to determine all of the requirements correctly and completely upfront.
 In practice, very often requirements may need be flexible to some extent and may change as the project evolves, so we need to ensure we are able to accommodate any agreed changes.
@@ -197,32 +214,69 @@ but some popular examples include:
 - Security: how do we ensure a user is authenticated and authorised to conduct a particular action?
 - Performance: what performance goals will the software be required to satisfy?
 - Usability: how will the user interact with the software?
+- Reproducibility: how do we ensure others are able to reproduce results generated using the software?
 - Portability: to what extent should the software be able to run on different systems with minimal changes?
+- Maintainability: how easily can the software be modified, enhanced, or restructured?
 - Reliability: to what extent should the software we able to operate without errors and unexpected failures?
 - Availability: to what extent should the software remain accessible and operational when needed?
 
 
 ## The Coffee Beans Analysis Project
 
-FIXME: change name!
-FIXME: add link to brief, summarise the project here
+For the remainder of the course, 
+we'll be making use of a hypothetical scenario for many exercises,
+where a fictional coffee company is looking for a small software company to do some software development and analysis for them on an existing dataset.
 
-## Capturing Requirements in a Product Backlog
-
-FIXME: overview of a product backlog: purpose, what they contain, how to build one
+Details for this scenario are found in the [Project Brief](files/ProjectBrief.pdf).
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Create a Product Repository
+## Group Exercise: Create a Product Repository
 
-FIXME: create example template repo with initial code, participants copy that
+For this course each group will create it's own GitHub software repository,
+based on another repository that contains the original client code that will be adapted.
 
-:::::::::::::::  solution
+First, select one member of the group to create the repository,
+who needs to:
 
+1. Go to https://github.com/softwaresaved/coffee-analysis on GitHub.
+1. Select the `Use this template` button on the right, and then `Create a new repository`.
+1. On the following page, enter a suitable owner (such as yourself) and the repository name (such as `coffee-analysis`), and ensure the repository is public. Ordinarily in such circumstances, development would very likely be private, but for the purposes of training, select a public repository.
+1. Select 'Create repository'
 
-:::::::::::::::::::::::::
+A new repository will be created, with the contents of the original repository included.
+
+Secondly, each member of the group needs to be invited to collaborate on the repository,
+to ensure they have access.
+The individual who created the repository thus needs to:
+
+1. Select `Settings` on the new repository page, then select `Collaborators` (you may need to provide additional authentication for this step).
+1. On the `Collaborators and teams` page, under `Manage people`, select `Add people`.
+1. In the pop-up box, you should be able to search for each group member's GitHub account by username, and select `Add to repository` to send an invite.
+1. Each new member will need to accept the invite, which is sent out by email.
+1. Ensure each member has the `Maintain` permission on the repository,
+which will allow them to push commits to the repository,
+and perform other non-destructive repository actions.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+## Capturing Requirements in a Product Backlog
+
+A *product backlog* is a prioritised list of functionality that a product should contain;
+essentially, a list of work for the development team.
+It represents everything that might be needed in the product and is the single source of truth for all work.
+They include requirement-related aspects such as features, bugs, improvements, and non-functional requirements,
+but also any other supporting tasks such as any needed research (also known as *spikes*),
+and other implementation-related tasks (like cleaning up/refactoring code).
+
+A product backlog is owned by the *product owner* (the client),
+and is dynamic, in that it evolves as the needs of the product evolves.
+Regular backlog refinement sessions throughout a project ensure items are updated, estimated,
+re-prioritised if necessary, and ready for upcoming sprints.
+
+
 
 :::::::::::::::::::::::::::::::::::::::: callout
 
