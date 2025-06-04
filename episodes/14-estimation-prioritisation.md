@@ -21,6 +21,8 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+FIXME: create a project board, accessible by group members
+
 ## Estimation: the Foundation for Prioritisation
 
 Once we have an initial set of requirements captured,
@@ -225,19 +227,6 @@ The idea is that as a project progresses,
 even if it becomes clear that you are only able to
 deliver the Must Haves for a particular time period,
 you have still delivered it *successfully*.
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Prioritise!
-
-FIXME: 10 min solo exercise of prioritising above toy example requirements using moscow (close to a 60/20/20 split). Have some obvious bikeshedding-level reqs
-
-:::::::::::::::  solution
-
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 

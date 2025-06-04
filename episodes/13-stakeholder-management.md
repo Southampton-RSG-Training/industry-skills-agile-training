@@ -71,6 +71,8 @@ FIXME: mention acceptance criteria for functional and non-functional requirement
 
 ## Solo Exercise: User Stories
 
+5 mins.
+
 Consider this scenario:
 
 *"A small town cheese-making business has received many enquiries about being able to make online purchases delivered to their homes or place of business,
@@ -80,7 +82,7 @@ and when ready, add payment and shipping details and confirm the order.
 There is some evidence that some online customers are environmentally and ecologically conscious,
 so are interested in the environmental impacts of products.
 In order to schedule their supply chains efficiently, business customers are keen to have updates on shipping.
-From the perspective of the business owner, they want to able to manage available stock inventory on the online store."
+From the perspective of the business owner, they want to able to manage available stock inventory on the online store."*
 
 Identify at least two types of user - also known as *personas* - that would use the store.
 From the above scenario, create at least four user stories using this format:
@@ -94,17 +96,21 @@ Hint: focus on the user needs, not what may be implementated.
 Here are some example user stories:
 
 Business owner:
+
 - As a business owner, I want to add new stock to the sit,e so that customers can purchase it.
 - As a business owner, I want to remove old stock from the site, so that customers cannot purchase expired stock.
 
 Personal customer:
+
 - As a customer, I want to search available cheeses by name, so I can find the ones I want easily.
 - As a customer, I want to add cheeses to a basket, so I can continue to shop and purchase them all later.
 
 Eco-conscious customer:
+
 - As an eco-conscious customer, I want to view the environmental impact details of products, so I can make environmentally-informed purchasing choices.
 
 Business customer:
+
 - As a business customer, I want to have real-time updates of orders that have been shipped, so I can organise my supply chains efficiently.
 
 :::::::::::::::::::::::::
@@ -123,9 +129,9 @@ requirements concentrate on what technically needs to change.
 For this reason, it's common to develop user stories first (to understand the user),
 then from those stories,
 derive requirements (to understand what needs to be built).
-Therefore, they typically address technical aspects of software functionality and features,
-and are more numerous than the collection of user stories,
-with each user story often being addressed by more than one requirement.
+Requirements typically address technical aspects of software functionality and features that are needed to complete a user story,
+and are more numerous than the collection of user stories.
+Therefore, each user story is often addressed by more than one requirement.
 
 There is repeated evidence that most errors aren't actually introduced during the software development stage,
 but during requirements analysis and design.
@@ -160,6 +166,8 @@ and we must account for them in our requirements.
 :::::::::::::::::::::::::::::::::::::::  challenge
 
 ## Solo Exercise: Types of Software
+
+5 mins.
 
 Think about some software you are familiar with
 (could be software you have written yourself or by someone else)
@@ -231,7 +239,31 @@ Details for this scenario are found in the [Project Brief](files/ProjectBrief.pd
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
+## Solo Exercise: Develop User Stories
+
+5 mins.
+
+Read through the project brief linked above, and write down some user stories (no more than 6).
+The project is only concerned with the needs of the coffee company,
+so you only need to consider that as a single user type or persona.
+
+:::::::::::::::  solution
+
+Some examples:
+
+- As a coffee provider, I want to understand from which suppliers to source the best coffee beans, so that we maintain our artisanal reputation.
+- As a coffee provider, I want to understand how many suppliers exist in each country, so that we can simplify our supplier chain.
+- As a coffee provider, I want the resultant code to be reproducible and documented, so that I can regenerate results from previous analyses.
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
 ## Group Exercise: Create a Product Repository
+
+10 mins.
 
 For this course each group will create it's own GitHub software repository,
 based on another repository that contains the original client code that will be adapted.
@@ -261,7 +293,6 @@ and perform other non-destructive repository actions.
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-
 ## Capturing Requirements in a Product Backlog
 
 A *product backlog* is a prioritised list of functionality that a product should contain;
@@ -276,22 +307,93 @@ and is dynamic, in that it evolves as the needs of the product evolves.
 Regular backlog refinement sessions throughout a project ensure items are updated, estimated,
 re-prioritised if necessary, and ready for upcoming sprints.
 
+### Using GitHub Issues to Manage Requirements
 
+For a given repository, GitHub provides *Issues* - a framework for managing bug reports, feature requests, and lists of future work which is ideal for our needs.
+
+Go back to the home page for your repository in GitHub, and click on the `Issues` tab. 
+You should see a page listing the open issues on your repository - currently there should be none.
+The issues we add here will form our product backlog.
+
+![](fig/github-issue-list.png){alt='List of project issues in GitHub' .image-with-shadow width="1000px"}
 
 :::::::::::::::::::::::::::::::::::::::: callout
 
+## The Issues aren't Visible!
+
+If you do not see the `Issues` tab, the repository owner needs to enable it in the settings of the repository:
+go to the `Settings` tab, scroll down to the `Features` section, and activate the checkmark on `Issues`.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+From the `Issues` tab you can create new issues by selecting `New Issue`:
+
+![](fig/github-new-issue.png){alt='Creating a new issue in GitHub' .image-with-shadow width="1000px"}
+
+When you create an issue, you can add a range of details to them.
+They can be *assigned to a specific developer* for example -
+this can be a helpful way to know who, if anyone, is currently working to fix the issue,
+or a way to assign responsibility to someone to deal with it.
+
+They can also be assigned a *label*.
+The labels available for issues can be customised,
+and given a colour,
+allowing you to see at a glance the state of your code's issues.
+The [default labels available in GitHub](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels) include:
+
+- `bug` - indicates an unexpected problem or unintended behavior
+- `documentation` - indicates a need for improvements or additions to documentation
+- `duplicate` - indicates similar or already reported issues, pull requests, or discussions
+- `enhancement` - indicates new feature requests,
+  or if they are created by a developer, indicate planned new features
+- `good first issue` - indicates a good issue for first-time contributors
+- `help wanted` - indicates that a maintainer wants help on an issue or pull request
+- `invalid` - indicates that an issue, pull request, or discussion is no longer relevant
+- `question` - indicates that an issue, pull request, or discussion needs more information
+- `wontfix` - indicates that work will not continue on an issue, pull request, or discussion
+
+### Adding new Issue Labels
+
+Many of these label types are useful,
+but what if we need to add new labels?
+
+If we go to our `Issues` tab, then select `Labels` next to the search box,
+we should see a list of existing issue labels:
+
+![](fig/github-issue-label-list.png){alt='Issue labels in GitHub' .image-with-shadow width="1000px"}
+
+By selecting `New label`, we specify a new label name, description, and even a new label colour, before selecting `Create label`.
+
+
 ## What Makes a Good Requirement?
+
+In general, a good requirement is:
+
+- Clear and concise - there shouldn't be any confusion regarding its interpretation
+- Valuable - is relevant to the project by addressing a user need
+- Singular in scope - articulating a single need or quality attribute
+- Actionable - is sufficiently concrete and detailed enough to be implementable
+- Attainable - is realistic enough in scope to be achieved within a reasonable timeframe
+- Verifiable/testable - any solution that addresses the requirement can be verified to satisfy that requirement
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Create a Product Backlog
+## Group Exercise: Create a Product Backlog
 
-:::::::::::::::  solution
+15 mins.
 
+As a group, examine the project brief and identify (at most 10) key requirements for the project,
+and add these as new issues to our product backlog in GitHub,
+assigning an appropriate label to classify the type of issue.
 
-:::::::::::::::::::::::::
+For our purposes it would be good to label some issues as a new `feature` as well
+(as opposed to an `enhancement` of existing code),
+so add this as a new type of label and use that where appropriate.
+
+Be sure to add a suitable (and concise) description for the issue.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
