@@ -243,7 +243,7 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#user-stories-understanding-requirements-from-the-user-perspective">User Stories: Understanding Requirements from the User
+        <ul><li><a href="#user-stories-understanding-what-is-needed-from-the-user-perspective">User Stories: Understanding what is Needed from the User
 Perspective</a></li>
 <li><a href="#what-exactly-is-a-requirement-and-why-are-they-important">What Exactly is a Requirement, and Why are they Important?</a></li>
 <li><a href="#requirements-are-more-than-just-features">Requirements are More than just Features</a></li>
@@ -258,7 +258,7 @@ Perspective</a></li>
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="14-estimation-prioritisation.html">1.3 Estimation, Prioritisation, and Stakeholder Management</a>
+        <a href="14-estimation-prioritisation.html">1.4 Estimation, Prioritisation, and Stakeholder Management</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -267,7 +267,7 @@ Perspective</a></li>
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="15-version-control.html">1.4 Version Control within the Agile Way of Working</a>
+        <a href="15-version-control.html">1.5 Version Control within the Agile Way of Working</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -514,13 +514,13 @@ Perspective</a></li>
           Previous: 1.2 Software
         </a>
         <a class="chapter-link float-end" href="14-estimation-prioritisation.html" rel="next">
-          Next: 1.3 Estimation,...
+          Next: 1.4 Estimation,...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>1.3 User Stories and Capturing Project Requirements</h1>
-        <p>Last updated on 2025-06-02 |
+        <p>Last updated on 2025-06-04 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/13-stakeholder-management.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -563,14 +563,24 @@ non-functional requirements</li>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="user-stories-understanding-requirements-from-the-user-perspective">User Stories: Understanding Requirements from the User
-Perspective<a class="anchor" aria-label="anchor" href="#user-stories-understanding-requirements-from-the-user-perspective"></a></h2>
-<hr class="half-width"><p>Capturing requirements is pivotal to understanding what needs to be
-built, but whilst they state what is required, they lack the end-user
-context of what they are and why they are important. User stories aim to
-capture this perspective, being short and simple descriptions of new
-features or functionality from the perspective of the end user
-themselves. Therefore, user stories help:</p>
+<p>In this section, we’ll introduce two established key concepts for
+capturing the needs of a project,</p>
+<ul><li>
+<em>User stories</em>, which capture what is needed from solely the
+perspective of the client</li>
+<li>
+<em>Requirements</em>, which state what needs to be built (or what
+needs to change) by the development team</li>
+</ul><p>So whilst they both capture what the software will do, each reflects
+one side of the client/developer perspective.</p>
+<section><h2 class="section-heading" id="user-stories-understanding-what-is-needed-from-the-user-perspective">User Stories: Understanding what is Needed from the User
+Perspective<a class="anchor" aria-label="anchor" href="#user-stories-understanding-what-is-needed-from-the-user-perspective"></a></h2>
+<hr class="half-width"><p>Capturing “requirements” is pivotal to understanding what needs to be
+built, but whilst they state what is technically required, they lack the
+end-user context of what they are and why they are important. User
+stories aim to capture this perspective, being short and simple
+descriptions of new features or functionality from the perspective of
+the end user themselves. Therefore, user stories help:</p>
 <ul><li>The project remains <em>user-centered</em> and <em>focused on real
 needs</em>, rather than jumping prematurely to solution or technical
 requirements</li>
@@ -638,7 +648,7 @@ four user stories using this format:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Here are some example user stories:</p>
 <p>Business owner: - As a business owner, I want to add new stock to the
@@ -664,14 +674,21 @@ chains efficiently.</p>
 be met for software to solve a problem or address a need</em>. They form
 the foundation of our project and drive what will be developed, so if we
 do not properly explore and understand what is required, the software
-will not be suitable for it’s intended purpose. Whilst user stories
-focus purely on the user perspective, requirements concentrate on the
-technical aspects of building a product that meets these needs. For this
+will not be suitable for it’s intended purpose.</p>
+<p>Whilst user stories focus purely on the user perspective,
+requirements concentrate on what technically needs to change. For this
 reason, it’s common to develop user stories first (to understand the
 user), then from those stories, derive requirements (to understand what
-needs to be built).</p>
-<p>FIXME: add in SWC slide references to importance of reqs and stats
-for failure, with examples (e.g. galileo probe)</p>
+needs to be built). Therefore, they typically address technical aspects
+of software functionality and features, and are more numerous than the
+collection of user stories, with each user story often being addressed
+by more than one requirement.</p>
+<p>There is repeated evidence that most errors aren’t actually
+introduced during the software development stage, but during
+requirements analysis and design. For example, <a href="https://doi.org/10.1109/ISRE.1993.324825" class="external-link">one analysis</a> of the
+software errors uncovered during integration and testing and the Voyager
+(1977) and Galileo (1989) probes discovered that 79% of these errors
+were due to a poor understanding of requirements.</p>
 <p>However, it is unlikely that we will be able to determine all of the
 requirements correctly and completely upfront. In practice, very often
 requirements may need be flexible to some extent and may change as the
@@ -748,7 +765,7 @@ factors?</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Some Examples </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Desktop Application - Has a graphical interface for use with mouse
 and keyboard - May need to work on multiple, very different operating
@@ -784,42 +801,79 @@ conduct a particular action?</li>
 <li>Performance: what performance goals will the software be required to
 satisfy?</li>
 <li>Usability: how will the user interact with the software?</li>
+<li>Reproducibility: how do we ensure others are able to reproduce
+results generated using the software?</li>
 <li>Portability: to what extent should the software be able to run on
 different systems with minimal changes?</li>
+<li>Maintainability: how easily can the software be modified, enhanced,
+or restructured?</li>
 <li>Reliability: to what extent should the software we able to operate
 without errors and unexpected failures?</li>
 <li>Availability: to what extent should the software remain accessible
 and operational when needed?</li>
 </ul></section><section><h2 class="section-heading" id="the-coffee-beans-analysis-project">The Coffee Beans Analysis Project<a class="anchor" aria-label="anchor" href="#the-coffee-beans-analysis-project"></a></h2>
-<hr class="half-width"><p>FIXME: change name! FIXME: add link to brief, summarise the project
-here</p>
-</section><section><h2 class="section-heading" id="capturing-requirements-in-a-product-backlog">Capturing Requirements in a Product Backlog<a class="anchor" aria-label="anchor" href="#capturing-requirements-in-a-product-backlog"></a></h2>
-<hr class="half-width"><p>FIXME: overview of a product backlog: purpose, what they contain, how
-to build one</p>
-<div id="create-a-product-repository" class="callout challenge">
+<hr class="half-width"><p>For the remainder of the course, we’ll be making use of a
+hypothetical scenario for many exercises, where a fictional coffee
+company is looking for a small software company to do some software
+development and analysis for them on an existing dataset.</p>
+<p>Details for this scenario are found in the <a href="files/ProjectBrief.pdf">Project Brief</a>.</p>
+<div id="group-exercise-create-a-product-repository" class="callout discussion">
 <div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
+<i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div id="create-a-product-repository" class="callout-inner">
-<h3 class="callout-title">Create a Product Repository</h3>
+<div id="group-exercise-create-a-product-repository" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Create a Product Repository</h3>
 <div class="callout-content">
-<p>FIXME: create example template repo with initial code, participants
-copy that</p>
+<p>For this course each group will create it’s own GitHub software
+repository, based on another repository that contains the original
+client code that will be adapted.</p>
+<p>First, select one member of the group to create the repository, who
+needs to:</p>
+<ol style="list-style-type: decimal"><li>Go to <a href="https://github.com/softwaresaved/coffee-analysis" class="external-link uri">https://github.com/softwaresaved/coffee-analysis</a> on
+GitHub.</li>
+<li>Select the <code>Use this template</code> button on the right, and
+then <code>Create a new repository</code>.</li>
+<li>On the following page, enter a suitable owner (such as yourself) and
+the repository name (such as <code>coffee-analysis</code>), and ensure
+the repository is public. Ordinarily in such circumstances, development
+would very likely be private, but for the purposes of training, select a
+public repository.</li>
+<li>Select ‘Create repository’</li>
+</ol><p>A new repository will be created, with the contents of the original
+repository included.</p>
+<p>Secondly, each member of the group needs to be invited to collaborate
+on the repository, to ensure they have access. The individual who
+created the repository thus needs to:</p>
+<ol style="list-style-type: decimal"><li>Select <code>Settings</code> on the new repository page, then select
+<code>Collaborators</code> (you may need to provide additional
+authentication for this step).</li>
+<li>On the <code>Collaborators and teams</code> page, under
+<code>Manage people</code>, select <code>Add people</code>.</li>
+<li>In the pop-up box, you should be able to search for each group
+member’s GitHub account by username, and select
+<code>Add to repository</code> to send an invite.</li>
+<li>Each new member will need to accept the invite, which is sent out by
+email.</li>
+<li>Ensure each member has the <code>Maintain</code> permission on the
+repository, which will allow them to push commits to the repository, and
+perform other non-destructive repository actions.</li>
+</ol></div>
 </div>
 </div>
-</div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
-</button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
-<div class="accordion-body">
-
-</div>
-</div>
-</div>
-</div>
+</section><section><h2 class="section-heading" id="capturing-requirements-in-a-product-backlog">Capturing Requirements in a Product Backlog<a class="anchor" aria-label="anchor" href="#capturing-requirements-in-a-product-backlog"></a></h2>
+<hr class="half-width"><p>A <em>product backlog</em> is a prioritised list of functionality
+that a product should contain; essentially, a list of work for the
+development team. It represents everything that might be needed in the
+product and is the single source of truth for all work. They include
+requirement-related aspects such as features, bugs, improvements, and
+non-functional requirements, but also any other supporting tasks such as
+any needed research (also known as <em>spikes</em>), and other
+implementation-related tasks (like cleaning up/refactoring code).</p>
+<p>A product backlog is owned by the <em>product owner</em> (the
+client), and is dynamic, in that it evolves as the needs of the product
+evolves. Regular backlog refinement sessions throughout a project ensure
+items are updated, estimated, re-prioritised if necessary, and ready for
+upcoming sprints.</p>
 <div id="what-makes-a-good-requirement" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -842,12 +896,12 @@ copy that</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 
 </div>
@@ -881,7 +935,7 @@ any links that you are not going to use.
           Previous: 1.2 Software
         </a>
         <a class="chapter-link float-end" href="14-estimation-prioritisation.html" rel="next">
-          Next: 1.3 Estimation,...
+          Next: 1.4 Estimation,...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -926,9 +980,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/13-stakeholder-management.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/13-stakeholder-management.html",
-  "dateCreated": "2025-06-02",
-  "dateModified": "2025-06-02",
-  "datePublished": "2025-06-03"
+  "dateCreated": "2025-06-04",
+  "dateModified": "2025-06-04",
+  "datePublished": "2025-06-04"
 }
 
   </script><script>
