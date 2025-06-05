@@ -353,7 +353,7 @@ The [default labels available in GitHub](https://docs.github.com/en/issues/using
 - `question` - indicates that an issue, pull request, or discussion needs more information
 - `wontfix` - indicates that work will not continue on an issue, pull request, or discussion
 
-### Adding new Issue Labels
+### Adding New Issue Labels
 
 Many of these label types are useful,
 but what if we need to add new labels?
@@ -364,6 +364,8 @@ we should see a list of existing issue labels:
 ![](fig/github-issue-label-list.png){alt='Issue labels in GitHub' .image-with-shadow width="1000px"}
 
 By selecting `New label`, we specify a new label name, description, and even a new label colour, before selecting `Create label`.
+
+### Add our Coffee Analysis Requirements to a Product Backlog
 
 :::::::::::::::::::::::::::::::::::::::: callout
 
@@ -386,7 +388,7 @@ In general, a good requirement is:
 
 15 mins.
 
-As a group, examine the project brief and identify (at most 10) key requirements for the project,
+As a group, examine the project brief and identify (perhaps around 10-15) key requirements for the project,
 and add these as new issues to our product backlog in GitHub,
 assigning an appropriate label to classify the type of issue.
 
