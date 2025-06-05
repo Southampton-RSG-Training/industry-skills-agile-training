@@ -106,7 +106,7 @@ and manage them.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
-## Adapting our Board...
+## Adapting our Board Columns...
 
 You can add or remove columns from your project board to suit your use case.
 One commonly seen extra column is `On hold` or `Waiting`.
@@ -138,6 +138,17 @@ Select the repository and you should see a list of issues appear from which you 
 
 In your groups each add at least one repository issue to the `Todo` column in the project board until they have all been added.
 Ensure that everyone gets a chance to add at least one issue!
+
+You may see that the added issues don't display their labels by default.
+This is particularly useful, so to do that:
+
+1. Select the drop down next to `View 1` (a down pointing arrow)
+1. Select `Fields`, then select `Labels` from the `Hidden fields`
+1. Select `Save` on the pop=up that appears
+
+![](fig/github-board-display-labels.png){alt='Display labels on board issues' .image-with-shadow width="1000px"}
+
+The assigned labels for each issue should now be visible.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -343,17 +354,23 @@ deliver the Must Haves for a particular time period,
 you have still delivered it *successfully*.
 
 
-
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Prioritise our Product Backlog
+## Group Exercise: Prioritise our Product Backlog
 
-FIXME: do prioritisation for our backlog as a team
+15 mins.
 
-:::::::::::::::  solution
+In this exercise you'll be prioritising the issues/backlog items according to a MoSCoW approach.
 
+Firstly, have someone in the group add some additional custom labels to the repository,
+one each for the MoSCoW classifications, e.g.:
 
-:::::::::::::::::::::::::
+- `MH` for `Must Have`
+- `SH` for `Should Have`
+- `CH` for `Could Have`
+- `WH` for `Won't Have`
+
+Once added, as a group, go through each the backlog items and decide what level of priority to assign to them.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
