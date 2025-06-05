@@ -14,6 +14,8 @@ exercises: 0
  
 ::::::::::::::::::::::::::::::::::::: objectives
  
+- Create a GitHub Project Board to manage issues
+- Add backlog items to the Project Board
 - Describe the key principles and approaches to estimation [t-shirt estimation]
 - Apply MoSCoW with a client to prioritise items in a product backlog
 - Create questions for clarification needed from the client
@@ -21,7 +23,123 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-FIXME: create a project board, accessible by group members
+## Managing Issues in GitHub
+
+Managing our issues as presented in the `Issues` page is helpful as a view to everything that's being done,
+but it gives a relative flat representation of tasks and it's not straightforward to determine,
+at a glance, the overall status of a project.
+In particular:
+
+- What's still to do
+- What's currently in progress
+- What's been completed
+
+This is particularly the case when we have many issues for a given project,
+and more than one person working on them.
+
+In an agile Scrum sense, if we're currently in a sprint (or preparing for one in a sprint planning session) it would be beneficial to have a way to visualise and manage this information efficiently.
+GitHub does provide *Milestones* as an organisational mechanism,
+where we are able to group issues together in logical lists, but this approach also has similar limitations at scale.
+In addition, a key technique in agile approaches is frequent prioritisation,
+and that's difficult to do without a higher-level approach.
+
+### GitHub Projects
+
+GitHub Projects enable ways of organising issues into smaller “sub-projects” (i.e. smaller than the “project” represented by the whole repository).
+Projects provide a way of visualising and organising work which is not time-bound and is on a higher level,
+which makes management easier.
+Milestones are typically used to organise lower-level tasks that have deadlines and progress of which needs to be closely tracked (e.g. release and version management). The main difference is that Milestones are a repository-level feature (i.e. they belong and are managed from a single repository), whereas projects are account-level and can manage tasks across many repositories under the same user or organisational account.
+
+Conceptually, for our purposes a GitHub Project is a "project board",
+which originated as a tool used by Toyota in the 1940s called the "Kanban" system.
+Kanban-style boards consists of columns and cards to keep track of tasks.
+You break down your project into smaller sub-projects,
+which in turn are split into tasks which you write on cards,
+then move the cards between columns that describe the status of each task.
+Cards are usually small, descriptive and self-contained tasks that build on each other.
+Breaking a project down into clearly-defined tasks makes it a lot easier to manage.
+
+In GitHub, a project board adopts this Kanban-style,
+with entries on the board either being:
+
+- *Cards* - a short note which belongs only to the Project Board
+- *Issues* - essentially GitHub issues imported from a repository (or many repositories)
+
+As well as a Kanban-style boards, GitHub Projects also supports other types of view too,
+including roadmap views, table-based views, or as a spreadsheet.
+For the purposes of this training, we'll use the boards view.
+
+### Creating a Board for our Project
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Group Exercise: Create a Project Board
+
+5 mins.
+
+To use a project board in GitHub, it needs to be created and shared with the rest of the group.
+
+Firstly, select one of the team to create the board, who will:
+
+1. On the group repository's main page, select `Projects`, then `New Project`.
+1. In the `Create Project` pop-up window, we are presented with some styles to choose from: `Table`, `Board` and `Roadmap`. Select `Board`.
+1. Decide and enter a name for the board, `Coffee Analysis` for example:
+  ![](fig/github-board-create.png){alt='Create a project board in GitHub' .image-with-shadow width="1000px"}
+
+Similarly to how the repository was shared with the rest of the group,
+the project board also needs to be shared:
+
+1. Select the `...` in the top right and select `Settings:
+  ![](fig/github-board-settings.png){alt='Access settings for a project board' .image-with-shadow width="1000px"}
+1. Select `Manage access` from the navigation bar on the left.
+1. Under `Invite collaborators`, add each member of the group by adding their username.
+1. Set each member's permissions under `Manage access` to `Write` or `Admin` so they are able to make changes to the board.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Once created, you should see the default layout for a GitHub board,
+with three columns: `Todo`, `In Progress`, and `Done`,
+into which we import repository issues,
+and manage them.
+
+![](fig/github-board-layout.png){alt='Layout of a typical project board' .image-with-shadow width="1000px"}
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Adapting our Board...
+
+You can add or remove columns from your project board to suit your use case.
+One commonly seen extra column is `On hold` or `Waiting`.
+If you have tasks that get held up by waiting on other people (e.g. to respond to your questions) then moving them to a separate column makes their current state clearer.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+### Importing Issues
+
+In order to manage our repository's issues, we need to first add them to our board.
+
+If you select `+ Add item` at the bottom of the `Todo` column,
+you'll be able to enter some text.
+If you continue to add arbitrary text, this will create a board card,
+but instead, we want to add issues from our repository.
+To do this, type `#` followed by your repository name, e.g. `#coffee-analysis`.
+
+![](fig/github-board-add-issue.png){alt='Adding an issue to a GitHub project board' .image-with-shadow width="1000px"}
+
+This will present a short list of repositories that match that name (hopefully just the one!).
+Select the repository and you should see a list of issues appear from which you are able to select to add to the board (although don't do this just yet!)
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Group Exercise: Add our Project Backlog Issues to the Board
+
+5 mins.
+
+In your groups each add at least one repository issue to the `Todo` column in the project board until they have all been added.
+Ensure that everyone gets a chance to add at least one issue!
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Estimation: the Foundation for Prioritisation
 
@@ -44,7 +162,7 @@ Firstly, we need to know:
   i.e. who will be involved and how much of their time we will have during this period.
 
 We also need estimates for how long each requirement will take to resolve,
-since we cannot meaningfully prioritise requirements without
+since it's difficult to meaningfully prioritise requirements without
 knowing what the effort tradeoffs will be.
 Even if we know how important each requirement is,
 how would we even know if completing the project is possible?
@@ -89,10 +207,6 @@ this implies it needs to be clarified and/or broken down into further tasks.
 Apply a t-shirt size estimation to each of the following requirements:
 
 FIXME: add example requirements
-
-:::::::::::::::  solution
-
-:::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
