@@ -1877,6 +1877,8 @@ take?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
+<li>Create a GitHub Project Board to manage issues</li>
+<li>Add backlog items to the Project Board</li>
 <li>Describe the key principles and approaches to estimation <a href="#t-shirt-estimation">t-shirt estimation</a>
 </li>
 <li>Apply MoSCoW with a client to prioritise items in a product
@@ -1890,8 +1892,159 @@ client</li>
 </div>
 </div>
 </div>
-<p>FIXME: create a project board, accessible by group members</p>
-<section><h2 class="section-heading" id="estimation-the-foundation-for-prioritisation">Estimation: the Foundation for Prioritisation<a class="anchor" aria-label="anchor" href="#estimation-the-foundation-for-prioritisation"></a>
+<section><h2 class="section-heading" id="managing-issues-in-github">Managing Issues in GitHub<a class="anchor" aria-label="anchor" href="#managing-issues-in-github"></a>
+</h2>
+<hr class="half-width">
+<p>Managing our issues as presented in the <code>Issues</code> page is
+helpful as a view to everything that’s being done, but it gives a
+relative flat representation of tasks and it’s not straightforward to
+determine, at a glance, the overall status of a project. In
+particular:</p>
+<ul>
+<li>What’s still to do</li>
+<li>What’s currently in progress</li>
+<li>What’s been completed</li>
+</ul>
+<p>This is particularly the case when we have many issues for a given
+project, and more than one person working on them.</p>
+<p>In an agile Scrum sense, if we’re currently in a sprint (or preparing
+for one in a sprint planning session) it would be beneficial to have a
+way to visualise and manage this information efficiently. GitHub does
+provide <em>Milestones</em> as an organisational mechanism, where we are
+able to group issues together in logical lists, but this approach also
+has similar limitations at scale. In addition, a key technique in agile
+approaches is frequent prioritisation, and that’s difficult to do
+without a higher-level approach.</p>
+<div class="section level3">
+<h3 id="github-projects">GitHub Projects<a class="anchor" aria-label="anchor" href="#github-projects"></a>
+</h3>
+<p>GitHub Projects enable ways of organising issues into smaller
+“sub-projects” (i.e. smaller than the “project” represented by the whole
+repository). Projects provide a way of visualising and organising work
+which is not time-bound and is on a higher level, which makes management
+easier. Milestones are typically used to organise lower-level tasks that
+have deadlines and progress of which needs to be closely tracked
+(e.g. release and version management). The main difference is that
+Milestones are a repository-level feature (i.e. they belong and are
+managed from a single repository), whereas projects are account-level
+and can manage tasks across many repositories under the same user or
+organisational account.</p>
+<p>Conceptually, for our purposes a GitHub Project is a “project board”,
+which originated as a tool used by Toyota in the 1940s called the
+“Kanban” system. Kanban-style boards consists of columns and cards to
+keep track of tasks. You break down your project into smaller
+sub-projects, which in turn are split into tasks which you write on
+cards, then move the cards between columns that describe the status of
+each task. Cards are usually small, descriptive and self-contained tasks
+that build on each other. Breaking a project down into clearly-defined
+tasks makes it a lot easier to manage.</p>
+<p>In GitHub, a project board adopts this Kanban-style, with entries on
+the board either being:</p>
+<ul>
+<li>
+<em>Cards</em> - a short note which belongs only to the Project
+Board</li>
+<li>
+<em>Issues</em> - essentially GitHub issues imported from a
+repository (or many repositories)</li>
+</ul>
+<p>As well as a Kanban-style boards, GitHub Projects also supports other
+types of view too, including roadmap views, table-based views, or as a
+spreadsheet. For the purposes of this training, we’ll use the boards
+view.</p>
+</div>
+<div class="section level3">
+<h3 id="creating-a-board-for-our-project">Creating a Board for our Project<a class="anchor" aria-label="anchor" href="#creating-a-board-for-our-project"></a>
+</h3>
+<div id="group-exercise-create-a-project-board" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="group-exercise-create-a-project-board" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Create a Project Board</h3>
+<div class="callout-content">
+<p>5 mins.</p>
+<p>To use a project board in GitHub, it needs to be created and shared
+with the rest of the group.</p>
+<p>Firstly, select one of the team to create the board, who will:</p>
+<ol style="list-style-type: decimal">
+<li>On the group repository’s main page, select <code>Projects</code>,
+then <code>New Project</code>.</li>
+<li>In the <code>Create Project</code> pop-up window, we are presented
+with some styles to choose from: <code>Table</code>, <code>Board</code>
+and <code>Roadmap</code>. Select <code>Board</code>.</li>
+<li>Decide and enter a name for the board, <code>Coffee Analysis</code>
+for example: <img src="fig/github-board-create.png" class="image-with-shadow figure" alt="Create a project board in GitHub" width="1000">
+</li>
+</ol>
+<p>Similarly to how the repository was shared with the rest of the
+group, the project board also needs to be shared:</p>
+<ol style="list-style-type: decimal">
+<li>Select the <code>...</code> in the top right and select `Settings:
+<img src="fig/github-board-settings.png" class="image-with-shadow figure" alt="Access settings for a project board" width="1000">
+</li>
+<li>Select <code>Manage access</code> from the navigation bar on the
+left.</li>
+<li>Under <code>Invite collaborators</code>, add each member of the
+group by adding their username.</li>
+<li>Set each member’s permissions under <code>Manage access</code> to
+<code>Write</code> or <code>Admin</code> so they are able to make
+changes to the board.</li>
+</ol>
+</div>
+</div>
+</div>
+<p>Once created, you should see the default layout for a GitHub board,
+with three columns: <code>Todo</code>, <code>In Progress</code>, and
+<code>Done</code>, into which we import repository issues, and manage
+them.</p>
+<figure><img src="fig/github-board-layout.png" class="image-with-shadow figure mx-auto d-block" alt="Layout of a typical project board" width="1000"></figure><div id="adapting-our-board" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="adapting-our-board" class="callout-inner">
+<h3 class="callout-title">Adapting our Board…</h3>
+<div class="callout-content">
+<p>You can add or remove columns from your project board to suit your
+use case. One commonly seen extra column is <code>On hold</code> or
+<code>Waiting</code>. If you have tasks that get held up by waiting on
+other people (e.g. to respond to your questions) then moving them to a
+separate column makes their current state clearer.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="importing-issues">Importing Issues<a class="anchor" aria-label="anchor" href="#importing-issues"></a>
+</h3>
+<p>In order to manage our repository’s issues, we need to first add them
+to our board.</p>
+<p>If you select <code>+ Add item</code> at the bottom of the
+<code>Todo</code> column, you’ll be able to enter some text. If you
+continue to add arbitrary text, this will create a board card, but
+instead, we want to add issues from our repository. To do this, type
+<code>#</code> followed by your repository name,
+e.g. <code>#coffee-analysis</code>.</p>
+<figure><img src="fig/github-board-add-issue.png" class="image-with-shadow figure mx-auto d-block" alt="Adding an issue to a GitHub project board" width="1000"></figure><p>This will present a short list of repositories that match that name
+(hopefully just the one!). Select the repository and you should see a
+list of issues appear from which you are able to select to add to the
+board (although don’t do this just yet!)</p>
+<div id="group-exercise-add-our-project-backlog-issues-to-the-board" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="group-exercise-add-our-project-backlog-issues-to-the-board" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Add our Project Backlog Issues to the Board</h3>
+<div class="callout-content">
+<p>5 mins.</p>
+<p>In your groups each add at least one repository issue to the
+<code>Todo</code> column in the project board until they have all been
+added. Ensure that everyone gets a chance to add at least one issue!</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="estimation-the-foundation-for-prioritisation">Estimation: the Foundation for Prioritisation<a class="anchor" aria-label="anchor" href="#estimation-the-foundation-for-prioritisation"></a>
 </h2>
 <hr class="half-width">
 <p>Once we have an initial set of requirements captured, we need to
@@ -1914,12 +2067,13 @@ be involved and how much of their time we will have during this
 period.</li>
 </ul>
 <p>We also need estimates for how long each requirement will take to
-resolve, since we cannot meaningfully prioritise requirements without
-knowing what the effort tradeoffs will be. Even if we know how important
-each requirement is, how would we even know if completing the project is
-possible? Or if we do not know how long it will take to deliver those
-requirements we deem to be critical to the success of a project, how can
-we know if we can include other less important ones?</p>
+resolve, since it’s difficult to meaningfully prioritise requirements
+without knowing what the effort tradeoffs will be. Even if we know how
+important each requirement is, how would we even know if completing the
+project is possible? Or if we do not know how long it will take to
+deliver those requirements we deem to be critical to the success of a
+project, how can we know if we can include other less important
+ones?</p>
 <p>It is often not the reality in practice, but estimation should
 ideally be done by the people likely to do the actual work: the
 developers themselves. It shouldn’t be done by project managers or those
@@ -1977,9 +2131,9 @@ often vague.</p>
 </table>
 <p>So for any tasks judged to be <code>XL</code>, this implies it needs
 to be clarified and/or broken down into further tasks.</p>
-<div id="solo-exercise-t-shirt-estimate" class="callout challenge">
+<div id="solo-exercise-t-shirt-estimate" class="callout discussion">
 <div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
+<i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="solo-exercise-t-shirt-estimate" class="callout-inner">
 <h3 class="callout-title">Solo Exercise: T-Shirt Estimate!</h3>
@@ -1987,18 +2141,6 @@ to be clarified and/or broken down into further tasks.</p>
 <p>Apply a t-shirt size estimation to each of the following
 requirements:</p>
 <p>FIXME: add example requirements</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-
-</div>
 </div>
 </div>
 </div>
@@ -2176,12 +2318,12 @@ particular time period, you have still delivered it
 </div>
 </div>
 </div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 
 </div>
