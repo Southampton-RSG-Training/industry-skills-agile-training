@@ -16,7 +16,7 @@ exercises: 0
  
 - Create a GitHub Project Board to manage issues
 - Add backlog items to the Project Board
-- Describe the key principles and approaches to estimation [t-shirt estimation]
+- Describe the key principles and approaches to estimation
 - Apply MoSCoW with a client to prioritise items in a product backlog
 - Create questions for clarification needed from the client
 - Elicit clarifications and agree on project requirements with client
@@ -370,7 +370,10 @@ one each for the MoSCoW classifications, e.g.:
 - `CH` for `Could Have`
 - `WH` for `Won't Have`
 
-Once added, as a group, go through each the backlog items and decide what level of priority to assign to them.
+Once added, as a group, go through each the backlog items and taking into account the time estimates for each, decide what level of priority to assign to them.
+Try to assign a 60%/20%/20% balance of `MH`/`SH`/`CH` across the issues.
+For the purposes of this training exercise, assume there is only a total of 1.5 hours available for the project
+(which may mean, depending on your estimates, that some things won't make the cut!)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
