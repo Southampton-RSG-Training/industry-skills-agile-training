@@ -242,6 +242,8 @@ and raise crucial questions to clarify ambiguities.
 
 ## Group Exercise: Collate your Estimates!
 
+5 mins.
+
 As a group, reveal all your individual estimates  - which may be wildly different! -
 for each of the requirements and decide the final size based on the majority size.
 For those that have equal votes, decide quickly as a group on the final size.
