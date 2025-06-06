@@ -18,8 +18,6 @@ exercises: 0
 - Add backlog items to the Project Board
 - Describe the key principles and approaches to estimation
 - Apply MoSCoW with a client to prioritise items in a product backlog
-- Create questions for clarification needed from the client
-- Elicit clarifications and agree on project requirements with client
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -286,8 +284,6 @@ and clarify them in the product backlog
 
 
 ## Prioritisation
-
-FIXME: when to prioritise? essentially at a number of levels within the project
 
 Now we have our estimates we can decide
 how important each requirement is to the success of the project.
