@@ -365,6 +365,13 @@ For the purposes of this training exercise, assume there is only a total of 1.5 
 
 :::::::::::::::::::::::::::::::::::::: keypoints
  
-- FIXME
+- GitHub Projects provide project boards to organise issues and visualise the status of a project in terms of its requirements
+- Kanban boards consists of columns (which represent statuses) and cards (which represent tasks), which are moveable between columns
+- GitHub Project Boards are owned by the creating user or organisation, and not any particular repository
+- GitHub Boards can contain either board-specific cards, or issues imported from GitHub repositories
+- Estimation is a foundation for prioritisation
+- T-shirt estimation is a technique employed early in a project that assigns a t-shirt size to each task in order to estimate their size relative to each other
+- MoSCoW prioritisation classifies requirements either as Must Have (MH), Should Have (SH), Could Have (CH) or Won't Have (WH)
+- Using a 60%/20%/20% effort ratio of MH/SH/CH ensures a 40% safety margin of effort for a project
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
