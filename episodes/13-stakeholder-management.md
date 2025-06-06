@@ -405,6 +405,12 @@ Be sure to add a suitable (and concise) description for the issue.
 
 :::::::::::::::::::::::::::::::::::::: keypoints
  
-- FIXME
- 
+- User Stories help to understand project needs from the perspective of the client
+- User Stories follow the format `As a [type of user], I want [an action] so that [benefit]`
+- Clear and well understood requirements are fundamental to a successful project
+- Evidence that most project errors are introduced during the handling of requirements
+- Requirements will change over time, and we need to allow and manage for that
+- Requirements are more than just features: non-functional requirements capture the environment and how and in what way the software should operate and be provided
+- A product backlog is a prioritised list of desired product functionality owned by the product owner (typically the client)
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
