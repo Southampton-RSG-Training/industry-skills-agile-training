@@ -82,6 +82,7 @@ To use a project board in GitHub, it needs to be created and shared with the res
 Firstly, select one of the team to create the board, who will:
 
 1. On the group repository's main page, select `Projects`, then `New Project`.
+  ![](fig/github-board-project-link.png){alt='Link to create a project board' .image-with-shadow width="1000px"}
 1. In the `Create Project` pop-up window, we are presented with some styles to choose from: `Table`, `Board` and `Roadmap`. Select `Board`.
 1. Decide and enter a name for the board, `Coffee Analysis` for example:
   ![](fig/github-board-create.png){alt='Create a project board in GitHub' .image-with-shadow width="1000px"}
