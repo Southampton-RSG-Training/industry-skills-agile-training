@@ -214,14 +214,42 @@ this implies it needs to be clarified and/or broken down into further tasks.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Solo Exercise: T-Shirt Estimate!
+## Solo Exercise: Apply T-shirt Estimates to your Product Backlog
 
-Apply a t-shirt size estimation to each of the following requirements:
+5 mins.
 
-FIXME: add example requirements
+On your own, quickly apply the t-shirt estimation technique to the issues in your product backlog,
+noting down your estimates.
+Use the following categories, which have a greatly reduced time scale:
+
+| Size | Description | Rough time estimate |
+|----- |-------------|---------------------|
+| XS | Very quick and easy | < 5 mins  |
+| S  | Small effort        | 5-10 mins |
+| M  | Medium effort       | 10-20 mins |
+| L  | Large effort        | 1 hour |
+| XL | Very large or unclear | - |
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+An effective way of helping to make your estimates more accurate is to do it as a team.
+Other members can ask prudent questions that may not have been considered,
+and bring in other sanity checks and their own development experience.
+Just talking things through can help uncover other complexities and pitfalls,
+and raise crucial questions to clarify ambiguities.
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Group Exercise: Collate your Estimates!
+
+As a group, reveal all your individual estimates  - which may be wildly different! -
+for each of the requirements and decide the final size based on the majority size.
+For those that have equal votes, decide quickly as a group on the final size.
+
+Once you have a list of final sizes,
+add each agreed size as a comment to its corresponding issue in your product backlog.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -241,47 +269,6 @@ More experience in estimation will also help to reduce these effects.
 So keep estimating!
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-An effective way of helping to make your estimates more accurate is to do it as a team.
-Other members can ask prudent questions that may not have been considered,
-and bring in other sanity checks and their own development experience.
-Just talking things through can help uncover other complexities and pitfalls,
-and raise crucial questions to clarify ambiguities.
-
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Solo Exercise: Apply T-shirt Estimates to your Product Backlog
-
-5 mins.
-
-On your own, quickly apply the t-shirt estimation technique to the issues in your product backlog,
-noting down your estimates.
-Use the following categories, which have a greatly reduced time scale:
-
-| Size | Description | Rough time estimate |
-|----- |-------------|---------------------|
-| XS | Very quick and easy | < 5 mins  |
-| S  | Small effort        | 5-10 mins |
-| M  | Medium effort       | 10-20 mins |
-| L  | Large effort        | 1 hour |
-| XL | Very large or unclear | - |
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Group Exercise: Collate your Estimates!
-
-As a group, reveal all your individual estimates  - which may be wildly different! -
-for each of the requirements and decide the final size based on the majority size.
-For those that have equal votes, decide quickly as a group on the final size.
-
-Once you have a list of final sizes,
-add each agreed size as a comment to its corresponding issue in your product backlog.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
 
 :::::::::::::::::::::::::::::::::::::::: callout
 
