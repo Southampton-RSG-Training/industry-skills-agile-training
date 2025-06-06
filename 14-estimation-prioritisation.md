@@ -222,10 +222,10 @@ Use the following categories, which have a greatly reduced time scale:
 
 | Size | Description | Rough time estimate |
 |----- |-------------|---------------------|
-| XS | Very quick and easy | < 5 mins  |
-| S  | Small effort        | 5-10 mins |
-| M  | Medium effort       | 10-20 mins |
-| L  | Large effort        | 1 hour |
+| XS | Very quick and easy | < 10 mins  |
+| S  | Small effort        | 10-30 mins |
+| M  | Medium effort       | 1-2 hours |
+| L  | Large effort        | 2-5 hours |
 | XL | Very large or unclear | - |
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -358,7 +358,7 @@ one each for the MoSCoW classifications, e.g.:
 
 Once added, as a group, go through each the backlog items and taking into account the time estimates for each, decide what level of priority to assign to them.
 Try to assign a 60%/20%/20% balance of `MH`/`SH`/`CH` across the issues.
-For the purposes of this training exercise, assume there is only a total of 1.5 hours available for the project
+For the purposes of this training exercise, assume there is only a total of 7 hours available for the project
 (which may mean, depending on your estimates, that some things won't make the cut!)
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
