@@ -273,7 +273,7 @@ who needs to:
 1. Go to https://github.com/softwaresaved/coffee-analysis on GitHub.
 1. Select the `Use this template` button on the right, and then `Create a new repository`.
 1. On the following page, enter a suitable owner (such as yourself) and the repository name (such as `coffee-analysis`), and ensure the repository is public. Ordinarily in such circumstances, development would very likely be private, but for the purposes of training, select a public repository.
-1. Select 'Create repository'
+1. Select `Create repository`
 
 A new repository will be created, with the contents of the original repository included.
 
