@@ -19,7 +19,6 @@ exercises: 0
 - Highlight the characteristics and differences between functional and non-functional requirements
 - Describe the purpose and composition of the product backlog
 - Describe what makes a good product requirement
-- Describe the purpose of a product backlog and what it contains
 - Create an initial product backlog from a given scenario
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
