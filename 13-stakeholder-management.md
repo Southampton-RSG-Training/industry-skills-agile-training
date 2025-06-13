@@ -177,9 +177,9 @@ Here are some examples of questions you can use to get started:
 - How do people interact with it?
 - What features of the software have been affected by these factors?
 
-:::::::::::::::  solution
+### Some Examples
 
-## Some Examples
+To get you thinking, consider the following examples:
 
 Desktop Application
 - Has a graphical interface for use with mouse and keyboard
@@ -211,12 +211,19 @@ Web Application
 - Documentation probably part of the software itself
 - Client-side component typically written in JavaScript
 
-:::::::::::::::::::::::::
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-There are many categories of non-functional requirements,
-but some popular examples include:
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Class Exercise: What Classes of Non-functional Requirements Are There?
+
+5 mins.
+
+As a class, what types of non-functional requirements can you think of?
+
+:::::::::::::::  solution
+
+Some typical classes of non-functional categories include:
 
 - Security: how do we ensure a user is authenticated and authorised to conduct a particular action?
 - Performance: what performance goals will the software be required to satisfy?
@@ -226,6 +233,13 @@ but some popular examples include:
 - Maintainability: how easily can the software be modified, enhanced, or restructured?
 - Reliability: to what extent should the software we able to operate without errors and unexpected failures?
 - Availability: to what extent should the software remain accessible and operational when needed?
+
+A more comprehensive list can be found [on Wikipedia](https://en.wikipedia.org/wiki/Non-functional_requirement#Examples).
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 
 ## The Coffee Beans Analysis Project
@@ -245,6 +259,11 @@ Details for this scenario are found in the [Project Brief](files/ProjectBrief.pd
 Read through the project brief linked above, and write down some user stories (no more than 6).
 The project is only concerned with the needs of the coffee company,
 so you only need to consider that as a single user type or persona.
+
+Reminder of user story format:
+
+> As a *[type of user]*, I want *[an action]* so that *[benefit]*.
+
 
 :::::::::::::::  solution
 
@@ -366,9 +385,15 @@ By selecting `New label`, we specify a new label name, description, and even a n
 
 ### Add our Coffee Analysis Requirements to a Product Backlog
 
-:::::::::::::::::::::::::::::::::::::::: callout
+:::::::::::::::::::::::::::::::::::::::  challenge
 
-## What Makes a Good Requirement?
+## Class Exercise: What Makes a Good Requirement?
+
+5 mins.
+
+As a class, discuss which characteristics make a good requirement.
+
+:::::::::::::::  solution
 
 In general, a good requirement is:
 
@@ -379,7 +404,9 @@ In general, a good requirement is:
 - Attainable - is realistic enough in scope to be achieved within a reasonable timeframe
 - Verifiable/testable - any solution that addresses the requirement can be verified to satisfy that requirement
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
