@@ -1259,7 +1259,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-13-stakeholder-management"><p>Content from <a href="13-stakeholder-management.html">1.3 User Stories and Capturing Project Requirements</a></p>
 <hr>
-<p>Last updated on 2025-06-08 |
+<p>Last updated on 2025-06-13 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/13-stakeholder-management.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
@@ -1396,7 +1396,7 @@ four user stories using this format:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Here are some example user stories:</p>
 <p>Business owner:</p>
@@ -1532,9 +1532,9 @@ a photo frame application), the other <em>non-functional</em>
 considerations describe facets of how the software must be developed and
 how it must operate (often as constraints), and we must account for them
 in our requirements.</p>
-<div id="solo-exercise-types-of-software" class="callout challenge">
+<div id="solo-exercise-types-of-software" class="callout discussion">
 <div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
+<i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="solo-exercise-types-of-software" class="callout-inner">
 <h3 class="callout-title">Solo Exercise: Types of Software</h3>
@@ -1550,16 +1550,10 @@ examples of questions you can use to get started:</p>
 <li>What features of the software have been affected by these
 factors?</li>
 </ul>
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Some Examples </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
+<div class="section level3">
+<h3 id="some-examples">Some Examples<a class="anchor" aria-label="anchor" href="#some-examples"></a>
+</h3>
+<p>To get you thinking, consider the following examples:</p>
 <p>Desktop Application - Has a graphical interface for use with mouse
 and keyboard - May need to work on multiple, very different operating
 systems - May be intended for users to modify / compile themselves -
@@ -1587,8 +1581,27 @@ written in JavaScript</p>
 </div>
 </div>
 </div>
-<p>There are many categories of non-functional requirements, but some
-popular examples include:</p>
+<div id="class-exercise-what-classes-of-non-functional-requirements-are-there" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="class-exercise-what-classes-of-non-functional-requirements-are-there" class="callout-inner">
+<h3 class="callout-title">Class Exercise: What Classes of Non-functional Requirements Are There?</h3>
+<div class="callout-content">
+<p>5 mins.</p>
+<p>As a class, what types of non-functional requirements can you think
+of?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<p>Some typical classes of non-functional categories include:</p>
 <ul>
 <li>Security: how do we ensure a user is authenticated and authorised to
 conduct a particular action?</li>
@@ -1605,7 +1618,14 @@ or restructured?</li>
 without errors and unexpected failures?</li>
 <li>Availability: to what extent should the software remain accessible
 and operational when needed?</li>
-</ul></section><section><h2 class="section-heading" id="the-coffee-beans-analysis-project">The Coffee Beans Analysis Project<a class="anchor" aria-label="anchor" href="#the-coffee-beans-analysis-project"></a>
+</ul>
+<p>A more comprehensive list can be found <a href="https://en.wikipedia.org/wiki/Non-functional_requirement#Examples" class="external-link">on
+Wikipedia</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="the-coffee-beans-analysis-project">The Coffee Beans Analysis Project<a class="anchor" aria-label="anchor" href="#the-coffee-beans-analysis-project"></a>
 </h2>
 <hr class="half-width">
 <p>For the remainder of the course, we’ll be making use of a
@@ -1625,6 +1645,11 @@ development and analysis for them on an existing dataset.</p>
 stories (no more than 6). The project is only concerned with the needs
 of the coffee company, so you only need to consider that as a single
 user type or persona.</p>
+<p>Reminder of user story format:</p>
+<blockquote>
+<p>As a <em>[type of user]</em>, I want <em>[an action]</em> so that
+<em>[benefit]</em>.</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -1633,7 +1658,7 @@ user type or persona.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Some examples:</p>
 <ul>
@@ -1795,13 +1820,26 @@ description, and even a new label colour, before selecting
 <div class="section level3">
 <h3 id="add-our-coffee-analysis-requirements-to-a-product-backlog">Add our Coffee Analysis Requirements to a Product Backlog<a class="anchor" aria-label="anchor" href="#add-our-coffee-analysis-requirements-to-a-product-backlog"></a>
 </h3>
-<div id="what-makes-a-good-requirement" class="callout">
+<div id="class-exercise-what-makes-a-good-requirement" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="what-makes-a-good-requirement" class="callout-inner">
-<h3 class="callout-title">What Makes a Good Requirement?</h3>
+<div id="class-exercise-what-makes-a-good-requirement" class="callout-inner">
+<h3 class="callout-title">Class Exercise: What Makes a Good Requirement?</h3>
 <div class="callout-content">
+<p>5 mins.</p>
+<p>As a class, discuss which characteristics make a good
+requirement.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div class="accordion-body">
 <p>In general, a good requirement is:</p>
 <ul>
 <li>Clear and concise - there shouldn’t be any confusion regarding its
@@ -1816,6 +1854,7 @@ reasonable timeframe</li>
 <li>Verifiable/testable - any solution that addresses the requirement
 can be verified to satisfy that requirement</li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -1875,7 +1914,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-14-estimation-prioritisation"><p>Content from <a href="14-estimation-prioritisation.html">1.4 Estimation, Prioritisation, and Stakeholder Management</a></p>
 <hr>
-<p>Last updated on 2025-06-06 |
+<p>Last updated on 2025-06-13 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/14-estimation-prioritisation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
@@ -1944,13 +1983,18 @@ without a higher-level approach.</p>
 “sub-projects” (i.e. smaller than the “project” represented by the whole
 repository). Projects provide a way of visualising and organising work
 which is not time-bound and is on a higher level, which makes management
-easier. Milestones are typically used to organise lower-level tasks that
-have deadlines and progress of which needs to be closely tracked
+easier.</p>
+<p>Milestones are typically used to organise lower-level tasks that have
+deadlines and progress of which needs to be closely tracked
 (e.g. release and version management). The main difference is that
 Milestones are a repository-level feature (i.e. they belong and are
-managed from a single repository), whereas projects are account-level
+managed from a single repository), whereas projects are account-level,
 and can manage tasks across many repositories under the same user or
-organisational account.</p>
+organisational account. This is particularly useful for larger projects
+with development across multiple repositories (for example, with
+client-side code in one repository and server-side code in another).
+This enables the development team to manage issues on these repositories
+under a single project board, if desired.</p>
 <p>Conceptually, for our purposes a GitHub Project is a “project board”,
 which originated as a tool used by Toyota in the 1940s called the
 “Kanban” system. Kanban-style boards consists of columns and cards to
@@ -2227,10 +2271,13 @@ ambiguities.</p>
 <h3 class="callout-title">Group Exercise: Collate your Estimates!</h3>
 <div class="callout-content">
 <p>5 mins.</p>
-<p>As a group, reveal all your individual estimates - which may be
-wildly different! - for each of the requirements and decide the final
-size based on the majority size. For those that have equal votes, decide
-quickly as a group on the final size.</p>
+<p>As a group, reveal your individual estimates for each requirement -
+which may be wildly different! - and decide the final size based on the
+majority size. For those that have equal votes, decide quickly as a
+group on the final size.</p>
+<p>Have one member lead the discussion for a requirement, and rotate
+this role until all requirement estimates have been decided, such that
+every member leads the discussion at least once.</p>
 <p>Once you have a list of final sizes, add each agreed size as a
 comment to its corresponding issue in your product backlog.</p>
 </div>
@@ -2275,6 +2322,16 @@ requirements, and clarify them in the product backlog</li>
 </div>
 </div>
 </div>
+<p>To an extent, the <em>process</em> of deciding estimates is more
+important than the actual result of estimation. Creating estimates
+forces the team to consider the detail of what will be required to
+fulfil a requirement, beyond just coming up with a number. For example,
+when coming up with an estimate it may become clear there are unrealised
+dependencies between tasks, or some requirements are not readily
+estimable due to being too complex or too widely scoped, and require
+further decomposition into multiple smaller requirements to estimate
+properly. It may also become clear that some requirements may not be
+achievable at all within the timeframe of the project!</p>
 </div>
 </section><section><h2 class="section-heading" id="prioritisation">Prioritisation<a class="anchor" aria-label="anchor" href="#prioritisation"></a>
 </h2>
@@ -3554,9 +3611,9 @@ roles for the session</li>
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
-  "dateCreated": "2025-06-08",
-  "dateModified": "2025-06-10",
-  "datePublished": "2025-06-10"
+  "dateCreated": "2025-06-13",
+  "dateModified": "2025-06-13",
+  "datePublished": "2025-06-13"
 }
 
   </script><script>
