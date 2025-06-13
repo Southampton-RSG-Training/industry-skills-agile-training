@@ -46,7 +46,13 @@ and that's difficult to do without a higher-level approach.
 GitHub Projects enable ways of organising issues into smaller “sub-projects” (i.e. smaller than the “project” represented by the whole repository).
 Projects provide a way of visualising and organising work which is not time-bound and is on a higher level,
 which makes management easier.
-Milestones are typically used to organise lower-level tasks that have deadlines and progress of which needs to be closely tracked (e.g. release and version management). The main difference is that Milestones are a repository-level feature (i.e. they belong and are managed from a single repository), whereas projects are account-level and can manage tasks across many repositories under the same user or organisational account.
+
+Milestones are typically used to organise lower-level tasks that have deadlines and progress of which needs to be closely tracked (e.g. release and version management).
+The main difference is that Milestones are a repository-level feature (i.e. they belong and are managed from a single repository),
+whereas projects are account-level,
+and can manage tasks across many repositories under the same user or organisational account.
+This is particularly useful for larger projects with development across multiple repositories (for example, with client-side code in one repository and server-side code in another).
+This enables the development team to manage issues on these repositories under a single project board, if desired.
 
 Conceptually, for our purposes a GitHub Project is a "project board",
 which originated as a tool used by Toyota in the 1940s called the "Kanban" system.
@@ -242,9 +248,12 @@ and raise crucial questions to clarify ambiguities.
 
 5 mins.
 
-As a group, reveal all your individual estimates  - which may be wildly different! -
-for each of the requirements and decide the final size based on the majority size.
+As a group, reveal your individual estimates for each requirement - which may be wildly different! - and decide the final size based on the majority size.
 For those that have equal votes, decide quickly as a group on the final size.
+
+Have one member lead the discussion for a requirement,
+and rotate this role until all requirement estimates have been decided,
+such that every member leads the discussion at least once.
 
 Once you have a list of final sizes,
 add each agreed size as a comment to its corresponding issue in your product backlog.
@@ -281,6 +290,15 @@ So keep estimating!
 and clarify them in the product backlog
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+To an extent, the *process* of deciding estimates is more important than the actual result of estimation.
+Creating estimates forces the team to consider the detail of what will be required to fulfil a requirement,
+beyond just coming up with a number.
+For example, when coming up with an estimate it may become clear there are unrealised dependencies between tasks,
+or some requirements are not readily estimable due to being too complex or too widely scoped,
+and require further decomposition into multiple smaller requirements to estimate properly.
+It may also become clear that some requirements may not be achievable at all
+within the timeframe of the project!
 
 
 ## Prioritisation
