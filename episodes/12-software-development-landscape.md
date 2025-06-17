@@ -40,9 +40,9 @@ Someone who is engineering software takes a wider view:
 -   Software (or code) is an asset: software inherently contains value - for example, in terms of what it can do, the lessons learned throughout its development, and as an implementation of a research approach (i.e. a particular research algorithm, process, or technical approach).
 -   As an asset, it could be reused: again, it may not be evident initially that the software will have use beyond its initial purpose or project, but there is an assumption that the software - or even just a part of it - could be reused in the future.
 
+::: challenge
+## Let's Break it Down
 
-:::::::::::::::::::::::::::::::::::::::  challenge
-## Let's Break it Down 
 **Solo Challenge**
 
 Think about a project you've completed in the past.
@@ -50,7 +50,7 @@ This could be a software project but it doesn't have to be.
 It could be anything from organising an event to completing a personal goal or managing a work task.
 
 If you were to break down that project into stages, what would the stages be?
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ### Software Development Process
 
@@ -65,7 +65,6 @@ The typical stages of a software development process are:
 
 These stages are followed implicitly or explicitly in every software project but there are many different ways to arrange them.
 The stages may be arranged according to an established model of software development.
-
 
 ## Models of Software Development
 
@@ -84,17 +83,36 @@ However, there are some disadvantages to the Waterfall Model:
 
 ![](fig/waterfall.png){alt="diagram of the waterfall model"}
 
+FIXME: add real life example
+
 ### V-Model
 
-The V-Model emphasises the importance of testing and validation at each development stage, running parallel to the corresponding development activity.
+The V-Model emphasises the importance of validating each level of the software development.
 This approach ensures that verification (checking work during development) and validation (checking final products against requirements) are systematically integrated throughout the process.
 
-The two sides of the "V" represent:
+The left side of the V includes creation and verification steps, i.e. does it work according to the specification.
 
--   Verification phases (requirements gathering, system design, architectural design, module design, and coding) on the left side.
--   Validation phases (unit testing, integration testing, system testing, and user acceptance testing) on the right side.
+-   Requirements gathering
 
-![(Designed by Freepik)](fig/v-model.png){alt='image of the v-model of software development'}
+-   System design
+
+-   Architectural design
+
+-   Module design
+
+-   Coding
+
+The right side of the V includes validation for each step, i.e. have you built the right thing
+
+-   Unit testing (validation for module design)
+
+-   Integration testing (validation for architectural design)
+
+-   System testing (validation for system design)
+
+-   User acceptance testing (validation for requirements gathering)
+
+![](fig/v-model.png){alt="image of the v-model of software development"}
 
 Advantages
 
@@ -108,6 +126,8 @@ Disadvantages
 -   Time-consuming due to extensive documentation and testing.
 
 -   No support for development activities to occur concurrently or to iterate.
+
+FIXME: add real life example
 
 ### Iterative
 
@@ -123,7 +143,7 @@ In iterative development, a large application is built in smaller, manageable pa
 Each iteration includes planning, design, development, and testing, and produces a working version of the product.
 Unlike the Waterfall and V models, where the entire product is developed at once, iterative development adds features incrementally, with each cycle enhancing the functionality of the product.
 
-![(From The Carpentries Intermediate Research Software Development)](fig/iterative.png){alt='image of iterative software development'}
+![image of iterative software development](fig/iterative.png)
 
 Advantages of Iterative Development:
 
@@ -146,7 +166,9 @@ More recently, the spiral model has been thought of as a 'process model generato
 
 Decisions about how much effort should be directed into each element of the project is guided by the goal of minimising the overall risk.
 
-![(Boehm, 1987)](fig/spiral.png){alt='image of the spiral model of software development'}
+![image of the spiral model of software development](fig/spiral.png)
+
+FIXME: add real life example
 
 #### Agile
 
@@ -165,6 +187,45 @@ The Agile Manifesto was inspired by the desire for a more rapid and lightweight 
 It drew on ideas from existing lightweight software development methods such as rapid application development, the rational unified process aka RUP, dynamic systems development method, scrum, extreme programming and feature driven development.
 Although these methods were developed in the 1990s, before the Agile Manifesto, they are now all referred to under the umbrella term 'Agile' and, with the exception of Scrum, these methods have now gone out of fashion.
 
+#### Scrum
+
+Scrum is one of the most popular Agile frameworks.
+Scrum is defined in the Scrum Guide as 'a lightweight framework that helps people, teams and organisations generate value through adaptive solutions for complex problems'.
+The core philosophy of Scrum is to make incremental progress toward a goal through repeated iterations.
+
+In Scrum:
+
+1.  A **Product Backlog** is created.
+    This is a list of everything that needs to be done to build the product.
+
+2.  Work is done in **Sprints**, which are short blocks of time (\< 1 month).
+
+3.  At the start of a Sprint, a subset of the Product Backlog is selected to be worked on during the Sprint.
+    This is called the **Sprint Backlog**.
+
+4.  The developers work on tasks from the Sprint Backlog during the Sprint, creating an **Increment of Value.**
+
+5.  The **Scrum Team** and its stakeholders inspect the results and adjust for the next Sprint.
+
+6.  Repeat
+
+![](fig/scrum_simplified.png){alt="simplified diagram of scrum with arrows showing that the product backlog is broken down into sprint backlogs and these are worked on throughout a sprint to create an increment of value"}
+
+FIXME: add real life example
+
+::: callout
+## Scrum Buzzwords Decoded
+
+-   Product Owner - responsible for maximising the value of the product.
+-   Product Backlog - Ordered list of what is needed to improve the product.
+-   Increment of Value - a concrete stepping stone toward the Product Goal.
+-   Scrum Team - one Scrum Master, one Product Owner, and Developers (we'll discuss what each of these roles does later in the course).
+-   Sprint Backlog - the set of Product Backlog items selected for the Sprint.
+-   Sprint - Fixed-length events of one month or less in which the work gets done.
+:::
+
+Later in this course we will talk more about Scrum so that you are able to use it to run your own Sprints on a project.
+
 ## Which Model to Choose?
 
 Any model can be used for any software development project.
@@ -176,8 +237,9 @@ It's also worth noting that, to some extent, linear approaches become iterative 
 For example, knowing 100% of the requirements from the start is nearly always impossible.
 Even if a waterfall approach is applied, changes will most likely be made at each of the stages, requiring revision of an earlier stage.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: challenge
 ## Model Matchmaking: What’s the Best Fit?
+
 **Group Challenge**
 
 Imagine you've been hired to develop a web-based system for managing applications for public research grants.
@@ -198,42 +260,10 @@ The portal will be used by applicants, reviewers and administrators.
 -   Consider factors such as the nature of the project, clarity of requirements, timeline, risk, and the need for flexibility
 
 -   Be prepared to **justify your choice** - why is this model a good fit for the scenario?
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 In this course, we will focus on Agile, as it is currently a commonly used method for software engineering across sectors, and it suits the project that you'll be working on throughout this course.
 In particular, we will focus on a an Agile framework called 'Scrum'.
-
-## Scrum
-
-Scrum is one of the most popular Agile frameworks.
-Scrum is defined in the Scrum Guide as 'a lightweight framework that helps people, teams and organisations generate value through adaptive solutions for complex problems'.
-The core philosophy of Scrum is to make incremental progress toward a goal through repeated iterations.
-
-In Scrum:
-
-1.  A **Product Owner** orders the work into a **Product Backlog**
-
-2.  The **Scrum Team** turns a subset of the work (the **Sprint Backlog**) into an **Increment of Value** during a **Sprint**
-
-3.  The Scrum Team and its stakeholders inspect the results and adjust for the next Sprint.
-
-4.  Repeat
-
-(The Scrum Guide, 2020)
-
-![](fig/scrum_simplified.png){alt='simplified diagram of scrum with arrows showing that the product backlog is broken down into sprint backlogs and these are worked on throughout a sprint to create an increment of value'}
-
-:::::::::::::::::::::::::::::::::::::::  callout
-## Scrum Buzzwords Decoded
-- Product Owner - responsible for maximising the value of the product.
-- Product Backlog - Ordered list of what is needed to improve the product.
-- Increment of Value - a concrete stepping stone toward the Product Goal.
-- Scrum Team - one Scrum Master, one Product Owner, and Developers (we'll discuss what each of these roles does later in the course).
-- Sprint Backlog - the set of Product Backlog items selected for the Sprint. 
-- Sprint - Fixed-length events of one month or less in which the work gets done.
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-Later in this course we will talk more about Scrum so that you are able to use it to run your own Sprints on a project.
 
 ## Agile Software Development vs Project Management
 
@@ -251,42 +281,37 @@ It emphasises transparency, flexibility and meeting customer need, as well as al
 Another popular project management framework is PRINCE2 (PRojects IN Controlled Environments), which was developed by the UK government, and outlines seven principles, seven themes and seven processes to guide how a project should be managed.
 It is a more heavyweight project management framework than Agile Project Management and so is often used in sectors where governance and documentation are priorities.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
-
+:::: challenge
 ## Software Development or Project Management?
+
 **Group Challenge**
 
 Below is a list of tasks, discuss whether each task belongs in software development models or project management models:
 
-1. Writing and testing code for a new feature
-2. Designing the software architecture for a system
-3. Creating a risk mitigation plan for project delivery
-4. Allocating team members across multiple concurrent projects
-5. Refactoring legacy code to improve maintainability
-6. Tracking project progress against the Gantt chart
-7. Setting up a version control system (e.g. Git)
-8. Reviewing whether the project is on track to meet its deadline and budget
-9. Leading a daily stand-up meeting
+1.  Writing and testing code for a new feature
+2.  Designing the software architecture for a system
+3.  Creating a risk mitigation plan for project delivery
+4.  Allocating team members across multiple concurrent projects
+5.  Refactoring legacy code to improve maintainability
+6.  Tracking project progress against the Gantt chart
+7.  Setting up a version control system (e.g. Git)
+8.  Reviewing whether the project is on track to meet its deadline and budget
+9.  Leading a daily stand-up meeting
 10. Leading a group retrospective to reflect on project outcomes and team performance
 
-:::::::::::::::  solution
-
-1. Software development
-2. Software development
-3. Project management
-4. Project management
-5. Software development
-6. Project management
-7. Software development
-8. Project management
-9. Could be either
+::: solution
+1.  Software development
+2.  Software development
+3.  Project management
+4.  Project management
+5.  Software development
+6.  Project management
+7.  Software development
+8.  Project management
+9.  Could be either
 10. Could be either
-
-:::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
+:::
+::::
 
 ## References
 
