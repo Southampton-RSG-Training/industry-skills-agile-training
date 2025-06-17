@@ -237,7 +237,6 @@
         <ul><li><a href="#the-stages-of-a-typical-software-development-process">The Stages of a Typical Software Development Process</a></li>
 <li><a href="#models-of-software-development">Models of Software Development</a></li>
 <li><a href="#which-model-to-choose">Which Model to Choose?</a></li>
-<li><a href="#scrum">Scrum</a></li>
 <li><a href="#agile-software-development-vs-project-management">Agile Software Development vs Project Management</a></li>
 <li><a href="#references">References</a></li>
         </ul></div><!--/div.accordion-body-->
@@ -520,7 +519,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>1.2 Software Development Process and the Landscape of Approaches</h1>
-        <p>Last updated on 2025-06-02 |
+        <p>Last updated on 2025-06-17 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/12-software-development-landscape.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -679,21 +678,30 @@ software projects, particularly in research.</li>
 <li>The software is not seen by the client until late in the project
 timeline, which may increase the risk of it not meeting the client’s
 expectations.</li>
-</ul><figure><img src="../fig/waterfall.png" alt="diagram of the waterfall model" class="figure mx-auto d-block"></figure></div>
+</ul><figure><img src="../fig/waterfall.png" alt="diagram of the waterfall model" class="figure mx-auto d-block"></figure><p>FIXME: add real life example</p>
+</div>
 <div class="section level3">
 <h3 id="v-model">V-Model<a class="anchor" aria-label="anchor" href="#v-model"></a></h3>
-<p>The V-Model emphasises the importance of testing and validation at
-each development stage, running parallel to the corresponding
-development activity. This approach ensures that verification (checking
+<p>The V-Model emphasises the importance of validating each level of the
+software development. This approach ensures that verification (checking
 work during development) and validation (checking final products against
 requirements) are systematically integrated throughout the process.</p>
-<p>The two sides of the “V” represent:</p>
-<ul><li>Verification phases (requirements gathering, system design,
-architectural design, module design, and coding) on the left side.</li>
-<li>Validation phases (unit testing, integration testing, system
-testing, and user acceptance testing) on the right side.</li>
-</ul><figure><img src="../fig/v-model.png" alt="image of the v-model of software development" class="figure mx-auto d-block"><div class="figcaption">(Designed by Freepik)</div>
-</figure><p>Advantages</p>
+<p>The left side of the V includes creation and verification steps,
+i.e. does it work according to the specification.</p>
+<ul><li><p>Requirements gathering</p></li>
+<li><p>System design</p></li>
+<li><p>Architectural design</p></li>
+<li><p>Module design</p></li>
+<li><p>Coding</p></li>
+</ul><p>The right side of the V includes validation for each step, i.e. have
+you built the right thing</p>
+<ul><li><p>Unit testing (validation for module design)</p></li>
+<li><p>Integration testing (validation for architectural
+design)</p></li>
+<li><p>System testing (validation for system design)</p></li>
+<li><p>User acceptance testing (validation for requirements
+gathering)</p></li>
+</ul><figure><img src="../fig/v-model.png" alt="image of the v-model of software development" class="figure mx-auto d-block"></figure><p>Advantages</p>
 <ul><li>Focus on quality through early and continuous testing</li>
 <li>The strong link between requirements and the final product improve
 the traceability of software changes.</li>
@@ -704,7 +712,8 @@ requirements</p></li>
 testing.</p></li>
 <li><p>No support for development activities to occur concurrently or to
 iterate.</p></li>
-</ul></div>
+</ul><p>FIXME: add real life example</p>
+</div>
 <div class="section level3">
 <h3 id="iterative">Iterative<a class="anchor" aria-label="anchor" href="#iterative"></a></h3>
 <p>In many cases, it doesn’t make sense for software development to
@@ -723,8 +732,7 @@ design, development, and testing, and produces a working version of the
 product. Unlike the Waterfall and V models, where the entire product is
 developed at once, iterative development adds features incrementally,
 with each cycle enhancing the functionality of the product.</p>
-<figure><img src="../fig/iterative.png" alt="image of iterative software development" class="figure mx-auto d-block"><div class="figcaption">(From The Carpentries Intermediate Research
-Software Development)</div>
+<figure><img src="../fig/iterative.png" alt="image of iterative software development" class="figure mx-auto d-block"><div class="figcaption">image of iterative software development</div>
 </figure><p>Advantages of Iterative Development:</p>
 <ul><li>Progress on the software product can initially be faster as less
 time is spent on the requirements and design stages before starting
@@ -755,8 +763,10 @@ argues that choices based on a project’s risks generate an appropriate
 process model for the project.</p>
 <p>Decisions about how much effort should be directed into each element
 of the project is guided by the goal of minimising the overall risk.</p>
-<figure><img src="../fig/spiral.png" alt="image of the spiral model of software development" class="figure mx-auto d-block"><div class="figcaption">(Boehm, 1987)</div>
-</figure></div>
+<figure><img src="../fig/spiral.png" alt="image of the spiral model of software development" class="figure mx-auto d-block"><div class="figcaption">image of the spiral model of software
+development</div>
+</figure><p>FIXME: add real life example</p>
+</div>
 <div class="section level4">
 <h4 id="agile">Agile<a class="anchor" aria-label="anchor" href="#agile"></a></h4>
 <p>Agile software development is a phrase used to describe any iterative
@@ -778,6 +788,52 @@ feature driven development. Although these methods were developed in the
 1990s, before the Agile Manifesto, they are now all referred to under
 the umbrella term ‘Agile’ and, with the exception of Scrum, these
 methods have now gone out of fashion.</p>
+</div>
+<div class="section level4">
+<h4 id="scrum">Scrum<a class="anchor" aria-label="anchor" href="#scrum"></a></h4>
+<p>Scrum is one of the most popular Agile frameworks. Scrum is defined
+in the Scrum Guide as ‘a lightweight framework that helps people, teams
+and organisations generate value through adaptive solutions for complex
+problems’. The core philosophy of Scrum is to make incremental progress
+toward a goal through repeated iterations.</p>
+<p>In Scrum:</p>
+<ol style="list-style-type: decimal"><li><p>A <strong>Product Backlog</strong> is created. This is a list of
+everything that needs to be done to build the product.</p></li>
+<li><p>Work is done in <strong>Sprints</strong>, which are short blocks
+of time (&lt; 1 month).</p></li>
+<li><p>At the start of a Sprint, a subset of the Product Backlog is
+selected to be worked on during the Sprint. This is called the
+<strong>Sprint Backlog</strong>.</p></li>
+<li><p>The developers work on tasks from the Sprint Backlog during the
+Sprint, creating an <strong>Increment of Value.</strong></p></li>
+<li><p>The <strong>Scrum Team</strong> and its stakeholders inspect the
+results and adjust for the next Sprint.</p></li>
+<li><p>Repeat</p></li>
+</ol><figure><img src="../fig/scrum_simplified.png" alt="simplified diagram of scrum with arrows showing that the product backlog is broken down into sprint backlogs and these are worked on throughout a sprint to create an increment of value" class="figure mx-auto d-block"></figure><p>FIXME: add real life example</p>
+<div id="scrum-buzzwords-decoded" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="scrum-buzzwords-decoded" class="callout-inner">
+<h3 class="callout-title">Scrum Buzzwords Decoded</h3>
+<div class="callout-content">
+<ul><li>Product Owner - responsible for maximising the value of the
+product.</li>
+<li>Product Backlog - Ordered list of what is needed to improve the
+product.</li>
+<li>Increment of Value - a concrete stepping stone toward the Product
+Goal.</li>
+<li>Scrum Team - one Scrum Master, one Product Owner, and Developers
+(we’ll discuss what each of these roles does later in the course).</li>
+<li>Sprint Backlog - the set of Product Backlog items selected for the
+Sprint.</li>
+<li>Sprint - Fixed-length events of one month or less in which the work
+gets done.</li>
+</ul></div>
+</div>
+</div>
+<p>Later in this course we will talk more about Scrum so that you are
+able to use it to run your own Sprints on a project.</p>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="which-model-to-choose">Which Model to Choose?<a class="anchor" aria-label="anchor" href="#which-model-to-choose"></a></h2>
@@ -829,46 +885,6 @@ model a good fit for the scenario?</p></li>
 used method for software engineering across sectors, and it suits the
 project that you’ll be working on throughout this course. In particular,
 we will focus on a an Agile framework called ‘Scrum’.</p>
-</section><section><h2 class="section-heading" id="scrum">Scrum<a class="anchor" aria-label="anchor" href="#scrum"></a></h2>
-<hr class="half-width"><p>Scrum is one of the most popular Agile frameworks. Scrum is defined
-in the Scrum Guide as ‘a lightweight framework that helps people, teams
-and organisations generate value through adaptive solutions for complex
-problems’. The core philosophy of Scrum is to make incremental progress
-toward a goal through repeated iterations.</p>
-<p>In Scrum:</p>
-<ol style="list-style-type: decimal"><li><p>A <strong>Product Owner</strong> orders the work into a
-<strong>Product Backlog</strong></p></li>
-<li><p>The <strong>Scrum Team</strong> turns a subset of the work (the
-<strong>Sprint Backlog</strong>) into an <strong>Increment of
-Value</strong> during a <strong>Sprint</strong></p></li>
-<li><p>The Scrum Team and its stakeholders inspect the results and
-adjust for the next Sprint.</p></li>
-<li><p>Repeat</p></li>
-</ol><p>(The Scrum Guide, 2020)</p>
-<figure><img src="../fig/scrum_simplified.png" alt="simplified diagram of scrum with arrows showing that the product backlog is broken down into sprint backlogs and these are worked on throughout a sprint to create an increment of value" class="figure mx-auto d-block"></figure><div id="scrum-buzzwords-decoded" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div id="scrum-buzzwords-decoded" class="callout-inner">
-<h3 class="callout-title">Scrum Buzzwords Decoded</h3>
-<div class="callout-content">
-<ul><li>Product Owner - responsible for maximising the value of the
-product.</li>
-<li>Product Backlog - Ordered list of what is needed to improve the
-product.</li>
-<li>Increment of Value - a concrete stepping stone toward the Product
-Goal.</li>
-<li>Scrum Team - one Scrum Master, one Product Owner, and Developers
-(we’ll discuss what each of these roles does later in the course).</li>
-<li>Sprint Backlog - the set of Product Backlog items selected for the
-Sprint.</li>
-<li>Sprint - Fixed-length events of one month or less in which the work
-gets done.</li>
-</ul></div>
-</div>
-</div>
-<p>Later in this course we will talk more about Scrum so that you are
-able to use it to run your own Sprints on a project.</p>
 </section><section><h2 class="section-heading" id="agile-software-development-vs-project-management">Agile Software Development vs Project Management<a class="anchor" aria-label="anchor" href="#agile-software-development-vs-project-management"></a></h2>
 <hr class="half-width"><p>Agile software development is a methodology and mindset that guides
 the actual software development process. It is concerned with delivering
@@ -1066,8 +1082,8 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/12-software-development-landscape.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/12-software-development-landscape.html",
-  "dateCreated": "2025-06-13",
-  "dateModified": "2025-06-02",
+  "dateCreated": "2025-06-17",
+  "dateModified": "2025-06-17",
   "datePublished": "2025-06-17"
 }
 
