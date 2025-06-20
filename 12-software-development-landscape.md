@@ -8,15 +8,14 @@ exercises: 0
 -   What are the main stages in a typical software development process?
 -   What are waterfall, iterative, and V-Model approaches to software development?
 -   What is Agile and how does it compare to project management?
--   How does Scrum compare and relate to project management frameworks?
+-   How do software development models compare and relate to project management frameworks?
 :::
 
 ::: objectives
 -   Highlight the main stages in a software development process
 -   Order and describe the stages within a typical software development process and how these apply within waterfall and iterative approaches
 -   Summarise the V-Model approach to software development
--   Demystify, compare and contrast agile approaches against project management
--   Describe how Scrum compares and relates to project management frameworks [AgilePM, PRINCE2]
+-   Describe how software development models compare and relate to project management frameworks [AgilePM, PRINCE2]
 :::
 
 ## The Stages of a Typical Software Development Process
@@ -65,6 +64,8 @@ The typical stages of a software development process are:
 
 These stages are followed implicitly or explicitly in every software project but there are many different ways to arrange them.
 The stages may be arranged according to an established model of software development.
+
+FIXME: Example of not using a process for software development leading to a disaster
 
 ## Models of Software Development
 
@@ -265,18 +266,18 @@ The portal will be used by applicants, reviewers and administrators.
 In this course, we will focus on Agile, as it is currently a commonly used method for software engineering across sectors, and it suits the project that you'll be working on throughout this course.
 In particular, we will focus on a an Agile framework called 'Scrum'.
 
-## Agile Software Development vs Project Management
+## Scrum vs Project Management
 
-Agile software development is a methodology and mindset that guides the actual software development process.
-It is concerned with delivering a project i.e. doing the actual software engineering.
+Scrum is an Agile delivery technique that guides the actual software development process.
+Scrum is concerned with delivering a project i.e. doing the actual software engineering.
 
 Project management is concerned with all aspects of a project including planning, executing, and closing projects, as well as managing change and risk within a project.
-Project management may contain Agile Software Development but will also cover the wider project aspects including ensuring that a project meets its goals, timeline, and budget.
+Project management may contain Scrum but will also cover the wider project aspects including ensuring that a project meets its goals, timeline, and budget.
 
 There are lots of project management frameworks.
 
-To avoid confusion we should distinguish between Agile Software Development and Agile Project Management (AgilePM), which involves the application of Agile principles to managing projects.
-It emphasises transparency, flexibility and meeting customer need, as well as allowing teams to have autonomy, make shared decisions and self-organise.
+To avoid confusion we should distinguish between Scrum (an Agile delivery technique) and Agile Project Management (AgilePM), which involves the application of Agile principles to managing projects.
+AgilePM emphasises transparency, flexibility and meeting customer need, as well as allowing teams to have autonomy, make shared decisions and self-organise.
 
 Another popular project management framework is PRINCE2 (PRojects IN Controlled Environments), which was developed by the UK government, and outlines seven principles, seven themes and seven processes to guide how a project should be managed.
 It is a more heavyweight project management framework than Agile Project Management and so is often used in sectors where governance and documentation are priorities.
@@ -317,6 +318,7 @@ Below is a list of tasks, discuss whether each task belongs in software developm
 
 -   Stages of Software Development from [Python Intermediate Development Carpentries Training](https://carpentries-incubator.github.io/python-intermediate-development/30-section3-intro.html)
 -   [The Scrum Guide](https://scrumguides.org/)
+-   [It's Time to End the Battle Between Waterfall and Agile](https://hbr.org/2023/10/its-time-to-end-the-battle-between-waterfall-and-agile)
 -   Software Engineering by Ian Sommerville
 -   Software Engineering: Theory and Practice by Shari Lawrence Pfleeger
 -   [British Standards Online](https://library.soton.ac.uk/techinfo/standards)
