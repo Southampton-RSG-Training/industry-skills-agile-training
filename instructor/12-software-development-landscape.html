@@ -655,19 +655,34 @@ requirements.</li>
 project but there are many different ways to arrange them. The stages
 may be arranged according to an established model of software
 development.</p>
-<p>FIXME: Example of not using a process for software development
-leading to a disaster</p>
 </div>
 </section><section><h2 class="section-heading" id="models-of-software-development">Models of Software Development<a class="anchor" aria-label="anchor" href="#models-of-software-development"></a></h2>
 <hr class="half-width"><div class="section level3">
 <h3 id="waterfall">Waterfall<a class="anchor" aria-label="anchor" href="#waterfall"></a></h3>
-<p>The Waterfall Model is a software development methodology in which
+<figure><img src="../fig/waterfall.png" alt="diagram of the waterfall model" class="figure mx-auto d-block"></figure><p>The Waterfall Model is a software development methodology in which
 the typical stages of the software development process (that we outlined
 above) are followed step-by-step in a set, sequential order.</p>
 <p>The Waterfall Model is effective when used for projects where the
 requirements are clearly defined from the outset. It is ideal for
 projects with long timelines and minimal tolerance for errors, where
 stakeholders require high confidence in the final outcome.</p>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p><a href="https://learninglegacy.crossrail.co.uk/learning-legacy-themes/project-and-programme-management/initiation-and-development/" class="external-link">London’s
+Crossrail project</a> (later rebranded as the Elizabeth Line) used a
+Waterfall approach of clear, sequential phases. The line spans 118km,
+serving 41 stations (10 new) and had been used for over 500 million
+journeys by early 2025 since its opening in 2022. Despite the project
+delays and overspend, the Elizabeth Line was widely praised as an
+engineering triumph.</p>
+<figure><img src="../fig/elizabeth-line.png" alt="map of the elizabeth line" class="figure mx-auto d-block"></figure></div>
+</div>
+</div>
 <p>However, there are some disadvantages to the Waterfall Model:</p>
 <ul><li>The model is relatively inflexible. Once a phase is completed, the
 model does not account for going back to make changes and therefore
@@ -678,10 +693,38 @@ software projects, particularly in research.</li>
 <li>The software is not seen by the client until late in the project
 timeline, which may increase the risk of it not meeting the client’s
 expectations.</li>
-</ul><figure><img src="../fig/waterfall.png" alt="diagram of the waterfall model" class="figure mx-auto d-block"></figure><p>FIXME: add real life example</p>
+</ul><div id="callout2" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p>The <a href="https://www.audit.vic.gov.au/report/operational-effectiveness-myki-ticketing-system?section=" class="external-link">myki
+ticketing system project</a> in Melbourne, Australia, demonstrates some
+of the limitations of the Waterfall approach.</p>
+<p>The myki ticketing system was designed to replace the Metcard system
+for Public Transport Victoria, improving the efficiency and reliability
+of public transport. Almost $1 billion was committed to this project in
+July 2005.</p>
+<p>The project was expected to be completed in two years but ended up
+taking over nine years in total and the budgeted cost was exceeded by
+55%. Furthermore, due to the rigidly fixed scope and upfront planning,
+the system could not adapt to evolving user expectations or new
+technologies. The system was plagued by multiple issues including
+overcharging, slow touch readers, top-up delays and limited device
+compatibility.</p>
+<p>These issues were all symptomatic of the inflexible development
+process.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="v-model">V-Model<a class="anchor" aria-label="anchor" href="#v-model"></a></h3>
+<p>The concept of the V-model was developed simultaneously, but
+independently, in Germany and in the United States in the late
+1980s.</p>
 <p>The V-Model emphasises the importance of validating each level of the
 software development. This approach ensures that verification (checking
 work during development) and validation (checking final products against
@@ -701,7 +744,28 @@ design)</p></li>
 <li><p>System testing (validation for system design)</p></li>
 <li><p>User acceptance testing (validation for requirements
 gathering)</p></li>
-</ul><figure><img src="../fig/v-model.png" alt="image of the v-model of software development" class="figure mx-auto d-block"></figure><p>Advantages</p>
+</ul><figure><img src="../fig/v-model.png" alt="image of the v-model of software development" class="figure mx-auto d-block"></figure><p>The V-Model is used in safety-critical, regulated industries where
+traceability, formal verification and compliance with standards are
+essential. These include:</p>
+<ul><li><p>Aerospace and defense</p></li>
+<li><p>Automotive</p></li>
+<li><p>Medical devices</p></li>
+<li><p>Railways and transportation</p></li>
+</ul><div id="callout3" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p>The V‑Model is a mandated development framework in German federal and
+defense software projects.</p>
+<p>This originated in the late 1980s with the Ministry of Defense and
+later extended to civilian administration.</p>
+</div>
+</div>
+</div>
+<p>Advantages</p>
 <ul><li>Focus on quality through early and continuous testing</li>
 <li>The strong link between requirements and the final product improve
 the traceability of software changes.</li>
@@ -712,7 +776,23 @@ requirements</p></li>
 testing.</p></li>
 <li><p>No support for development activities to occur concurrently or to
 iterate.</p></li>
-</ul><p>FIXME: add real life example</p>
+</ul><div id="callout4" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p>The V-Model was used by <a href="https://www.mdpi.com/2079-9292/13/11/2051" class="external-link">Siemens
+Healthineers</a> to develop their ultrasound systems Acuson SC2000 PRIME
+(from 2006) and Sequoia (from 2017).</p>
+<p>The product had to be aligned with medical device regulations and so
+required the rigorous traceability that the V-Model enables.</p>
+<p>Both projects used the V-Model alongside iterative approaches
+including Scrum.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="iterative">Iterative<a class="anchor" aria-label="anchor" href="#iterative"></a></h3>
@@ -732,25 +812,25 @@ design, development, and testing, and produces a working version of the
 product. Unlike the Waterfall and V models, where the entire product is
 developed at once, iterative development adds features incrementally,
 with each cycle enhancing the functionality of the product.</p>
-<figure><img src="../fig/iterative.png" alt="image of iterative software development" class="figure mx-auto d-block"><div class="figcaption">image of iterative software development</div>
-</figure><p>Advantages of Iterative Development:</p>
-<ul><li>Progress on the software product can initially be faster as less
-time is spent on the requirements and design stages before starting
-implementation</li>
-<li>Iterative approaches allow for continuous feedback, adaptation, and
-improvement throughout the project’s lifecycle.</li>
-<li>Defects can be found and corrected early, preventing them from
-affecting later stages.</li>
-<li>After each iteration, feedback can be gathered from users, allowing
-for adjustments and improvements to meet their expectations.</li>
-</ul><p>Disadvantages of Iterative Development:</p>
-<ul><li>Without fully determined requirements and design, software can
-become messy or ‘hacky’ if quality control standards are not
-maintained</li>
-<li>Since not all requirements are defined from the start, unforeseen
-changes may arise during the development process which require revision
-of the software architecture, costing more time in the long run.</li>
-</ul><div class="section level4">
+<figure><img src="../fig/iterative.png" alt="image of iterative software development" class="figure mx-auto d-block"></figure><div id="callout5" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p>The evolution of Google’s search engine exemplifies the principles of
+Agile development through continuous iteration and adaptation.</p>
+<p>Rather than being developed in a rigid, one-time release, Google
+Search has undergone thousands of incremental improvements, including
+hundreds of algorithm updates annually.</p>
+<p>Now handling at least 8.5 billion searches daily, Google’s sustained
+success is built on a foundation of iterative enhancements, frequent
+feedback integration, and rapid deployment.</p>
+</div>
+</div>
+</div>
+<div class="section level4">
 <h4 id="spiral-model">Spiral Model<a class="anchor" aria-label="anchor" href="#spiral-model"></a></h4>
 <p>The Spiral Model, sometimes known as Boehm’s Spiral, is an iterative,
 risk-driven approach to software development. The approach allows for
@@ -763,10 +843,7 @@ argues that choices based on a project’s risks generate an appropriate
 process model for the project.</p>
 <p>Decisions about how much effort should be directed into each element
 of the project is guided by the goal of minimising the overall risk.</p>
-<figure><img src="../fig/spiral.png" alt="image of the spiral model of software development" class="figure mx-auto d-block"><div class="figcaption">image of the spiral model of software
-development</div>
-</figure><p>FIXME: add real life example</p>
-</div>
+<figure><img src="../fig/spiral.png" alt="image of the spiral model of software development" class="figure mx-auto d-block"></figure></div>
 <div class="section level4">
 <h4 id="agile">Agile<a class="anchor" aria-label="anchor" href="#agile"></a></h4>
 <p>Agile software development is a phrase used to describe any iterative
@@ -788,6 +865,58 @@ feature driven development. Although these methods were developed in the
 1990s, before the Agile Manifesto, they are now all referred to under
 the umbrella term ‘Agile’ and, with the exception of Scrum, these
 methods have now gone out of fashion.</p>
+<div id="callout6" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p>Amazon embodies the Agile principle of customer collaboration through
+relentless feedback-driven iteration.</p>
+<p>Amazon systematically gathers and acts on customer feedback to
+continually refine its products, and small, agile teams rapidly
+prototype and test ideas.</p>
+<p>This Agile model has driven Amazon’s extensive expansion into
+e-commerce, cloud (AWS), smart devices, and subscription services.</p>
+</div>
+</div>
+</div>
+<p>Advantages of Iterative Development:</p>
+<ul><li>Progress on the software product can initially be faster as less
+time is spent on the requirements and design stages before starting
+implementation</li>
+<li>Iterative approaches allow for continuous feedback, adaptation, and
+improvement throughout the project’s lifecycle.</li>
+<li>Defects can be found and corrected early, preventing them from
+affecting later stages.</li>
+<li>After each iteration, feedback can be gathered from users, allowing
+for adjustments and improvements to meet their expectations.</li>
+</ul><p>Disadvantages of Iterative Development:</p>
+<ul><li>Without fully determined requirements and design, software can
+become messy or ‘hacky’ if quality control standards are not
+maintained</li>
+<li>Since not all requirements are defined from the start, unforeseen
+changes may arise during the development process which require revision
+of the software architecture, costing more time in the long run.</li>
+</ul><div id="callout7" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p>The <a href="https://www.computerweekly.com/news/2240185166/Universal-Credit-will-cost-taxpayers-128bn" class="external-link">UK’s
+Universal Credit welfare reform project</a> demonstrates that estimating
+timings and delivery costs can be challenging when using an Agile
+delivery method.</p>
+<p>The project was initially budgeted at £2.2 billion but is estimated
+to have cost £15-16 billion.</p>
+<p>Originally due to complete by 2017, the project end date is now
+2028.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="section level4">
 <h4 id="scrum">Scrum<a class="anchor" aria-label="anchor" href="#scrum"></a></h4>
@@ -809,8 +938,7 @@ Sprint, creating an <strong>Increment of Value.</strong></p></li>
 <li><p>The <strong>Scrum Team</strong> and its stakeholders inspect the
 results and adjust for the next Sprint.</p></li>
 <li><p>Repeat</p></li>
-</ol><figure><img src="../fig/scrum_simplified.png" alt="simplified diagram of scrum with arrows showing that the product backlog is broken down into sprint backlogs and these are worked on throughout a sprint to create an increment of value" class="figure mx-auto d-block"></figure><p>FIXME: add real life example</p>
-<div id="scrum-buzzwords-decoded" class="callout">
+</ol><figure><img src="../fig/scrum_simplified.png" alt="simplified diagram of scrum with arrows showing that the product backlog is broken down into sprint backlogs and these are worked on throughout a sprint to create an increment of value" class="figure mx-auto d-block"></figure><div id="scrum-buzzwords-decoded" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -937,7 +1065,7 @@ team performance</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Software development</li>
 <li>Software development</li>
@@ -965,29 +1093,14 @@ Time to End the Battle Between Waterfall and Agile</a></li>
 Pfleeger</li>
 <li><a href="https://library.soton.ac.uk/techinfo/standards" class="external-link">British
 Standards Online</a></li>
-<li>ISO/IEC/IEEE 12207 Systems and software engineering – Software life
-cycle processes</li>
-<li>ISO/IEC/IEEE 15288 Systems and software engineering – System life
-cycle processes</li>
-<li>ISO/IEC 29110-1-1 Systems and software engineering – Lifecycle
-profiles for very small entities (VSEs) Part 1-1: Overview</li>
-<li>ISO/IEC 29110-5-4 Systems and software engineering – Lifecycle
-profiles for very small entities (VSEs) Part 5-4: Agile software
-development guidelines</li>
-<li>TickITplus Base Process Library: ORG.10 Lifecycle Model
-Management</li>
-<li>IEEE SWEBOK Software Engineering Body of Knowledge</li>
-<li>Waterfall Method ideas from <a href="https://www.geeksforgeeks.org/waterfall-model/" class="external-link">geeksforgeeks</a>
-</li>
-<li>V-Model ideas from <a href="https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/" class="external-link">geeksforgeeks</a>
-</li>
-<li>Iterative ideas from from <a href="https://easternpeak.com/definition/iterative-development/#:~:text=Iterative%20development%20is%20a%20software,%2C%20development%2C%20and%20testing%20steps." class="external-link">Eastern
+<li><a href="https://en.wikipedia.org/wiki/V-model" class="external-link">V-Model</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Waterfall_model" class="external-link">Waterfall
+Model</a></li>
+<li>Iterative ideas from <a href="https://easternpeak.com/definition/iterative-development/#:~:text=Iterative%20development%20is%20a%20software,%2C%20development%2C%20and%20testing%20steps." class="external-link">Eastern
 Peak</a>
 </li>
-<li><a href="https://en.wikipedia.org/wiki/Agile_software_development" class="external-link">Agile
-wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/PRINCE2" class="external-link">PRINCE2
-wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Agile_software_development" class="external-link">Agile</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PRINCE2" class="external-link">PRINCE2</a></li>
 </ul><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
