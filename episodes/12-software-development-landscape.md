@@ -65,16 +65,24 @@ The typical stages of a software development process are:
 These stages are followed implicitly or explicitly in every software project but there are many different ways to arrange them.
 The stages may be arranged according to an established model of software development.
 
-FIXME: Example of not using a process for software development leading to a disaster
-
 ## Models of Software Development
 
 ### Waterfall
+
+![](fig/waterfall.png){alt="diagram of the waterfall model"}
 
 The Waterfall Model is a software development methodology in which the typical stages of the software development process (that we outlined above) are followed step-by-step in a set, sequential order.
 
 The Waterfall Model is effective when used for projects where the requirements are clearly defined from the outset.
 It is ideal for projects with long timelines and minimal tolerance for errors, where stakeholders require high confidence in the final outcome.
+
+::: callout
+[London's Crossrail project](https://learninglegacy.crossrail.co.uk/learning-legacy-themes/project-and-programme-management/initiation-and-development/) (later rebranded as the Elizabeth Line) used a Waterfall approach of clear, sequential phases.
+The line spans 118km, serving 41 stations (10 new) and had been used for over 500 million journeys by early 2025 since its opening in 2022.
+Despite the project delays and overspend, the Elizabeth Line was widely praised as an engineering triumph.
+
+![](fig/elizabeth-line.png){alt="map of the elizabeth line"}
+:::
 
 However, there are some disadvantages to the Waterfall Model:
 
@@ -82,11 +90,22 @@ However, there are some disadvantages to the Waterfall Model:
 -   The model assumes that project requirements are fully defined from the beginning, which is rarely the case for smaller, non-critical software projects, particularly in research.
 -   The software is not seen by the client until late in the project timeline, which may increase the risk of it not meeting the client's expectations.
 
-![](fig/waterfall.png){alt="diagram of the waterfall model"}
+::: callout
+The [myki ticketing system project](https://www.audit.vic.gov.au/report/operational-effectiveness-myki-ticketing-system?section=) in Melbourne, Australia, demonstrates some of the limitations of the Waterfall approach.
 
-FIXME: add real life example
+The myki ticketing system was designed to replace the Metcard system for Public Transport Victoria, improving the efficiency and reliability of public transport.
+Almost \$1 billion was committed to this project in July 2005.
+
+The project was expected to be completed in two years but ended up taking over nine years in total and the budgeted cost was exceeded by 55%.
+Furthermore, due to the rigidly fixed scope and upfront planning, the system could not adapt to evolving user expectations or new technologies.
+The system was plagued by multiple issues including overcharging, slow touch readers, top-up delays and limited device compatibility.
+
+These issues were all symptomatic of the inflexible development process.
+:::
 
 ### V-Model
+
+The concept of the V-model was developed simultaneously, but independently, in Germany and in the United States in the late 1980s.
 
 The V-Model emphasises the importance of validating each level of the software development.
 This approach ensures that verification (checking work during development) and validation (checking final products against requirements) are systematically integrated throughout the process.
@@ -115,6 +134,23 @@ The right side of the V includes validation for each step, i.e. have you built t
 
 ![](fig/v-model.png){alt="image of the v-model of software development"}
 
+The V-Model is used in safety-critical, regulated industries where traceability, formal verification and compliance with standards are essential.
+These include:
+
+-   Aerospace and defense
+
+-   Automotive
+
+-   Medical devices
+
+-   Railways and transportation
+
+::: callout
+The V‑Model is a mandated development framework in German federal and defense software projects.
+
+This originated in the late 1980s with the Ministry of Defense and later extended to civilian administration.
+:::
+
 Advantages
 
 -   Focus on quality through early and continuous testing
@@ -128,7 +164,13 @@ Disadvantages
 
 -   No support for development activities to occur concurrently or to iterate.
 
-FIXME: add real life example
+::: callout
+The V-Model was used by [Siemens Healthineers](https://www.mdpi.com/2079-9292/13/11/2051) to develop their ultrasound systems Acuson SC2000 PRIME (from 2006) and Sequoia (from 2017).
+
+The product had to be aligned with medical device regulations and so required the rigorous traceability that the V-Model enables.
+
+Both projects used the V-Model alongside iterative approaches including Scrum.
+:::
 
 ### Iterative
 
@@ -144,19 +186,15 @@ In iterative development, a large application is built in smaller, manageable pa
 Each iteration includes planning, design, development, and testing, and produces a working version of the product.
 Unlike the Waterfall and V models, where the entire product is developed at once, iterative development adds features incrementally, with each cycle enhancing the functionality of the product.
 
-![image of iterative software development](fig/iterative.png)
+![](fig/iterative.png){alt="image of iterative software development"}
 
-Advantages of Iterative Development:
+::: callout
+The evolution of Google’s search engine exemplifies the principles of Agile development through continuous iteration and adaptation.
 
--   Progress on the software product can initially be faster as less time is spent on the requirements and design stages before starting implementation
--   Iterative approaches allow for continuous feedback, adaptation, and improvement throughout the project's lifecycle.
--   Defects can be found and corrected early, preventing them from affecting later stages.
--   After each iteration, feedback can be gathered from users, allowing for adjustments and improvements to meet their expectations.
+Rather than being developed in a rigid, one-time release, Google Search has undergone thousands of incremental improvements, including hundreds of algorithm updates annually.
 
-Disadvantages of Iterative Development:
-
--   Without fully determined requirements and design, software can become messy or 'hacky' if quality control standards are not maintained
--   Since not all requirements are defined from the start, unforeseen changes may arise during the development process which require revision of the software architecture, costing more time in the long run.
+Now handling at least 8.5 billion searches daily, Google’s sustained success is built on a foundation of iterative enhancements, frequent feedback integration, and rapid deployment.
+:::
 
 #### Spiral Model
 
@@ -167,9 +205,7 @@ More recently, the spiral model has been thought of as a 'process model generato
 
 Decisions about how much effort should be directed into each element of the project is guided by the goal of minimising the overall risk.
 
-![image of the spiral model of software development](fig/spiral.png)
-
-FIXME: add real life example
+![](fig/spiral.png){alt="image of the spiral model of software development"}
 
 #### Agile
 
@@ -187,6 +223,34 @@ These principles, outlined in the Manifesto for Agile Software Development, are 
 The Agile Manifesto was inspired by the desire for a more rapid and lightweight approach to software development, as an alternative to the more heavyweight processes such as Waterfall and V-Model.
 It drew on ideas from existing lightweight software development methods such as rapid application development, the rational unified process aka RUP, dynamic systems development method, scrum, extreme programming and feature driven development.
 Although these methods were developed in the 1990s, before the Agile Manifesto, they are now all referred to under the umbrella term 'Agile' and, with the exception of Scrum, these methods have now gone out of fashion.
+
+::: callout
+Amazon embodies the Agile principle of customer collaboration through relentless feedback-driven iteration.
+
+Amazon systematically gathers and acts on customer feedback to continually refine its products, and small, agile teams rapidly prototype and test ideas.
+
+This Agile model has driven Amazon's extensive expansion into e-commerce, cloud (AWS), smart devices, and subscription services.
+:::
+
+Advantages of Iterative Development:
+
+-   Progress on the software product can initially be faster as less time is spent on the requirements and design stages before starting implementation
+-   Iterative approaches allow for continuous feedback, adaptation, and improvement throughout the project's lifecycle.
+-   Defects can be found and corrected early, preventing them from affecting later stages.
+-   After each iteration, feedback can be gathered from users, allowing for adjustments and improvements to meet their expectations.
+
+Disadvantages of Iterative Development:
+
+-   Without fully determined requirements and design, software can become messy or 'hacky' if quality control standards are not maintained
+-   Since not all requirements are defined from the start, unforeseen changes may arise during the development process which require revision of the software architecture, costing more time in the long run.
+
+::: callout
+The [UK's Universal Credit welfare reform project](https://www.computerweekly.com/news/2240185166/Universal-Credit-will-cost-taxpayers-128bn) demonstrates that estimating timings and delivery costs can be challenging when using an Agile delivery method.
+
+The project was initially budgeted at £2.2 billion but is estimated to have cost £15-16 billion.
+
+Originally due to complete by 2017, the project end date is now 2028.
+:::
 
 #### Scrum
 
@@ -211,8 +275,6 @@ In Scrum:
 6.  Repeat
 
 ![](fig/scrum_simplified.png){alt="simplified diagram of scrum with arrows showing that the product backlog is broken down into sprint backlogs and these are worked on throughout a sprint to create an increment of value"}
-
-FIXME: add real life example
 
 ::: callout
 ## Scrum Buzzwords Decoded
@@ -322,17 +384,11 @@ Below is a list of tasks, discuss whether each task belongs in software developm
 -   Software Engineering by Ian Sommerville
 -   Software Engineering: Theory and Practice by Shari Lawrence Pfleeger
 -   [British Standards Online](https://library.soton.ac.uk/techinfo/standards)
--   ISO/IEC/IEEE 12207 Systems and software engineering – Software life cycle processes
--   ISO/IEC/IEEE 15288 Systems and software engineering – System life cycle processes
--   ISO/IEC 29110-1-1 Systems and software engineering – Lifecycle profiles for very small entities (VSEs) Part 1-1: Overview
--   ISO/IEC 29110-5-4 Systems and software engineering – Lifecycle profiles for very small entities (VSEs) Part 5-4: Agile software development guidelines
--   TickITplus Base Process Library: ORG.10 Lifecycle Model Management
--   IEEE SWEBOK Software Engineering Body of Knowledge
--   Waterfall Method ideas from [geeksforgeeks](https://www.geeksforgeeks.org/waterfall-model/)
--   V-Model ideas from [geeksforgeeks](https://www.geeksforgeeks.org/software-engineering-sdlc-v-model/)
--   Iterative ideas from from [Eastern Peak](https://easternpeak.com/definition/iterative-development/#:~:text=Iterative%20development%20is%20a%20software,%2C%20development%2C%20and%20testing%20steps.)
--   [Agile wikipedia](https://en.wikipedia.org/wiki/Agile_software_development)
--   [PRINCE2 wikipedia](https://en.wikipedia.org/wiki/PRINCE2)
+-   [V-Model](https://en.wikipedia.org/wiki/V-model)
+-   [Waterfall Model](https://en.wikipedia.org/wiki/Waterfall_model)
+-   Iterative ideas from [Eastern Peak](https://easternpeak.com/definition/iterative-development/#:~:text=Iterative%20development%20is%20a%20software,%2C%20development%2C%20and%20testing%20steps.)
+-   [Agile](https://en.wikipedia.org/wiki/Agile_software_development)
+-   [PRINCE2](https://en.wikipedia.org/wiki/PRINCE2)
 
 ::: keypoints
 -   The typical stages of a software development process are: requirements gathering, design, implementation, testing, deployment and maintenance
