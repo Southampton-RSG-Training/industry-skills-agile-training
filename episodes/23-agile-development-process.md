@@ -38,6 +38,20 @@ Scrum is designed to make clear the effectiveness of existing working techniques
 Scrum is an iterative, incremental approach.
 It aims to reduce risk and increase predictability.
 
+:::: challenge
+1.  It is intentionally \_\_\_\_\_\_\_\_\_\_, meaning it provides only the essential structure and leaves room for adaptation.
+2.  Scrum is based on \_\_\_\_\_\_\_\_\_\_, which means knowledge comes from experience and decisions are based on observation.
+3.  It also draws on \_\_\_\_\_\_\_\_\_\_ thinking, which emphasizes reducing waste and maximizing value.
+4.  Scrum is both \_\_\_\_\_\_\_\_\_\_ and \_\_\_\_\_\_\_\_\_\_, allowing teams to inspect and adapt regularly.
+
+::: solution
+1.  incomplete
+2.  empiricism
+3.  lean
+4.  iterative, incremental
+:::
+::::
+
 # Scrum Pillars
 
 The effectiveness of Scrum relies on three core pillars that support its empirical foundation:
@@ -53,6 +67,11 @@ The effectiveness of Scrum relies on three core pillars that support its empiric
 **Without transparency, inspection is misleading. Without inspection, adaptation is impossible.**
 
 The pillars are interconnected and each one is critical to Scrum.
+:::
+
+::: discussion
+What’s an example of “transparency” you’ve seen—or failed to see—in a previous project?
+How did it affect the outcome?
 :::
 
 # Scrum Values
@@ -73,6 +92,12 @@ These guide the Scrum Team's work, actions and behaviour.
 
 Scrum isn't just a set of meetings and roles.
 Scrum only works when the team truly adopts the values it was built to support.
+
+::: discussion
+Which Scrum Value do you find hardest to practice?
+Why?
+How could a team support each other in developing it?
+:::
 
 ::: keypoints
 -   FIXME
