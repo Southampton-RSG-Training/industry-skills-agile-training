@@ -9,9 +9,12 @@ exercises: 0
 :::
 
 ::: objectives
--   Explain the importance and benefits of a repeatable and defined working process
+-   Explain the Philosophy of Scrum
 -   List and briefly describe the three Scrum Pillars
 -   List and briefly describe the five Scrum Values
+-   Describe the responsibilities of the three Scrum roles
+-   Describe the purpose of the sprint backlog and how it is used throughout a sprint
+-   Define Definition of Done
 :::
 
 # Scrum Philosophy
@@ -194,7 +197,7 @@ It evolves constantly based on things like feedback, market shifts, and changing
 The Product Goal is the long-term vision for the product, a clear destination that the team is moving toward over time.
 
 ::: callout
-## Designing a Board Game 'The Solent Voyage'
+## Designing a Board Game: The Solent Voyage
 
 Imagine you have an idea to create a board game 'The Solent Voyage', about a ship that sailed from Southampton in Roman times.
 
