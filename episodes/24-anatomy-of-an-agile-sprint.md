@@ -147,6 +147,21 @@ The Scrum Master reminded the team to consider the Definition of Done and ensure
 
 ## Daily Scrum Meeting
 
+The Scrum Team meet each day to inspect progress toward the Sprint Goal, adapt the Sprint Backlog and adjust plans for upcoming work. 
+
+The Daily Scrum isn’t just a status update; it’s a communication booster that helps the team:
+
+-   See progress toward the Sprint Goal
+-   Surface and solve problems faster
+-   Make quick decisions
+-   Reduce the need for additional meetings
+-   Keep momentum going with clear next steps
+
+This meeting should usually last no longer than 15 minutes and is usually held in the same time and place every working day of the Sprint.
+
+The Daily Scrum can take any structure and use any techniques as long as it focuses on progress toward the Sprint Goal and produces a plan for the next day of work.  
+
+The Daily Scrum Meeting isn't the only time that Developers can discuss and adjust their plans. Developers can also meet throughout the day to re-adjust plans or to have more detailed discussions. 
 
 ::: challenge
 Practice conducting a daily scrum meeting
