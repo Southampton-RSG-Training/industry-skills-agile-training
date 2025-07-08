@@ -21,7 +21,12 @@ exercises: 0
 A Sprint in Scrum is a fixed-length event, usually between one week and one month in length.
 All work that is needed to achieve the Product Goal is contained within Sprints.
 
-There are four Scrum Events within a Sprint: - Sprint Planning Meeting - Daily Scrum Meeting - Sprint Review - Sprint Retrospective
+There are four Scrum Events within a Sprint:
+
+-   Sprint Planning Meeting
+-   Daily Scrum Meeting
+-   Sprint Review
+-   Sprint Retrospective
 
 All of the Scrum Events are designed to enable transparency and to give formal opportunities to inspect and adapt Scrum artifacts.
 
@@ -97,59 +102,56 @@ The Scrum Master reminded the team to consider the Definition of Done and ensure
 
 **Questions**
 
-1.   What aspects of the Sprint Planning went well?
-2.   What important elements were missing or could be improved?
-3.   Why is it important to discuss features like messaging and scheduling during Sprint Planning?
-4.   How could the Sprint Goal be reframed to focus more on delivering user value?
-5.   What would you recommend for the team to do differently in the next Sprint Planning session?
+1.  What aspects of the Sprint Planning went well?
+2.  What important elements were missing or could be improved?
+3.  Why is it important to discuss features like messaging and scheduling during Sprint Planning?
+4.  How could the Sprint Goal be reframed to focus more on delivering user value?
+5.  What would you recommend for the team to do differently in the next Sprint Planning session?
 
 ::: solution
-
 **1. What aspects of the Sprint Planning went well?**
 
-- Clear Sprint Goal aligned with the Product Goal.  
-- Thoughtful breakdown of Product Backlog items into concrete tasks.  
-- Inclusion of testing and peer reviews highlights focus on quality.  
-- Scrum Master emphasised the Definition of Done, reinforcing standards.  
-- Open discussion of team capacity and challenges with new technologies.
+-   Clear Sprint Goal aligned with the Product Goal.
+-   Thoughtful breakdown of Product Backlog items into concrete tasks.
+-   Inclusion of testing and peer reviews highlights focus on quality.
+-   Scrum Master emphasised the Definition of Done, reinforcing standards.
+-   Open discussion of team capacity and challenges with new technologies.
 
 **2. What important elements were missing or could be improved?**
 
-- Messaging and scheduling features were not addressed or prioritised.  
-- Lack of Product Owner clarity on feature prioritisation and roadmap.  
-- No plan to manage risks related to unfamiliar technologies.  
-- Missing discussion on dependencies or backlog refinement status.  
-- No mitigation strategy for uncertainties in capacity estimation.
+-   Messaging and scheduling features were not addressed or prioritised.
+-   Lack of Product Owner clarity on feature prioritisation and roadmap.
+-   No plan to manage risks related to unfamiliar technologies.
+-   Missing discussion on dependencies or backlog refinement status.
+-   No mitigation strategy for uncertainties in capacity estimation.
 
 **3. Why is it important to discuss features like messaging and scheduling during Sprint Planning?**
 
-- They are core features critical to the app’s success and user satisfaction.  
-- Early discussion ensures prioritisation aligns with business goals and stakeholder expectations.  
-- Helps identify dependencies and plan future Sprints effectively.  
-- Avoids last-minute surprises or bottlenecks later in development.
+-   They are core features critical to the app’s success and user satisfaction.
+-   Early discussion ensures prioritisation aligns with business goals and stakeholder expectations.
+-   Helps identify dependencies and plan future Sprints effectively.
+-   Avoids last-minute surprises or bottlenecks later in development.
 
 **4. How could the Sprint Goal be reframed to focus more on delivering user value?**
 
-- Instead of focusing on features, express the goal in terms of user outcomes, for example:  
-  *“Allow dog owners to create profiles and easily find playdate partners nearby to start connecting.”*  
-- This keeps the team focused on the why, not just the what.
+-   Instead of focusing on features, express the goal in terms of user outcomes, for example *“Allow dog owners to create profiles and easily find playdate partners nearby to start connecting.”*
+-   This keeps the team focused on the why, not just the what.
 
 **5. What would you recommend for the team to do differently in the next Sprint Planning session?**
 
-- Collaborate with the Product Owner to clarify backlog priorities and feature timelines.  
-- Include backlog refinement updates to ensure readiness of items.  
-- Plan for risk management and capacity uncertainties, possibly with technical spikes.  
-- Discuss dependencies and integration challenges.  
-- Encourage open communication and adjustment of the Definition of Done if needed.
-
+-   Collaborate with the Product Owner to clarify backlog priorities and feature timelines.
+-   Include backlog refinement updates to ensure readiness of items.
+-   Plan for risk management and capacity uncertainties, possibly with technical spikes.
+-   Discuss dependencies and integration challenges.
+-   Encourage open communication and adjustment of the Definition of Done if needed.
 :::
 ::::
 
 ## Daily Scrum Meeting
 
-The Scrum Team meet each day to inspect progress toward the Sprint Goal, adapt the Sprint Backlog and adjust plans for upcoming work. 
+The Scrum Team meet each day to inspect progress toward the Sprint Goal, adapt the Sprint Backlog and adjust plans for upcoming work.
 
-The Daily Scrum isn’t just a status update; it’s a communication booster that helps the team:
+The Daily Scrum isn’t just a status update, it helps the Scrum Team:
 
 -   See progress toward the Sprint Goal
 -   Surface and solve problems faster
@@ -159,9 +161,10 @@ The Daily Scrum isn’t just a status update; it’s a communication booster tha
 
 This meeting should usually last no longer than 15 minutes and is usually held in the same time and place every working day of the Sprint.
 
-The Daily Scrum can take any structure and use any techniques as long as it focuses on progress toward the Sprint Goal and produces a plan for the next day of work.  
+The Daily Scrum can take any structure and use any techniques as long as it focuses on progress toward the Sprint Goal and produces a plan for the next day of work.
 
-The Daily Scrum Meeting isn't the only time that Developers can discuss and adjust their plans. Developers can also meet throughout the day to re-adjust plans or to have more detailed discussions. 
+The Daily Scrum Meeting isn't the only time that Developers can discuss and adjust their plans.
+Developers can also meet throughout the day to re-adjust plans or to have more detailed discussions.
 
 ::: challenge
 Practice conducting a daily scrum meeting
