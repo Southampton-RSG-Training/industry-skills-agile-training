@@ -11,16 +11,171 @@ exercises: 0
 ::::::::::::::::::::::::::::::::::::::::::::::::
  
 ::::::::::::::::::::::::::::::::::::: objectives
- 
+
+- Describe how workflow relates to process
+- Describe the purpose of branches in a repository
 - Define the elements of a feature-branch workflow
+- Describe four major strategies for merging branches
 - Bullet-point some advantages and limitations of working in a feature-branch workflow
+- Verify that team is able to developing using project repository locally
+- Create and use a branch
 - Define a pull request and identify some reasons for using pull requests
 - Submit a pull request in GitHub
+- Review a pull request
 - Resolve a small conflict between two branches
-
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
- 
+
+## How are a Development Process and Version Control Related?
+
+FIXME: how the use of infrastructure should reflect and support how the team operates
+FIXME: the reality of simultaneous strands of development in a project
+FIXME: the main branch, the need for multiple branches
+
+## Introduction to Feature Branch Workflow
+
+FIXME: a process picture overview, of branch creation and commits to it, to branch merge
+FIXME: then add two steps in-between: the pull request and code review
+
+### Git Branches
+
+You might be used to committing code directly, but not sure what branches really are or why they matter?
+When you start a new Git repository and begin committing,
+all changes go into a branch — by default, this is usually called `main` (or `master` in older repositories).
+The name "main" is just a convention — a Git repository’s default branch can technically be named anything.
+
+So why not just always use the main branch?
+While it is possible to always commit to `main`, it is not ideal when you’re collaborating with others,
+or when you are working on new features or want to experiment with your code and you want to keep main clean and stable for your users and collaborators.
+
+## Feature Branches
+
+Creating and working on a separate branch, often called a “feature” branch, allows you to add or test code containing a new “feature” by adding commits to this branch without affecting the main line of development.
+So, working on a separate branch for each feature you are adding is good for several reasons:
+
+- it enables the main branch to remain stable while you and the team explore and test the new code on a feature branch,
+- it enables you to keep the untested and not-yet-functional feature branch code under version control and backed up,
+- you and other team members may work on several features at the same time independently from one another, and
+- if you decide that the feature is not working or is no longer needed - you can easily and safely discard that branch without affecting the rest of the code.
+
+You should consider starting a new branch whenever you are working on a distinct feature or fixing a specific bug.
+This allows you to collect a related set of commits in one place, without interfering with other parts of the project.
+Once the work is complete and has been tested, the branch is reviewed by project collaborators (other than the code author), any merge conflicts addressed and the new work merged back into the main branch.
+
+This approach is known as *feature branch workflow*.
+
+## Branch Merging Strategies
+
+When you are ready to bring the changes from your feature branch back into the main branch, Git offers you to do a merge - a process that unifies work done in 2 separate branches. 
+Git will take two (or more - you can merge more branches at the same time) commit pointers and attempt to find a common base commit between them. 
+Git has several different methods of finding the base commit - these methods are called "merge strategies". Once Git finds the common base commit it will create a new "merge commit" that combines the changes of the specified merge commits. Technically, a merge commit is a regular commit which just happens to have two parent commits.
+
+Each merge strategy is suited for a different scenario. The choice of strategy depends on the complexity of changes and the desired outcome. Let's have a look at the most commonly used merge strategies.
+
+### Fast Forward Merge
+
+A fast-forward merge occurs when the main branch has not diverged from the feature branch - meaning there are no new commits on the main branch since the feature branch was created. 
+
+```text
+A - B - C [main]
+         \
+          D - E [feature]
+```
+
+In this case, Git simply moves the main branch pointer to the latest commit in the feature branch. This strategy is simple and keeps the commit history linear - i.e. the history is one straight line.
+
+After a fast forward merge:
+
+```text
+A - B - C - D - E [main][feature]
+```
+
+### 3-Way Merge with Merge Commit
+
+A fast-forward merge is not possible if the main and the feature branches have diverged. 
+
+```text
+A - B - C - F [main]
+         \
+          D - E [feature]
+```
+
+If you try to merge your feature branch changes into the main branch and other changes have been made to main - regardless of whether these changes create a conflict or not - Git will try to do a 3-way merge and generate a merge commit. 
+
+A merge commit is a dedicated special commit that records the combined changes from both branches and has two parent commits, preserving the history of both lines of development. The name "3-way merge" comes from the fact that Git uses three commits to generate the merge commit - the two branch tips and their common ancestor to reconstruct the changes that are to be merged.
+
+```text
+A - B - C - F - "MergeCommitG" [main]
+         \     /
+          D - E [feature]
+```
+
+In addition, if the two branches you are trying to merge both changed the same part of the same file, Git will not be able to figure out which version to use and merge automatically.
+When such a situation occurs, it stops right before the merge commit so that you can resolve the conflicts manually before continuing.
+	
+### Rebase & Merge
+
+In Git, there is another way to integrate changes from one branch into another: the rebase.
+
+Let's go back to an earlier example from the 3-way merge, where main and feature branches have diverged with subsequent commits made on each (so fast-forward merging strategy is not an option).
+
+```text
+A - B - C - F [main]
+         \
+          D - E [feature]
+```
+
+When you rebase the feature branch with the main branch, Git replays each commit from the feature branch on top of all the commits from the main branch in order. This results in a cleaner, linear history that looks as if the feature branch was started from the latest commit on main. 
+
+So, all the changes introduced on feature branch (commits D and E) are reapplied on top of commit F - becoming D' and E'. Note that D' and E' are rebased commits, which are actually new commits with different SHAs but the same modifications as commits D and E.
+
+
+```text
+A - B - C - F [main]
+             \
+              D' - E' [feature]
+```
+
+At this point, you can go back to the main branch and do a fast-forward merge with feature branch.
+
+Fast forward merge strategy is best used when you have a short-lived feature branch that needs to be merged back into the main branch, and no other changes have been made to the main branch in the meantime.
+
+Rebase is ideal for feature branches that have fallen behind the main development line and need updating. It is particularly useful before merging long-running feature branches to ensure they apply cleanly on top of the main branch.
+Rebasing maintains a linear history and avoids merge commits (like fast forwarding), making it look as if changes were made sequentially and as if you created your feature branch from a different point in the repository's history. 
+A disadvantage is that it rewrites commit history, which can be problematic for shared branches as it requires force pushing.
+
+Here is a little comparison of the three merge strategies we have covered so far.
+
+| Fast Forward            | Rebasing              | 3-Way Merge          |
+| ----------------------- | ----------------------|----------------------|
+| Maintains linear history  |  Maintains linear history | Non-linear history (commit with 2 parents) |
+| No new commits on main | New commits on main | New commits on main |
+| Avoids merge commits         | Avoids merge commits | Uses merge commits |
+| Only works if there are no new commits on the main branch        | Works for diverging branches | Works for diverging branches |
+| Does not rewrite commit history | Rewrites commit history | Does not rewrite commit history |
+
+### Squash & Merge
+
+Squash and merge squashes all the commits from a feature branch into a single commit before merging into the main branch. This strategy simplifies the commit history, making it easier to follow.
+This strategy is ideal for merging feature branches with numerous small commits, resulting in a cleaner main branch history. 
+
+```text
+A - B - C - F - "SquashCommitG" [main]
+         \
+          D - E [feature]
+```
+
+## Pull Requests and Code Reviews
+
+FIXME: a pull request is an check (or insurance policy?) against merging bad commits
+
+## Submitting a Pull Request
+
+## Reviewing Code
+
+## Merging the Pull Request
+
+
 :::::::::::::::::::::::::::::::::::::: keypoints
  
 - FIXME
