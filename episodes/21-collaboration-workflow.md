@@ -48,7 +48,7 @@ So why not just always use the main branch?
 While it is possible to always commit to `main`, it is not ideal when you’re collaborating with others,
 or when you are working on new features or want to experiment with your code and you want to keep main clean and stable for your users and collaborators.
 
-## Feature Branches
+### Feature Branches
 
 Creating and working on a separate branch, often called a “feature” branch, allows you to add or test code containing a new “feature” by adding commits to this branch without affecting the main line of development.
 So, working on a separate branch for each feature you are adding is good for several reasons:
@@ -129,7 +129,6 @@ When you rebase the feature branch with the main branch, Git replays each commit
 
 So, all the changes introduced on feature branch (commits D and E) are reapplied on top of commit F - becoming D' and E'. Note that D' and E' are rebased commits, which are actually new commits with different SHAs but the same modifications as commits D and E.
 
-
 ```text
 A - B - C - F [main]
              \
@@ -144,16 +143,6 @@ Rebase is ideal for feature branches that have fallen behind the main developmen
 Rebasing maintains a linear history and avoids merge commits (like fast forwarding), making it look as if changes were made sequentially and as if you created your feature branch from a different point in the repository's history. 
 A disadvantage is that it rewrites commit history, which can be problematic for shared branches as it requires force pushing.
 
-Here is a little comparison of the three merge strategies we have covered so far.
-
-| Fast Forward            | Rebasing              | 3-Way Merge          |
-| ----------------------- | ----------------------|----------------------|
-| Maintains linear history  |  Maintains linear history | Non-linear history (commit with 2 parents) |
-| No new commits on main | New commits on main | New commits on main |
-| Avoids merge commits         | Avoids merge commits | Uses merge commits |
-| Only works if there are no new commits on the main branch        | Works for diverging branches | Works for diverging branches |
-| Does not rewrite commit history | Rewrites commit history | Does not rewrite commit history |
-
 ### Squash & Merge
 
 Squash and merge squashes all the commits from a feature branch into a single commit before merging into the main branch. This strategy simplifies the commit history, making it easier to follow.
@@ -164,6 +153,29 @@ A - B - C - F - "SquashCommitG" [main]
          \
           D - E [feature]
 ```
+
+Note that unlike the 3-way merge, `SquashCommitG` only has one parent, `F`,
+so does not preserve the link to the commits on the feature branch upon which `SquashCommitG` is based.
+This has caused some to consider squash commits harmful,
+since that part of the commit history is lost.
+For this reason, squash commits are handy when you want to clean up a commit history from a short-lived feature branch prior to merging to `main`,
+but problematic with longer lived branches or when maintaining commit history is important.
+
+FIXME: verify squash commit has only 1 parent when using a squash-merged PR
+
+## Summary
+
+Here is a little comparison of the three merge strategies we have covered so far.
+
+| Fast Forward            | Rebasing              | 3-Way Merge          | Squash Merge    |
+| ----------------------- | ----------------------|----------------------|-----------------|
+| Maintains linear history  |  Maintains linear history | Non-linear history (commit with 2 parents) | Linear history (commit with 1 parent) |
+| No new commits on main | New commits on main | New commits on main | One new commit on main |
+| Avoids merge commits         | Avoids merge commits | Uses merge commits | Avoids merge commits |
+| Only works if there are no new commits on the main branch        | Works for diverging branches | Works for diverging branches | Works for diverging branches |
+| Does not rewrite commit history | Rewrites commit history | Does not rewrite commit history | Does not rewrite commit history |
+
+
 
 ## Pull Requests and Code Reviews
 
