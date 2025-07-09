@@ -42,6 +42,12 @@ Scrum is an iterative, incremental approach.
 It aims to reduce risk and increase predictability.
 
 :::: challenge
+## Fill in the Blanks
+
+**Solo Challenge**
+
+We've just introduced some key concepts of Scrum philosophy.  To reinforce your learning, think about the information you've just read (or heard) and fill in the blanks to create sentences that accurately describe the philosophy of Scrum. 
+
 1.  It is intentionally \_\_\_\_\_\_\_\_\_\_, meaning it provides only the essential structure and leaves room for adaptation.
 2.  Scrum is based on \_\_\_\_\_\_\_\_\_\_, which means knowledge comes from experience and decisions are based on observation.
 3.  It also draws on \_\_\_\_\_\_\_\_\_\_ thinking, which emphasizes reducing waste and maximizing value.
@@ -75,9 +81,37 @@ The pillars are interconnected and each one is critical to Scrum.
 :::
 
 ::: discussion
-What’s an example of “transparency” you’ve seen—or failed to see—in a previous project?
-How did it affect the outcome?
+## What happens when the Pillar of Transparency Crumbles?
+
+**Group Challenge**
+
+Discuss in small groups the following questions:
+
+-   What’s an example of “transparency” you’ve seen - or failed to see - in a previous project?
+
+-   How did it affect the outcome?
 :::
+
+:::: challenge
+
+During a Daily Stand-Up Meeting, inspecting the progress on the project reveals some problems:
+
+-   A developer has created a front-end component which displays some output from an API endpoint, but the endpoint doesn't currently exist and isn't scheduled for the current Sprint.  The Developer can't continue with the rest of their work until this endpoint is in place.
+-   When discussing their planned work, the group notices that two developers are working on elements that heavily depend on each other - if one isn't compatible with the other, the software won't work. 
+-   One developer is scheduled to work on a large task over the next couple of days, which is critical to the rest of the group's work.  However, the developer is going on holiday the next day.
+
+
+::: solution
+
+Suggested **adaptations** (others are also possible):
+
+-   Talk to the Product Owner to determine whether the creation of this API endpoint can be moved to the current Sprint and decide which tasks could be deprioritised to enable this.
+-   The two developers decide to set up co-working sessions using pair programming and whiteboard design to ensure that the components are compatible.
+-   Reassign the large task to another developer and assign the developer who's going on holiday to smaller task(s) that can be finished in less than a day. 
+
+:::
+
+::::
 
 # Scrum Values
 
@@ -98,10 +132,16 @@ These guide the Scrum Team's work, actions and behaviour.
 Scrum isn't just a set of meetings and roles.
 Scrum only works when the team truly adopts the values it was built to support.
 
-::: discussion
-Which Scrum Value do you think you would find hardest to practice?
-Why?
-How could a team support each other in developing it?
+::: challenge
+## Scrum Values in Practice
+
+**Solo Challenge**
+
+Think about the following questions and note down your thoughts in the shared document:
+
+-   Which Scrum Value do you think you would find hardest to put into practice?
+-   Why?
+-   How could a team support each other in developing that Scrum Value?
 :::
 
 # Scrum Team
@@ -157,20 +197,32 @@ You could think of the Scrum Master as a coach, empowering the Scrum Team to wor
 
 (Picture of encouraging coach)
 
+
+::: callout
+## Roles Aren't Always Fixed
+
+In practice, Scrum Team roles are often flexible. Each person doesn't necessarily only take one role. 
+
+For instance:
+
+-   The Scrum Master role might rotate between several developers.
+
+-   One person could even take on all three roles for a solo project. 
+
+Scrum defines the roles but teams can adapt them to fit their context.
+
+:::
+
 ::: challenge
-## Developer, Product Owner or Scrum Master - Which Role would you Choose?
+## Getting in the Mindset of a Scrum Team Member
 
-(Discuss in pairs)
+**Group Discussion**
 
-Imagine you’ve just joined a new Scrum Team.
-You’re given the choice to fill one of the three roles.
-Which would you choose and why?
+Pick one of the Scrum Team roles and discuss within your group:
 
-Consider:
+-   What challenges might you face in the role?
+-   What skills or mindset would you need to succeed in the role?
 
--   Which role best matches your strengths, interests, or career goals?
--   What skills or mindset would you need to succeed in that role?
--   What challenges might you face in the role and how would you handle them?
 :::
 
 # Scrum Artifacts and Commitments
@@ -209,15 +261,22 @@ You may not know all the mechanics or artwork details yet, but you know what suc
 
 The Product Backlog is your ever-evolving list of features and ideas:
 
--   Design core mechanics (combat, trade, movement)
 -   Create player roles and abilities
--   Write the rules
--   Sketch the game board
+-   Draft simple turn mechanics for the game
+-   Design custom mechanics for each role's combat, trade, and movement
+-   Write the a comprehensive rulebook
+-   Decide win/lose conditions
+-   Sketch a rough paper game board
+-   Design custom artwork for the board
+-   Print the game board onto high quality material
+-   Create quick example cards
 -   Design and print cards
 -   Build a scoring system
--   Test it out with real people
+-   Run a short 20-minute test with two players
+-   Run a full test with four players
+-   Gather feedback from players
 -   Create custom miniatures for each character
--   Add artwork and polish
+
 
 Some items are critical (like the rules), others are stretch goals (like custom miniatures).
 The backlog helps your team stay focused on building toward the big idea.
@@ -245,30 +304,53 @@ You’re not building the whole game at once - during the first Sprint, you’re
 
 For example, your Sprint Goal might be: “Test the basic turn system with 2 players using paper placeholders.”
 
-Your Sprint Backlog includes all the tasks needed to get there:
-
--   Draft simple turn mechanics
--   Create quick example cards
--   Sketch a rough paper game board
--   Decide win/lose conditions
--   Run a short 20-minute test
--   Gather feedback from players
+From this Sprint Goal you would create your Sprint Backlog, which would include all the tasks needed to achieve this goal.
 
 If you completed all the items in the Sprint Backlog, you would still be far from achieving the Product Goal, but your Sprint Goal is a stepping stone in the right direction.
 :::
+
+:::: challenge
+## Sprint Backlog for the Sail Away
+
+**Group Challenge**
+
+You have the Sprint Goal: “Test the basic turn system with 2 players using paper placeholders.”
+
+Discuss in your group:
+
+Which items would you select from the Product Backlog for this Sprint?
+
+::: solution
+
+Your Sprint Backlog might include:
+
+-   Draft simple turn mechanics for the game
+-   Create quick example cards
+-   Sketch a rough paper game board
+-   Decide win/lose conditions
+-   Run a short 20-minute test with two players
+-   Gather feedback from players
+
+:::
+
+::::
 
 ## Increment
 
 The Increment is the result of the Scrum Team's work during the Sprint and is a working, usable part of the product that meets any quality criteria that have been agreed.
 
-The Increment should be: - Integrated with the rest of the product - Tested - Reviewed\
-- Potentially releasable
+The Increment should be:
+
+-   Integrated with the rest of the product
+-   Tested 
+-   Reviewed
+-   Potentially releasable
 
 The Increment includes the sum of all previous Increments and so it increases in value after every Sprint.
 
 ### Commitment: Definition of Done
 
-The Definition of Done is a a formal description of the state that the Increment should be in to meet the quality measures required for the product
+The Definition of Done is a a formal description of the state that the Increment should be in to meet the quality measures required for the product.
 
 You could think of the increment as being like a brick in a wall.
 The Definition of Done would be a checklist to ensure that the brick is strong, stable, and usable in the wall.
@@ -279,7 +361,23 @@ The Definition of Done would be a checklist to ensure that the brick is strong, 
 At the end of the Sprint, your team has a working prototype.
 The artwork might be rough and the game play might be unbalanced, but it can be played and evaluated.
 
-That's your Increment: an overly simple and incomplete, but usable version of the game that brings you closer to your Product Goal.
+That's your Increment: an overly simple and incomplete, but usable, version of the game that brings you closer to your Product Goal.
+
+If the Increment meets the Definition of Done, it will become part of the growing, evolving game.
+
+Next Sprint, you might improve the experience further, possibly by expanding the the map area for the game, balancing roles, or designing better cards.
+:::
+
+:::: challenge
+## Voyage Complete?
+
+**Group Challenge**
+
+The Definition of Done is an important checklist of the quality standards that each Increment must meet.
+
+Discuss and write down a possible Definition of Done for the Solent Voyage project?
+
+::: solution
 
 The Definition of Done in this case might be:
 
@@ -288,9 +386,9 @@ The Definition of Done in this case might be:
 -   The test players complete a game.
 -   Any bugs or confusing moments were documented.
 
-Only if the Increment meets the Definition of Done will it become part of the growing, evolving game.
-Next Sprint, you might improve the experience further, possibly by expanding the the map area for the game, balancing roles, or designing better cards.
 :::
+
+::::
 
 ::: keypoints
 -   FIXME

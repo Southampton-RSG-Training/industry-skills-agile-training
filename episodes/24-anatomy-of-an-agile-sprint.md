@@ -66,29 +66,28 @@ Time-boxing the meeting keeps the discussion focussed and allows the Scrum Team 
 :::
 
 :::: challenge
-## Dog Playdate Planner
+## Puppy Playdate Planner
 
-(Discuss in small groups)
+**Group Challenge**
 
-Read the following Sprint Planning summary from a fictional Scrum Team working on the Dog Playdate Planner app.
-Then answer the questions below.
+Read the following scenario about the Puppy Playdate Planner app and discuss the questions at the end.
 
-**Scenario**
+**Sprint Planning Meeting Scenario**
 
-Your Scrum Team is working on the Dog Playdate Planner app.
-The Product Goal is: “Help dog owners connect and organise playdates easily.”
+Imagine your Scrum Team is working on the Puppy Playdate Planner app.
+The Product Goal is: “Help puppy owners connect and organise playdates easily.”
 
-During Sprint Planning, the team agreed on this Sprint Goal: “Enable creation of dog profiles and the functionality to search for nearby dogs.”
+During Sprint Planning, the team agreed on this Sprint Goal: “Enable creation of puppy profiles and the functionality to search for nearby puppies.”
 
 They selected these Product Backlog items for the Sprint:
 
--   Dog profiles (breed, age, personality, photo upload)
--   Location-based search for nearby dog owners
+-   Puppy profiles (breed, age, personality, photo upload)
+-   Location-based search for nearby puppy owners
 -   Basic UI for profile creation and search results
 
 The Developers planned these tasks:
 
--   Design UI wireframes and mockups
+-   Design user interface wireframes and mockups
 -   Develop backend APIs for profiles and search
 -   Implement photo upload and location filtering
 -   Write unit and integration tests
@@ -100,13 +99,12 @@ Some Developers were unsure how much work they could complete due to unfamiliari
 
 The Scrum Master reminded the team to consider the Definition of Done and ensure the Increment would be fully integrated and tested.
 
-**Questions**
+**Questions:**
 
-1.  What aspects of the Sprint Planning went well?
-2.  What important elements were missing or could be improved?
-3.  Why is it important to discuss features like messaging and scheduling during Sprint Planning?
-4.  How could the Sprint Goal be reframed to focus more on delivering user value?
-5.  What would you recommend for the team to do differently in the next Sprint Planning session?
+**1. Which aspects of the Sprint Planning Meeting went well?**
+
+**2. Which aspects of the Sprint Planning Meeting could be improved?**
+
 
 ::: solution
 **1. What aspects of the Sprint Planning went well?**
@@ -117,33 +115,15 @@ The Scrum Master reminded the team to consider the Definition of Done and ensure
 -   Scrum Master emphasised the Definition of Done, reinforcing standards.
 -   Open discussion of team capacity and challenges with new technologies.
 
-**2. What important elements were missing or could be improved?**
+**2. What aspects of this Sprint Planning Meeting could be improved?**
 
--   Messaging and scheduling features were not addressed or prioritised.
--   Lack of Product Owner clarity on feature prioritisation and roadmap.
--   No plan to manage risks related to unfamiliar technologies.
--   Missing discussion on dependencies or backlog refinement status.
--   No mitigation strategy for uncertainties in capacity estimation.
+-   Discuss important features that will be developed in later sprints, such as messaging and scheduling, to make sure that they can be integrated into the current work.
+-   Check with the product owner on feature prioritisation and roadmap.
+-   Plan to manage risks related to unfamiliar technologies.
+-   Discuss dependencies for each task to make sure no developer is likely to become blocked.
+-   Form a mitigation strategy for uncertainties in capacity estimation.
+-   Express the Sprint Goal in terms of user outcomes, instead of focusing on features, for example: *“Allow puppy owners to create profiles and easily find playdate partners nearby to start connecting.”*
 
-**3. Why is it important to discuss features like messaging and scheduling during Sprint Planning?**
-
--   They are core features critical to the app’s success and user satisfaction.
--   Early discussion ensures prioritisation aligns with business goals and stakeholder expectations.
--   Helps identify dependencies and plan future Sprints effectively.
--   Avoids last-minute surprises or bottlenecks later in development.
-
-**4. How could the Sprint Goal be reframed to focus more on delivering user value?**
-
--   Instead of focusing on features, express the goal in terms of user outcomes, for example *“Allow dog owners to create profiles and easily find playdate partners nearby to start connecting.”*
--   This keeps the team focused on the why, not just the what.
-
-**5. What would you recommend for the team to do differently in the next Sprint Planning session?**
-
--   Collaborate with the Product Owner to clarify backlog priorities and feature timelines.
--   Include backlog refinement updates to ensure readiness of items.
--   Plan for risk management and capacity uncertainties, possibly with technical spikes.
--   Discuss dependencies and integration challenges.
--   Encourage open communication and adjustment of the Definition of Done if needed.
 :::
 ::::
 
@@ -159,15 +139,74 @@ The Daily Scrum isn’t just a status update, it helps the Scrum Team:
 -   Reduce the need for additional meetings
 -   Keep momentum going with clear next steps
 
-This meeting should usually last no longer than 15 minutes and is usually held in the same time and place every working day of the Sprint.
+This meeting should usually last no longer than 15 minutes and is usually held in the same time and place every working day of the Sprint.  The Daily Scrum can take any structure and use any techniques as long as it focuses on progress toward the Sprint Goal and produces a plan for the next day of work.
 
-The Daily Scrum can take any structure and use any techniques as long as it focuses on progress toward the Sprint Goal and produces a plan for the next day of work.
+Usually each developer would cover:
+-   What you did yesterday
+-   What you plan to do today
+-   Anything that's blocking you
+
+During a Daily Scrum Meeting, focus on exchanging information with others in the group not just talking about what you've been doing.  
 
 The Daily Scrum Meeting isn't the only time that Developers can discuss and adjust their plans.
 Developers can also meet throughout the day to re-adjust plans or to have more detailed discussions.
 
-::: challenge
-Practice conducting a daily scrum meeting
+:::: challenge
+
+## Exchange and Unblock
+
+**Group Challenge**
+
+In this challenge, you're going to practice conducting a Daily Scrum Meeting in groups of four. 
+
+Assign one person to the Scrum Master role, they are responsible for keeping the meeting to time and ensuring everyone get a chance to say everything they need to.  The whole meeting must be under five minutes long. 
+
+Assign the three other group members to developer roles: Developer 1, Developer 2, or Developer 3.  
+
+Each developer should read the information under their section below but none of the others.  This information may be important to others in the Scrum Team.
+
+During the meeting, the developers should exchange information so that all developers end the meeting with no blockers, a clear plan for their day and are aware of any dependencies or issues.
+
+
+
+::: solution
+
+Useful information exchanged and possible outcomes from the meeting:
+
+-   Developer 1 learns that Developer 2 has created the API endpoint that they need and that it's likely to be ready later today.  
+-   Developer 3 takes some of the user interface element tasks from Developer 1.
+-   Developer 2 plans some co-working time with the developer(s) working on the user interface elements. 
+-   Developer 2 understands that the calculation tests are currently expected to fail due to the updated calculation implemented by Developer 3.
+
+:::
+
+::::
+
+::: spoiler
+## Developer 1
+
+-   I'm planning to develop a user interface for viewing user information from our app.  However, I can see that the API endpoint for fetching user information isn't complete yet.  Any idea when that will be ready?
+-   Today I've also planned to create user interface components for the registration, login, and admin dashboard.
+-   I have more tasks than I can realistically get through today.
+
+
+:::
+
+::: spoiler
+## Developer 2
+
+-   Yesterday I developed an API endpoint for fetching user information.  I need to check this passes all relevant tests and will merge later today if so.
+-   I'm planning work on changing the method of authentication for our app to make it more secure for users but I want to make sure that this doesn't break the front-end of the app.  How can we make sure that doesn't happen?
+-  I noticed that some of the tests related to the calculations are failing, does anyone know why this is?
+
+:::
+
+::: spoiler
+## Developer 3
+
+-   Yesterday I changed one of the calculations in the app (as was planned for this Sprint), the test is based on the old calculation and is expected to now fail, I need to update the test to reflect the calculation change. 
+-   I don't think I have enough tasks to fill my day - can anyone suggest what I should work on next?
+
 :::
 
 ## Sprint Review
