@@ -66,9 +66,7 @@ Time-boxing the meeting keeps the discussion focussed and allows the Scrum Team 
 :::
 
 :::: challenge
-## Puppy Playdate Planner
-
-**Group Challenge**
+## Group Challenge: Puppy Playdate Planner
 
 Read the following scenario about the Puppy Playdate Planner app and discuss the questions at the end.
 
@@ -153,9 +151,7 @@ Developers can also meet throughout the day to re-adjust plans or to have more d
 
 :::: challenge
 
-## Exchange and Unblock
-
-**Group Challenge**
+## Group Challenge: Exchange and Unblock
 
 In this challenge, you're going to practice conducting a Daily Scrum Meeting in groups of four. 
 
@@ -167,26 +163,26 @@ Each developer should read the information under their section below but none of
 
 During the meeting, the developers should exchange information so that all developers end the meeting with no blockers, a clear plan for their day and are aware of any dependencies or issues.
 
-
-
 ::: solution
 
 Useful information exchanged and possible outcomes from the meeting:
 
 -   Developer 1 learns that Developer 2 has created the API endpoint that they need and that it's likely to be ready later today.  
--   Developer 3 takes some of the user interface element tasks from Developer 1.
+-   Developer 3 could take some of the user interface element tasks from Developer 1 (if they have the relevant skills).
 -   Developer 2 plans some co-working time with the developer(s) working on the user interface elements. 
 -   Developer 2 understands that the calculation tests are currently expected to fail due to the updated calculation implemented by Developer 3.
+-   Developer 3 might look at the sprint backlog and see which tasks they could take.
 
 :::
+
 
 ::::
 
 ::: spoiler
 ## Developer 1
 
--   I'm planning to develop a user interface for viewing user information from our app.  However, I can see that the API endpoint for fetching user information isn't complete yet.  Any idea when that will be ready?
--   Today I've also planned to create user interface components for the registration, login, and admin dashboard.
+-   I'm planning to develop a user interface for viewing user information from our app.  However, I can see that the API endpoint for fetching user information isn't complete yet.  Any idea when that will be ready? This is a high priority task.
+-   Today I've also planned to create user interface components for the registration, login, and admin dashboard. These are lower priority tasks.
 -   I have more tasks than I can realistically get through today.
 
 
@@ -195,7 +191,7 @@ Useful information exchanged and possible outcomes from the meeting:
 ::: spoiler
 ## Developer 2
 
--   Yesterday I developed an API endpoint for fetching user information.  I need to check this passes all relevant tests and will merge later today if so.
+-   Yesterday I developed an API endpoint for fetching user information.  I need to check this passes all relevant tests and will merge later today if so. 
 -   I'm planning work on changing the method of authentication for our app to make it more secure for users but I want to make sure that this doesn't break the front-end of the app.  How can we make sure that doesn't happen?
 -  I noticed that some of the tests related to the calculations are failing, does anyone know why this is?
 
@@ -209,9 +205,32 @@ Useful information exchanged and possible outcomes from the meeting:
 
 :::
 
+
 ## Sprint Review
 
+The Sprint Review is where the Scrum Team and stakeholders inspect the work completed during the Sprint and discuss what to do next.
+
+It’s a chance to show progress, gather feedback, and adapt the Product Backlog if needed. 
+
+The Sprint Review may take the form of a demonstration and discussion, but it should be a working session, not just a presentation.
+
+The Sprint Review:
+
+-   Is held at the end of the Sprint
+-   Focuses on how the Increment moves the product toward the Product Goal
+-   Aims to enable collaboration between the Scrum Team and stakeholders of the product.
+
 ## Sprint Retrospective
+
+The Sprint Retrospective is a reflective session for the Scrum Team only to inspect what went well and what could be improved from the previous Sprint.
+
+The Sprint Retrospective:
+
+-   Is the last event of the Sprint - held after the Sprint Review but before the next Sprint Planning Meeting.
+-   Focuses on inspection of team collaboration, tools, processes and anything else that affected the Sprint to identify any changes that can improve effectiveness. 
+-   Addresses any assumptions that led the team away from the Product Goal and determines where they came from. 
+
+We'll go into more detail about the Sprint Review and Sprint Retrospective after you've conducted your first Sprint.
 
 # Sprint Planning for the Coffee Beans Analysis Project
 

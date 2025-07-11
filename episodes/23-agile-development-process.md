@@ -16,6 +16,12 @@ exercises: 0
 -   Describe the purpose of the sprint backlog and how it is used throughout a sprint
 -   Define Definition of Done
 :::
+# Scrum
+
+In this section we'll cover a few different concepts and how they fit into the world of Scrum.
+
+(Diagram of Scrum philosophy, values, pillars, team, artifacts and events)
+
 
 # Scrum Philosophy
 
@@ -42,9 +48,7 @@ Scrum is an iterative, incremental approach.
 It aims to reduce risk and increase predictability.
 
 :::: challenge
-## Fill in the Blanks
-
-**Solo Challenge**
+## Solo Challenge: Fill in the Blanks
 
 We've just introduced some key concepts of Scrum philosophy.  To reinforce your learning, think about the information you've just read (or heard) and fill in the blanks to create sentences that accurately describe the philosophy of Scrum. 
 
@@ -80,10 +84,25 @@ The effectiveness of Scrum relies on three core pillars that support its empiric
 The pillars are interconnected and each one is critical to Scrum.
 :::
 
-::: discussion
-## What happens when the Pillar of Transparency Crumbles?
+::: callout
+## Consequences of a Lack of Transparency: From Inconvenience to Devastation
 
-**Group Challenge**
+**Manipulating Burndown Charts**
+An anecdote of Scrum ineffectiveness from Scrum.org describes how a team deliberately altered their burndown chart to align exactly with the ideal progress line on the chart.  The Scrum Team said that they were "manipulating the numbers so that the management does not bother them".
+
+The empirical data was falsified, going against one of the key principles of Scrum theory.  This meant that the Scrum Team and wider organisation couldn't accurately inspect or adapt, making Sprint Planning and Review totally ineffective activities.
+
+
+**Horizon IT British Post Office Scandal**
+The Post Office’s Horizon accounting software, introduced in 1999, contained numerous bugs (e.g., duplicating ledger entries, phantom shortfalls) that erroneously implicated hundreds of subpostmasters in fraud.
+
+The software company Fujitsu and the Post Office were aware of these serious issues as early as 1999–2002 but concealed them from the public, subpostmasters, and even prosecution courts. They denied errors and pressured individuals to cover unexplained deficits, while claiming system reliability in court.
+
+This highlights the disastrous consequences that a lack of transparency can have.  
+:::
+
+::: discussion
+## Group Challenge: What happens when the Pillar of Transparency Crumbles?
 
 Discuss in small groups the following questions:
 
@@ -94,12 +113,15 @@ Discuss in small groups the following questions:
 
 :::: challenge
 
+## Group Challenge: Inspecting and Adapting
+
 During a Daily Stand-Up Meeting, inspecting the progress on the project reveals some problems:
 
 -   A developer has created a front-end component which displays some output from an API endpoint, but the endpoint doesn't currently exist and isn't scheduled for the current Sprint.  The Developer can't continue with the rest of their work until this endpoint is in place.
 -   When discussing their planned work, the group notices that two developers are working on elements that heavily depend on each other - if one isn't compatible with the other, the software won't work. 
 -   One developer is scheduled to work on a large task over the next couple of days, which is critical to the rest of the group's work.  However, the developer is going on holiday the next day.
 
+**Can you suddest a possible adaptation for each of the problems?**
 
 ::: solution
 
@@ -133,9 +155,7 @@ Scrum isn't just a set of meetings and roles.
 Scrum only works when the team truly adopts the values it was built to support.
 
 ::: challenge
-## Scrum Values in Practice
-
-**Solo Challenge**
+## Solo Challenge: Scrum Values in Practice
 
 Think about the following questions and note down your thoughts in the shared document:
 
@@ -214,9 +234,7 @@ Scrum defines the roles but teams can adapt them to fit their context.
 :::
 
 ::: challenge
-## Getting in the Mindset of a Scrum Team Member
-
-**Group Discussion**
+## Group Challenge: Getting in the Mindset of a Scrum Team Member
 
 Pick one of the Scrum Team roles and discuss within your group:
 
@@ -310,9 +328,7 @@ If you completed all the items in the Sprint Backlog, you would still be far fro
 :::
 
 :::: challenge
-## Sprint Backlog for the Sail Away
-
-**Group Challenge**
+## Group Challenge: Sprint Backlog for the Sail Away
 
 You have the Sprint Goal: “Test the basic turn system with 2 players using paper placeholders.”
 
@@ -369,9 +385,7 @@ Next Sprint, you might improve the experience further, possibly by expanding the
 :::
 
 :::: challenge
-## Voyage Complete?
-
-**Group Challenge**
+## Group Challenge: Voyage Complete?
 
 The Definition of Done is an important checklist of the quality standards that each Increment must meet.
 
@@ -389,6 +403,11 @@ The Definition of Done in this case might be:
 :::
 
 ::::
+
+## References
+
+-   [British Post Office Scandal Wikipedia](https://en.wikipedia.org/wiki/British_Post_Office_scandal)
+-   [5 Reasons Leading to Scrum Team Ineffectiveness](https://www.scrum.org/resources/blog/5-reasons-leading-scrum-team-ineffectiveness)
 
 ::: keypoints
 -   FIXME
