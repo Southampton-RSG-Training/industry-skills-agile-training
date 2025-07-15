@@ -18,10 +18,9 @@ exercises: 0
 :::
 # Scrum
 
+![](fig/scrum_temple.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple'}
+
 In this section we'll cover a few different concepts and how they fit into the world of Scrum.
-
-(Diagram of Scrum philosophy, values, pillars, team, artifacts and events)
-
 
 # Scrum Philosophy
 
@@ -37,6 +36,8 @@ Scrum is deliberately incomplete.
 It doesn't provide detailed instructions, but instead provides a structure to guide interactions and relationships.
 
 ### Key Principles of Scrum Theory
+
+![](fig/scrum_philosophy.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with scrum philosophy highlighted as the foundations'}
 
 -   **Empiricism**: Decisions are based on observation and experience, not speculation. Work is guided by evidence and continuous learning.
 -   **Lean Thinking**: Focus on delivering value while eliminating waste i.e. doing only what matters most.
@@ -67,7 +68,7 @@ We've just introduced some key concepts of Scrum philosophy.  To reinforce your 
 
 # Scrum Pillars
 
-(Picture of pillars)
+![](fig/scrum_pillars.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the pillars highlighted'}
 
 The effectiveness of Scrum relies on three core pillars that support its empirical foundation:
 
@@ -88,12 +89,14 @@ The pillars are interconnected and each one is critical to Scrum.
 ## Consequences of a Lack of Transparency: From Inconvenience to Devastation
 
 **Manipulating Burndown Charts**
+
 An anecdote of Scrum ineffectiveness from Scrum.org describes how a team deliberately altered their burndown chart to align exactly with the ideal progress line on the chart.  The Scrum Team said that they were "manipulating the numbers so that the management does not bother them".
 
 The empirical data was falsified, going against one of the key principles of Scrum theory.  This meant that the Scrum Team and wider organisation couldn't accurately inspect or adapt, making Sprint Planning and Review totally ineffective activities.
 
 
 **Horizon IT British Post Office Scandal**
+
 The Post Office’s Horizon accounting software, introduced in 1999, contained numerous bugs (e.g., duplicating ledger entries, phantom shortfalls) that erroneously implicated hundreds of subpostmasters in fraud.
 
 The software company Fujitsu and the Post Office were aware of these serious issues as early as 1999–2002 but concealed them from the public, subpostmasters, and even prosecution courts. They denied errors and pressured individuals to cover unexplained deficits, while claiming system reliability in court.
@@ -137,6 +140,8 @@ Suggested **adaptations** (others are also possible):
 
 # Scrum Values
 
+![](fig/scrum_values.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the steps to the temple highlighted and each step showing a value'}
+
 Scrum isn't only about what is done but how it is done.
 Scrum has five values that encourage a healthy and productive working environment.
 These guide the Scrum Team's work, actions and behaviour.
@@ -164,86 +169,9 @@ Think about the following questions and note down your thoughts in the shared do
 -   How could a team support each other in developing that Scrum Value?
 :::
 
-# Scrum Team
-
-The Scrum Team has a simple structure, with no sub-teams and no hierarchies, just one self-managing unit working toward a common goal.
-
-A Scrum Team includes:
-
--   Developers (usually 3-9 people)
--   One Product Owner
--   One Scrum Master
-
-::: callout
-**Why no hierarchy?** Because Agile processes do best when teams make decisions and adapt quickly, without waiting for permission from higher-ups.
-:::
-
-## Developers
-
-In a software development project, most developers will probably be software engineers, but developers could also be designers, testers, data analysts or any other role doing work to turn ideas into a working product.
-
--   They are **committed to quality**, and collectively responsible for delivering Done work.
--   They decide **how** to accomplish the Sprint Goal.
--   They collaborate, inspect, and adapt.
-
-You could think of developers as the engine of the team.
-
-(Picture of engine)
-
-## Product Owner
-
-The Product Owner is responsible for maximising the value delivered by the Scrum Team.
-The Product Owner is one single person, but they may represent a group of clients or other stakeholders.
-
--   Owns and manages the Product Backlog by ordering and refining it to ensure clarity for the rest of the Team
--   Represents the user perspective and works according to the business goals for the product.
--   Decides what gets built next but not how it gets built
-
-You could think of the Product Owner as the compass, ensuring that the Scrum Team is always pointing toward the highest-value outcome.
-
-(Picture of compass)
-
-## Scrum Master
-
-The Scrum Master ensures that the Scrum framework is understood and carried out correctly.
-
--   A servant leader, not a manager or a taskmaster.
-
--   Helps the team to remove blockers, improve flow, and reflect on what has gone well and what could be improved.
-
--   Supports the Scrum Team in applying Scrum effectively.
-
-You could think of the Scrum Master as a coach, empowering the Scrum Team to work as effectively as possible.
-
-(Picture of encouraging coach)
-
-
-::: callout
-## Roles Aren't Always Fixed
-
-In practice, Scrum Team roles are often flexible. Each person doesn't necessarily only take one role. 
-
-For instance:
-
--   The Scrum Master role might rotate between several developers.
-
--   One person could even take on all three roles for a solo project. 
-
-Scrum defines the roles but teams can adapt them to fit their context.
-
-:::
-
-::: challenge
-## Group Challenge: Getting in the Mindset of a Scrum Team Member
-
-Pick one of the Scrum Team roles and discuss within your group:
-
--   What challenges might you face in the role?
--   What skills or mindset would you need to succeed in the role?
-
-:::
-
 # Scrum Artifacts and Commitments
+
+![](fig/scrum_artifacts.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the roof of the temple highlighted and scrum artifacts written on it'}
 
 The Scrum Artifacts are the Scrum Team's source of truth.
 They make visible what's being worked on, why it matters, and how close you are to delivering value.
@@ -403,6 +331,88 @@ The Definition of Done in this case might be:
 :::
 
 ::::
+
+
+# Scrum Team
+
+The Scrum Team has a simple structure, with no sub-teams and no hierarchies, just one self-managing unit working toward a common goal.
+
+A Scrum Team includes:
+
+-   Developers (usually 3-9 people)
+-   One Product Owner
+-   One Scrum Master
+
+::: callout
+**Why no hierarchy?**
+
+Because Agile processes do best when teams make decisions and adapt quickly, without waiting for permission from higher-ups.
+:::
+
+## Developers
+
+In a software development project, most developers will probably be software engineers, but developers could also be designers, testers, data analysts or any other role doing work to turn ideas into a working product.
+
+-   They are **committed to quality**, and collectively responsible for delivering Done work.
+-   They decide **how** to accomplish the Sprint Goal.
+-   They collaborate, inspect, and adapt.
+
+You could think of developers as the engine of the team.
+
+![By Clerk, Dugald, Sir, 1854-1932. Library of Congress Catalog, Public Domain](fig/engine.jpg){alt='daigram of an old machine'}
+
+## Product Owner
+
+The Product Owner is responsible for maximising the value delivered by the Scrum Team.
+The Product Owner is one single person, but they may represent a group of clients or other stakeholders.
+
+-   Owns and manages the Product Backlog by ordering and refining it to ensure clarity for the rest of the Team
+-   Represents the user perspective and works according to the business goals for the product.
+-   Decides what gets built next but not how it gets built
+
+You could think of the Product Owner as the compass, ensuring that the Scrum Team is always pointing toward the highest-value outcome.
+
+![Image by freepik](fig/compass.jpg){alt='compass and map'}
+
+## Scrum Master
+
+The Scrum Master ensures that the Scrum framework is understood and carried out correctly.
+
+-   A servant leader, not a manager or a taskmaster.
+
+-   Helps the team to remove blockers, improve flow, and reflect on what has gone well and what could be improved.
+
+-   Supports the Scrum Team in applying Scrum effectively.
+
+You could think of the Scrum Master as a coach, empowering the Scrum Team to work as effectively as possible.
+
+![Carine06 / CC BY 2.0](fig/coach.png){alt='tennis coach'}
+
+::: callout
+## Roles Aren't Always Fixed
+
+In practice, Scrum Team roles are often flexible. Each person doesn't necessarily only take one role. 
+
+For instance:
+
+-   The Scrum Master role might rotate between several developers.
+
+-   One person could even take on all three roles for a solo project. 
+
+Scrum defines the roles but teams can adapt them to fit their context.
+
+:::
+
+::: challenge
+## Group Challenge: Getting in the Mindset of a Scrum Team Member
+
+Pick one of the Scrum Team roles and discuss within your group:
+
+-   What challenges might you face in the role?
+-   What skills or mindset would you need to succeed in the role?
+
+:::
+
 
 ## References
 
