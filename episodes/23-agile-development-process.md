@@ -16,37 +16,38 @@ exercises: 0
 -   Describe the purpose of the sprint backlog and how it is used throughout a sprint
 -   Define Definition of Done
 :::
-# Scrum
-
-![](fig/scrum_temple.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple'}
-
-In this section we'll cover a few different concepts and how they fit into the world of Scrum.
-
-# Scrum Philosophy
 
 ::: callout
 *'Scrum is a lightweight framework that helps people, teams and organizations generate value through adaptive solutions for complex problems'* - The Scrum Guide
 :::
 
-Scrum is intentionally minimalist.
-It defines only what is essential to implement Scrum theory, encouraging teams to build on it and adapt it to their context.
-Think of Scrum not as a complete recipe, but as a flexible scaffolding that helps teams navigate complexity.
+# Scrum Philosophy
 
-Scrum is deliberately incomplete.
-It doesn't provide detailed instructions, but instead provides a structure to guide interactions and relationships.
+Scrum is an iterative and incremental approach.
 
-### Key Principles of Scrum Theory
+Scrum is intentionally **minimalist**. It defines only what is essential to implement Scrum theory, encouraging teams to build on it and adapt it to their context.
 
-![](fig/scrum_philosophy.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with scrum philosophy highlighted as the foundations'}
+Scrum is deliberately **incomplete**.It doesn't provide detailed instructions, but instead provides a structure to guide interactions and relationships.
+
+Scrum can be used alongside or around existing practices, processes and frameworks. 
+
+Just as important as the visible elements of Scrum, such as the Scrum Team Roles, Events and Artifacts, are the underlying values and philosophy of Scrum.  For Scrum to work effectively, you need to adopt a mindset and way of working that is underpinned by certain values and actions. 
+
+These are defined in the Scrum Guide as the Principles, Values and Pillars.  
+
+They can be depicted as a temple with the key principles of Empiricism and Lean Thinking as the foundations, the Values as the steps, and the Pillars holding up the roof of the temple.  The Scrum Events (i.e. everything that happens in the Sprint) can be thought of as part of the 'roof', and will only run effectively when the pillars, steps, and foundations are in place.
+
+![](fig/scrum_temple.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple'}
+
+
+## Key Principles of Scrum Theory
+
+There are two key principles of Scrum Theory:
 
 -   **Empiricism**: Decisions are based on observation and experience, not speculation. Work is guided by evidence and continuous learning.
 -   **Lean Thinking**: Focus on delivering value while eliminating waste i.e. doing only what matters most.
 
-Scrum can be used alongside or around existing practices, processes and frameworks.
-Scrum is designed to make clear the effectiveness of existing working techniques.
-
-Scrum is an iterative, incremental approach.
-It aims to reduce risk and increase predictability.
+![](fig/scrum_philosophy.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with scrum philosophy highlighted as the foundations'}
 
 :::: challenge
 ## Solo Challenge: Fill in the Blanks
@@ -68,8 +69,6 @@ We've just introduced some key concepts of Scrum philosophy.  To reinforce your 
 
 # Scrum Pillars
 
-![](fig/scrum_pillars.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the pillars highlighted'}
-
 The effectiveness of Scrum relies on three core pillars that support its empirical foundation:
 
 1.  **Transparency:** the process and work must be visible to those performing the work and stakeholders.
@@ -79,11 +78,11 @@ The effectiveness of Scrum relies on three core pillars that support its empiric
 
 3.  **Adaptation:** when problems are identified through inspection, the team must adapt to minimise any further deviation from the goal.
 
-::: callout
-**Without transparency, inspection is misleading. Without inspection, adaptation is impossible.**
 
-The pillars are interconnected and each one is critical to Scrum.
-:::
+The pillars are interconnected and each one is critical to Scrum - without transparency, inspection is misleading. Without inspection, adaptation is impossible.
+
+![](fig/scrum_pillars.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the pillars highlighted'}
+
 
 ::: callout
 ## Consequences of a Lack of Transparency: From Inconvenience to Devastation
@@ -140,8 +139,6 @@ Suggested **adaptations** (others are also possible):
 
 # Scrum Values
 
-![](fig/scrum_values.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the steps to the temple highlighted and each step showing a value'}
-
 Scrum isn't only about what is done but how it is done.
 Scrum has five values that encourage a healthy and productive working environment.
 These guide the Scrum Team's work, actions and behaviour.
@@ -152,12 +149,15 @@ These guide the Scrum Team's work, actions and behaviour.
 4.  Respect - Every team member is valued as capable and autonomous. Scrum works best in an environment of mutual respect.
 5.  Courage - Scrum Team members need courage to tackle hard problems and speak truthfully.
 
+Scrum isn't just a set of meetings and roles.
+Scrum only works when the team truly adopts the values it was built to support.
+
 ::: callout
 *“Scrum is the framework I built to put those values into practice. There is no methodology.”* - Jeff Sutherland (co-creator of Scrum)
 :::
 
-Scrum isn't just a set of meetings and roles.
-Scrum only works when the team truly adopts the values it was built to support.
+![](fig/scrum_values.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the steps to the temple highlighted and each step showing a value'}
+
 
 ::: challenge
 ## Solo Challenge: Scrum Values in Practice
@@ -171,12 +171,13 @@ Think about the following questions and note down your thoughts in the shared do
 
 # Scrum Artifacts and Commitments
 
-![](fig/scrum_artifacts.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the roof of the temple highlighted and scrum artifacts written on it'}
 
-The Scrum Artifacts are the Scrum Team's source of truth.
+The Scrum Artifacts are tangible items that provide transparency about the work being done. They are the Scrum Team's source of truth.
 They make visible what's being worked on, why it matters, and how close you are to delivering value.
 
-There are three key artifacts, each with a commitment that helps to keep the team focused and aligned.
+There are three key Artifacts in Scrum: the **Product Backlog**, **Sprint Backlog** and **Increment**. Each Artifact comes with a commitment that helps to keep the team focused and aligned
+
+![](fig/scrum_artifacts.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the roof of the temple highlighted and scrum artifacts written on it'}
 
 ## Product Backlog
 
@@ -233,7 +234,8 @@ The backlog helps your team stay focused on building toward the big idea.
 The Sprint Backlog is the game plan for the current block of work and is created at the start of each Sprint, during the Sprint Planning Meeting.
 It includes:
 
--   A subset of the items from the Product Backlog.
+-   A Sprint Goal.
+-   A subset of the items from the Product Backlog that will be worked on during this Sprint.
 -   An actionable plan for delivering a working increment by the end of the Sprint.
 
 The Sprint Backlog is owned and maintained by the Developers.
@@ -386,7 +388,7 @@ The Scrum Master ensures that the Scrum framework is understood and carried out 
 
 You could think of the Scrum Master as a coach, empowering the Scrum Team to work as effectively as possible.
 
-![Carine06 / CC BY 2.0](fig/coach.png){alt='tennis coach'}
+![Image by Creazilla, Creazilla Open License](fig/coach.png){alt='football coach'}
 
 ::: callout
 ## Roles Aren't Always Fixed

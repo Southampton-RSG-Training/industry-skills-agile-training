@@ -18,6 +18,8 @@ exercises: 0
 
 # Events of a Sprint
 
+![](fig/scrum_detailed_diagram.png){alt='diagram of scrum events and artifacts'}
+
 A Sprint in Scrum is a fixed-length event, usually between one week and one month in length.
 All work that is needed to achieve the Product Goal is contained within Sprints.
 
@@ -28,9 +30,15 @@ There are four Scrum Events within a Sprint:
 -   Sprint Review
 -   Sprint Retrospective
 
-All of the Scrum Events are designed to enable transparency and to give formal opportunities to inspect and adapt Scrum artifacts.
+All of the Scrum Events are designed to enable transparency and to give formal opportunities to inspect and adapt Scrum artifacts. 
+
+::: callout
+In relation to the diagram in the previous section, Scrum Events can be thought of as part of the temple roof.  Scrum Events need to be supported by the Scrum principles, values and pillars to work successfully.
+:::
 
 ## Sprint Planning Meeting
+
+![](fig/scrum_planning.png){alt='diagram of scrum events and artifacts with sprint planning highlighted'}
 
 The Sprint Planning Meeting is the kickoff meeting for the Sprint.
 During this meeting the Scrum Team will decide what's most important, how much can realistically get done, and how you'll make it happen.
@@ -56,14 +64,6 @@ Sprint Planning needs to answer three questions:
 A Sprint Planning Meeting should be an absolute maximum of eight hours for a one month Sprint, and should be shorter for shorter Sprints.
 Time-boxing the meeting keeps the discussion focussed and allows the Scrum Team to start making delivering value fast.
 
-::: callout
-## Tips for a successful Sprint Planning Meeting
-
--   The Product Owner should come prepared with a prioritised Product Backlog and ideas about the goal for the Sprint.
--   Everyone should contribute to the Sprint Planning Meeting for the Sprint Backlog to feel like it is owned by the whole Scrum Team.
--   Developers should be realistic about what they can achieve - it's better to under-promise and over-deliver than the other way around!
--   Keep the Definition of Done in mind to avoid surprises later.
-:::
 
 :::: challenge
 ## Group Challenge: Puppy Playdate Planner
@@ -126,6 +126,8 @@ The Scrum Master reminded the team to consider the Definition of Done and ensure
 ::::
 
 ## Daily Scrum Meeting
+
+![](fig/scrum_daily_meeting.png){alt='diagram of scrum events and artifacts with daily meeting highlighted'}
 
 The Scrum Team meet each day to inspect progress toward the Sprint Goal, adapt the Sprint Backlog and adjust plans for upcoming work.
 
@@ -208,6 +210,8 @@ Useful information exchanged and possible outcomes from the meeting:
 
 ## Sprint Review
 
+![](fig/scrum_review.png){alt='diagram of scrum events and artifacts with sprint review highlighted'}
+
 The Sprint Review is where the Scrum Team and stakeholders inspect the work completed during the Sprint and discuss what to do next.
 
 It’s a chance to show progress, gather feedback, and adapt the Product Backlog if needed. 
@@ -222,6 +226,8 @@ The Sprint Review:
 
 ## Sprint Retrospective
 
+![](fig/scrum_retrospective.png){alt='diagram of scrum events and artifacts with sprint retrospective highlighted'}
+
 The Sprint Retrospective is a reflective session for the Scrum Team only to inspect what went well and what could be improved from the previous Sprint.
 
 The Sprint Retrospective:
@@ -234,8 +240,34 @@ We'll go into more detail about the Sprint Review and Sprint Retrospective after
 
 # Sprint Planning for the Coffee Beans Analysis Project
 
+Now, it's time to put all of this theory into practice and conduct a Sprint Planning Meeting for the first Sprint of the Coffee Beans Analysis Project.  
+
+
 ::: challenge
-Conduct the sprint planning meeting for Sprint 1 of the coffee beans analysis project.
+
+## Group Challenge: Sprint Planning for Coffee Beans Analysis
+
+Conduct the Sprint Planning Meeting for Sprint 1 of the Coffee Beans Analysis Project.
+
+**Roles**
+
+-   One person should be Scrum Master.  You are the servant leader who helps the group apply Scrum effectively, removes blockers and improves flow for the Scrum Team.
+-   One person should role play as the Product Owner.  You should represent the interests of the client throughout the meeting.
+-   The rest of the group should be developers.  The Scrum Master and acting Product Owner can also be developers.
+
+**Questions for Sprint Planning**
+
+Remember to answer the following questions during the Sprint Planning Meeting:
+
+-   Why is this Sprint valuable?
+-   What can be Done this Sprint?
+-   How will the chosen work get Done?
+
+The output from your Sprint Planning Meeting should be your Sprint Backlog including:
+-   A Sprint Goal
+-   The subset of items from the Product Backlog that you will work on this Sprint
+-   A plan for delivering the Increment by the end of the Sprint
+
 :::
 
 ::: keypoints
