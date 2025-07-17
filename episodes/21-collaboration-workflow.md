@@ -48,16 +48,118 @@ So why not just always use the main branch?
 While it is possible to always commit to `main`, it is not ideal when you’re collaborating with others,
 or when you are working on new features or want to experiment with your code and you want to keep main clean and stable for your users and collaborators.
 
-FIXME: try out branch challenge
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Solo Exercise: Set up SSH Keypair for use with GitHub
+
+5 mins.
+
+In order to access GitHub using Git from your machine securely,
+you need to set up a way of authenticating yourself with GitHub through Git.
+The recommended way to do that for this course is to set up
+[*SSH authentication*](https://www.ssh.com/academy/ssh/public-key-authentication) -
+a method of authentication that is more secure than sending
+[*passwords over HTTPS*](https://security.stackexchange.com/questions/110415/is-it-ok-to-send-plain-text-password-over-https)
+and which requires a pair of keys -
+one public that you upload to your GitHub account, and one private that remains on your machine.
+
+GitHub provides full documentation and guides on how to:
+
+- [Generate an SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- [Add an SSH key to a GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+
+To generate an SSH key pair, you will need to run the `ssh-keygen` command from your command line tool/GitBash
+and provide **your identity for the key pair** (e.g. the email address you used to register with GitHub)
+via the `-C` parameter as shown below.
+Note that the `ssh-keygen` command can be run with different parameters -
+e.g. to select a specific public key algorithm and key length;
+if you do not use them `ssh-keygen` will generate an
+[RSA](https://en.wikipedia.org/wiki/RSA_\(cryptosystem\)#:~:text=RSA%20involves%20a%20public%20key,by%20using%20the%20private%20key.)
+key pair for you by default.
+GitHub now recommends that you use a newer cryptographic standard (such as [EdDSA](https://en.wikipedia.org/wiki/EdDSA) variant algorithm [Ed25519](https://cryptobook.nakov.com/digital-signatures/eddsa-and-ed25519)),
+so please be sure to specify it using the `-t` flag as shown below.
+It will also prompt you to answer a few questions -
+e.g. where to save the keys on your machine and a passphrase to use to protect your private key.
+Pressing 'Enter' on these prompts will get `ssh-keygen` to use the default key location (within
+`.ssh` folder in your home directory)
+and set the passphrase to empty.
+
+```bash
+$ ssh-keygen -t ed25519 -C "your-github-email@example.com"
+```
+
+```output
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/Users/<YOUR_USERNAME>/.ssh/id_ed25519): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/<YOUR_USERNAME>/.ssh/id_ed25519
+Your public key has been saved in /Users/<YOUR_USERNAME>/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:qjhN/iO42nnYmlpink2UTzaJpP8084yx6L2iQkVKdHk your-github-email@example.com
+The key's randomart image is:
++--[ED25519 256]--+
+|.. ..            |
+| ..o A           |
+|. o..            |
+| .o.o .          |
+| ..+ =  B        |
+| .o = ..         |
+|o..X *.          |
+|++B=@.X          |
+|+*XOoOo+         |
++----[SHA256]-----+
+```
+
+Next, you need to copy your public key (**not your private key - this is important!**) over to
+your GitHub account. The `ssh-keygen` command above will let you know where your public key is saved (the file should have the
+extension ".pub"), and you can get its contents (e.g. on a Mac OS system) as follows:
+
+```bash
+$ cat /Users/<YOUR_USERNAME>/.ssh/id_ed25519.pub
+```
+
+```output
+ssh-ed25519 AABAC3NzaC1lZDI1NTE5AAAAICWGVRsl/pZsxx85QHLwSgJWyfMB1L8RCkEvYNkP4mZC your-github-email@example.com
+```
+
+Copy the line of output that starts with "ssh-ed25519" and ends with your email address
+(it may start with a different algorithm name based on which one you used to generate the key pair
+and it may have gone over multiple lines if your command line window is not wide enough).
+
+Finally, go to your [GitHub Settings -> SSH and GPG keys -> Add New](https://github.com/settings/ssh/new) page to add a new
+SSH public key. Give your key a memorable name (e.g. the name of the computer you are working on that contains the
+private key counterpart), paste the public key
+from your clipboard into the box labelled "Key" (making sure it does not contain any line breaks), then click the "Add SSH key" button.
+
+Now, we can check that the SSH connection is working:
+
+```bash
+$ ssh -T git@github.com
+```
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Solo Exercise: Check we can use the Group Repository
+
+10 mins.
+
+FIXME: add instructions
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 ### Feature Branches
 
-Creating and working on a separate branch, often called a “feature” branch, allows you to add or test code containing a new “feature” by adding commits to this branch without affecting the main line of development.
-So, working on a separate branch for each feature you are adding is good for several reasons:
+Creating and working on a separate branch, often called a “feature” branch,
+allows you to add or test code containing a new “feature” by adding commits to this branch without affecting the main line of development.
 
 You should consider starting a new branch whenever you are working on a distinct feature or fixing a specific bug.
-This allows you to collect a related set of commits in one place, without interfering with other parts of the project.
-Once the work is complete and has been tested, the branch is reviewed by project collaborators (other than the code author), any merge conflicts addressed and the new work merged back into the main branch.
+Once the work is complete and has been tested,
+the branch is reviewed by project collaborators (other than the code author),
+any merge conflicts addressed and the new work merged back into the main branch.
 
 This approach is known as *feature branch workflow*.
 
@@ -68,7 +170,7 @@ This approach is known as *feature branch workflow*.
 5 mins.
 
 As a group, discuss how a feature branch workflow affects how code is developed,
-and list some advantages and disadvantages of such an approach.
+and list some advantages and disadvantages of such an approach when used in a team.
 
 :::::::::::::::  solution
 
@@ -194,15 +296,13 @@ FIXME: verify squash commit has only 1 parent when using a squash-merged PR
 
 Here is a little comparison of the three merge strategies we have covered so far.
 
-FIXME: add left column for title of row
-
-| Fast Forward            | Rebasing              | 3-Way Merge          | Squash Merge    |
-| ----------------------- | ----------------------|----------------------|-----------------|
-| Maintains linear history  |  Maintains linear history | Non-linear history (commit with 2 parents) | Linear history (commit with 1 parent) |
-| No new commits on main | New commits on main | New commits on main | One new commit on main |
-| Avoids merge commits         | Avoids merge commits | Uses merge commits | Avoids merge commits |
-| Only works if there are no new commits on the main branch        | Works for diverging branches | Works for diverging branches | Works for diverging branches |
-| Does not rewrite commit history | Rewrites commit history | Does not rewrite commit history | Does not rewrite commit history |
+|                   | Fast Forward            | Rebasing              | 3-Way Merge          | Squash Merge    |
+|-------------------| ----------------------- | ----------------------|----------------------|-----------------|
+| History           | Maintains linear history  |  Maintains linear history | Non-linear history (commit with 2 parents) | Linear history (commit with 1 parent) |
+| Effect on main    | No new commits on main | New commits on main | New commits on main | One new commit on main |
+| Merge commit?     | Avoids merge commits         | Avoids merge commits | Uses merge commits | Avoids merge commits |
+| When it works     | Only works if there are no new commits on the main branch        | Works for diverging branches | Works for diverging branches | Works for diverging branches |
+| Rewrites history? | Does not rewrite commit history | Rewrites commit history | Does not rewrite commit history | Does not rewrite commit history |
 
 FIXME: callout
 
