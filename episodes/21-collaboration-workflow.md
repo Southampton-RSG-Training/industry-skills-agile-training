@@ -48,21 +48,48 @@ So why not just always use the main branch?
 While it is possible to always commit to `main`, it is not ideal when you’re collaborating with others,
 or when you are working on new features or want to experiment with your code and you want to keep main clean and stable for your users and collaborators.
 
+FIXME: try out branch challenge
+
 ### Feature Branches
 
 Creating and working on a separate branch, often called a “feature” branch, allows you to add or test code containing a new “feature” by adding commits to this branch without affecting the main line of development.
 So, working on a separate branch for each feature you are adding is good for several reasons:
-
-- it enables the main branch to remain stable while you and the team explore and test the new code on a feature branch,
-- it enables you to keep the untested and not-yet-functional feature branch code under version control and backed up,
-- you and other team members may work on several features at the same time independently from one another, and
-- if you decide that the feature is not working or is no longer needed - you can easily and safely discard that branch without affecting the rest of the code.
 
 You should consider starting a new branch whenever you are working on a distinct feature or fixing a specific bug.
 This allows you to collect a related set of commits in one place, without interfering with other parts of the project.
 Once the work is complete and has been tested, the branch is reviewed by project collaborators (other than the code author), any merge conflicts addressed and the new work merged back into the main branch.
 
 This approach is known as *feature branch workflow*.
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Group Exercise: Pros and Cons of Feature Branch Workflow
+
+5 mins.
+
+As a group, discuss how a feature branch workflow affects how code is developed,
+and list some advantages and disadvantages of such an approach.
+
+:::::::::::::::  solution
+
+Advantages:
+
+- It enables the main branch to remain stable while you and the team explore and test the new code on a feature branch
+- It enables you to keep the untested and not-yet-functional feature branch code under version control and backed up
+- You and other team members may work on several features at the same time independently from one another
+- If you decide that the feature is not working or is no longer needed - you can easily and safely discard that branch without affecting the rest of the code
+
+Disadvantages:
+
+- Requires that the team understand this approach and how to use it in an agreed and consistent manner
+- Can become complicated if you need to use features available on another branch in your own branch
+- Long-lived branches may become too divergent from the `main` branch, complicating the process of merging changes from such branches
+- Similarly, implementing and then merging multiple feature branches simultaneously becomes exponentially more difficult
+- If `main` contains many changes not in the feature branches, all feature branches may diverge [fixme]
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Branch Merging Strategies
 
@@ -167,6 +194,8 @@ FIXME: verify squash commit has only 1 parent when using a squash-merged PR
 
 Here is a little comparison of the three merge strategies we have covered so far.
 
+FIXME: add left column for title of row
+
 | Fast Forward            | Rebasing              | 3-Way Merge          | Squash Merge    |
 | ----------------------- | ----------------------|----------------------|-----------------|
 | Maintains linear history  |  Maintains linear history | Non-linear history (commit with 2 parents) | Linear history (commit with 1 parent) |
@@ -175,6 +204,9 @@ Here is a little comparison of the three merge strategies we have covered so far
 | Only works if there are no new commits on the main branch        | Works for diverging branches | Works for diverging branches | Works for diverging branches |
 | Does not rewrite commit history | Rewrites commit history | Does not rewrite commit history | Does not rewrite commit history |
 
+FIXME: callout
+
+FIXME: challenge - which approach suits your use of version control in most cases? and scenarios for when to and when not to squash merge: twenty people giving many commits to a single feature branch (i.e. want to keep history), simple changes that need to revert (i.e. changing colours back and forth, or testing)
 
 
 ## Pull Requests and Code Reviews
