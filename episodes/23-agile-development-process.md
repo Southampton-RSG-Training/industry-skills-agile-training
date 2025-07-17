@@ -5,14 +5,19 @@ exercises: 0
 ---
 
 ::: questions
--   FIXME
+-   What are the two key principles of Scrum Theory?
+-   What are the five Scrum Values?
+-   How do the Scrum Pillars relate to each other?
+-   What are the responsibilities of each of the Scrum Team roles?
+-   What are the commitments for each of the three Scrum Artifacts?
 :::
 
 ::: objectives
 -   Explain the Philosophy of Scrum
--   List and briefly describe the three Scrum Pillars
 -   List and briefly describe the five Scrum Values
+-   List and briefly describe the three Scrum Pillars
 -   Describe the responsibilities of the three Scrum roles
+-   Describe the primary artifacts and stages within Scrum and how they relate as a process
 -   Describe the purpose of the sprint backlog and how it is used throughout a sprint
 -   Define Definition of Done
 :::
@@ -418,9 +423,18 @@ Pick one of the Scrum Team roles and discuss within your group:
 
 ## References
 
+-   [Scrum Guide](https://scrumguides.org/scrum-guide.html)
 -   [British Post Office Scandal Wikipedia](https://en.wikipedia.org/wiki/British_Post_Office_scandal)
 -   [5 Reasons Leading to Scrum Team Ineffectiveness](https://www.scrum.org/resources/blog/5-reasons-leading-scrum-team-ineffectiveness)
 
 ::: keypoints
--   FIXME
+-   Scrum is an iterative, incremental, minimalist, and deliberately incomplete framework emphasizing empiricism and lean thinking.  
+-   Scrum is built upon five core values: commitment, focus, openness, respect, and courage.  
+-   Scrum relies on the three interconnected pillars of transparency, inspection, adaptation.  
+-   A Scrum Team consists of Developers, a Product Owner, and a Scrum Master.  
+-   Scrum makes use of three main artifacts which are the Product Backlog, Sprint Backlog, and Increment.
+-   The Sprint Backlog includes a sprint goal, a subset of items from the Product Backlog selected for the current sprint, and an actionable plan for completing them. 
+-   The Increment is the usable output from a sprint that must meet the Definition of Done, which is a checklist of quality standards for the Increment.  
+-   Scrum roles and structures are defined but adaptable and teams should adjust them to fit their context.
+
 :::

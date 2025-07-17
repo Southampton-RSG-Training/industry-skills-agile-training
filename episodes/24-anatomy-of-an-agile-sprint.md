@@ -5,20 +5,21 @@ exercises: 0
 ---
 
 ::: questions
--   FIXME
+-   What three questions would you ask during a Sprint Planning Meeting?
+-   What should be the outcome of a Sprint Planning Meeting?
+-   What are the three main points that a developer would cover during the Daily Scrum Meeting?
+-   
 :::
 
 ::: objectives
--   Describe the primary artifacts and stages within Scrum and how they relate as a process
--   Outline the key steps to a sprint planning meeting
--   Outline the key steps to a scrum stand-up meeting
--   Participate in a sprint planning meeting to create a sprint backlog
+-   Outline the key steps to a Sprint Planning Meeting
+-   Outline the key steps to a Daily Scrum Meeting
 -   Describe the purpose, objectives and format of the main Scrum meetings
+-   Participate in a Sprint Planning Meeting to create a Sprint Backlog
 :::
 
 # Events of a Sprint
 
-![](fig/scrum_detailed_diagram.png){alt='diagram of scrum events and artifacts'}
 
 A Sprint in Scrum is a fixed-length event, usually between one week and one month in length.
 All work that is needed to achieve the Product Goal is contained within Sprints.
@@ -59,7 +60,12 @@ Sprint Planning needs to answer three questions:
     -   For each item selected from the Product Backlog, the Developers plan the specific tasks needed to turn ideas into a working Increment.
     -   Often, Developers will break large items into smaller, more manageable chunks that will take one day or less.
     -   The Developers decide how to do the work. The Developers are in charge of this, no one else can tell them how to build the solution.
-    -   The Sprint Goal, the Product Backlog items selected for the Sprint, and the plan for delivering them are collectively referred to as the Sprint Backlog.
+    
+The output from your Sprint Planning Meeting should be your Sprint Backlog including:
+
+-   A Sprint Goal
+-   The subset of items from the Product Backlog that you will work on this Sprint
+-   A plan for delivering the Increment by the end of the Sprint
 
 A Sprint Planning Meeting should be an absolute maximum of eight hours for a one month Sprint, and should be shorter for shorter Sprints.
 Time-boxing the meeting keeps the discussion focussed and allows the Scrum Team to start making delivering value fast.
@@ -270,6 +276,18 @@ The output from your Sprint Planning Meeting should be your Sprint Backlog inclu
 
 :::
 
+## References
+
+-   [Scrum Guide](https://scrumguides.org/scrum-guide.html)
+
+
 ::: keypoints
--   FIXME
+-   A Sprint is a fixed-length event in Scrum, usually between one week and one month in length.
+-   The four Scrum Events are Sprint Planning Meeting, Daily Scrum Meeting, Sprint Review, and Sprint Retrospective.  
+-   Sprint Planning answers: Why is this Sprint valuable? What can be done? How will the work get done?  
+-   The outcome from the Sprint Planning Meeting is the Sprint Backlog containing the Sprint Goal, subset of Product Backlog items, and a plan for delivering the Increment. 
+-   The Daily Scrum Meeting is a 15-minute meeting for the Scrum Master and Developers to inspect progress, adjust plans, and resolve blockers.  
+-   The Sprint Review allows the Scrum Team and stakeholders to inspect the Increment and adapt the Product Backlog.  
+-   The Sprint Retrospective is a time for the Scrum Team to reflect on the Sprint and identify improvements.  
+-   All Scrum Events promote transparency, inspection, and adaptation to improve product and team effectiveness.  
 :::
