@@ -72,9 +72,42 @@ We've just introduced some key concepts of Scrum philosophy.  To reinforce your 
 :::
 ::::
 
+
+# Scrum Values
+
+Scrum isn't only about what is done but how it is done.
+Scrum has five values that encourage a healthy and productive working environment.
+These guide the Scrum Team's work, actions and behaviour.
+
+1.  Commitment - the Scrum Team commits to achieving its goals and supporting each other
+2.  Focus - the primary focus of the Scrum Team is the work of the sprint to make the best possible progress toward the Sprint Goal.
+3.  Openness - the Scrum Team and its stakeholders are open about the work and the challenges. This builds trust and surfaces problems early.
+4.  Respect - Every team member is valued as capable and autonomous. Scrum works best in an environment of mutual respect.
+5.  Courage - Scrum Team members need courage to tackle hard problems and speak truthfully.
+
+Scrum isn't just a set of meetings and roles.
+Scrum only works when the team truly adopts the values it was built to support.
+
+::: callout
+*“Scrum is the framework I built to put those values into practice. There is no methodology.”* - Jeff Sutherland (co-creator of Scrum)
+:::
+
+![](fig/scrum_values.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the steps to the temple highlighted and each step showing a value'}
+
+
+::: challenge
+## Solo Challenge: Scrum Values in Practice
+
+Think about the following questions and note down your thoughts in the shared document:
+
+-   Which Scrum Value do you think you would find hardest to put into practice?
+-   Why?
+-   How could a team support each other in developing that Scrum Value?
+:::
+
 # Scrum Pillars
 
-The effectiveness of Scrum relies on three core pillars that support its empirical foundation:
+The effectiveness of Scrum relies on three core pillars, which are built on top of the foundations of Empiricism and Lean Thinking, and the steps of Scrum Values:
 
 1.  **Transparency:** the process and work must be visible to those performing the work and stakeholders.
     Transparency is essential for effective inspection and adaptation.
@@ -142,37 +175,6 @@ Suggested **adaptations** (others are also possible):
 
 ::::
 
-# Scrum Values
-
-Scrum isn't only about what is done but how it is done.
-Scrum has five values that encourage a healthy and productive working environment.
-These guide the Scrum Team's work, actions and behaviour.
-
-1.  Commitment - the Scrum Team commits to achieving its goals and supporting each other
-2.  Focus - the primary focus of the Scrum Team is the work of the sprint to make the best possible progress toward the Sprint Goal.
-3.  Openness - the Scrum Team and its stakeholders are open about the work and the challenges. This builds trust and surfaces problems early.
-4.  Respect - Every team member is valued as capable and autonomous. Scrum works best in an environment of mutual respect.
-5.  Courage - Scrum Team members need courage to tackle hard problems and speak truthfully.
-
-Scrum isn't just a set of meetings and roles.
-Scrum only works when the team truly adopts the values it was built to support.
-
-::: callout
-*“Scrum is the framework I built to put those values into practice. There is no methodology.”* - Jeff Sutherland (co-creator of Scrum)
-:::
-
-![](fig/scrum_values.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the steps to the temple highlighted and each step showing a value'}
-
-
-::: challenge
-## Solo Challenge: Scrum Values in Practice
-
-Think about the following questions and note down your thoughts in the shared document:
-
--   Which Scrum Value do you think you would find hardest to put into practice?
--   Why?
--   How could a team support each other in developing that Scrum Value?
-:::
 
 # Scrum Artifacts and Commitments
 
@@ -185,9 +187,6 @@ There are three key Artifacts in Scrum: the **Product Backlog**, **Sprint Backlo
 ![](fig/scrum_artifacts.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the roof of the temple highlighted and scrum artifacts written on it'}
 
 ## Product Backlog
-
-A Product Backlog is like a wishlist for the product.
-It's a master to-do list that is strategic and adaptable.
 
 The Product Backlog is an ordered list of everything the product might need including features, fixes, experiments, and improvements.
 It evolves constantly based on things like feedback, market shifts, and changing stakeholder goals.
