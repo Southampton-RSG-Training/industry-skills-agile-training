@@ -39,6 +39,8 @@ Someone who is engineering software takes a wider view:
 -   Software (or code) is an asset: software inherently contains value - for example, in terms of what it can do, the lessons learned throughout its development, and as an implementation of a research approach (i.e. a particular research algorithm, process, or technical approach).
 -   As an asset, it could be reused: again, it may not be evident initially that the software will have use beyond its initial purpose or project, but there is an assumption that the software - or even just a part of it - could be reused in the future.
 
+Thinking about software engineering from that wider view, there are some typical stages that a software development project would go through and these are ver similar to the stages of any project.
+
 ::: challenge
 ## Let's Break it Down
 
@@ -160,9 +162,7 @@ Advantages
 Disadvantages
 
 -   Not flexible so struggles to deal with changing requirements
-
 -   Time-consuming due to extensive documentation and testing.
-
 -   No support for development activities to occur concurrently or to iterate.
 
 ::: callout

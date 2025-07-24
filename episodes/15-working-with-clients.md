@@ -17,19 +17,24 @@ exercises: 0
 -   Conduct a productive and professional client kickoff meeting.
 -   Apply communication and negotiation techniques in a technical context.
 ::::::::::::::::::::::::::::::::::::::::::::::::
- 
-# Clarifying Requirements for Software Projects
+
  
 # Communicating with Clients
  
-Translating technical constraints into client-understandable terms.
  
-Setting realistic expectations without overcommitting (underpromise, overdeliver).
+## Setting Realistic Expectations
+(underpromise, overdeliver)
 
-Handling trade-offs (scope, time, cost) with professionalism.
+## Handling Trade-offs with Professionalism
+(scope, time, cost) 
 
-Brief reference to previously learned MoSCoW: applying it in discussions about MVPs.
+## Speaking the Same Language
+Translating technical constraints into client-understandable terms.
 
+## Minimal Viable Product
+Applying MosCoW to discussions about the Minimal Viable Product
+
+## Reaching Clarity
 Why it's important to clarify anything that's unclear
 
 ::: challenge
