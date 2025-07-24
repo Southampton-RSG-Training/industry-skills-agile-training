@@ -77,11 +77,12 @@ The Waterfall Model is effective when used for projects where the requirements a
 It is ideal for projects with long timelines and minimal tolerance for errors, where stakeholders require high confidence in the final outcome.
 
 ::: callout
-[London's Crossrail project](https://learninglegacy.crossrail.co.uk/learning-legacy-themes/project-and-programme-management/initiation-and-development/) (later rebranded as the Elizabeth Line) used a Waterfall approach of clear, sequential phases.
+[London's Crossrail project](https://learninglegacy.crossrail.co.uk/learning-legacy-themes/project-and-programme-management/initiation-and-development/) (later rebranded as the Elizabeth Line) used a Waterfall approach of clear, sequential phases. 
+This approach was appropriate because the requirements were known from the start, with little possibility for change throughout the project.
 The line spans 118km, serving 41 stations (10 new) and had been used for over 500 million journeys by early 2025 since its opening in 2022.
 Despite the project delays and overspend, the Elizabeth Line was widely praised as an engineering triumph.
 
-![](fig/elizabeth-line.png){alt="map of the elizabeth line"}
+![By Alex6nt - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=118896679](fig/elizabeth-line-train.jpg){alt="Elizabeth Line train 345001 at Abbey Wood"}
 :::
 
 However, there are some disadvantages to the Waterfall Model:
