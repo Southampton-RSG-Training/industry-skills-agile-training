@@ -77,7 +77,9 @@ episodes:
 - 15-version-control.md
 - 20-day2-intro.md
 - 21-collaboration-workflow.md
-- 22-testing-code.md
+- 22-intro-automated-testing.md
+- 22-1-writing-unit-tests.md
+- 22-2-continuous-integration.md
 - 23-agile-development-process.md
 - 24-anatomy-of-an-agile-sprint.md
 - 30-day3-intro.md
