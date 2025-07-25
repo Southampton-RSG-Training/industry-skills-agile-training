@@ -6,7 +6,12 @@ exercises: 0
  
 :::::::::::::::::::::::::::::::::::::: questions
  
-- FIXME
+- Why should I test my code?
+- What is the role of automated testing?
+- What are the different types of automated tests?
+- What is the structure of a unit test?
+- What is test "mocking"?
+- How can I run unit tests?
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
  
@@ -16,6 +21,7 @@ exercises: 0
 - Describe the three main types of tests and what each are used for
 - Describe the practice of test "mocking" and when to use it
 - Obtain example code repository and run existing unit tests
+- Describe the format of a unit test written for the Pytest testing framework
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -294,6 +300,14 @@ So make sure you work with known 'good' test data which has been verified to be 
  
 :::::::::::::::::::::::::::::::::::::: keypoints
  
-- FIXME
- 
+- Testing code is the process of verifying that your code behaves as expected and continues to do so as it evolves
+- Code complexity often increases beyond our ability to fully understand it
+- Code testing allows us to discover the existence of issues before they become a potentially much larger issue when using the code in its intended environment
+- Unit tests verify in isolation that a small code component, such as a function or class, behaves correctly with known inputs
+- Integration tests verify correct behaviour of multiple components or modules working together, at a higher level
+- System tests evaluate software as a complete, integrated system, focuses on validating the entire application’s functionality from end to end, typically from a user's perspective
+- Test mocking involves replacing a code component, such as a function or class, with a simplified, controllable version - known as a mock - to make testing easier by mimicing how the real component works
+- Tests written in `pytest` are defined as functions that return either true or false, and have a function name beginning with `test_`
+- Using `pytest`, we can run a set of tests using `python -m pytest` followed by a specific file containing a set of tests, or a directory containing many test files with filenames beginning with `test_`
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
