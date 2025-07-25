@@ -7,12 +7,17 @@ exercises: 0
 :::::::::::::::::::::::::::::::::::::: questions
  
 - How do I write a unit test?
+- When should I use a regression test?
+- When should I write and re-run unit tests throughout development?
+- What makes a good test?
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
  
 ::::::::::::::::::::::::::::::::::::: objectives
  
 - Implement and run unit tests to verify the correct behaviour of program functions
+- Describe how and when testing fits into code development
+- Write a regression test to identify if an unwanted code behaviour returns
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -253,6 +258,9 @@ So the overall process of development becomes:
  
 :::::::::::::::::::::::::::::::::::::: keypoints
  
-- FIXME
+- Running automated tests is generally a rapid process that takes far less time than testing code manually
+- When we change our code, re-run existing tests to ensure we haven't broken anything or otherwise compromised the desired behaviour of our code
+- When we change our code, consider if a new test should be added to verify it works correctly
+- If we fix an error in our code, consider adding a regression test to identify if it returns
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
