@@ -309,5 +309,6 @@ So make sure you work with known 'good' test data which has been verified to be 
 - Test mocking involves replacing a code component, such as a function or class, with a simplified, controllable version - known as a mock - to make testing easier by mimicing how the real component works
 - Tests written in `pytest` are defined as functions that return either true or false, and have a function name beginning with `test_`
 - Using `pytest`, we can run a set of tests using `python -m pytest` followed by a specific file containing a set of tests, or a directory containing many test files with filenames beginning with `test_`
+- We can use `-v` when running `pytest` to produce more verbose output that explicitly lists each test that is run
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
