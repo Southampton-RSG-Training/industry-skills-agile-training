@@ -17,8 +17,9 @@ exercises: 0
 ::::::::::::::::::::::::::::::::::::: objectives
  
 - Understand the concept of automation and its role in improving efficiency and consistency in software development
-- Describe the benefits of using Continuous Integration for further automation of testing
+- Describe the benefits of using Continuous Integration (CI) for further automation of testing
 - Use continuous integration to automatically run unit tests when changes are committed to a version control repository
+- View the results of running tests automatically using CI
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -373,5 +374,6 @@ and adding new tests as required to verify new functionality.
 - CI pipelines can run on many platforms and environments using cloud-based services (e.g. GitHub Actions, Travis CI) or self-hosted solutions (e.g. Jenkins, GitLab CI)
 - GitHub Actions workflows are defined using YAML
 - A GitHub Actions workflow defines a sequence of jobs, and each job contains a sequence of steps, which each represent a specific "action" or task to perform
+- GitHub Actions log the progress of a build which can be viewed in GitHub
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
