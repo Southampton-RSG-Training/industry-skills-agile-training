@@ -67,38 +67,53 @@ Then, whenever we make changes to our code,
 we can rerun our tests to make sure we haven't broken anything.
 An additional benefit is that successfully running our unit tests can also give others confidence that our code works as expected.
 
-## Change our Implementation, and Re-test
+## Updating and Re-testing our Implementation
 
 Let's illustrate another key advantage of having unit tests.
 Let's assume during development we find an error in our code.
-For example, if we run our code with `factorial(10000)` our Python program from within the Python interpreter, on Python version 3.10.7 or later it will crash with an exception:
+For example, if we run our code with `-1`:
 
 ```python
 >>> from mymath.factorial import factorial
->>> factorial(10000)
+>>> factorial(-1)
+```
+
+We get a nonsensical answer of 1, since for negative numbers, factorial is undefined.
+So this isn't desired behaviour!
+
+### Implementing a Fix
+
+Therefore, in our implementation we explicitly don't want to process negative numbers,
+so we can add what is known as a *precondition* beforehand,
+and this approach to checking function input data prior to processing it is considered good practice.
+
+Let's add the following after the function's docstring in `mymath/factorial.py`,
+and before `factorial = 1`:
+
+```python
+    if n < 0:
+        raise ValueError('Only use non-negative integers.')
+```
+
+So if we run it with a negative input from within the Python interpreter,
+we should see the error:
+
+```python
+>>> from mymath.factorial import factorial
+>>> factorial(-1)
 ```
 
 ```output
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-ValueError: Exceeds the limit (4300) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit
+  File "/home/steve/factorial-example/mymath/factorial.py", line 9, in factorial
+    raise ValueError('Only use non-negative integers.')
+ValueError: Only use non-negative integers.
 ```
 
-It turns out that version of 3.10.7 of Python introduced a breaking change,
-preventing large integer to string conversions due to [a vulnerability](https://github.com/python/cpython/issues/95778).
+### Re-testing our Existing Code
 
-However, we can sidestep this vulnerability by adding the following at the beginning of `mymath/factorial.py`,
-which will disable this conversion limit:
-
-```python
-import sys
-sys.set_int_max_str_digits(0)
-```
-
-Make sure you replace the code in the `factorial.py` file,
-and not the `test_factorial.py` file.
-
-We now have our updated implementation, but we need to make sure it works as intended.
+We now have our updated implementation, but we need to make sure it all still works as intended.
 Fortunately, we have our set of tests, so let's run them again:
 
 ```bash
@@ -123,51 +138,31 @@ So again, each time we change our code,
 whether it's making small or large changes,
 we retest and check they all pass.
 
-## Testing for an Exception
+### Adding a New "Regression Test"
 
-In our implementation we explicitly don't want to process negative numbers,
-since that would lead to undefined results which we cannot compute,
-so we have added what is known as a *precondition*.
+But since we've amended our code to correct for a known issue,
+what would be helpful would be to have a test that checks for the existence of this issue.
+This would verify that the fix is behaving correctly,
+and also would be a check to ensure the behaviour of the code has not *regressed* to a previous bad state.
+These types of test, which we introduced briefly before, are known as *regression tests*.
 
-The precondition will check the validity of our input data before we do any processing on it,
-and this approach to checking function input data is considered good practice:
-
-```python
-if n < 0:
-    raise ValueError('Only use non-negative integers.')
-```
-
-So if we run it with a negative input from within the Python interpreter,
-we should see the error:
-
-```python
->>> from mymath.factorial import factorial
->>> factorial(-1)
-```
-
-```output
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/steve/factorial-example/mymath/factorial.py", line 9, in factorial
-    raise ValueError('Only use non-negative integers.')
-ValueError: Only use non-negative integers.
-```
-
-Sure enough, we get our exception as desired.
-But how do we test for this in a unit test,
-since this is an exception, not a value?
+But how do we write a regression test for this as a unit test,
+since this is an exception, and not a value?
 Fortunately, unit test frameworks have ways to check for this.
 
 Let's add a new test to `tests/test_factorial.py`:
 
 ```python
-def test_negative(self):
-    with self.assertRaises(ValueError):
+def test_negative():
+    with pytest.raises(ValueError):
       factorial(-1)
 ```
 
-So here, we use `unittest`'s built-in `assertRaises()` (instead of `assertEquals()`) to test for a `ValueError` exception occurring when we run `factorial(-1)`.
+So here, we use `pytest`'s built-in `raises()` (instead of `assert`) to test for a `ValueError` exception occurring when we run `factorial(-1)`.
 We also use Python's `with` here to test for this within the call to `factorial()`.
+
+### Re-testing with all our Tests
+
 So if we re-run our tests again, we should see them all succeed:
 
 ```bash
