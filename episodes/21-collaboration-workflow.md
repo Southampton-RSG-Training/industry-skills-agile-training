@@ -1,5 +1,5 @@
 ---
-title: "2.1 Version Control Collaboration Workflow "
+title: "2.1 Version Control: Collaborative Workflow"
 teaching: 0
 exercises: 0
 ---
@@ -31,22 +31,6 @@ exercises: 0
 FIXME: how the use of infrastructure should reflect and support how the team operates
 FIXME: the reality of simultaneous strands of development in a project
 FIXME: the main branch, the need for multiple branches
-
-## Introduction to Feature Branch Workflow
-
-FIXME: a process picture overview, of branch creation and commits to it, to branch merge
-FIXME: then add two steps in-between: the pull request and code review
-
-### Git Branches
-
-You might be used to committing code directly, but not sure what branches really are or why they matter?
-When you start a new Git repository and begin committing,
-all changes go into a branch — by default, this is usually called `main` (or `master` in older repositories).
-The name "main" is just a convention — a Git repository’s default branch can technically be named anything.
-
-So why not just always use the main branch?
-While it is possible to always commit to `main`, it is not ideal when you’re collaborating with others,
-or when you are working on new features or want to experiment with your code and you want to keep main clean and stable for your users and collaborators.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -140,11 +124,28 @@ ssh -T git@github.com
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+## Introduction to Feature Branches
 
-## Solo Exercise: Check we can use the Group Repository
+You might be used to committing code directly, but not sure what branches really are or why they matter?
+When you start a new Git repository and begin committing,
+all changes go into a branch — by default, this is usually called `main` (or `master` in older repositories).
+The name "main" is just a convention — a Git repository’s default branch can technically be named anything.
 
-10 mins.
+So why not just always use the main branch?
+While it is possible to always commit to `main`, it is not ideal when you’re collaborating with others,
+or when you are working on new features or want to experiment with your code and you want to keep main clean and stable for your users and collaborators.
+
+Creating and working on a separate branch, often called a “feature” branch,
+allows developers to "branch off" development from a particular commit in the repository,
+enabling them to make changes (as new commits) to a branch without disrupting the `main` branch.
+When this separate development has been tested and is judged to be ready,
+the commits on this branch are then merged into the `main` branch.
+
+![](fig/collab-workflow-branches-merging.png){alt="Diagram depicting a feature branch being created off of a main branch, with its own commits, and those commits then being merged onto the main branch."}
+
+You should consider starting a new branch whenever you are working on a distinct feature or fixing a specific bug.
+
+## Check we can Use the Group Repository
 
 To verify we are able to use the group's `coffee-analysis` repository,
 we'll each clone the repository on our own machines,
@@ -187,24 +188,9 @@ and save the file.
 
 1. Since it's no longer needed, go to the group repository's list of branches (e.g. https://github.com/github-username/coffee-analysis/branches) and delete the branch you just created by clicking on the dustbin/trash icon on its row on the right (be careful not to delete any others!).
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-### Feature Branches
-
-Creating and working on a separate branch, often called a “feature” branch,
-allows you to add or test code containing a new “feature” by adding commits to this branch without affecting the main line of development.
-
-You should consider starting a new branch whenever you are working on a distinct feature or fixing a specific bug.
-Once the work is complete and has been tested,
-the branch is reviewed by project collaborators (other than the code author),
-any merge conflicts addressed and the new work merged back into the main branch.
-
-This approach is known as *feature branch workflow*.
-
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Group Exercise: Pros and Cons of Feature Branch Workflow
+## Group Exercise: Pros and Cons of Using Feature Branches
 
 5 mins.
 
@@ -350,13 +336,128 @@ FIXME: challenge - which approach suits your use of version control in most case
 
 ## Pull Requests and Code Reviews
 
-FIXME: a pull request is a check (or insurance policy?) against merging bad commits
+So far we've looked at different ways we can work on separate strands of development in branches and then merge them.
+Since they are independent, it's sometimes difficult to know what the overall effect will be when they are finally merged.
 
-## Submitting a Pull Request
+:::::::::::::::::::::::::::::::::::::::  challenge
 
-## Reviewing Code
+## Group Exercise: What are the Risks?
 
-## Merging the Pull Request
+5 mins.
+
+In general, as a group discuss what you think the risks are with developing and merging code using branches in a team environment.
+
+::::::::::::::::::::::: solution
+
+Here are several non-exhaustive reasons:
+
+- The merge may introduce errors that cause the software to break or fundamentally change its behaviour in ways that are unintended but not immediately obvious
+- There may be a variability in the quality or style of written code that leads to bugs or readability issues
+- Team members may not be aware of important changes being made in other branches that will affect their work
+- Work may be unknowingly duplicated, or introduce conflicting solutions, e.g. where there are logical overlaps between coding tasks in different branches
+- The reasoning behind changes may be unclear
+- A suboptimal approach may be taken for which another team member has a better solution
+
+:::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+In our previous exercise we focused on writing code in an individual setting on feature branches.
+However if we allowed everyone to develop and merge code whenever, wherever, and however they wanted,
+without any kind of coordination,
+the result would likely be a chaotic and potentially non-functional mess.
+Using feature branches helps to some extent,
+keeping strands of development separate
+but in many cases, when it comes time to merge our branch into the `main` branch,
+it would be really useful to have a way to *review* code before it's finally merged to verify that these changes are well considered and implemented.
+
+Fortunately version control hosting infrastructures like GitHub support an additional step in the use of feature branches, the *pull request*:
+the changes in a feature branch are proposed in a pull request,
+and then the pull request is reviewed by another team member (or maybe several).
+If the pull request is judged to be a suitable set of changes,
+the pull request is accepted and the changes are merged using a branch merging strategy as discussed.
+
+![](fig/collab-workflow-pull-request.png){alt="Diagram depicting a feature branch being created off of a main branch, with its own commits, and those commits then being merged onto the main branch."}
+
+However, if the review identifies issues that mean that it is unsuitable to be merged,
+the pull request is rejected.
+This does not necessarily mean the pull request has to be closed,
+and development on the feature branch of that pull request may continue,
+addressing the points brought up in the review,
+and then the pull request reviewed at a later time and perhaps accepted and merged.
+
+In a sense, a pull request is a verification check - or insurance policy - against merging bad commits to the `main` branch.
+
+This approach is known as *feature branch workflow*.
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Group Exercise: Make Work for Yourselves
+
+5 mins.
+
+The group repository contains a draft README with a typical set of section headings that should be added:
+
+- *Description* - what are the motivations for the software, the problem it aims to solve, and its key functions?
+- *Pre-requisites* - what software or other dependencies are required to use this software?
+- *Installation* - how do you install or deploy the software so it can be used?
+- *Usage* - what are a basic set of instructions for using the software for its intended purpose?
+- *Running Tests* - how do you run the automated unit tests?
+- *Authors/Maintainers* - who are the authors and maintainers of the software? e.g. including yourselves, and your contact information?
+- *Licence* - what is the licence for the software?
+- *Acknowledgements* - what other projects, software or people should be acknowledged as part of this work?
+
+As a group:
+
+1. Select a number of sections equal to the number of members in your group,
+and divide them up so everyone gets a section
+1. Each member then creates an issue on the group repository describing the task of writing that section,
+ensuring the issue has a sufficient description,
+has a `Documentation` label set,
+and is assigned to that member.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::: solution
+
+For example:
+
+![](fig/collab-workflow-add-issue.png){alt="Adding a new GitHub issue to the group repository for writing a description to the README, ensuring it has a quick summary, is assigned to someone, and has a documentation label"}
+
+::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Solo Exercise: Try out Feature Branch Workflow
+
+15 mins.
+
+Individually, based on your assigned task,
+use feature branch workflow on your cloned group repository to:
+
+1. Create a new branch for that issue, referencing the issue number in the branch name, e.g. `git branch 123-readme-description`
+1. Switch to that branch, e.g. `git switch 123-readme-description`
+1. Use a code editor to edit the `README.md` file and very briefly write content for that section, and save the file
+1. Add the changes to the Git staging area, e.g. `git add README.md`
+1. Commit the changes, referencing the issue number in the commit message prefixed with a `#` symbol, e.g. `git commit -m "#123 - Add description"`
+1. Push the changes to the remote group repository, e.g. `git push -u origin 123-readme-description`
+
+If you go to the repository's main branches page (e.g. https://github.com/github-username/coffee-analysis/branches) you should see your new branch listed,
+and eventually those of your other team members.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+### Submitting a Pull Request
+
+Let's each create a pull request now, based on our changes.
+
+
+
+
+
+### Reviewing Code
+
+### Merging the Pull Request
 
 
 :::::::::::::::::::::::::::::::::::::: keypoints
