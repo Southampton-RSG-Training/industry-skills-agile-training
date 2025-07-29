@@ -333,12 +333,6 @@ FIXME: callout
 
 FIXME: challenge - which approach suits your use of version control in most cases? and scenarios for when to and when not to squash merge: twenty people giving many commits to a single feature branch (i.e. want to keep history), simple changes that need to revert (i.e. changing colours back and forth, or testing)
 
-
-## Pull Requests and Code Reviews
-
-So far we've looked at different ways we can work on separate strands of development in branches and then merge them.
-Since they are independent, it's sometimes difficult to know what the overall effect will be when they are finally merged.
-
 :::::::::::::::::::::::::::::::::::::::  challenge
 
 ## Group Exercise: What are the Risks?
@@ -362,6 +356,12 @@ Here are several non-exhaustive reasons:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+## Pull Requests and Code Reviews
+
+So far we've looked at different ways we can work on separate strands of development in branches and then merge them.
+Since they are independent, it's sometimes difficult to know what the overall effect will be when they are finally merged.
+
 In our previous exercise we focused on writing code in an individual setting on feature branches.
 However if we allowed everyone to develop and merge code whenever, wherever, and however they wanted,
 without any kind of coordination,
@@ -379,16 +379,23 @@ the pull request is accepted and the changes are merged using a branch merging s
 
 ![](fig/collab-workflow-pull-request.png){alt="Diagram depicting a feature branch being created off of a main branch, with its own commits, and those commits then being merged onto the main branch."}
 
-However, if the review identifies issues that mean that it is unsuitable to be merged,
+However, if the review identifies issues that indicate that it is unsuitable to be merged,
 the pull request is rejected.
-This does not necessarily mean the pull request has to be closed,
-and development on the feature branch of that pull request may continue,
-addressing the points brought up in the review,
-and then the pull request reviewed at a later time and perhaps accepted and merged.
+This does not necessarily mean the pull request has to be closed.
+Development on the feature branch of that pull request may continue,
+with further commits to address the points brought up in the review,
+and then the pull request reviewed again at a later time and perhaps accepted and merged.
+
+![](fig/collab-workflow-pr-second-review.png){alt="Diagram depicting a failed first review of a pull request, subsequent fixes to address the review, and a successful second review and merge to main."}
 
 In a sense, a pull request is a verification check - or insurance policy - against merging bad commits to the `main` branch.
 
 This approach is known as *feature branch workflow*.
+
+### Preparing Some Example Work
+
+In order for us to try out feature branch workflow as a team,
+let's first create some issues on our group repository to represent some small tasks we'll do using that approach.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -410,13 +417,12 @@ The group repository contains a draft README with a typical set of section headi
 As a group:
 
 1. Select a number of sections equal to the number of members in your group,
-and divide them up so everyone gets a section
+and divide them up so everyone gets a section to write
+1. For each member select someone else who will review their pull request
 1. Each member then creates an issue on the group repository describing the task of writing that section,
 ensuring the issue has a sufficient description,
 has a `Documentation` label set,
 and is assigned to that member.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::: solution
 
@@ -426,18 +432,17 @@ For example:
 
 ::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Solo Exercise: Try out Feature Branch Workflow
+Next, based on your assigned task,
+we'll use feature branch workflow on our cloned group repository.
 
-15 mins.
+Ensure you have a terminal open,
+and you're currently in the root directory of your group repository.
 
-Individually, based on your assigned task,
-use feature branch workflow on your cloned group repository to:
-
-1. Create a new branch for that issue, referencing the issue number in the branch name, e.g. `git branch 123-readme-description`
+1. First, create a new branch for that issue, referencing the issue number in the branch name, e.g. `git branch 123-readme-description`
 1. Switch to that branch, e.g. `git switch 123-readme-description`
-1. Use a code editor to edit the `README.md` file and very briefly write content for that section, and save the file
+1. Use a code editor to edit the `README.md` file and very briefly write content for that section as per your assigned issue, and save the file
 1. Add the changes to the Git staging area, e.g. `git add README.md`
 1. Commit the changes, referencing the issue number in the commit message prefixed with a `#` symbol, e.g. `git commit -m "#123 - Add description"`
 1. Push the changes to the remote group repository, e.g. `git push -u origin 123-readme-description`
@@ -449,13 +454,25 @@ and eventually those of your other team members.
 
 ### Submitting a Pull Request
 
+Before we create a pull requestm
+
 Let's each create a pull request now, based on our changes.
 
-
-
-
+1. First, go the `Pull requests` tab at the top of the group repository main page,
+and select `New pull request`
+1. In the `Compare changes` page that comes up:
+   - Select `compare:` and select your new branch, e.g. `123-readme-description`
+   You should now see a summary of the changes between the new branch and the `main` branch,
+   i.e. a single commit and the new README content you pushed earlier
+   - Select `Create pull request`
+1. In the `Open a pull request` page that appears:
+   - Enter a fitting title, brief description, and label
+   - Select `Reviewers` and add the GitHub account for the other group member who will review your pull request
+   - Select `Create pull request`
 
 ### Reviewing Code
+
+### Addressing Feedback
 
 ### Merging the Pull Request
 
