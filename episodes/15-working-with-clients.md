@@ -21,6 +21,10 @@ exercises: 0
  
 # Communicating with Clients
 
+
+![Illustration by Muhammad Noor on Unsplash](fig/communicating_with_clients.png){alt='Illustration of two people at a table with laptops'}
+
+
 One of the most important skills for a software engineer working in industry is the ability to communicate effectively with clients. 
 
 Clear communication builds trust, prevents expensive misunderstandings, and ensures that the business goals and technical implementation are aligned.
@@ -30,10 +34,14 @@ While this course is focused on software engineering, the points that we'll cove
  
 ## Speaking the Same Language
 
+![Photo by zhendong wang on Unsplash](fig/speaking_different_languages.jpg){alt='photo of speach bubbles with words in different languages'}
+
 You’re in a meeting with a client and explain, *“We’re planning to refactor the backend and upgrade the framework so we can implement the auth flow asynchronously. That should make deployments cleaner.”*  
 The client nods politely but later admits they didn’t understand a word. They leave the meeting unclear on what's being done, why it's needed, or how it affects their goals.
 
 This kind of miscommunication is surprisingly common. It stems from the **Expert Awareness Gap**, a disconnect where technical professionals assume non-technical stakeholders share their understanding of concepts that have become second nature. As a result, clients may feel confused, excluded, or unsure how to make informed decisions.
+
+![Photo by Denny Luan on Unsplash](fig/bridge_the_gap.jpg){alt='Lizard jumping across a large gap'}
 
 To bridge this gap, and build shared understanding, try the following techniques:
 
@@ -87,6 +95,8 @@ This is a classic example of unrealistic expectations, often caused by optimism,
 
 Setting realistic expectations is one of the most important parts of client communication. It helps prevent misunderstandings, reduces stress, and builds long-term trust.
 
+![Photo by Headway on Unsplash](fig/negotiation.jpg){alt='man with laptop gesturing'}
+
 
 - **Under-promise, Over-deliver**  
   Clients would rather be pleasantly surprised than disappointed. Estimate conservatively, it's better to deliver something early or with extra polish than to miss a deadline.
@@ -105,6 +115,8 @@ Setting realistic expectations is one of the most important parts of client comm
   
 
 ### Watch Out for Scope Creep
+
+![Photo by Patti Black on Unsplash](fig/scope_creep.jpg){alt='snail creeping along a log'}
 
 **Scope creep**, also known as *requirement creep*, happens when new features or changes are added during the project without adjusting time or budget. If this isn't managed, it can derail progress and increase risk.
 
@@ -183,7 +195,7 @@ You explain that the scope is too large for the timeline, but the client insists
 
 This kind of situation is common. Clients are often enthusiastic and ambitious, but may not understand the trade-offs involved. That’s why **clear prioritisation discussions** are essential.
 
-
+![Photo by airfocus on Unsplash](fig/prioritisation.jpg){alt='two people arranging sticky notes on a board'}
 
 ### Why Prioritisation Matters
 
@@ -254,6 +266,8 @@ List the components that should be included in the MVP version of the DIY pizza 
 
 ## Reaching Clarity
 
+![Photo by Paul Pastourmatzis on Unsplash](fig/reaching_clarity.jpg){alt='a hand reaching toward a clear lake'}
+
 During a planning meeting, a client tells the team: “We want the site to feel modern and fast.” No one asks for clarification. The designers choose a sleek, minimal style with bold colours, and the developers focus on performance optimisations to reduce load times to under 500ms.
 
 But at the next review, the client is unhappy. By “modern,” they actually meant visually similar to Apple’s aesthetic. And by “fast,” they didn’t mean technical speed, but a user journey with fewer steps. Because the team didn’t dig deeper, they now need to rework major parts of the product, wasting both time and budget.
@@ -274,7 +288,7 @@ Small misunderstandings can grow into major issues if left unchecked. Assumption
 -   **Probe when clients say, “use your judgement”**  
   If the client doesn’t know exactly what they want, try asking:  
   *“What don’t you want?”* or  
-  *“Can you show me an example of something you like—or don’t like?”*
+  *“Can you show me an example of something you like or something you don’t like?”*
 
 -   **Summarise and confirm**  
   Restate what you’ve heard to confirm your understanding.  
@@ -313,6 +327,8 @@ The three key objectives of a kickoff meeting are:
 -   **Resolve ambiguity**: Clarify any unclear or vague requirements before development begins. This may involve asking the client to define specific terms, provide examples, or explain business rules in detail. The goal is to remove guesswork and ensure that both the development team and the client share the same understanding of what is being built and why.
 
 ## Anatomy of an Agenda
+
+![Illustration by Round Icons on Unsplash](fig/agenda.png){alt='illustration of a clipboard'}
 
 Every good meeting should have an agenda which maps out the key points that the meeting should cover.  A well-structured agenda helps to keep the meeting focused, efficient and productive.  An agenda for a kickoff meeting would usually include the following elements:
 
@@ -376,6 +392,8 @@ Use the structure above to develop your agenda ensuring it:
 
 
 ## Chairing the Meeting
+
+![Photo by Mapbox on Unsplash](fig/chairing_the_meeting.jpg){alt='four people in a meeting'}
 
 In a client meeting, the software development team (the supplier) should take responsibility for leading the meeting. As an analogy, when an electrician comes to your house, they don’t expect you to explain wiring protocols, instead they ask questions to diagnose the problem and recommend solutions. Similarly, the development team should guide the meeting to get the clarity they need to do their job.
 
