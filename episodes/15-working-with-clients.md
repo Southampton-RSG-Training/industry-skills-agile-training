@@ -23,28 +23,143 @@ exercises: 0
 
 One of the most important skills for a software engineer working in industry is the ability to communicate effectively with clients. 
 
-Clear communication builds trust, prevents expensive misunderstandings, and ensures that the business goals and technical implementation are aligned
+Clear communication builds trust, prevents expensive misunderstandings, and ensures that the business goals and technical implementation are aligned.
+
+While this course is focused on software engineering, the points that we'll cover can be applied to any project.
 
  
 ## Speaking the Same Language
 
-Often you may need to translate technical concepts into non-technical language to ensure a shared understanding with the client.
+You’re in a meeting with a client and explain, *“We’re planning to refactor the backend and upgrade the framework so we can implement the auth flow asynchronously. That should make deployments cleaner.”*  
+The client nods politely but later admits they didn’t understand a word. They leave the meeting unclear on what's being done, why it's needed, or how it affects their goals.
 
--   Use analogies or briefly explain any terminology that you may need to use.  For example, rather than saying you're refactoring the code you might say 'We need to tidy up the code so that it's easier to change in future'.
--   Expand acronyms, even those which may seem obvious to you. 
--   Translate changes to the technical implementation to benefits for the client.  For example, rather than just saying you are 'upgrading the framework', you might say you are 'upgrading the framework to reduce future bugs and support newer features'.
--   Explain how technical decisions you need to make will impact the clients' goals, which might include things like revenue, usability, time to market, compliance etc.
--   Use diagrams to support shared understanding with non-technical clients
+This kind of miscommunication is surprisingly common. It stems from the **Expert Awareness Gap**, a disconnect where technical professionals assume non-technical stakeholders share their understanding of concepts that have become second nature. As a result, clients may feel confused, excluded, or unsure how to make informed decisions.
+
+To bridge this gap, and build shared understanding, try the following techniques:
+
+- **Use analogies or plain language.**  
+  For example, instead of saying *“we’re refactoring the code,”* try *“we’re tidying up the code to make it easier and safer to change in the future.”*
+
+- **Expand acronyms even if they seem obvious.**  
+  Don’t assume clients know what “CI/CD,” “API,” or “JWT” mean.  A good rule is to expand any acronym at least the first time you use it.
+
+- **Connect technical changes to client value.**  
+  For instance, rather than saying *“we’re upgrading the framework,”* say *“we’re upgrading the framework to reduce bugs and give us access to modern features that improve security and performance.”*
+
+- **Frame decisions in terms of the client’s goals.**  
+  When discussing trade-offs, explain how technical choices affect things like **user experience, compliance, or costs**.
+
+- **Use visuals to support understanding.**  
+  Diagrams, flowcharts, or wireframes can help convey complex ideas without relying on jargon.
+
+By learning to speak the client’s language you build trust, make better decisions together, and avoid frustration on both sides.
+
+
+::: challenge
+
+## Pair Challenge: Explain a Technical Topic
+
+(7 minutes)
+
+Practice overcoming the expert awareness gap by explaining a familiar topic clearly to someone with no background in it.
+
+1. Individually, think of a topic that you know a lot about.  For example, it could be the subject of your research, a programming language or framework that you've used extensively, or a hobby or skill that you have a lot of experience with (e.g. playing the clarinet, wild swimming, golf).
+
+2. Check with your partner that they know little or nothing about this topic.
+
+3. Take two minutes each to explain your topic to your partner as if they have no prior knowledge. 
+
+4. After listening, the partner should ask questions to clarify anything they don't understand. 
+
+5. Swap roles and repeat the exercise so both of you get a chance to explain and to listen.
+
+:::
 
 ## Setting Realistic Expectations
 
--   **Under-promise, Over-deliver**: Clients would rather be pleased that something is delivered early or with more features than expected than be disappointed when something is delivered late.  So, it's better to underestimate what you will be able to deliver in a particular time.
--   Always build in contingency time and assume that some things will go wrong.  Think about the aspects of the development that could take longer than you initially anticipate.
--   Avoid committing on the spot, you can always say you will check with your team and get back to the client later.
--  Don't be afraid to be honest about limitations and communicate these clearly, even when it's not what the client wants to hear.  For example, “We can deliver this in two weeks, but without automated testing. If you want it tested properly, we’ll need an extra week.”
+In a client meeting, a developer says, *"Yes, we should be able to add that feature by the end of the sprint."* The client is pleased.  
+
+But a week later, it becomes clear that the feature is more complex than expected, other tasks are behind schedule, and the team now has to explain the delay. 
+
+The client feels frustrated and blindsided and this impacts the trust they have in your development team.
+
+This is a classic example of unrealistic expectations, often caused by optimism, pressure to please, or fear of disappointing the client in the moment.
+
+Setting realistic expectations is one of the most important parts of client communication. It helps prevent misunderstandings, reduces stress, and builds long-term trust.
+
+
+- **Under-promise, Over-deliver**  
+  Clients would rather be pleasantly surprised than disappointed. Estimate conservatively, it's better to deliver something early or with extra polish than to miss a deadline.
+
+- **Build in contingency time**  
+  Always allow for the unexpected. Think carefully about what could go wrong (technical complexity, team availability, integration issues), and factor that into your estimates.
+
+- **Avoid committing on the spot**  
+  Don’t feel pressured to promise something immediately. It's entirely professional to say:  
+  *“Let me check with the team and get back to you this afternoon.”*
+
+- **Be honest about trade-offs and limitations**  
+  For example:  
+  *“We can deliver this in two weeks, but without automated testing. If you want it tested properly, we’ll need an extra week.”*  
+  Being upfront avoids surprises later.
+  
+
+### Watch Out for Scope Creep
+
+**Scope creep**, also known as *requirement creep*, happens when new features or changes are added during the project without adjusting time or budget. If this isn't managed, it can derail progress and increase risk.
+
+Help clients make informed decisions by explaining:
+
+- **The Project Management Triangle**  
+  You can have two of the following:  
+  **Fast, Cheap, or Good** but rarely all three at once.
+
+- **Impact of changes**  
+  Rather than saying *“That’s not possible,”* present options:  
+  *“We can do X by Friday, or Y by next week—what’s more important to you?”*
+
+- **Cost of adding features**  
+  Be clear about how additional features may delay delivery, increase complexity, or reduce testing time.
+
+- **Stay neutral and solution-focused**  
+  Avoid blame or emotional language. Stick to the facts and guide clients toward trade-offs based on their priorities.
+
+
+By setting realistic expectations from the start, you're managing risk, building your client's confidence in your team and keeping the project on track.
+
+
+::: challenge
+
+## Group Challenge: Responding to Scope Creep
+
+(10 minutes)
+
+Your team has already agreed with the client on the project's scope and timeline. You're midway through the first sprint when the client sends an email saying:
+
+“We’ve been thinking, and we’d really like to add a feature that allows users to share their progress with friends. Can we fit that in before the demo next week?”
+
+This new feature was not in the original backlog and has design, development, and testing implications.
+
+Discuss your response to the client, using the principles outlined above, and then draft a short email that:
+
+-   Acknowledges the client's request positively and professionally;
+-   Explains the impact of the new feature on timeline, scope and/or risk;
+-   Presents options (e.g. delay another feature, extend the deadline, or push the feature to the next iteration);
+
+:::
+
 
 :::callout
-## Techniques for Expectation Setting
+## Techniques for Setting Expectations
+
+### Tracking Velocity
+
+In this context, velocity describes the amount of work that a team delivers in a set period. 
+
+You would track how many tasks your team has completed in previous Sprints and use this as a baseline for how many tasks of a similar size can be completed in the current sprint.  This gives you an evidence-based approach to expectation setting.
+
+Tracking velocity can help you to set realistic timelines based on what your team has actually delivered in the past.  It can also help you to build trust with the client through transparency and predictability.
+
 
 ### Timeboxing
 
@@ -56,51 +171,135 @@ Timeboxing is where you allocate a fixed amount of time to an issue and stop whe
 
 For example: *“Since we’re not yet sure how complex this integration is, we’ll allocate 2 days to investigate. We’ll regroup after that to decide the next steps based on what we learn.”*
 
-### Tracking Velocity
-
-In this context, velocity describes the amount of work that a team delivers in a set period. 
-
-You would track how many tasks your team has completed in previous Sprints and use this as a baseline for how many tasks of a similar size can be completed in the current sprint.  This gives you an evidence-based approach to expectation setting.
-
-Tracking velocity can help you to set realistic timelines based on what your team has actually delivered in the past.  It can also help you to build trust with the client through transparency and predictability
+Sprints are a example of timeboxing.  You might also timebox a product backlog item within a Sprint. 
 
 :::
 
-## Handling Trade-offs with Professionalism
+## Discussing Prioritisation
 
-You may need to help clients make informed decisions about scope, time and cost.
+A client approaches your team with a bold vision for a meal-planning app. They want grocery integration, dietary preference tracking, AI-generated recipes, video tutorials, social sharing, and a sleek mobile interface, all delivered within eight weeks.
 
--   Explain the project management triangle: You can have two out of three of fast, cheap and good.
--   Stay focused on solutions.  Instead of saying 'that's not possible' consider options, for example, “We can do X by Friday, or Y by next week - what’s more important?” 
--   Discuss the impact of adding a feature on increasing risk or delaying the development of another feature.
--   Try to stay neutral and fact-based, avoid any emotional language or blame.
+You explain that the scope is too large for the timeline, but the client insists each feature is essential. Without clear prioritisation, the team attempts to build everything and ends up delivering an unstable app that fails to meet user expectations. The client is disappointed, and trust is damaged.
 
-## Minimum Viable Product
+This kind of situation is common. Clients are often enthusiastic and ambitious, but may not understand the trade-offs involved. That’s why **clear prioritisation discussions** are essential.
 
-The Minimum Viable Product (MVP) is an early, basic version of a product that meets the minimum necessary requirements for use.  An MVP is often created to validate product assumptions and identify areas for improvement with minimal investment.  
 
-The MVP is often a core artifact in an iterative development process.  When the most basic version of the product exists, it can be evaluated and improved in subsequent iterations.
 
-You can use MoSCoW to help you and the client decide on the features necessary for the MVP.  It will probably include some or all of the must haves but few or none of the could/should haves.
+### Why Prioritisation Matters
+
+There’s rarely enough time or budget to build every requested feature. Prioritisation helps focus resources on what truly matters, ensuring that:
+
+-   The product can launch on time.
+-   Key user needs are met early.
+-   The team can iterate and improve based on real feedback.
+
+Introducing the concept of the **Minimum Viable Product (MVP)** can help clients shift from “everything now” to “what’s essential first.”
+
+
+### The MVP: A Strategic Starting Point
+
+The **MVP** is a basic, working version of the product that delivers core value. It's not the final product, but it’s enough to test with users and validate the idea.
+
+For instance, imagine that the client wants you to build a car.  Within the time and resource constraints, you determine that 100% of the 'must', 'should' and 'could' features would give you a bicycle, but the minimum viable product of 60% of all features would be a skateboard. 
 
 ![By Teemu - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=65494330](fig/minimum_viable_product.png){alt='diagram of a car mvp'}
 
+### Tools for Prioritisation: MoSCoW
+
+Use the **MoSCoW method** to help clients classify features:
+
+- **Must haves** – Essential for the product to function.
+- **Should haves** – Important, but not critical for launch.
+- **Could haves** – Desirable extras, only if time allows.
+- **Won’t haves (for now)** – Deferred until a later phase.
+
+This framework encourages honest, collaborative conversations about what really matters, and helps avoid overcommitting.
+
+
+### Facilitating Prioritisation
+
+-   Use visuals (roadmaps, feature lists) to support the discussion.
+-   Frame prioritisation in terms of client goals:  *“Which features will help you learn the most from your first users?”*
+-   Be prepared to explain technical dependencies (e.g. why Feature A must come before Feature B).
+-   Remind clients that starting small doesn’t mean thinking small - a more complex product can be built on top of the MVP but only when the bare essentials are in place.
+
+By leading productive prioritisation conversations, you help clients make better decisions, reduce risk, and increase the likelihood of a successful product launch.
+
+
+::: challenge
+
+## Solo Challenge: From Product Vision to MVP
+
+(5 minutes)
+
+Your client wants to launch a DIY pizza kit delivered to customers' homes. The big vision includes:
+
+-   Artisan dough, sauce, and toppings
+-   Vegan and gluten-free options
+-   A recipe booklet with tips and tricks
+-   Fancy packaging and branding
+-   App integration with cooking videos
+-   Optional dessert add-ons
+-   Custom topping selections
+-   Subscription bundles
+
+But:
+
+They have a tight budget and want to test the idea in the first month with a basic version.
+
+Your task is to develop their MVP: What’s the simplest product they can launch that still gives customers the core experience of “making your own pizza at home”?
+
+List the components that should be included in the MVP version of the DIY pizza kit.
+:::
+
 ## Reaching Clarity
 
-Clarifying anything that is unclear to anyone involved is really important to avoid incorrect assumptions and ensure a shared understanding of what the team is trying to achieve.
+During a planning meeting, a client tells the team: “We want the site to feel modern and fast.” No one asks for clarification. The designers choose a sleek, minimal style with bold colours, and the developers focus on performance optimisations to reduce load times to under 500ms.
 
-Methods of improving clarity:
+But at the next review, the client is unhappy. By “modern,” they actually meant visually similar to Apple’s aesthetic. And by “fast,” they didn’t mean technical speed, but a user journey with fewer steps. Because the team didn’t dig deeper, they now need to rework major parts of the product, wasting both time and budget.
 
- - Give concrete examples for abstract requests. For example, ask follow-up questions like “When you say ‘fast’, do you mean under 1 second?”
- -  Confirm you understand by summarising what the client has requested.  For example, "So just to confirm, you’d like the dashboard to show data from the last 7 days by default?”
- -   Use written follow-ups in the form of email recaps and/or meeting notes.
- -  Don't pretend to understand. You could say something like “I’m not sure I follow, please can you give me an example?”
+
+### Why Reaching Clarity Matters
+
+Small misunderstandings can grow into major issues if left unchecked. Assumptions on either side can lead to missed expectations, rework, and a loss of client trust. It’s far better to pause and ask than to move forward on unclear instructions.
+
+
+### Methods for Improving Clarity
+
+-   **Ask for specifics when things are vague**  
+  Use follow-up questions to make abstract requests concrete.  
+  For example:  
+  *“When you say ‘fast’, do you mean page loads under 1 second, or fewer clicks to reach key information?”*
+
+-   **Probe when clients say, “use your judgement”**  
+  If the client doesn’t know exactly what they want, try asking:  
+  *“What don’t you want?”* or  
+  *“Can you show me an example of something you like—or don’t like?”*
+
+-   **Summarise and confirm**  
+  Restate what you’ve heard to confirm your understanding.  
+  Example:  
+  *“So just to confirm, you’d like the dashboard to show data from the last 7 days by default?”*
+
+-   **Document everything clearly**  
+  Use written follow-ups like email recaps or meeting notes to reinforce shared understanding. These also create a useful reference point.
+
+-   **Admit when you’re unsure**  
+  It’s okay to say:  
+  *“I’m not sure I follow—could you walk me through an example?”*  
+  Honesty prevents costly mistakes later.
 
 
 ::: challenge
 ## Group Challenge: There's No Such Thing as a Silly Question
 
-Think about what is unclear to you in the project brief and formulate a list of questions for the client.
+(15 minutes)
+
+Re-read the project brief for the coffee beans project.  
+
+First, individually, take a few minutes to think about what is unclear to you in the project brief and formulate a list of questions for the client.
+
+Then, discuss your questions as a group and form a combined list of all of your questions.
 :::
 
 # Designing a Kickoff Meeting
@@ -137,15 +336,17 @@ Use your list of questions for the client in this section of the meeting
 
 ### Prioritisation and MVP Discussion
 
--   Introduce the concept of a minimum visable product if necessary.
--   Use techniques such as MoSCoW to prioritise backlog items.
 -   Help the client decide which features are essential for launch and which can wait.
+-   Use techniques such as MoSCoW to prioritise backlog items.
+-   Introduce the concept of a minimum viable product if necessary.
+
 
 ### Expectations and Timelines
 
+-   Agree what will be delivered (after Sprint 1 and in the final presentation).
+-   Agree on the format of the product you will deliver.
 -   Discuss delivery phases or sprints and milestone dates (In this case you have two sprints, each about 3 hours in length, and the delivery is on day 5).
--   Clarify any constraints such as resource limitations.
--   Mention how changes to scope will be handled (e.g., change requests or backlog re-prioritisation).
+
 
 Note: Be conservative in time estimates to allow for unforeseen delays.
 
@@ -159,36 +360,74 @@ Note: Be conservative in time estimates to allow for unforeseen delays.
 ::: challenge
 ## Group Challenge: Agenda Assembly
 
+(15 minutes)
+
 Create an agenda for a 30 minute kickoff meeting with the client for the Coffee Beans Analysis project.  
 
 The agenda should take the form of either a bullet list or a table.
 
 Use the structure above to develop your agenda ensuring it:
+
 -   is logically structured.
 -   each section has a rough timing assigned to it.
 -   includes key questions or talking points under each section.
 -   is appropriate for use with a non-technical client.
 :::
 
-## Meeting Notes
-
--   Capture decisions
--   Capture ambiguity
--   Actions
 
 ## Chairing the Meeting
 
--   the supplier i.e. the software developers should lead the meeting (When an electrician comes to your house they will ask the questions to get the information they need.  The customer shouldn't be expected to lead the interaction.)
--   make sure you get the information you need
--   the customer is unlikely to ask/answer the right questions
--   choose one person to take the lead
+In a client meeting, the software development team (the supplier) should take responsibility for leading the meeting. As an analogy, when an electrician comes to your house, they don’t expect you to explain wiring protocols, instead they ask questions to diagnose the problem and recommend solutions. Similarly, the development team should guide the meeting to get the clarity they need to do their job.
+
+-   Nominate one person to chair the meeting, it's their job to ensure that the meeting stays on track and follows the agenda. The rest of the group can add questions or comments but it's more straightforward if there is a single person leading the meeting.
+-   Make sure you get the information you need from the meeting.  Don't assume that the client will volunteer all necessary information - you may need to draw it out of them through asking lots of questions.
+-   Clients often don’t know what’s important to developers.  They may focus on the appearance of the product or general ideas rather than technical details. It's your job to lead the discussion towards finding the details you need.  You could use diagrams, examples, or “what-if” scenarios to help clients think through their needs.
+
+
+## Meeting Notes
+
+Meeting notes are a vital output from any client meeting. They protect against miscommunication, enable follow-up, and support future planning.
+
+Meeting notes should capture:
+
+-   **Decisions**: What was agreed in the meeting. 
+-   **Ambiguity**: Any areas that are still unclear and/or any open questions.
+-   **Actions**: Who is doing what and by when. Include actions on the software development team and on the client.
+
+It's helpful to take notes in a shared document (e.g. google doc) that everyone can access.  This way, if any updates are made, everyone can see them straight away.
+
+Send a summary email containing the meeting notes within 24 hours of the meeting to confirm that everyone is on the same page.
+
+It can be helpful to use consistent formating across meetings for clarity (e.g. bullet points or a table).
+
+
 
 ::: challenge
-Client meeting
+
+## Group Challenge: Client Meeting
+
+(30 minutes)
+
+You have a 30 minute meeting with the owner of the coffee company.  
+
+Choose a chair for your meeting and someone to be in charge of note taking. 
+
+Conduct the kickoff meeting for the project according to the agenda you produced earlier.  Make sure you get answers to all your questions and agree the priorities for the project with the client.
+
+Remember to send the client the meeting notes afterwards.
+
 :::
 
 ::: challenge
-Refine the backlog
+
+## Group Challenge: Refine the Product Backlog
+
+(15 minutes)
+
+Refine your product backlog following the client meeting.
+
+Add or edit any product backlog items and adjust the priorities according to the prioritisation you agreed with the client.
+
 :::
 
 ## References
