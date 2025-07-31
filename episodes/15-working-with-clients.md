@@ -6,7 +6,12 @@ exercises: 0
  
 :::::::::::::::::::::::::::::::::::::: questions
  
-- FIXME
+-   How can I communicate technical ideas clearly to non-technical clients?
+-   What should I do when the client’s needs or requests are vague or unclear?
+-   How do I help the client decide what features to prioritise?
+-   How do I manage client expectations around time, budget, and quality?
+-   What makes a good client kickoff meeting, and how should I lead it?
+-   What should be included in an agenda for a kickoff meeting?
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
  
@@ -36,10 +41,10 @@ While this course is focused on software engineering, the points that we'll cove
 
 ![Photo by zhendong wang on Unsplash](fig/speaking_different_languages.jpg){alt='photo of speach bubbles with words in different languages'}
 
-You’re in a meeting with a client and explain, *“We’re planning to refactor the backend and upgrade the framework so we can implement the auth flow asynchronously. That should make deployments cleaner.”*  
-The client nods politely but later admits they didn’t understand a word. They leave the meeting unclear on what's being done, why it's needed, or how it affects their goals.
+**Scenario:**
+You’re in a meeting with a client and explain, *“We’re planning to refactor the backend and upgrade the framework so we can implement the auth flow asynchronously. That should make deployments cleaner.”* The client nods politely but later admits they didn’t understand a word. They leave the meeting unclear on what's being done, why it's needed, or how it affects their goals.
 
-This kind of miscommunication is surprisingly common. It stems from the **Expert Awareness Gap**, a disconnect where technical professionals assume non-technical stakeholders share their understanding of concepts that have become second nature. As a result, clients may feel confused, excluded, or unsure how to make informed decisions.
+This kind of miscommunication is surprisingly common. It stems from the **Expert Awareness Gap** (also known as the Curse of Knowledge), a disconnect between experts and non-experts, where the expert unintentionally assumes that others share their knowledge, context, or mental models, when they do not. This is because experts internalise concepts so deeply that they become automatic and invisible to them.  In this context, software engineers may assume non-technical stakeholders share their understanding of technical concepts that have become second nature. As a result, clients may feel confused, excluded, or unsure how to make informed decisions.
 
 ![Photo by Denny Luan on Unsplash](fig/bridge_the_gap.jpg){alt='Lizard jumping across a large gap'}
 
@@ -49,18 +54,18 @@ To bridge this gap, and build shared understanding, try the following techniques
   For example, instead of saying *“we’re refactoring the code,”* try *“we’re tidying up the code to make it easier and safer to change in the future.”*
 
 - **Expand acronyms even if they seem obvious.**  
-  Don’t assume clients know what “CI/CD,” “API,” or “JWT” mean.  A good rule is to expand any acronym at least the first time you use it.
+  Don’t assume clients know what CI/CD (Continuous Integration / Continuous Deployment), API (Application Programming Interface), or JWT (JSON Web Token) mean.  A good rule is to expand any acronym at least the first time you use it.  
 
 - **Connect technical changes to client value.**  
   For instance, rather than saying *“we’re upgrading the framework,”* say *“we’re upgrading the framework to reduce bugs and give us access to modern features that improve security and performance.”*
 
 - **Frame decisions in terms of the client’s goals.**  
-  When discussing trade-offs, explain how technical choices affect things like **user experience, compliance, or costs**.
+  When discussing trade-offs, explain how technical choices affect things like user experience, compliance, or costs.
 
 - **Use visuals to support understanding.**  
-  Diagrams, flowcharts, or wireframes can help convey complex ideas without relying on jargon.
+  Diagrams, such as flowcharts, can help convey complex ideas without relying on jargon.
 
-By learning to speak the client’s language you build trust, make better decisions together, and avoid frustration on both sides.
+By learning to speak the client’s language you build their trust, enable better decision making, and avoid frustration on both sides.
 
 
 ::: challenge
@@ -85,11 +90,8 @@ Practice overcoming the expert awareness gap by explaining a familiar topic clea
 
 ## Setting Realistic Expectations
 
-In a client meeting, a developer says, *"Yes, we should be able to add that feature by the end of the sprint."* The client is pleased.  
-
-But a week later, it becomes clear that the feature is more complex than expected, other tasks are behind schedule, and the team now has to explain the delay. 
-
-The client feels frustrated and blindsided and this impacts the trust they have in your development team.
+**Scenario:**
+In a client meeting, a developer says, *"Yes, we should be able to add that feature by the end of the sprint."* The client is pleased.  However, a week later, it becomes clear that the feature is more complex than expected, other tasks are behind schedule, and the team now has to explain the delay. The client feels frustrated and blindsided and this impacts the trust they have in your development team.
 
 This is a classic example of unrealistic expectations, often caused by optimism, pressure to please, or fear of disappointing the client in the moment.
 
@@ -98,7 +100,7 @@ Setting realistic expectations is one of the most important parts of client comm
 ![Photo by Headway on Unsplash](fig/negotiation.jpg){alt='man with laptop gesturing'}
 
 
-- **Under-promise, Over-deliver**  
+- **Under-promise, over-deliver**  
   Clients would rather be pleasantly surprised than disappointed. Estimate conservatively, it's better to deliver something early or with extra polish than to miss a deadline.
 
 - **Build in contingency time**  
@@ -110,8 +112,8 @@ Setting realistic expectations is one of the most important parts of client comm
 
 - **Be honest about trade-offs and limitations**  
   For example:  
-  *“We can deliver this in two weeks, but without automated testing. If you want it tested properly, we’ll need an extra week.”*  
-  Being upfront avoids surprises later.
+  *“We can deliver this in two weeks, but without automated testing. If you want it tested properly, we’ll need an extra week.”*
+  
   
 
 ### Watch Out for Scope Creep
@@ -124,11 +126,11 @@ Help clients make informed decisions by explaining:
 
 - **The Project Management Triangle**  
   You can have two of the following:  
-  **Fast, Cheap, or Good** but rarely all three at once.
+  Fast, Cheap, or Good - but rarely all three at once.
 
 - **Impact of changes**  
   Rather than saying *“That’s not possible,”* present options:  
-  *“We can do X by Friday, or Y by next week—what’s more important to you?”*
+  *“We can do X by Friday, or Y by next week.  What’s more important to you?”*
 
 - **Cost of adding features**  
   Be clear about how additional features may delay delivery, increase complexity, or reduce testing time.
@@ -189,9 +191,8 @@ Sprints are a example of timeboxing.  You might also timebox a product backlog i
 
 ## Discussing Prioritisation
 
-A client approaches your team with a bold vision for a meal-planning app. They want grocery integration, dietary preference tracking, AI-generated recipes, video tutorials, social sharing, and a sleek mobile interface, all delivered within eight weeks.
-
-You explain that the scope is too large for the timeline, but the client insists each feature is essential. Without clear prioritisation, the team attempts to build everything and ends up delivering an unstable app that fails to meet user expectations. The client is disappointed, and trust is damaged.
+**Scenario:**
+A client approaches your team with a vision for a meal-planning app. They want grocery shopping integration, dietary preference tracking, AI-generated recipes, video tutorials, and a sleek mobile interface, all delivered within eight weeks. You explain that the scope is too large for the timeline, but the client insists each feature is essential. Without clear prioritisation, the team attempts to build everything and ends up delivering an unstable app that fails to meet user expectations. The client is disappointed, and trust is damaged.
 
 This kind of situation is common. Clients are often enthusiastic and ambitious, but may not understand the trade-offs involved. That’s why **clear prioritisation discussions** are essential.
 
@@ -210,9 +211,9 @@ Introducing the concept of the **Minimum Viable Product (MVP)** can help clients
 
 ### The MVP: A Strategic Starting Point
 
-The **MVP** is a basic, working version of the product that delivers core value. It's not the final product, but it’s enough to test with users and validate the idea.
+The **MVP** is a basic, working version of the product that delivers the product's core value. It's not the final product, but it’s enough to test with users and validate the idea.
 
-For instance, imagine that the client wants you to build a car.  Within the time and resource constraints, you determine that 100% of the 'must', 'should' and 'could' features would give you a bicycle, but the minimum viable product of 60% of all features would be a skateboard. 
+For instance, imagine that the client wants you to build a car.  The core value is a structure with wheels that can get you from A to B, so the MVP might be a skateboard.
 
 ![By Teemu - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=65494330](fig/minimum_viable_product.png){alt='diagram of a car mvp'}
 
@@ -268,9 +269,8 @@ List the components that should be included in the MVP version of the DIY pizza 
 
 ![Photo by Paul Pastourmatzis on Unsplash](fig/reaching_clarity.jpg){alt='a hand reaching toward a clear lake'}
 
-During a planning meeting, a client tells the team: “We want the site to feel modern and fast.” No one asks for clarification. The designers choose a sleek, minimal style with bold colours, and the developers focus on performance optimisations to reduce load times to under 500ms.
-
-But at the next review, the client is unhappy. By “modern,” they actually meant visually similar to Apple’s aesthetic. And by “fast,” they didn’t mean technical speed, but a user journey with fewer steps. Because the team didn’t dig deeper, they now need to rework major parts of the product, wasting both time and budget.
+**Scenario:**
+During a planning meeting, a client tells the team: “We want the site to feel modern and fast.” No one asks for clarification. The designers choose a sleek, minimal style with bold colours, and the developers focus on performance optimisations to reduce load times to under 500ms.  However, at the next review, the client is unhappy. By “modern,” they actually meant visually similar to Apple’s aesthetic. And by “fast,” they didn’t mean technical speed, but a user journey with fewer steps. The team now need to rework major parts of the product, wasting both time and budget.
 
 
 ### Why Reaching Clarity Matters
@@ -300,7 +300,7 @@ Small misunderstandings can grow into major issues if left unchecked. Assumption
 
 -   **Admit when you’re unsure**  
   It’s okay to say:  
-  *“I’m not sure I follow—could you walk me through an example?”*  
+  *“I’m not sure I follow, please could you walk me through an example?”*  
   Honesty prevents costly mistakes later.
 
 
@@ -313,7 +313,7 @@ Re-read the project brief for the coffee beans project.
 
 First, individually, take a few minutes to think about what is unclear to you in the project brief and formulate a list of questions for the client.
 
-Then, discuss your questions as a group and form a combined list of all of your questions.
+Then, discuss your questions as a group and form a combined list of all your questions.
 :::
 
 # Designing a Kickoff Meeting
@@ -412,11 +412,11 @@ Meeting notes should capture:
 -   **Ambiguity**: Any areas that are still unclear and/or any open questions.
 -   **Actions**: Who is doing what and by when. Include actions on the software development team and on the client.
 
-It's helpful to take notes in a shared document (e.g. google doc) that everyone can access.  This way, if any updates are made, everyone can see them straight away.
+It's helpful to take notes in a shared document (e.g., google doc) that everyone can access.  This way, if any updates are made, everyone can see them straight away.
 
 Send a summary email containing the meeting notes within 24 hours of the meeting to confirm that everyone is on the same page.
 
-It can be helpful to use consistent formating across meetings for clarity (e.g. bullet points or a table).
+It can be helpful to use consistent formating across meetings for clarity (e.g., bullet points or a table).
 
 
 
@@ -451,9 +451,20 @@ Add or edit any product backlog items and adjust the priorities according to the
 ## References
 -   [IEEE Software Engineering Body of Knowledge (SWEBOK), "Software Engineering Professional Practice"](https://swebokwiki.org)
 -   [Minimum viable product wikipedia](https://en.wikipedia.org/wiki/Minimum_viable_product)
+-   [The Decision Lab - The Curse of Knowledge](https://thedecisionlab.com/reference-guide/management/curse-of-knowledge)
+-   [Dev - How to underpromise and underdeliver](https://dev.to/femolacaster/how-to-underpromise-and-overdeliver-5a9)
+-   [Scope creep wikipedia](https://en.wikipedia.org/wiki/Scope_creep)
 
 :::::::::::::::::::::::::::::::::::::: keypoints
  
-- FIXME
+-   Avoid jargon by translating technical concepts into plain, client-friendly language.
+-   Clarify vague requests by asking follow-up questions and confirming understanding.
+-   Use the concept of a Minimum Viable Product to help clients focus on the core of their product.
+-   Set expectations realistically by under-promising and including contingency time.
+-   Be transparent about limitations and clearly explain the impact of technical decisions.
+-   Manage scope creep by showing how new requests affect cost, time, or quality.
+-   Take the lead in client meetings to ensure key information is gathered.
+-   Use a clear agenda to guide productive and structured client discussions.
+-   Record and share meeting notes to capture decisions, questions, and action points.
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
