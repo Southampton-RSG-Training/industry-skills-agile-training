@@ -277,7 +277,9 @@ which includes the merge options discussed previously -
 create a merge commit, squash and merge, and rebase and merge.
 Ensure this `Create a merge commit` is selected for now.
 
-Finally, select `Merge pull request` to complete the merge.
+Finally, select `Merge pull request`,
+add a commit message that describes it,
+and `Confirm merge` to complete the merge.
 
 :::::::::::::::::::::::::::::::::::::: keypoints
  
