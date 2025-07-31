@@ -76,7 +76,8 @@ episodes:
 - 14-estimation-prioritisation.md
 - 15-version-control.md
 - 20-day2-intro.md
-- 21-collaboration-workflow.md
+- 21-1-collaboration-workflow.md
+- 21-2-collaboration-workflow.md
 - 22-intro-automated-testing.md
 - 22-1-writing-unit-tests.md
 - 22-2-continuous-integration.md

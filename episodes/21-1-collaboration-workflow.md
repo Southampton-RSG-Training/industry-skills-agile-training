@@ -1,7 +1,7 @@
 ---
-title: "2.1 Version Control: Collaborative Workflow"
+title: "2.1 Collaborative Workflow: Branches and Merging Strategies"
 teaching: 0
-exercises: 0
+exercises: 10
 ---
  
 :::::::::::::::::::::::::::::::::::::: questions
@@ -14,23 +14,27 @@ exercises: 0
 
 - Describe how workflow relates to process
 - Describe the purpose of branches in a repository
+- Verify that team is able to developing using project repository locally
 - Define the elements of a feature-branch workflow
 - Describe four major strategies for merging branches
-- Bullet-point some advantages and limitations of working in a feature-branch workflow
-- Verify that team is able to developing using project repository locally
 - Create and use a branch
-- Define a pull request and identify some reasons for using pull requests
-- Submit a pull request in GitHub
-- Review a pull request
-- Resolve a small conflict between two branches
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## How are a Development Process and Version Control Related?
 
-FIXME: how the use of infrastructure should reflect and support how the team operates
-FIXME: the reality of simultaneous strands of development in a project
-FIXME: the main branch, the need for multiple branches
+In a software development project the infrastructure - particularly the version control system - should be configured and used in way that reflects and support the team’s chosen development process.
+This alignment ensures that the tools in place reinforce the way the team works,
+rather than creating friction or bottlenecks.
+With a team following an agile, feature-driven workflow, the version control system should explicitly support that workflow.
+
+Ultimately, as development processes evolve,
+the infrastructure should evolve with them.
+A version control system that reflects the development process helps to reduce coding errors, increases communications between members, streamline the collaborative process, 
+and improves the overall efficiency and quality of the software being produced.
+
+In the next couple of episodes, we'll look at how to use well-established practices for using version control,
+using Git and GitHub as an example, to illustrate how it can support software developed using an agile approach.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -284,18 +288,38 @@ When you rebase the feature branch with the main branch, Git replays each commit
 So, all the changes introduced on feature branch (commits D and E) are reapplied on top of commit F - becoming D' and E'. Note that D' and E' are rebased commits, which are actually new commits with different SHAs but the same modifications as commits D and E.
 
 ```text
-A - B - C - F [main]
+A - B - C - F - D' - E' [main]
              \
-              D' - E' [feature]
+              D - E [feature]
 ```
 
 At this point, you can go back to the main branch and do a fast-forward merge with feature branch.
 
 Fast forward merge strategy is best used when you have a short-lived feature branch that needs to be merged back into the main branch, and no other changes have been made to the main branch in the meantime.
 
-Rebase is ideal for feature branches that have fallen behind the main development line and need updating. It is particularly useful before merging long-running feature branches to ensure they apply cleanly on top of the main branch.
+Rebase is ideal for feature branches that have fallen behind the main development line and need updating.
+It is particularly useful before merging long-running feature branches to ensure they apply cleanly on top of the main branch.
 Rebasing maintains a linear history and avoids merge commits (like fast forwarding), making it look as if changes were made sequentially and as if you created your feature branch from a different point in the repository's history. 
 A disadvantage is that it rewrites commit history, which can be problematic for shared branches as it requires force pushing.
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## The Golden Rule of Rebasing
+
+Note that you can also do rebasing with branches on the command line.
+But a word of warning: when doing this,
+be sure you know what will happen.
+
+Rebasing in this way rewrites the repository's history,
+and therefore, with rebasing, there is a GOLDEN RULE
+which states that you should only rebase with a local branch, never a public (shared) branch you suspect is being used by others.
+When rebasing, you're re-writing the history of commits,
+so if someone else has the repository on their own machine and has worked on a particular branch,
+if you rebase on that branch, the history will have changed, and they will run into difficulties when pushing their changes due to the rewritten history.
+It can get quite messy,
+so if in doubt, do a standard merge!
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Squash & Merge
 
@@ -355,126 +379,6 @@ Here are several non-exhaustive reasons:
 :::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-## Pull Requests and Code Reviews
-
-So far we've looked at different ways we can work on separate strands of development in branches and then merge them.
-Since they are independent, it's sometimes difficult to know what the overall effect will be when they are finally merged.
-
-In our previous exercise we focused on writing code in an individual setting on feature branches.
-However if we allowed everyone to develop and merge code whenever, wherever, and however they wanted,
-without any kind of coordination,
-the result would likely be a chaotic and potentially non-functional mess.
-Using feature branches helps to some extent,
-keeping strands of development separate
-but in many cases, when it comes time to merge our branch into the `main` branch,
-it would be really useful to have a way to *review* code before it's finally merged to verify that these changes are well considered and implemented.
-
-Fortunately version control hosting infrastructures like GitHub support an additional step in the use of feature branches, the *pull request*:
-the changes in a feature branch are proposed in a pull request,
-and then the pull request is reviewed by another team member (or maybe several).
-If the pull request is judged to be a suitable set of changes,
-the pull request is accepted and the changes are merged using a branch merging strategy as discussed.
-
-![](fig/collab-workflow-pull-request.png){alt="Diagram depicting a feature branch being created off of a main branch, with its own commits, and those commits then being merged onto the main branch."}
-
-However, if the review identifies issues that indicate that it is unsuitable to be merged,
-the pull request is rejected.
-This does not necessarily mean the pull request has to be closed.
-Development on the feature branch of that pull request may continue,
-with further commits to address the points brought up in the review,
-and then the pull request reviewed again at a later time and perhaps accepted and merged.
-
-![](fig/collab-workflow-pr-second-review.png){alt="Diagram depicting a failed first review of a pull request, subsequent fixes to address the review, and a successful second review and merge to main."}
-
-In a sense, a pull request is a verification check - or insurance policy - against merging bad commits to the `main` branch.
-
-This approach is known as *feature branch workflow*.
-
-### Preparing Some Example Work
-
-In order for us to try out feature branch workflow as a team,
-let's first create some issues on our group repository to represent some small tasks we'll do using that approach.
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Group Exercise: Make Work for Yourselves
-
-5 mins.
-
-The group repository contains a draft README with a typical set of section headings that should be added:
-
-- *Description* - what are the motivations for the software, the problem it aims to solve, and its key functions?
-- *Pre-requisites* - what software or other dependencies are required to use this software?
-- *Installation* - how do you install or deploy the software so it can be used?
-- *Usage* - what are a basic set of instructions for using the software for its intended purpose?
-- *Running Tests* - how do you run the automated unit tests?
-- *Authors/Maintainers* - who are the authors and maintainers of the software? e.g. including yourselves, and your contact information?
-- *Licence* - what is the licence for the software?
-- *Acknowledgements* - what other projects, software or people should be acknowledged as part of this work?
-
-As a group:
-
-1. Select a number of sections equal to the number of members in your group,
-and divide them up so everyone gets a section to write
-1. For each member select someone else who will review their pull request
-1. Each member then creates an issue on the group repository describing the task of writing that section,
-ensuring the issue has a sufficient description,
-has a `Documentation` label set,
-and is assigned to that member.
-
-::::::::::::::::::::::::::::: solution
-
-For example:
-
-![](fig/collab-workflow-add-issue.png){alt="Adding a new GitHub issue to the group repository for writing a description to the README, ensuring it has a quick summary, is assigned to someone, and has a documentation label"}
-
-::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-Next, based on your assigned task,
-we'll use feature branch workflow on our cloned group repository.
-
-Ensure you have a terminal open,
-and you're currently in the root directory of your group repository.
-
-1. First, create a new branch for that issue, referencing the issue number in the branch name, e.g. `git branch 123-readme-description`
-1. Switch to that branch, e.g. `git switch 123-readme-description`
-1. Use a code editor to edit the `README.md` file and very briefly write content for that section as per your assigned issue, and save the file
-1. Add the changes to the Git staging area, e.g. `git add README.md`
-1. Commit the changes, referencing the issue number in the commit message prefixed with a `#` symbol, e.g. `git commit -m "#123 - Add description"`
-1. Push the changes to the remote group repository, e.g. `git push -u origin 123-readme-description`
-
-If you go to the repository's main branches page (e.g. https://github.com/github-username/coffee-analysis/branches) you should see your new branch listed,
-and eventually those of your other team members.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-### Submitting a Pull Request
-
-Before we create a pull requestm
-
-Let's each create a pull request now, based on our changes.
-
-1. First, go the `Pull requests` tab at the top of the group repository main page,
-and select `New pull request`
-1. In the `Compare changes` page that comes up:
-   - Select `compare:` and select your new branch, e.g. `123-readme-description`
-   You should now see a summary of the changes between the new branch and the `main` branch,
-   i.e. a single commit and the new README content you pushed earlier
-   - Select `Create pull request`
-1. In the `Open a pull request` page that appears:
-   - Enter a fitting title, brief description, and label
-   - Select `Reviewers` and add the GitHub account for the other group member who will review your pull request
-   - Select `Create pull request`
-
-### Reviewing Code
-
-### Addressing Feedback
-
-### Merging the Pull Request
 
 
 :::::::::::::::::::::::::::::::::::::: keypoints
