@@ -714,7 +714,7 @@
 </div>
 </div></section><section id="aio-12-software-development-landscape"><p>Content from <a href="12-software-development-landscape.html">1.2 Software Development Process and the Landscape of Approaches</a></p>
 <hr>
-<p>Last updated on 2025-07-24 |
+<p>Last updated on 2025-07-31 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/12-software-development-landscape.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
@@ -798,6 +798,9 @@ initially that the software will have use beyond its initial purpose or
 project, but there is an assumption that the software - or even just a
 part of it - could be reused in the future.</li>
 </ul>
+<p>Thinking about software engineering from that wider view, there are
+some typical stages that a software development project would go through
+and these are ver similar to the stages of any project.</p>
 <div id="lets-break-it-down" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -990,12 +993,10 @@ the traceability of software changes.</li>
 </ul>
 <p>Disadvantages</p>
 <ul>
-<li><p>Not flexible so struggles to deal with changing
-requirements</p></li>
-<li><p>Time-consuming due to extensive documentation and
-testing.</p></li>
-<li><p>No support for development activities to occur concurrently or to
-iterate.</p></li>
+<li>Not flexible so struggles to deal with changing requirements</li>
+<li>Time-consuming due to extensive documentation and testing.</li>
+<li>No support for development activities to occur concurrently or to
+iterate.</li>
 </ul>
 <div id="callout4" class="callout">
 <div class="callout-square">
@@ -1313,7 +1314,7 @@ team performance</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Software development</li>
@@ -1398,7 +1399,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-13-stakeholder-management"><p>Content from <a href="13-stakeholder-management.html">1.3 User Stories and Capturing Project Requirements</a></p>
 <hr>
-<p>Last updated on 2025-06-13 |
+<p>Last updated on 2025-07-31 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/13-stakeholder-management.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
@@ -1693,29 +1694,49 @@ factors?</li>
 <h3 id="some-examples">Some Examples<a class="anchor" aria-label="anchor" href="#some-examples"></a>
 </h3>
 <p>To get you thinking, consider the following examples:</p>
-<p>Desktop Application - Has a graphical interface for use with mouse
-and keyboard - May need to work on multiple, very different operating
-systems - May be intended for users to modify / compile themselves -
-Should work on a wide range of hardware configurations - Documentation
-probably either in a manual or in the software itself</p>
-<p>Command-line Application - Linux Tool - User interface is text based,
-probably via command-line arguments - Intended to be modified / compiled
-by users - though most will choose not to - Documentation has standard
-formats - also accessible from the command line - Should be usable as
-part of a pipeline</p>
-<p>Command-line Application - High Performance Computing - Similar to a
-UNIX Tool - Usually supports running across multiple networked machines
-simultaneously - Usually operated via a scheduler - interface should be
-scriptable - May need to run on a wide range of hardware (e.g. different
-CPU architectures) - May need to process large amounts of data - Often
-entirely or partially written in a lower-level language for performance
-(e.g. C, C++, Fortran)</p>
-<p>Web Application - Usually has components which run on server and
-components which run on the user’s device - Graphical interface should
-usually support both Desktop and Mobile devices - Client-side component
-should run on a range of browsers and operating systems - Documentation
-probably part of the software itself - Client-side component typically
-written in JavaScript</p>
+<p>Desktop Application</p>
+<ul>
+<li>Has a graphical interface for use with mouse and keyboard</li>
+<li>May need to work on multiple, very different operating systems</li>
+<li>May be intended for users to modify / compile themselves</li>
+<li>Should work on a wide range of hardware configurations</li>
+<li>Documentation probably either in a manual or in the software
+itself</li>
+</ul>
+<p>Command-line Application - Linux Tool</p>
+<ul>
+<li>User interface is text based, probably via command-line
+arguments</li>
+<li>Intended to be modified / compiled by users - though most will
+choose not to</li>
+<li>Documentation has standard formats - also accessible from the
+command line</li>
+<li>Should be usable as part of a pipeline</li>
+</ul>
+<p>Command-line Application - High Performance Computing</p>
+<ul>
+<li>Similar to a UNIX Tool</li>
+<li>Usually supports running across multiple networked machines
+simultaneously</li>
+<li>Usually operated via a scheduler - interface should be
+scriptable</li>
+<li>May need to run on a wide range of hardware (e.g. different CPU
+architectures)</li>
+<li>May need to process large amounts of data</li>
+<li>Often entirely or partially written in a lower-level language for
+performance (e.g. C, C++, Fortran)</li>
+</ul>
+<p>Web Application</p>
+<ul>
+<li>Usually has components which run on server and components which run
+on the user’s device</li>
+<li>Graphical interface should usually support both Desktop and Mobile
+devices</li>
+<li>Client-side component should run on a range of browsers and
+operating systems</li>
+<li>Documentation probably part of the software itself</li>
+<li>Client-side component typically written in JavaScript</li>
+</ul>
 </div>
 </div>
 </div>
@@ -2615,7 +2636,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-15-working-with-clients"><p>Content from <a href="15-working-with-clients.html">1.5 Working with Clients</a></p>
 <hr>
-<p>Last updated on 2025-07-24 |
+<p>Last updated on 2025-07-31 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/15-working-with-clients.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
@@ -2630,7 +2651,16 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>FIXME</li>
+<li>How can I communicate technical ideas clearly to non-technical
+clients?</li>
+<li>What should I do when the client’s needs or requests are vague or
+unclear?</li>
+<li>How do I help the client decide what features to prioritise?</li>
+<li>How do I manage client expectations around time, budget, and
+quality?</li>
+<li>What makes a good client kickoff meeting, and how should I lead
+it?</li>
+<li>What should be included in an agenda for a kickoff meeting?</li>
 </ul>
 </div>
 </div>
@@ -2653,29 +2683,412 @@ context.</li>
 </div>
 </div>
 <div class="section level1">
-<h1 id="clarifying-requirements-for-software-projects">Clarifying Requirements for Software Projects<a class="anchor" aria-label="anchor" href="#clarifying-requirements-for-software-projects"></a>
-</h1>
-</div>
-<div class="section level1">
 <h1 id="communicating-with-clients">Communicating with Clients<a class="anchor" aria-label="anchor" href="#communicating-with-clients"></a>
 </h1>
-<p>Translating technical constraints into client-understandable
-terms.</p>
-<p>Setting realistic expectations without overcommitting (underpromise,
-overdeliver).</p>
-<p>Handling trade-offs (scope, time, cost) with professionalism.</p>
-<p>Brief reference to previously learned MoSCoW: applying it in
-discussions about MVPs.</p>
-<p>Why it’s important to clarify anything that’s unclear</p>
-<div id="discussion1" class="callout discussion">
+<figure><img src="../fig/communicating_with_clients.png" alt="Illustration of two people at a table with laptops" class="figure mx-auto d-block"><div class="figcaption">Illustration by Muhammad Noor on Unsplash</div>
+</figure><p>One of the most important skills for a software engineer working in
+industry is the ability to communicate effectively with clients.</p>
+<p>Clear communication builds trust, prevents expensive
+misunderstandings, and ensures that the business goals and technical
+implementation are aligned.</p>
+<p>While this course is focused on software engineering, the points that
+we’ll cover can be applied to any project.</p>
+<div class="section level2">
+<h2 id="speaking-the-same-language">Speaking the Same Language<a class="anchor" aria-label="anchor" href="#speaking-the-same-language"></a>
+</h2>
+<figure><img src="../fig/speaking_different_languages.jpg" alt="photo of speach bubbles with words in different languages" class="figure mx-auto d-block"><div class="figcaption">Photo by zhendong wang on Unsplash</div>
+</figure><p><strong>Scenario:</strong> You’re in a meeting with a client and
+explain, <em>“We’re planning to refactor the backend and upgrade the
+framework so we can implement the auth flow asynchronously. That should
+make deployments cleaner.”</em> The client nods politely but later
+admits they didn’t understand a word. They leave the meeting unclear on
+what’s being done, why it’s needed, or how it affects their goals.</p>
+<p>This kind of miscommunication is surprisingly common. It stems from
+the <strong>Expert Awareness Gap</strong> (also known as the Curse of
+Knowledge), a disconnect between experts and non-experts, where the
+expert unintentionally assumes that others share their knowledge,
+context, or mental models, when they do not. This is because experts
+internalise concepts so deeply that they become automatic and invisible
+to them. In this context, software engineers may assume non-technical
+stakeholders share their understanding of technical concepts that have
+become second nature. As a result, clients may feel confused, excluded,
+or unsure how to make informed decisions.</p>
+<figure><img src="../fig/bridge_the_gap.jpg" alt="Lizard jumping across a large gap" class="figure mx-auto d-block"><div class="figcaption">Photo by Denny Luan on Unsplash</div>
+</figure><p>To bridge this gap, and build shared understanding, try the following
+techniques:</p>
+<ul>
+<li><p><strong>Use analogies or plain language.</strong><br>
+For example, instead of saying <em>“we’re refactoring the code,”</em>
+try <em>“we’re tidying up the code to make it easier and safer to change
+in the future.”</em></p></li>
+<li><p><strong>Expand acronyms even if they seem obvious.</strong><br>
+Don’t assume clients know what CI/CD (Continuous Integration /
+Continuous Deployment), API (Application Programming Interface), or JWT
+(JSON Web Token) mean. A good rule is to expand any acronym at least the
+first time you use it.</p></li>
+<li><p><strong>Connect technical changes to client value.</strong><br>
+For instance, rather than saying <em>“we’re upgrading the
+framework,”</em> say <em>“we’re upgrading the framework to reduce bugs
+and give us access to modern features that improve security and
+performance.”</em></p></li>
+<li><p><strong>Frame decisions in terms of the client’s
+goals.</strong><br>
+When discussing trade-offs, explain how technical choices affect things
+like user experience, compliance, or costs.</p></li>
+<li><p><strong>Use visuals to support understanding.</strong><br>
+Diagrams, such as flowcharts, can help convey complex ideas without
+relying on jargon.</p></li>
+</ul>
+<p>By learning to speak the client’s language you build their trust,
+enable better decision making, and avoid frustration on both sides.</p>
+<div id="pair-challenge-explain-a-technical-topic" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="pair-challenge-explain-a-technical-topic" class="callout-inner">
+<h3 class="callout-title">Pair Challenge: Explain a Technical Topic</h3>
 <div class="callout-content">
-<p>Determine what is unclear in the project brief and formulate a list
-of questions for the client.</p>
+<p>(7 minutes)</p>
+<p>Practice overcoming the expert awareness gap by explaining a familiar
+topic clearly to someone with no background in it.</p>
+<ol style="list-style-type: decimal">
+<li><p>Individually, think of a topic that you know a lot about. For
+example, it could be the subject of your research, a programming
+language or framework that you’ve used extensively, or a hobby or skill
+that you have a lot of experience with (e.g. playing the clarinet, wild
+swimming, golf).</p></li>
+<li><p>Check with your partner that they know little or nothing about
+this topic.</p></li>
+<li><p>Take two minutes each to explain your topic to your partner as if
+they have no prior knowledge.</p></li>
+<li><p>After listening, the partner should ask questions to clarify
+anything they don’t understand.</p></li>
+<li><p>Swap roles and repeat the exercise so both of you get a chance to
+explain and to listen.</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="setting-realistic-expectations">Setting Realistic Expectations<a class="anchor" aria-label="anchor" href="#setting-realistic-expectations"></a>
+</h2>
+<p><strong>Scenario:</strong> In a client meeting, a developer says,
+<em>“Yes, we should be able to add that feature by the end of the
+sprint.”</em> The client is pleased. However, a week later, it becomes
+clear that the feature is more complex than expected, other tasks are
+behind schedule, and the team now has to explain the delay. The client
+feels frustrated and blindsided and this impacts the trust they have in
+your development team.</p>
+<p>This is a classic example of unrealistic expectations, often caused
+by optimism, pressure to please, or fear of disappointing the client in
+the moment.</p>
+<p>Setting realistic expectations is one of the most important parts of
+client communication. It helps prevent misunderstandings, reduces
+stress, and builds long-term trust.</p>
+<figure><img src="../fig/negotiation.jpg" alt="man with laptop gesturing" class="figure mx-auto d-block"><div class="figcaption">Photo by Headway on Unsplash</div>
+</figure><ul>
+<li><p><strong>Under-promise, over-deliver</strong><br>
+Clients would rather be pleasantly surprised than disappointed. Estimate
+conservatively, it’s better to deliver something early or with extra
+polish than to miss a deadline.</p></li>
+<li><p><strong>Build in contingency time</strong><br>
+Always allow for the unexpected. Think carefully about what could go
+wrong (technical complexity, team availability, integration issues), and
+factor that into your estimates.</p></li>
+<li><p><strong>Avoid committing on the spot</strong><br>
+Don’t feel pressured to promise something immediately. It’s entirely
+professional to say:<br><em>“Let me check with the team and get back to you this
+afternoon.”</em></p></li>
+<li><p><strong>Be honest about trade-offs and limitations</strong><br>
+For example:<br><em>“We can deliver this in two weeks, but without automated testing. If
+you want it tested properly, we’ll need an extra week.”</em></p></li>
+</ul>
+<div class="section level3">
+<h3 id="watch-out-for-scope-creep">Watch Out for Scope Creep<a class="anchor" aria-label="anchor" href="#watch-out-for-scope-creep"></a>
+</h3>
+<figure><img src="../fig/scope_creep.jpg" alt="snail creeping along a log" class="figure mx-auto d-block"><div class="figcaption">Photo by Patti Black on Unsplash</div>
+</figure><p><strong>Scope creep</strong>, also known as <em>requirement
+creep</em>, happens when new features or changes are added during the
+project without adjusting time or budget. If this isn’t managed, it can
+derail progress and increase risk.</p>
+<p>Help clients make informed decisions by explaining:</p>
+<ul>
+<li><p><strong>The Project Management Triangle</strong><br>
+You can have two of the following:<br>
+Fast, Cheap, or Good - but rarely all three at once.</p></li>
+<li><p><strong>Impact of changes</strong><br>
+Rather than saying <em>“That’s not possible,”</em> present
+options:<br><em>“We can do X by Friday, or Y by next week. What’s more important to
+you?”</em></p></li>
+<li><p><strong>Cost of adding features</strong><br>
+Be clear about how additional features may delay delivery, increase
+complexity, or reduce testing time.</p></li>
+<li><p><strong>Stay neutral and solution-focused</strong><br>
+Avoid blame or emotional language. Stick to the facts and guide clients
+toward trade-offs based on their priorities.</p></li>
+</ul>
+<p>By setting realistic expectations from the start, you’re managing
+risk, building your client’s confidence in your team and keeping the
+project on track.</p>
+<div id="group-challenge-responding-to-scope-creep" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="group-challenge-responding-to-scope-creep" class="callout-inner">
+<h3 class="callout-title">Group Challenge: Responding to Scope Creep</h3>
+<div class="callout-content">
+<p>(10 minutes)</p>
+<p>Your team has already agreed with the client on the project’s scope
+and timeline. You’re midway through the first sprint when the client
+sends an email saying:</p>
+<p>“We’ve been thinking, and we’d really like to add a feature that
+allows users to share their progress with friends. Can we fit that in
+before the demo next week?”</p>
+<p>This new feature was not in the original backlog and has design,
+development, and testing implications.</p>
+<p>Discuss your response to the client, using the principles outlined
+above, and then draft a short email that:</p>
+<ul>
+<li>Acknowledges the client’s request positively and
+professionally;</li>
+<li>Explains the impact of the new feature on timeline, scope and/or
+risk;</li>
+<li>Presents options (e.g. delay another feature, extend the deadline,
+or push the feature to the next iteration);</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="solo-challenge-from-product-vision-to-mvp" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<div class="section level3 callout-title">
+<h3 class="callout-title" id="techniques-for-setting-expectations">Techniques for Setting Expectations<a class="anchor" aria-label="anchor" href="#techniques-for-setting-expectations"></a>
+</h3>
+</div>
+<div class="callout-content">
+<div class="section level3">
+<h3 id="tracking-velocity">Tracking Velocity<a class="anchor" aria-label="anchor" href="#tracking-velocity"></a>
+</h3>
+<p>In this context, velocity describes the amount of work that a team
+delivers in a set period.</p>
+<p>You would track how many tasks your team has completed in previous
+Sprints and use this as a baseline for how many tasks of a similar size
+can be completed in the current sprint. This gives you an evidence-based
+approach to expectation setting.</p>
+<p>Tracking velocity can help you to set realistic timelines based on
+what your team has actually delivered in the past. It can also help you
+to build trust with the client through transparency and
+predictability.</p>
+</div>
+<div class="section level3">
+<h3 id="timeboxing">Timeboxing<a class="anchor" aria-label="anchor" href="#timeboxing"></a>
+</h3>
+<p>Timeboxing is where you allocate a fixed amount of time to an issue
+and stop when that time is up, regardless of whether the issue has been
+resolved. Timeboxing can be useful when the work is exploratory or
+uncertain because it:</p>
+<ul>
+<li>makes transparent to the client how much time is being allocated to
+learning or discovery, which may not be clear from observable progress
+on the product.</li>
+<li>helps avoid analysis paralysis (getting stuck on one issue
+indefinitely)</li>
+<li>controls the risk when the outcome is uncertain</li>
+</ul>
+<p>For example: <em>“Since we’re not yet sure how complex this
+integration is, we’ll allocate 2 days to investigate. We’ll regroup
+after that to decide the next steps based on what we learn.”</em></p>
+<p>Sprints are a example of timeboxing. You might also timebox a product
+backlog item within a Sprint.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="discussing-prioritisation">Discussing Prioritisation<a class="anchor" aria-label="anchor" href="#discussing-prioritisation"></a>
+</h2>
+<p><strong>Scenario:</strong> A client approaches your team with a
+vision for a meal-planning app. They want grocery shopping integration,
+dietary preference tracking, AI-generated recipes, video tutorials, and
+a sleek mobile interface, all delivered within eight weeks. You explain
+that the scope is too large for the timeline, but the client insists
+each feature is essential. Without clear prioritisation, the team
+attempts to build everything and ends up delivering an unstable app that
+fails to meet user expectations. The client is disappointed, and trust
+is damaged.</p>
+<p>This kind of situation is common. Clients are often enthusiastic and
+ambitious, but may not understand the trade-offs involved. That’s why
+<strong>clear prioritisation discussions</strong> are essential.</p>
+<figure><img src="../fig/prioritisation.jpg" alt="two people arranging sticky notes on a board" class="figure mx-auto d-block"><div class="figcaption">Photo by airfocus on Unsplash</div>
+</figure><div class="section level3">
+<h3 id="why-prioritisation-matters">Why Prioritisation Matters<a class="anchor" aria-label="anchor" href="#why-prioritisation-matters"></a>
+</h3>
+<p>There’s rarely enough time or budget to build every requested
+feature. Prioritisation helps focus resources on what truly matters,
+ensuring that:</p>
+<ul>
+<li>The product can launch on time.</li>
+<li>Key user needs are met early.</li>
+<li>The team can iterate and improve based on real feedback.</li>
+</ul>
+<p>Introducing the concept of the <strong>Minimum Viable Product
+(MVP)</strong> can help clients shift from “everything now” to “what’s
+essential first.”</p>
+</div>
+<div class="section level3">
+<h3 id="the-mvp-a-strategic-starting-point">The MVP: A Strategic Starting Point<a class="anchor" aria-label="anchor" href="#the-mvp-a-strategic-starting-point"></a>
+</h3>
+<p>The <strong>MVP</strong> is a basic, working version of the product
+that delivers the product’s core value. It’s not the final product, but
+it’s enough to test with users and validate the idea.</p>
+<p>For instance, imagine that the client wants you to build a car. The
+core value is a structure with wheels that can get you from A to B, so
+the MVP might be a skateboard.</p>
+<figure><img src="../fig/minimum_viable_product.png" alt="diagram of a car mvp" class="figure mx-auto d-block"><div class="figcaption">By Teemu - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=65494330" class="external-link uri">https://commons.wikimedia.org/w/index.php?curid=65494330</a>
+</div>
+</figure>
+</div>
+<div class="section level3">
+<h3 id="tools-for-prioritisation-moscow">Tools for Prioritisation: MoSCoW<a class="anchor" aria-label="anchor" href="#tools-for-prioritisation-moscow"></a>
+</h3>
+<p>Use the <strong>MoSCoW method</strong> to help clients classify
+features:</p>
+<ul>
+<li>
+<strong>Must haves</strong> – Essential for the product to
+function.</li>
+<li>
+<strong>Should haves</strong> – Important, but not critical for
+launch.</li>
+<li>
+<strong>Could haves</strong> – Desirable extras, only if time
+allows.</li>
+<li>
+<strong>Won’t haves (for now)</strong> – Deferred until a later
+phase.</li>
+</ul>
+<p>This framework encourages honest, collaborative conversations about
+what really matters, and helps avoid overcommitting.</p>
+</div>
+<div class="section level3">
+<h3 id="facilitating-prioritisation">Facilitating Prioritisation<a class="anchor" aria-label="anchor" href="#facilitating-prioritisation"></a>
+</h3>
+<ul>
+<li>Use visuals (roadmaps, feature lists) to support the
+discussion.</li>
+<li>Frame prioritisation in terms of client goals: <em>“Which features
+will help you learn the most from your first users?”</em>
+</li>
+<li>Be prepared to explain technical dependencies (e.g. why Feature A
+must come before Feature B).</li>
+<li>Remind clients that starting small doesn’t mean thinking small - a
+more complex product can be built on top of the MVP but only when the
+bare essentials are in place.</li>
+</ul>
+<p>By leading productive prioritisation conversations, you help clients
+make better decisions, reduce risk, and increase the likelihood of a
+successful product launch.</p>
+<div id="group-challenge-theres-no-such-thing-as-a-silly-question" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="solo-challenge-from-product-vision-to-mvp" class="callout-inner">
+<h3 class="callout-title">Solo Challenge: From Product Vision to MVP</h3>
+<div class="callout-content">
+<p>(5 minutes)</p>
+<p>Your client wants to launch a DIY pizza kit delivered to customers’
+homes. The big vision includes:</p>
+<ul>
+<li>Artisan dough, sauce, and toppings</li>
+<li>Vegan and gluten-free options</li>
+<li>A recipe booklet with tips and tricks</li>
+<li>Fancy packaging and branding</li>
+<li>App integration with cooking videos</li>
+<li>Optional dessert add-ons</li>
+<li>Custom topping selections</li>
+<li>Subscription bundles</li>
+</ul>
+<p>But:</p>
+<p>They have a tight budget and want to test the idea in the first month
+with a basic version.</p>
+<p>Your task is to develop their MVP: What’s the simplest product they
+can launch that still gives customers the core experience of “making
+your own pizza at home”?</p>
+<p>List the components that should be included in the MVP version of the
+DIY pizza kit.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level2">
+<h2 id="reaching-clarity">Reaching Clarity<a class="anchor" aria-label="anchor" href="#reaching-clarity"></a>
+</h2>
+<figure><img src="../fig/reaching_clarity.jpg" alt="a hand reaching toward a clear lake" class="figure mx-auto d-block"><div class="figcaption">Photo by Paul Pastourmatzis on Unsplash</div>
+</figure><p><strong>Scenario:</strong> During a planning meeting, a client tells
+the team: “We want the site to feel modern and fast.” No one asks for
+clarification. The designers choose a sleek, minimal style with bold
+colours, and the developers focus on performance optimisations to reduce
+load times to under 500ms. However, at the next review, the client is
+unhappy. By “modern,” they actually meant visually similar to Apple’s
+aesthetic. And by “fast,” they didn’t mean technical speed, but a user
+journey with fewer steps. The team now need to rework major parts of the
+product, wasting both time and budget.</p>
+<div class="section level3">
+<h3 id="why-reaching-clarity-matters">Why Reaching Clarity Matters<a class="anchor" aria-label="anchor" href="#why-reaching-clarity-matters"></a>
+</h3>
+<p>Small misunderstandings can grow into major issues if left unchecked.
+Assumptions on either side can lead to missed expectations, rework, and
+a loss of client trust. It’s far better to pause and ask than to move
+forward on unclear instructions.</p>
+</div>
+<div class="section level3">
+<h3 id="methods-for-improving-clarity">Methods for Improving Clarity<a class="anchor" aria-label="anchor" href="#methods-for-improving-clarity"></a>
+</h3>
+<ul>
+<li><p><strong>Ask for specifics when things are vague</strong><br>
+Use follow-up questions to make abstract requests concrete.<br>
+For example:<br><em>“When you say ‘fast’, do you mean page loads under 1 second, or
+fewer clicks to reach key information?”</em></p></li>
+<li><p><strong>Probe when clients say, “use your
+judgement”</strong><br>
+If the client doesn’t know exactly what they want, try asking:<br><em>“What don’t you want?”</em> or<br><em>“Can you show me an example of something you like or something you
+don’t like?”</em></p></li>
+<li><p><strong>Summarise and confirm</strong><br>
+Restate what you’ve heard to confirm your understanding.<br>
+Example:<br><em>“So just to confirm, you’d like the dashboard to show data from the
+last 7 days by default?”</em></p></li>
+<li><p><strong>Document everything clearly</strong><br>
+Use written follow-ups like email recaps or meeting notes to reinforce
+shared understanding. These also create a useful reference
+point.</p></li>
+<li><p><strong>Admit when you’re unsure</strong><br>
+It’s okay to say:<br><em>“I’m not sure I follow, please could you walk me through an
+example?”</em><br>
+Honesty prevents costly mistakes later.</p></li>
+</ul>
+<div id="group-challenge-agenda-assembly" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="group-challenge-theres-no-such-thing-as-a-silly-question" class="callout-inner">
+<h3 class="callout-title">Group Challenge: There’s No Such Thing as a Silly Question</h3>
+<div class="callout-content">
+<p>(15 minutes)</p>
+<p>Re-read the project brief for the coffee beans project.</p>
+<p>First, individually, take a few minutes to think about what is
+unclear to you in the project brief and formulate a list of questions
+for the client.</p>
+<p>Then, discuss your questions as a group and form a combined list of
+all your questions.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -2683,50 +3096,235 @@ of questions for the client.</p>
 <div class="section level1">
 <h1 id="designing-a-kickoff-meeting">Designing a Kickoff Meeting<a class="anchor" aria-label="anchor" href="#designing-a-kickoff-meeting"></a>
 </h1>
-<p>Objectives of a kickoff meeting</p>
-<p>Anatomy of a good agenda:</p>
+<div class="section level2">
+<h2 id="objectives-of-a-kickoff-meeting">Objectives of a Kickoff Meeting<a class="anchor" aria-label="anchor" href="#objectives-of-a-kickoff-meeting"></a>
+</h2>
+<p>The three key objectives of a kickoff meeting are:</p>
 <ul>
-<li>Introductions &amp; context</li>
-<li>Clarification of brief</li>
-<li>Identification of gaps</li>
-<li>Prioritisation/MVP discussion</li>
-<li>Expectations, timelines</li>
-<li>Summary of decisions</li>
+<li>
+<strong>Agree prioritised requirements</strong>: Work with the
+client to review and prioritise the product backlog. While the final
+decision rests with the client, prioritisation should be a two-way
+conversation. Developers should feel confident advocating for items they
+believe are critical, especially technical tasks that may not appear
+important to non-technical stakeholders but are essential for enabling
+future features or maintaining system stability.</li>
+<li>
+<strong>Set expectations</strong>: Establish a shared understanding
+of what will be delivered, when, and to what standard. This includes
+clarifying timelines, defining the scope of work for early iterations
+(such as the MVP), and agreeing on communication channels and response
+times. Setting clear expectations upfront helps reduce misunderstandings
+and prevents scope creep later in the project.</li>
+<li>
+<strong>Resolve ambiguity</strong>: Clarify any unclear or vague
+requirements before development begins. This may involve asking the
+client to define specific terms, provide examples, or explain business
+rules in detail. The goal is to remove guesswork and ensure that both
+the development team and the client share the same understanding of what
+is being built and why.</li>
 </ul>
-<div id="discussion2" class="callout discussion">
+</div>
+<div class="section level2">
+<h2 id="anatomy-of-an-agenda">Anatomy of an Agenda<a class="anchor" aria-label="anchor" href="#anatomy-of-an-agenda"></a>
+</h2>
+<figure><img src="../fig/agenda.png" alt="illustration of a clipboard" class="figure mx-auto d-block"><div class="figcaption">Illustration by Round Icons on Unsplash</div>
+</figure><p>Every good meeting should have an agenda which maps out the key
+points that the meeting should cover. A well-structured agenda helps to
+keep the meeting focused, efficient and productive. An agenda for a
+kickoff meeting would usually include the following elements:</p>
+<div class="section level3">
+<h3 id="introductions-context">Introductions &amp; context<a class="anchor" aria-label="anchor" href="#introductions-context"></a>
+</h3>
+<ul>
+<li>Introduce all participants of the meeting, including their roles and
+responsibilities.</li>
+<li>Briefly explain why this project is happening.</li>
+<li>Allow the client to describe the problem from their
+perspective.</li>
+<li>Establish an open and collaborative atmosphere.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="clarification-of-brief-and-identification-of-gaps">Clarification of Brief and Identification of Gaps<a class="anchor" aria-label="anchor" href="#clarification-of-brief-and-identification-of-gaps"></a>
+</h3>
+<p>Use your list of questions for the client in this section of the
+meeting</p>
+<ul>
+<li>Review the brief provided by the client.</li>
+<li>Confirm working definitions of any technical language i.e. make sure
+that any technical language means the same thing to the client and the
+whole team.</li>
+<li>Highlight areas where the brief is vague, conflicting, or
+incomplete.</li>
+<li>Ask follow-up questions to understand goals, constraints and
+assumptions.</li>
+<li>Identify dependencies, risks, or areas where the team needs more
+detail.</li>
+<li>Record all unanswered questions and agree who will follow up with
+answers.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="prioritisation-and-mvp-discussion">Prioritisation and MVP Discussion<a class="anchor" aria-label="anchor" href="#prioritisation-and-mvp-discussion"></a>
+</h3>
+<ul>
+<li>Help the client decide which features are essential for launch and
+which can wait.</li>
+<li>Use techniques such as MoSCoW to prioritise backlog items.</li>
+<li>Introduce the concept of a minimum viable product if necessary.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="expectations-and-timelines">Expectations and Timelines<a class="anchor" aria-label="anchor" href="#expectations-and-timelines"></a>
+</h3>
+<ul>
+<li>Agree what will be delivered (after Sprint 1 and in the final
+presentation).</li>
+<li>Agree on the format of the product you will deliver.</li>
+<li>Discuss delivery phases or sprints and milestone dates (In this case
+you have two sprints, each about 3 hours in length, and the delivery is
+on day 5).</li>
+</ul>
+<p>Note: Be conservative in time estimates to allow for unforeseen
+delays.</p>
+</div>
+<div class="section level3">
+<h3 id="summary-of-decisions">Summary of decisions<a class="anchor" aria-label="anchor" href="#summary-of-decisions"></a>
+</h3>
+<ul>
+<li>Recap all major decisions (e.g., MVP scope, timelines).</li>
+<li>Review any open questions and note who will investigate and provide
+answers, and by when.</li>
+<li>Clarify how and when a summary of this meeting will be shared (e.g.,
+post-meeting email, shared document).</li>
+<li>End the meeting by inviting final questions or concerns and
+confirming that the client is happy and confident about the plan.</li>
+</ul>
+<div id="group-challenge-client-meeting" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="group-challenge-agenda-assembly" class="callout-inner">
+<h3 class="callout-title">Group Challenge: Agenda Assembly</h3>
 <div class="callout-content">
-<p>Create an agenda for the client meeting</p>
+<p>(15 minutes)</p>
+<p>Create an agenda for a 30 minute kickoff meeting with the client for
+the Coffee Beans Analysis project.</p>
+<p>The agenda should take the form of either a bullet list or a
+table.</p>
+<p>Use the structure above to develop your agenda ensuring it:</p>
+<ul>
+<li>is logically structured.</li>
+<li>each section has a rough timing assigned to it.</li>
+<li>includes key questions or talking points under each section.</li>
+<li>is appropriate for use with a non-technical client.</li>
+</ul>
 </div>
 </div>
 </div>
-<div id="discussion3" class="callout discussion">
+</div>
+</div>
+<div class="section level2">
+<h2 id="chairing-the-meeting">Chairing the Meeting<a class="anchor" aria-label="anchor" href="#chairing-the-meeting"></a>
+</h2>
+<figure><img src="../fig/chairing_the_meeting.jpg" alt="four people in a meeting" class="figure mx-auto d-block"><div class="figcaption">Photo by Mapbox on Unsplash</div>
+</figure><p>In a client meeting, the software development team (the supplier)
+should take responsibility for leading the meeting. As an analogy, when
+an electrician comes to your house, they don’t expect you to explain
+wiring protocols, instead they ask questions to diagnose the problem and
+recommend solutions. Similarly, the development team should guide the
+meeting to get the clarity they need to do their job.</p>
+<ul>
+<li>Nominate one person to chair the meeting, it’s their job to ensure
+that the meeting stays on track and follows the agenda. The rest of the
+group can add questions or comments but it’s more straightforward if
+there is a single person leading the meeting.</li>
+<li>Make sure you get the information you need from the meeting. Don’t
+assume that the client will volunteer all necessary information - you
+may need to draw it out of them through asking lots of questions.</li>
+<li>Clients often don’t know what’s important to developers. They may
+focus on the appearance of the product or general ideas rather than
+technical details. It’s your job to lead the discussion towards finding
+the details you need. You could use diagrams, examples, or “what-if”
+scenarios to help clients think through their needs.</li>
+</ul>
+</div>
+<div class="section level2">
+<h2 id="meeting-notes">Meeting Notes<a class="anchor" aria-label="anchor" href="#meeting-notes"></a>
+</h2>
+<p>Meeting notes are a vital output from any client meeting. They
+protect against miscommunication, enable follow-up, and support future
+planning.</p>
+<p>Meeting notes should capture:</p>
+<ul>
+<li>
+<strong>Decisions</strong>: What was agreed in the meeting.</li>
+<li>
+<strong>Ambiguity</strong>: Any areas that are still unclear and/or
+any open questions.</li>
+<li>
+<strong>Actions</strong>: Who is doing what and by when. Include
+actions on the software development team and on the client.</li>
+</ul>
+<p>It’s helpful to take notes in a shared document (e.g., google doc)
+that everyone can access. This way, if any updates are made, everyone
+can see them straight away.</p>
+<p>Send a summary email containing the meeting notes within 24 hours of
+the meeting to confirm that everyone is on the same page.</p>
+<p>It can be helpful to use consistent formating across meetings for
+clarity (e.g., bullet points or a table).</p>
+<div id="group-challenge-refine-the-product-backlog" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="group-challenge-client-meeting" class="callout-inner">
+<h3 class="callout-title">Group Challenge: Client Meeting</h3>
 <div class="callout-content">
-<p>Client meeting</p>
+<p>(30 minutes)</p>
+<p>You have a 30 minute meeting with the owner of the coffee
+company.</p>
+<p>Choose a chair for your meeting and someone to be in charge of note
+taking.</p>
+<p>Conduct the kickoff meeting for the project according to the agenda
+you produced earlier. Make sure you get answers to all your questions
+and agree the priorities for the project with the client.</p>
+<p>Remember to send the client the meeting notes afterwards.</p>
 </div>
 </div>
 </div>
-<div id="discussion4" class="callout discussion">
+<div id="discussion7" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="group-challenge-refine-the-product-backlog" class="callout-inner">
+<h3 class="callout-title">Group Challenge: Refine the Product Backlog</h3>
 <div class="callout-content">
-<p>Refine the backlog</p>
+<p>(15 minutes)</p>
+<p>Refine your product backlog following the client meeting.</p>
+<p>Add or edit any product backlog items and adjust the priorities
+according to the prioritisation you agreed with the client.</p>
 </div>
 </div>
 </div>
-<div id="keypoints1" class="callout keypoints">
+</div>
+<div class="section level2">
+<h2 id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
+</h2>
+<ul>
+<li><a href="https://swebokwiki.org" class="external-link">IEEE Software Engineering Body of
+Knowledge (SWEBOK), “Software Engineering Professional
+Practice”</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Minimum_viable_product" class="external-link">Minimum
+viable product wikipedia</a></li>
+<li><a href="https://thedecisionlab.com/reference-guide/management/curse-of-knowledge" class="external-link">The
+Decision Lab - The Curse of Knowledge</a></li>
+<li><a href="https://dev.to/femolacaster/how-to-underpromise-and-overdeliver-5a9" class="external-link">Dev
+- How to underpromise and underdeliver</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Scope_creep" class="external-link">Scope creep
+wikipedia</a></li>
+</ul>
+<div id="pair-challenge-explain-a-technical-topic" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -2734,7 +3332,24 @@ of questions for the client.</p>
 <h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul>
-<li>FIXME</li>
+<li>Avoid jargon by translating technical concepts into plain,
+client-friendly language.</li>
+<li>Clarify vague requests by asking follow-up questions and confirming
+understanding.</li>
+<li>Use the concept of a Minimum Viable Product to help clients focus on
+the core of their product.</li>
+<li>Set expectations realistically by under-promising and including
+contingency time.</li>
+<li>Be transparent about limitations and clearly explain the impact of
+technical decisions.</li>
+<li>Manage scope creep by showing how new requests affect cost, time, or
+quality.</li>
+<li>Take the lead in client meetings to ensure key information is
+gathered.</li>
+<li>Use a clear agenda to guide productive and structured client
+discussions.</li>
+<li>Record and share meeting notes to capture decisions, questions, and
+action points.</li>
 </ul>
 </div>
 </div>
@@ -2743,6 +3358,7 @@ of questions for the client.</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
 </div></section><section id="aio-20-day2-intro"><p>Content from <a href="20-day2-intro.html">Day 2: Technical Skills and Best Practices within an Agile Way of Working</a></p>
 <hr>
 <p>Last updated on 2025-04-10 |
@@ -3023,7 +3639,7 @@ and adapt regularly.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>incomplete</li>
@@ -3189,7 +3805,7 @@ problems?</strong></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Suggested <strong>adaptations</strong> (others are also
 possible):</p>
@@ -3343,7 +3959,7 @@ Sprint?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Your Sprint Backlog might include:</p>
 <ul>
@@ -3423,7 +4039,7 @@ Voyage project?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>The Definition of Done in this case might be:</p>
 <ul>
@@ -4920,9 +5536,9 @@ roles for the session</li>
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
-  "dateCreated": "2025-07-24",
-  "dateModified": "2025-07-29",
-  "datePublished": "2025-07-29"
+  "dateCreated": "2025-07-31",
+  "dateModified": "2025-07-31",
+  "datePublished": "2025-07-31"
 }
 
   </script><script>
