@@ -182,34 +182,36 @@ Here are some examples of questions you can use to get started:
 To get you thinking, consider the following examples:
 
 Desktop Application
-- Has a graphical interface for use with mouse and keyboard
-- May need to work on multiple, very different operating systems
-- May be intended for users to modify / compile themselves
-- Should work on a wide range of hardware configurations
-- Documentation probably either in a manual or in the software itself
+
+-   Has a graphical interface for use with mouse and keyboard
+-   May need to work on multiple, very different operating systems
+-   May be intended for users to modify / compile themselves
+-   Should work on a wide range of hardware configurations
+-   Documentation probably either in a manual or in the software itself
 
 Command-line Application - Linux Tool
-- User interface is text based, probably via command-line arguments
-- Intended to be modified / compiled by users - though most will choose not to
-- Documentation has standard formats - also accessible from the command line
-- Should be usable as part of a pipeline
+
+-   User interface is text based, probably via command-line arguments
+-   Intended to be modified / compiled by users - though most will choose not to
+-   Documentation has standard formats - also accessible from the command line
+-   Should be usable as part of a pipeline
 
 Command-line Application - High Performance Computing
-- Similar to a UNIX Tool
-- Usually supports running across multiple networked machines simultaneously
-- Usually operated via a scheduler - interface should be scriptable
-- May need to run on a wide range of hardware
-  (e.g. different CPU architectures)
-- May need to process large amounts of data
-- Often entirely or partially written in a lower-level language for performance
-  (e.g. C, C++, Fortran)
+
+-   Similar to a UNIX Tool
+-   Usually supports running across multiple networked machines simultaneously
+-   Usually operated via a scheduler - interface should be scriptable
+-   May need to run on a wide range of hardware (e.g. different CPU architectures)
+-   May need to process large amounts of data
+-   Often entirely or partially written in a lower-level language for performance (e.g. C, C++, Fortran)
 
 Web Application
-- Usually has components which run on server and components which run on the user's device
-- Graphical interface should usually support both Desktop and Mobile devices
-- Client-side component should run on a range of browsers and operating systems
-- Documentation probably part of the software itself
-- Client-side component typically written in JavaScript
+
+-   Usually has components which run on server and components which run on the user's device
+-   Graphical interface should usually support both Desktop and Mobile devices
+-   Client-side component should run on a range of browsers and operating systems
+-   Documentation probably part of the software itself
+-   Client-side component typically written in JavaScript
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
