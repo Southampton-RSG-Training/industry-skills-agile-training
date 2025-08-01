@@ -31,7 +31,22 @@
     <loc>https://carpentries.github.io/workbench-template-md/20-day2-intro.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/21-1-collaboration-workflow.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/21-2-collaboration-workflow.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/21-collaboration-workflow.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/22-1-writing-unit-tests.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/22-2-continuous-integration.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/22-intro-automated-testing.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/22-testing-code.html</loc>
@@ -139,7 +154,22 @@
     <loc>https://carpentries.github.io/workbench-template-md/instructor/20-day2-intro.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/21-1-collaboration-workflow.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/21-2-collaboration-workflow.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/21-collaboration-workflow.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/22-1-writing-unit-tests.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/22-2-continuous-integration.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/22-intro-automated-testing.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/22-testing-code.html</loc>
