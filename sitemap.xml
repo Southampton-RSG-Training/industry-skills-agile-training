@@ -40,6 +40,9 @@
     <loc>https://carpentries.github.io/workbench-template-md/21-collaboration-workflow.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/21-collaborative-workflow.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/22-1-writing-unit-tests.html</loc>
   </url>
   <url>
@@ -49,13 +52,31 @@
     <loc>https://carpentries.github.io/workbench-template-md/22-intro-automated-testing.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/22-pull-requests-code-review.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/22-testing-code.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/23-agile-development-process.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/23-intro-automated-testing.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/24-anatomy-of-an-agile-sprint.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/24-writing-unit-tests.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/25-continuous-integration.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/26-agile-development-process.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/27-anatomy-of-an-agile-sprint.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/30-day3-intro.html</loc>
@@ -163,6 +184,9 @@
     <loc>https://carpentries.github.io/workbench-template-md/instructor/21-collaboration-workflow.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/21-collaborative-workflow.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/22-1-writing-unit-tests.html</loc>
   </url>
   <url>
@@ -172,13 +196,31 @@
     <loc>https://carpentries.github.io/workbench-template-md/instructor/22-intro-automated-testing.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/22-pull-requests-code-review.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/22-testing-code.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/23-agile-development-process.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/23-intro-automated-testing.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/24-anatomy-of-an-agile-sprint.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/24-writing-unit-tests.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/25-continuous-integration.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/26-agile-development-process.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/27-anatomy-of-an-agile-sprint.html</loc>
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/30-day3-intro.html</loc>
