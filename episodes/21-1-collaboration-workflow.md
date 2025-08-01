@@ -6,13 +6,19 @@ exercises: 10
  
 :::::::::::::::::::::::::::::::::::::: questions
  
-- FIXME
- 
+- What's the relationship between development infrastructure and process?
+- How access to GitHub repositories without needing a password?
+- What is a feature branch, and why are they used?
+- Describe the benefits and risks of using feature branches
+- What are the options for merging branch commits into a baseline branch?
+- What are the risks with merging code from feature branches?
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
  
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Describe how workflow relates to process
+- Set up SSH passwordless access to GitHub
 - Describe the purpose of branches in a repository
 - Verify that team is able to developing using project repository locally
 - Define the elements of a feature-branch workflow
@@ -194,12 +200,12 @@ and save the file.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Group Exercise: Pros and Cons of Using Feature Branches
+## Group Exercise: Pros and Cons of Developing Code on Feature Branches
 
 5 mins.
 
-As a group, discuss how using feature branches affect how code is developed,
-and list some advantages and disadvantages of such an approach when used in a team.
+As a group, discuss list some advantages and disadvantages of developing code on feature branches as part of a team.
+Don't consider aspects related to merging - this will be covered in a future exercise!
 
 :::::::::::::::  solution
 
@@ -213,10 +219,8 @@ Advantages:
 Disadvantages:
 
 - Requires that the team understand this approach and how to use it in an agreed and consistent manner
-- Can become complicated if you need to use features available on another branch in your own branch
-- Long-lived branches may become too divergent from the `main` branch, complicating the process of merging changes from such branches
-- Similarly, implementing and then merging multiple feature branches simultaneously becomes exponentially more difficult
-- If `main` contains many changes not in the feature branches, all feature branches may diverge [fixme]
+- May become complicated if you need to use features available on another branch in your own branch
+- Similarly, if `main` contains many changes not in feature branches, it may diverge considerably from these feature branches
 
 :::::::::::::::::::::::::
 
@@ -232,7 +236,8 @@ Each merge strategy is suited for a different scenario. The choice of strategy d
 
 ### Fast Forward Merge
 
-A fast-forward merge occurs when the main branch has not diverged from the feature branch - meaning there are no new commits on the main branch since the feature branch was created. 
+A fast-forward merge occurs when the main branch has not diverged from the feature branch,
+meaning there are no new commits on the main branch since the feature branch was created. 
 
 ```text
 A - B - C [main]
@@ -240,13 +245,17 @@ A - B - C [main]
           D - E [feature]
 ```
 
-In this case, Git simply moves the main branch pointer to the latest commit in the feature branch. This strategy is simple and keeps the commit history linear - i.e. the history is one straight line.
+In this case, Git simply moves the main branch pointer to the latest commit in the feature branch.
+This strategy is simple and keeps the commit history linear - i.e. the history is one straight line.
 
 After a fast forward merge:
 
 ```text
 A - B - C - D - E [main][feature]
 ```
+
+Fast forward merge strategy is best used when you have a short-lived feature branch that needs to be merged back into the main branch,
+and no other changes have been made to the main branch in the meantime.
 
 ### 3-Way Merge with Merge Commit
 
@@ -258,9 +267,12 @@ A - B - C - F [main]
           D - E [feature]
 ```
 
-If you try to merge your feature branch changes into the main branch and other changes have been made to main - regardless of whether these changes create a conflict or not - Git will try to do a 3-way merge and generate a merge commit. 
+If you try to merge your feature branch changes into the main branch and other changes have been made to main - regardless of whether these changes create a conflict or not -
+Git will try to do a 3-way merge and generate a merge commit. 
 
-A merge commit is a dedicated special commit that records the combined changes from both branches and has two parent commits, preserving the history of both lines of development. The name "3-way merge" comes from the fact that Git uses three commits to generate the merge commit - the two branch tips and their common ancestor to reconstruct the changes that are to be merged.
+A merge commit is a dedicated special commit that records the combined changes from both branches and has two parent commits, preserving the history of both lines of development.
+The name "3-way merge" comes from the fact that Git uses three commits to generate the merge commit -
+the two branch tips and their common ancestor to reconstruct the changes that are to be merged.
 
 ```text
 A - B - C - F - "MergeCommitG" [main]
@@ -283,9 +295,11 @@ A - B - C - F [main]
           D - E [feature]
 ```
 
-When you rebase the feature branch with the main branch, Git replays each commit from the feature branch on top of all the commits from the main branch in order. This results in a cleaner, linear history that looks as if the feature branch was started from the latest commit on main. 
+When you rebase the feature branch with the main branch, Git replays each commit from the feature branch on top of all the commits from the main branch in order.
+This results in a cleaner, linear history that looks as if the feature branch was started from the latest commit on main. 
 
-So, all the changes introduced on feature branch (commits D and E) are reapplied on top of commit F - becoming D' and E'. Note that D' and E' are rebased commits, which are actually new commits with different SHAs but the same modifications as commits D and E.
+So, all the changes introduced on feature branch (commits D and E) are reapplied on top of commit F - becoming D' and E'.
+Note that D' and E' are rebased commits, which are actually new commits with different SHAs but the same modifications as commits D and E.
 
 ```text
 A - B - C - F - D' - E' [main]
@@ -294,8 +308,6 @@ A - B - C - F - D' - E' [main]
 ```
 
 At this point, you can go back to the main branch and do a fast-forward merge with feature branch.
-
-Fast forward merge strategy is best used when you have a short-lived feature branch that needs to be merged back into the main branch, and no other changes have been made to the main branch in the meantime.
 
 Rebase is ideal for feature branches that have fallen behind the main development line and need updating.
 It is particularly useful before merging long-running feature branches to ensure they apply cleanly on top of the main branch.
@@ -359,22 +371,27 @@ FIXME: challenge - which approach suits your use of version control in most case
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Group Exercise: What are the Risks?
+## Group Exercise: Merging - What are the Risks?
 
 5 mins.
 
-In general, as a group discuss what you think the risks are with developing and merging code using branches in a team environment.
+In general, as a group identify the risks are with merging code from branches in a team environment.
 
 ::::::::::::::::::::::: solution
 
 Here are several non-exhaustive reasons:
 
-- The merge may introduce errors that cause the software to break or fundamentally change its behaviour in ways that are unintended but not immediately obvious
-- There may be a variability in the quality or style of written code that leads to bugs or readability issues
+- A merge may introduce errors that cause the software to break or fundamentally change its behaviour in ways that are unintended but not immediately obvious
+- There may be a variability in the quality or style of written code that leads to inconsistency across the codebase
 - Team members may not be aware of important changes being made in other branches that will affect their work
 - Work may be unknowingly duplicated, or introduce conflicting solutions, e.g. where there are logical overlaps between coding tasks in different branches
 - The reasoning behind changes may be unclear
-- A suboptimal approach may be taken for which another team member has a better solution
+- Long-lived branches may become too divergent from the `main` branch, complicating the process of merging changes from such branches
+- Similarly, implementing and then merging multiple feature branches simultaneously becomes exponentially more difficult
+
+The benefits of using feature branches are generally considered to vastly outweight such drawbacks,
+and as we'll see in the next episode,
+there are features we can introduce to using feature branches that aim to mitigate these drawbacks by introducing additional steps that increase communication among team members.
 
 :::::::::::::::::::::::::::::::::
 
@@ -383,6 +400,13 @@ Here are several non-exhaustive reasons:
 
 :::::::::::::::::::::::::::::::::::::: keypoints
  
-- FIXME
- 
+- Infrastructure and tooling used by a team must *support* agreed healthy development processes and practices but not unnecessarily *dictate* them
+- Once you've set up personal SSH access to GitHub from a machine, you do no need to use passwords
+- Separate features or bug fixes should be developed on separate repository branches and merged to the main branch when ready
+- Developing code on feature branches enables the main branch to remain working and clear of unfinished features or bug fixes, and prevents confusion across separate development activities
+- If feature branches end up being unproductive "dead ends", they can simply be deleted
+- A fast-forward merge simply adds commits to the end of a destination branch
+- A 3-way merge with merge commit creates a new commit on the destination branch comprised of the commits on the feature branch
+- A rebase and merge rewrites the history 
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
