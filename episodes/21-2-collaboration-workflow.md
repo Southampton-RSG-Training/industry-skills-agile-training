@@ -6,7 +6,13 @@ exercises: 15
  
 :::::::::::::::::::::::::::::::::::::: questions
  
-- FIXME
+- How can infrastructure support collaborative development of code across a team?
+- What is a pull request and why are they useful?
+- How do I submit a pull request on GitHub?
+- How are code reviews useful?
+- What are the different types of code review?
+- How do I review a pull request on GitHub?
+- What's the process for merging a pull request?
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
  
@@ -16,13 +22,70 @@ exercises: 15
 - Bullet-point some advantages and limitations of working in a feature-branch workflow
 - Submit a pull request in GitHub
 - Review a pull request
+- Merge a pull request into its base branch
  
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Pull Requests and Code Reviews
-
 So far we've looked at different ways we can work on separate strands of development in branches and then merge them.
 Since they are independent, it's sometimes difficult to know what the overall effect will be when they are finally merged.
+
+Software development thrives on collaboration, even when much of the coding is done individually. 
+Getting input from others can have a big impact on the quality, maintainability, and effectiveness of your work, often requiring only a small investment of time.
+Since there is rarely a single “perfect” way to solve a problem, working with others allows you to share knowledge, skills, and perspectives, leading to better solutions and new insights.
+Through collaboration, you can learn new techniques, discover tools and infrastructure that streamline development,
+and help build a shared understanding that benefits the wider team or community.
+
+In this episode we'll look at bringing together the use of feature branches and code review into a well-established collaborative development approach called *feature branch workflow* that aims to realise these benefits.
+
+## Introduction to Code Review
+
+### Types of Code Review
+
+There are several types of code review, each suited to different contexts and goals.
+
+An *informal review* involves casually asking a colleague for input or advice.
+This type of review is often used to improve understanding, share skills, or get help with problem-solving, rather than enforce specific standards.
+Some examples include over-the-shoulder code review (when one developer talks the other developer through the code changes while sitting at the same machine),
+and pair programming (when two developers work on the code at the same time with one of them actively coding and the other providing real-time feedback).
+
+A *contribution-oriented review* occurs when changes or additions to a codebase are reviewed as they happen -
+commonly used in version-controlled software development workflows like GitHub’s pull requests which we'll look at in this episode.
+This approach is a bit more formal (e.g. structured pull requests with approval workflows) and tool-assisted,
+and focuses on ensuring understanding, clarity, maintainability, and code quality.
+
+Taken to the extreme, a more rigorous method is a *formal code review*, such as a Fagan inspection,
+where a team examines a codebase, or parts of it, systematically, following strict criteria to identify defects or ensure conformance to standards.
+While this method can be highly effective, it is resource-intensive and a less common practice.
+
+### Code Review Practices & Processes
+
+In this episode, we will focus on code review practices centered around code modifications and contributions.
+The aim is to integrate code review into the research software development process in a way that is lightweight, low-stakes, and easy to adopt.
+Even a short initial code review can have a significant impact.
+As highlighted in ["Best Kept Secrets of Peer Code Review" by Jason Cohen](https://www.amazon.co.uk/Best-Kept-Secrets-Peer-Review/dp/1599160676),
+the first hour of review is the most critical and productive, with diminishing returns thereafter.
+
+The goal is to strike a practical balance: invest enough time to offer useful, actionable feedback without turning reviews into a bottleneck.
+When reviewing code, focus on:
+
+- Code quality - is the code clear and readable? Do functions serve a single purpose? Is it well-structured and consistent with the rest of the project?
+- Best practices and conventions - is the project’s coding style followed? Are tests and documentation included and up to date?
+- Efficiency and minimalism - does the change duplicate existing functionality (found elsewhere in the code or in a third-party library)? Is it limited to what’s required by the issue or ticket?
+- Knowledge sharing: ask clarifying questions (do not assume you understand everything or know best) and offer respectful, specific feedback. This helps everyone learn and builds team trust.
+
+Given the value of that first hour, keep your efforts targeted. Do not spend time on:
+
+- Linting or style issues - automated tools or CI pipelines should catch these
+- Hunting for bugs, unless something clearly looks wrong — instead, check that tests exist for various cases that should catch bugs
+- Fixing unrelated legacy issues that pre-date the change — log those separately to avoid scope creep
+- Architectural overhauls — save big-picture changes for design discussions or dedicated meetings to decide whether the code needs to be restructured
+- Refactoring everything — provide only a few critical suggestions and aim for incremental improvement, not perfection.
+
+The process is typically *iterative*, with reviewers and contributors engaging in a cycle of discussion, updates, and re-review to address questions and refine changes before integration.
+If a conversation is taking place in a code review that has not been resolved by one or two back-and-forth exchange, then consider scheduling a conversation, 
+or a pair programming session to discuss things further (and record the outcome of the discussion - e.g. in the pull requests’s comments).
+
+## Pull Requests and Code Reviews
 
 In our previous exercise we focused on writing code in an individual setting on feature branches.
 However if we allowed everyone to develop and merge code whenever, wherever, and however they wanted,
@@ -283,6 +346,11 @@ and `Confirm merge` to complete the merge.
 
 :::::::::::::::::::::::::::::::::::::: keypoints
  
-- FIXME
- 
+- Working collaboratively is a cornerstone of successful software development
+- Code reviews can be short and informal, contribution-oriented, or formal
+- The first hour of code review matters most
+- Code review helps to increase code quality, ensure practices and conventions are met consistently, and increase codebase knowledge across the team
+- GitHub supports code review as part of pull requests
+- Aim to close pull requests as soon as is convenient, to avoid increased divergence from the main codebase
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
