@@ -198,7 +198,7 @@ and save the file.
 
 5 mins.
 
-As a group, discuss how a feature branch workflow affects how code is developed,
+As a group, discuss how using feature branches affect how code is developed,
 and list some advantages and disadvantages of such an approach when used in a team.
 
 :::::::::::::::  solution
