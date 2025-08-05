@@ -161,7 +161,7 @@ During a Daily Stand-Up Meeting, inspecting the progress on the project reveals 
 -   When discussing their planned work, the group notices that two developers are working on elements that heavily depend on each other - if one isn't compatible with the other, the software won't work. 
 -   One developer is scheduled to work on a large task over the next couple of days, which is critical to the rest of the group's work.  However, the developer is going on holiday the next day.
 
-**Can you suddest a possible adaptation for each of the problems?**
+**Can you suggest a possible adaptation for each of the problems?**
 
 ::: solution
 
@@ -350,7 +350,7 @@ A Scrum Team includes:
 -   One Scrum Master
 
 ::: callout
-**Why no hierarchy?**
+## Why no hierarchy?
 
 Because Agile processes do best when teams make decisions and adapt quickly, without waiting for permission from higher-ups.
 :::

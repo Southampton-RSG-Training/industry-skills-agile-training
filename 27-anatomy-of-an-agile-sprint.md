@@ -148,6 +148,7 @@ The Daily Scrum isn’t just a status update, it helps the Scrum Team:
 This meeting should usually last no longer than 15 minutes and is usually held in the same time and place every working day of the Sprint.  The Daily Scrum can take any structure and use any techniques as long as it focuses on progress toward the Sprint Goal and produces a plan for the next day of work.
 
 Usually each developer would cover:
+
 -   What you did yesterday
 -   What you plan to do today
 -   Anything that's blocking you
@@ -270,6 +271,7 @@ Remember to answer the following questions during the Sprint Planning Meeting:
 -   How will the chosen work get Done?
 
 The output from your Sprint Planning Meeting should be your Sprint Backlog including:
+
 -   A Sprint Goal
 -   The subset of items from the Product Backlog that you will work on this Sprint
 -   A plan for delivering the Increment by the end of the Sprint
