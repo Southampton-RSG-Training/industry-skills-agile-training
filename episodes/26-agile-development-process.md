@@ -1,5 +1,5 @@
 ---
-title: "2.3 The Agile Development Process"
+title: "2.6 The Agile Development Process"
 teaching: 0
 exercises: 0
 ---
