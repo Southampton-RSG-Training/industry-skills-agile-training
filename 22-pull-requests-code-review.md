@@ -1,5 +1,5 @@
 ---
-title: "2.1 Collaborative Workflow: Pull Requests and Code Reviews"
+title: "2.2 Collaborative Workflow: Pull Requests and Code Reviews"
 teaching: 0
 exercises: 15
 ---

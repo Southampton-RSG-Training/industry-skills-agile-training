@@ -1,5 +1,5 @@
 ---
-title: "2.4 Anatomy of an Agile Sprint"
+title: "2.7 Anatomy of an Agile Sprint"
 teaching: 0
 exercises: 0
 ---
