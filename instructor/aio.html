@@ -1578,7 +1578,7 @@ four user stories using this format:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Here are some example user stories:</p>
 <p>Business owner:</p>
@@ -1804,7 +1804,7 @@ of?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Some typical classes of non-functional categories include:</p>
 <ul>
@@ -1864,7 +1864,7 @@ user type or persona.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Some examples:</p>
 <ul>
@@ -2049,7 +2049,7 @@ requirement.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>In general, a good requirement is:</p>
 <ul>
@@ -4316,7 +4316,7 @@ to that member.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>For example:</p>
 <figure><img src="../fig/collab-workflow-add-issue.png" alt="Adding a new GitHub issue to the group repository for writing a description to the README, ensuring it has a quick summary, is assigned to someone, and has a documentation label" class="figure mx-auto d-block"></figure>
@@ -4577,7 +4577,7 @@ any links that you are not going to use.
 </div>
 </section></section><section id="aio-23-intro-automated-testing"><p>Content from <a href="23-intro-automated-testing.html">2.3 Introduction to Automated Testing</a></p>
 <hr>
-<p>Last updated on 2025-08-07 |
+<p>Last updated on 2025-08-11 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/23-intro-automated-testing.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
@@ -4815,9 +4815,42 @@ for ourselves.</p>
 <a class="anchor" aria-label="anchor" href="#setting-up-a-virtual-environment-for-pytest"></a>
 </h2>
 <hr class="half-width">
-<p>So how do we run these tests? Well, we need to create a virtual
-environment, since we’re using a unit test framework that’s supplied by
-another Python library which we need to have access to.</p>
+<p>So how do we run these tests? Well, we need to install a Python
+package called <code>pytest</code>, since the unit tests have been
+written using it. Typically, we’d use a virtual environment for
+this.</p>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Virtual environments are an indispensible tool for managing package
+dependencies across multiple projects, and could be a whole topic
+itself. In the case of Python, the idea is that instead of installing
+Python packages at the level of our machine’s Python installation, we’re
+going to install them within their own “container”, which is separate to
+the machine’s Python installation. Then we’ll run our Python code only
+using packages within that virtual environment.</p>
+<p>There are a number of key benefits to using virtual environments:</p>
+<ul>
+<li>It creates a clear separation between the packages we use for this
+project, and the packages we use other projects.</li>
+<li>We don’t end up with a machine’s Python installation containing a
+clutter of a thousand different packages, where determining which
+packages are used for which project often becomes very time consuming
+and prone to error.</li>
+<li>Since we are sure what our code actually needs as dependencies, it
+becomes much easier for someone else (which could be a future version of
+ourselves) to know what these dependencies are and install them to use
+our code.</li>
+<li>Virtual environments are not limited to Python; for example there
+are similar tools for available for Ruby, Java and JavaScript.</li>
+</ul>
+</div>
+</div>
+</div>
 <p>So in summary, we need to:</p>
 <ul>
 <li>Create a new virtual environment to hold Python packages</li>
@@ -5939,7 +5972,7 @@ and adapt regularly.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>incomplete</li>
@@ -6111,7 +6144,7 @@ problems?</strong></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Suggested <strong>adaptations</strong> (others are also
 possible):</p>
@@ -6269,7 +6302,7 @@ Sprint?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Your Sprint Backlog might include:</p>
 <ul>
@@ -6351,7 +6384,7 @@ Voyage project?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>The Definition of Done in this case might be:</p>
 <ul>
