@@ -151,6 +151,8 @@ Typically, we'd use a virtual environment for this.
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
+## What Are Virtual Environments?
+
 Virtual environments are an indispensible tool for managing package dependencies across multiple projects, and could be a whole topic itself.
 In the case of Python, the idea is that instead of installing Python packages at the level of our machine’s Python installation,
 we’re going to install them within their own “container”, which is separate to the machine’s Python installation.
