@@ -145,8 +145,25 @@ to make it easy for ourselves.
 ## Setting up a Virtual Environment for `pytest`
 
 So how do we run these tests?
-Well, we need to create a virtual environment,
-since we're using a unit test framework that's supplied by another Python library which we need to have access to.
+Well, we need to install a Python package called `pytest`,
+since the unit tests have been written using it.
+Typically, we'd use a virtual environment for this.
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+Virtual environments are an indispensible tool for managing package dependencies across multiple projects, and could be a whole topic itself.
+In the case of Python, the idea is that instead of installing Python packages at the level of our machine’s Python installation,
+we’re going to install them within their own “container”, which is separate to the machine’s Python installation.
+Then we’ll run our Python code only using packages within that virtual environment.
+
+There are a number of key benefits to using virtual environments:
+
+- It creates a clear separation between the packages we use for this project, and the packages we use other projects.
+- We don’t end up with a machine’s Python installation containing a clutter of a thousand different packages, where determining which packages are used for which project often becomes very time consuming and prone to error.
+- Since we are sure what our code actually needs as dependencies, it becomes much easier for someone else (which could be a future version of ourselves) to know what these dependencies are and install them to use our code.
+- Virtual environments are not limited to Python; for example there are similar tools for available for Ruby, Java and JavaScript.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 So in summary, we need to:
 
