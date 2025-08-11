@@ -17,7 +17,7 @@ exercises: 0
 - Create a GitHub Project Board to manage issues
 - Add backlog items to the Project Board
 - Describe the key principles and approaches to estimation
-- Apply MoSCoW with a client to prioritise items in a product backlog
+- Apply MoSCoW internally to initially prioritise items in a product backlog
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
