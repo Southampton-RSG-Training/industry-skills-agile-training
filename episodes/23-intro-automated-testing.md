@@ -184,8 +184,11 @@ Then to activate it:
 ```bash
 [Linux] source venv/bin/activate
 [Mac] source venv/bin/activate
-[Windows] source venv/Scripts/activate
+[Windows using Command Prompt] venv\Scripts\activate
+[Windows using Git Bash] source venv/Scripts/activate
 ```
+
+If you are using Windows with a Command Prompt, remember to use `\` instead of `/` in file paths.
 
 To install `pytest`:
 
