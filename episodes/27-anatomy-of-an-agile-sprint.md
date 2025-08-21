@@ -72,7 +72,7 @@ Time-boxing the meeting keeps the discussion focussed and allows the Scrum Team 
 
 
 :::: challenge
-## Group Challenge: Puppy Playdate Planner
+## Group Exercise: Puppy Playdate Planner
 
 Read the following scenario about the Puppy Playdate Planner app and discuss the questions at the end.
 
@@ -160,7 +160,7 @@ Developers can also meet throughout the day to re-adjust plans or to have more d
 
 :::: challenge
 
-## Group Challenge: Exchange and Unblock
+## Group Exercise: Exchange and Unblock
 
 In this challenge, you're going to practice conducting a Daily Scrum Meeting in groups of four. 
 
@@ -252,7 +252,7 @@ Now, it's time to put all of this theory into practice and conduct a Sprint Plan
 
 ::: challenge
 
-## Group Challenge: Sprint Planning for Coffee Beans Analysis
+## Group Exercise: Sprint Planning for Coffee Beans Analysis
 
 Conduct the Sprint Planning Meeting for Sprint 1 of the Coffee Beans Analysis Project.
 

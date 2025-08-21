@@ -44,7 +44,7 @@ Thinking about software engineering from that wider view, there are some typical
 ::: challenge
 ## Let's Break it Down
 
-**Solo Challenge**
+**Solo Exercise**
 
 Think about a project you've completed in the past.
 This could be a software project but it doesn't have to be.
@@ -304,7 +304,7 @@ Even if a waterfall approach is applied, changes will most likely be made at eac
 ::: challenge
 ## Model Matchmaking: What’s the Best Fit?
 
-**Group Challenge**
+**Group Exercise**
 
 Imagine you've been hired to develop a web-based system for managing applications for public research grants.
 The portal will be used by applicants, reviewers and administrators.
@@ -348,7 +348,7 @@ It is a more heavyweight project management framework than Agile Project Managem
 :::: challenge
 ## Software Development or Project Management?
 
-**Group Challenge**
+**Group Exercise**
 
 Below is a list of tasks, discuss whether each task belongs in software development models or project management models:
 

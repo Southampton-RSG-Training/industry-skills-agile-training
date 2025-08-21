@@ -70,7 +70,7 @@ By learning to speak the client’s language you build their trust, enable bette
 
 ::: challenge
 
-## Pair Challenge: Explain a Technical Topic
+## Pair Exercise: Explain a Technical Topic
 
 (7 minutes)
 
@@ -144,7 +144,7 @@ By setting realistic expectations from the start, you're managing risk, building
 
 ::: challenge
 
-## Group Challenge: Responding to Scope Creep
+## Group Exercise: Responding to Scope Creep
 
 (10 minutes)
 
@@ -241,7 +241,7 @@ By leading productive prioritisation conversations, you help clients make better
 
 ::: challenge
 
-## Solo Challenge: From Product Vision to MVP
+## Solo Exercise: From Product Vision to MVP
 
 (5 minutes)
 
@@ -305,7 +305,7 @@ Small misunderstandings can grow into major issues if left unchecked. Assumption
 
 
 ::: challenge
-## Group Challenge: There's No Such Thing as a Silly Question
+## Group Exercise: There's No Such Thing as a Silly Question
 
 (15 minutes)
 
@@ -374,7 +374,7 @@ Note: Be conservative in time estimates to allow for unforeseen delays.
 -   End the meeting by inviting final questions or concerns and confirming that the client is happy and confident about the plan.
 
 ::: challenge
-## Group Challenge: Agenda Assembly
+## Group Exercise: Agenda Assembly
 
 (15 minutes)
 
@@ -423,7 +423,7 @@ After a real client meeting, it's good practice to send a summary email containi
 
 ::: challenge
 
-## Group Challenge: Client Meeting
+## Group Exercise: Client Meeting
 
 (30 minutes)
 
@@ -437,7 +437,7 @@ Conduct the kickoff meeting for the project according to the agenda you produced
 
 ::: challenge
 
-## Group Challenge: Refine the Product Backlog
+## Group Exercise: Refine the Product Backlog
 
 (15 minutes)
 
