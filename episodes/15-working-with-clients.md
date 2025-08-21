@@ -395,11 +395,15 @@ Use the structure above to develop your agenda ensuring it:
 
 ![Photo by Mapbox on Unsplash](fig/chairing_the_meeting.jpg){alt='four people in a meeting'}
 
-In a client meeting, the software development team (the supplier) should take responsibility for leading the meeting. As an analogy, when an electrician comes to your house, they don’t expect you to explain wiring protocols, instead they ask questions to diagnose the problem and recommend solutions. Similarly, the development team should guide the meeting to get the clarity they need to do their job.
+In a client meeting, the software development team should take responsibility for leading the meeting. 
 
--   Nominate one person to chair the meeting, it's their job to ensure that the meeting stays on track and follows the agenda. The rest of the group can add questions or comments but it's more straightforward if there is a single person leading the meeting.
--   Make sure you get the information you need from the meeting.  Don't assume that the client will volunteer all necessary information - you may need to draw it out of them through asking lots of questions.
--   Clients often don’t know what’s important to developers.  They may focus on the appearance of the product or general ideas rather than technical details. It's your job to lead the discussion towards finding the details you need.  You could use diagrams, examples, or “what-if” scenarios to help clients think through their needs.
+As an analogy, when an electrician comes to your house, they don’t expect you to explain wiring protocols, instead they ask questions to diagnose the problem and recommend solutions. 
+
+Similarly, the development team should guide the meeting to get the clarity they need to do their job. Clients often don’t know what’s important to developers.  They may focus on the appearance of the product or general ideas rather than technical details. It's your job to lead the discussion towards finding the details you need.  You could use diagrams, examples, or “what-if” scenarios to help clients think through their needs.  Make sure you get the information you need from the meeting.  Don't assume that the client will volunteer all necessary information - you may need to draw it out of them through asking lots of questions.
+
+
+You would normally have one person to chair the meeting, it's their job to ensure that the meeting stays on track and follows the agenda. However, for the Coffee Beans Project client meeting, everyone in the should have an opportunity to chair a section of the meeting.  Split up the agenda and allocate each section to a different person in your group. See this as an opportunity to practice chairing a meeting - an opportunity which you might not have until several years into your career. There's absolutely nothing at stake so ave fun with it, enjoy the process, and don’t worry if something goes wrong. 
+
 
 
 ## Meeting Notes
@@ -428,11 +432,9 @@ It can be helpful to use consistent formating across meetings for clarity (e.g.,
 
 You have a 30 minute meeting with the owner of the coffee company.  
 
-Choose a chair for your meeting and someone to be in charge of note taking. 
+Choose a chair for each section of your meeting and someone to be in charge of note taking throughout the meeting. 
 
 Conduct the kickoff meeting for the project according to the agenda you produced earlier.  Make sure you get answers to all your questions and agree the priorities for the project with the client.
-
-Remember to send the client the meeting notes afterwards.
 
 :::
 
