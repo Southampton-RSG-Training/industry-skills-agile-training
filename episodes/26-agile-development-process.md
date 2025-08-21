@@ -57,6 +57,8 @@ There are two key principles of Scrum Theory:
 :::: challenge
 ## Solo Exercise: Fill in the Blanks
 
+3 mins.
+
 We've just introduced some key concepts of Scrum philosophy.  To reinforce your learning, think about the information you've just read (or heard) and fill in the blanks to create sentences that accurately describe the philosophy of Scrum. 
 
 1.  It is intentionally \_\_\_\_\_\_\_\_\_\_, meaning it provides only the essential structure and leaves room for adaptation.
@@ -97,6 +99,8 @@ Scrum only works when the team truly adopts the values it was built to support.
 
 ::: challenge
 ## Pair Exercise: Scrum Values in Practice
+
+3 mins.
 
 Discuss the following questions with your partner:
 
@@ -144,6 +148,8 @@ This highlights the disastrous consequences that a lack of transparency can have
 ::: discussion
 ## Group Exercise: What happens when the Pillar of Transparency Crumbles?
 
+3 mins.
+
 Discuss in small groups the following questions:
 
 -   What’s an example of “transparency” you’ve seen - or failed to see - in a previous project?
@@ -154,6 +160,8 @@ Discuss in small groups the following questions:
 :::: challenge
 
 ## Group Exercise: Inspecting and Adapting
+
+3 mins.
 
 During a Daily Stand-Up Meeting, inspecting the progress on the project reveals some problems:
 
@@ -264,6 +272,8 @@ If you completed all the items in the Sprint Backlog, you would still be far fro
 :::: challenge
 ## Group Exercise: Sprint Backlog for the Sail Away
 
+3 mins.
+
 You have the Sprint Goal: “Test the basic turn system with 2 players using paper placeholders.”
 
 Discuss in your group:
@@ -320,6 +330,8 @@ Next Sprint, you might improve the experience further, possibly by expanding the
 
 :::: challenge
 ## Group Exercise: Voyage Complete?
+
+5 mins.
 
 The Definition of Done is an important checklist of the quality standards that each Increment must meet.
 
@@ -411,6 +423,8 @@ Scrum defines the roles but teams can adapt them to fit their context.
 
 ::: challenge
 ## Group Exercise: Getting in the Mindset of a Scrum Team Member
+
+5 mins.
 
 Pick one of the Scrum Team roles and discuss within your group:
 

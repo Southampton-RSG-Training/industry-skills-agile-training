@@ -74,6 +74,8 @@ Time-boxing the meeting keeps the discussion focussed and allows the Scrum Team 
 :::: challenge
 ## Group Exercise: Puppy Playdate Planner
 
+10 mins.
+
 Read the following scenario about the Puppy Playdate Planner app and discuss the questions at the end.
 
 **Sprint Planning Meeting Scenario**
@@ -161,6 +163,8 @@ Developers can also meet throughout the day to re-adjust plans or to have more d
 :::: challenge
 
 ## Group Exercise: Exchange and Unblock
+
+10 mins.
 
 In this challenge, you're going to practice conducting a Daily Scrum Meeting in groups of four. 
 
@@ -253,6 +257,8 @@ Now, it's time to put all of this theory into practice and conduct a Sprint Plan
 ::: challenge
 
 ## Group Exercise: Sprint Planning for Coffee Beans Analysis
+
+20 mins.
 
 Conduct the Sprint Planning Meeting for Sprint 1 of the Coffee Beans Analysis Project.
 

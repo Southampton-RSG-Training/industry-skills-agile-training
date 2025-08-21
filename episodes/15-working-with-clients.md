@@ -72,7 +72,7 @@ By learning to speak the client’s language you build their trust, enable bette
 
 ## Pair Exercise: Explain a Technical Topic
 
-(7 minutes)
+7 mins.
 
 Practice overcoming the expert awareness gap by explaining a familiar topic clearly to someone with no background in it.
 
@@ -146,7 +146,7 @@ By setting realistic expectations from the start, you're managing risk, building
 
 ## Group Exercise: Responding to Scope Creep
 
-(10 minutes)
+10 mins.
 
 Your team has already agreed with the client on the project's scope and timeline. You're midway through the first sprint when the client sends an email saying:
 
@@ -243,7 +243,7 @@ By leading productive prioritisation conversations, you help clients make better
 
 ## Solo Exercise: From Product Vision to MVP
 
-(5 minutes)
+5 mins.
 
 Your client wants to launch a DIY pizza kit delivered to customers' homes. The big vision includes:
 
@@ -305,9 +305,9 @@ Small misunderstandings can grow into major issues if left unchecked. Assumption
 
 
 ::: challenge
-## Group Exercise: There's No Such Thing as a Silly Question
+## Group Exercise: Questions about the Coffee Beans Project Brief
 
-(15 minutes)
+15 mins.
 
 Re-read the project brief for the coffee beans project.  
 
@@ -376,7 +376,7 @@ Note: Be conservative in time estimates to allow for unforeseen delays.
 ::: challenge
 ## Group Exercise: Agenda Assembly
 
-(15 minutes)
+15 mins.
 
 Create an agenda for a 30 minute kickoff meeting with the client for the Coffee Beans Analysis project.  
 
@@ -425,7 +425,7 @@ After a real client meeting, it's good practice to send a summary email containi
 
 ## Group Exercise: Client Meeting
 
-(30 minutes)
+30 mins + 5 mins to set up meeting.
 
 You have a 30 minute meeting with the owner of the coffee company.  
 
@@ -439,7 +439,7 @@ Conduct the kickoff meeting for the project according to the agenda you produced
 
 ## Group Exercise: Refine the Product Backlog
 
-(15 minutes)
+15 mins.
 
 Refine your product backlog following the client meeting.
 

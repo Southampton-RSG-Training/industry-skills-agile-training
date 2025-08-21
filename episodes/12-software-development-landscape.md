@@ -42,9 +42,9 @@ Someone who is engineering software takes a wider view:
 Thinking about software engineering from that wider view, there are some typical stages that a software development project would go through and these are ver similar to the stages of any project.
 
 ::: challenge
-## Let's Break it Down
+## Solo Exercise: Stages of a Project
 
-**Solo Exercise**
+3 mins.
 
 Think about a project you've completed in the past.
 This could be a software project but it doesn't have to be.
@@ -197,16 +197,6 @@ Rather than being developed in a rigid, one-time release, Google Search has unde
 Now handling at least 8.5 billion searches daily, Google’s sustained success is built on a foundation of iterative enhancements, frequent feedback integration, and rapid deployment.
 :::
 
-#### Spiral Model
-
-The Spiral Model, sometimes known as Boehm's Spiral, is an iterative, risk-driven approach to software development.
-The approach allows for any mixture of software development approaches depending on the pattern of risk present in the project.
-The model guides users to first determine objectives, second identify and resolve risks, third develop and test, and fourth plan the next iteration.
-More recently, the spiral model has been thought of as a 'process model generator' because Boehm argues that choices based on a project's risks generate an appropriate process model for the project.
-
-Decisions about how much effort should be directed into each element of the project is guided by the goal of minimising the overall risk.
-
-![](fig/spiral.png){alt="image of the spiral model of software development"}
 
 #### Agile
 
@@ -253,6 +243,46 @@ The project was initially budgeted at £2.2 billion but is estimated to have cos
 Originally due to complete by 2017, the project end date is now 2028.
 :::
 
+
+## Which Model to Choose?
+
+Any model can be used for any software development project.
+Waterfall and V-Model and more likely to be used when all the requirements are known at the start of the project.
+Iterative methods are particularly suited to prototyping, where quick development and user feedback help shape early versions of a system, and to research software, where evolving requirements and experimental objectives demand adaptability.
+However, iterative approaches can be used on any project including those which are large scale and safety critical.
+
+It's also worth noting that, to some extent, linear approaches become iterative in reality, as it is nearly always necessary to return to previous stages throughout the software development process.
+For example, knowing 100% of the requirements from the start is nearly always impossible.
+Even if a waterfall approach is applied, changes will most likely be made at each of the stages, requiring revision of an earlier stage.
+
+::: challenge
+## Group Exercise: Which Model is the Best Fit?
+
+5 mins.
+
+Imagine you've been hired to develop a web-based system for managing applications for public research grants.
+The portal will be used by applicants, reviewers and administrators.
+
+-   The government has already defined **detailed and fixed requirements.**
+
+-   There is **no flexibility in the deadline**, as it must go live before the start of the next fiscal year.
+
+-   The system must be **fully tested and reliable on day one**, as errors could affect funding decisions.
+
+-   Stakeholder involvement is minimal after the requirements have been approved.
+
+**Your task:**
+
+-   Discuss the project as a group and decide which software development model would be most suitable for delivering
+
+-   Consider factors such as the nature of the project, clarity of requirements, timeline, risk, and the need for flexibility
+
+-   Be prepared to **justify your choice** - why is this model a good fit for the scenario?
+:::
+
+In this course, we will focus on Agile, as it is currently a commonly used method for software engineering across sectors, and it suits the project that you'll be working on throughout this course.
+In particular, we will focus on a an Agile framework called 'Scrum'.
+
 #### Scrum
 
 Scrum is one of the most popular Agile frameworks.
@@ -290,45 +320,6 @@ In Scrum:
 
 Later in this course we will talk more about Scrum so that you are able to use it to run your own Sprints on a project.
 
-## Which Model to Choose?
-
-Any model can be used for any software development project.
-Waterfall and V-Model and more likely to be used when all the requirements are known at the start of the project.
-Iterative methods are particularly suited to prototyping, where quick development and user feedback help shape early versions of a system, and to research software, where evolving requirements and experimental objectives demand adaptability.
-However, iterative approaches can be used on any project including those which are large scale and safety critical.
-
-It's also worth noting that, to some extent, linear approaches become iterative in reality, as it is nearly always necessary to return to previous stages throughout the software development process.
-For example, knowing 100% of the requirements from the start is nearly always impossible.
-Even if a waterfall approach is applied, changes will most likely be made at each of the stages, requiring revision of an earlier stage.
-
-::: challenge
-## Model Matchmaking: What’s the Best Fit?
-
-**Group Exercise**
-
-Imagine you've been hired to develop a web-based system for managing applications for public research grants.
-The portal will be used by applicants, reviewers and administrators.
-
--   The government has already defined **detailed and fixed requirements.**
-
--   There is **no flexibility in the deadline**, as it must go live before the start of the next fiscal year.
-
--   The system must be **fully tested and reliable on day one**, as errors could affect funding decisions.
-
--   Stakeholder involvement is minimal after the requirements have been approved.
-
-**Your task:**
-
--   Discuss the project as a group and decide which software development model would be most suitable for delivering
-
--   Consider factors such as the nature of the project, clarity of requirements, timeline, risk, and the need for flexibility
-
--   Be prepared to **justify your choice** - why is this model a good fit for the scenario?
-:::
-
-In this course, we will focus on Agile, as it is currently a commonly used method for software engineering across sectors, and it suits the project that you'll be working on throughout this course.
-In particular, we will focus on a an Agile framework called 'Scrum'.
-
 ## Scrum vs Project Management
 
 Scrum is an Agile delivery technique that guides the actual software development process.
@@ -346,9 +337,7 @@ Another popular project management framework is PRINCE2 (PRojects IN Controlled 
 It is a more heavyweight project management framework than Agile Project Management and so is often used in sectors where governance and documentation are priorities.
 
 :::: challenge
-## Software Development or Project Management?
-
-**Group Exercise**
+## Group Exercise: Software Development or Project Management?
 
 Below is a list of tasks, discuss whether each task belongs in software development models or project management models:
 
