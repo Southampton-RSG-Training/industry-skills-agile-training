@@ -96,9 +96,9 @@ Scrum only works when the team truly adopts the values it was built to support.
 
 
 ::: challenge
-## Solo Exercise: Scrum Values in Practice
+## Pair Exercise: Scrum Values in Practice
 
-Think about the following questions and note down your thoughts in the shared document:
+Discuss the following questions with your partner:
 
 -   Which Scrum Value do you think you would find hardest to put into practice?
 -   Why?

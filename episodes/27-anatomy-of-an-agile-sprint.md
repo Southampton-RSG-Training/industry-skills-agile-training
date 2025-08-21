@@ -260,7 +260,7 @@ Conduct the Sprint Planning Meeting for Sprint 1 of the Coffee Beans Analysis Pr
 
 -   One person should be Scrum Master.  You are the servant leader who helps the group apply Scrum effectively, removes blockers and improves flow for the Scrum Team.
 -   One person should role play as the Product Owner.  You should represent the interests of the client throughout the meeting.
--   The rest of the group should be developers.  The Scrum Master and acting Product Owner can also be developers.
+-   The rest of the group should be developers.  **The Scrum Master and acting Product Owner can also be developers.**
 
 **Questions for Sprint Planning**
 
