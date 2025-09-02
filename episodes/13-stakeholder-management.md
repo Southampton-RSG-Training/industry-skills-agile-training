@@ -422,7 +422,7 @@ assigning an appropriate label to classify the type of issue.
 
 For our purposes it would be good to label some issues as a new `feature` as well
 (as opposed to an `enhancement` of existing code),
-so add this as a new type of label and use that where appropriate.
+so have one member of the team add this as a new type of label and use that where appropriate.
 
 Be sure to add a suitable (and concise) description for the issue.
 
