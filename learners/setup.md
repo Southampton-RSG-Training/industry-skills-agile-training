@@ -6,7 +6,7 @@ title: Setup
 
 We will use the 'Coffee Ratings Dataset' throughout this training course.  
 
-You can download this dataset in csv format from here: [full_dataset_coffee_ratings.csv](../episodes/data/full_dataset_coffee_ratings.csv)
+You can download this dataset in csv format from here: [full_dataset_coffee_ratings.csv](../episodes/data/simplified_coffee_ratings.csv)
 
 This dataset was obtained from the TidyTuesday GitHub.  TidyTuesday is a weekly social data project and is organised by the Data Science Learning Community.
 
