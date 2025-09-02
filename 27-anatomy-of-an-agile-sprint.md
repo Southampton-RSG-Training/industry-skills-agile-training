@@ -72,7 +72,9 @@ Time-boxing the meeting keeps the discussion focussed and allows the Scrum Team 
 
 
 :::: challenge
-## Group Challenge: Puppy Playdate Planner
+## Group Exercise: Puppy Playdate Planner
+
+10 mins.
 
 Read the following scenario about the Puppy Playdate Planner app and discuss the questions at the end.
 
@@ -160,7 +162,9 @@ Developers can also meet throughout the day to re-adjust plans or to have more d
 
 :::: challenge
 
-## Group Challenge: Exchange and Unblock
+## Group Exercise: Exchange and Unblock
+
+10 mins.
 
 In this challenge, you're going to practice conducting a Daily Scrum Meeting in groups of four. 
 
@@ -252,7 +256,9 @@ Now, it's time to put all of this theory into practice and conduct a Sprint Plan
 
 ::: challenge
 
-## Group Challenge: Sprint Planning for Coffee Beans Analysis
+## Group Exercise: Sprint Planning for Coffee Beans Analysis
+
+20 mins.
 
 Conduct the Sprint Planning Meeting for Sprint 1 of the Coffee Beans Analysis Project.
 
@@ -260,7 +266,7 @@ Conduct the Sprint Planning Meeting for Sprint 1 of the Coffee Beans Analysis Pr
 
 -   One person should be Scrum Master.  You are the servant leader who helps the group apply Scrum effectively, removes blockers and improves flow for the Scrum Team.
 -   One person should role play as the Product Owner.  You should represent the interests of the client throughout the meeting.
--   The rest of the group should be developers.  The Scrum Master and acting Product Owner can also be developers.
+-   The rest of the group should be developers.  **The Scrum Master and acting Product Owner can also be developers.**
 
 **Questions for Sprint Planning**
 

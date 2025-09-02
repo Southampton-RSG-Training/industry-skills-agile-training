@@ -244,13 +244,177 @@ A more comprehensive list can be found [on Wikipedia](https://en.wikipedia.org/w
 
 
 
-## The Coffee Beans Analysis Project
+## Introducing the Coffee Beans Analysis Project
 
-For the remainder of the course, 
-we'll be making use of a hypothetical scenario for many exercises,
+Throughout the course, we'll be making use of a hypothetical scenario
 where a fictional coffee company is looking for a small software company to do some software development and analysis for them on an existing dataset.
 
-Details for this scenario are found in the [Project Brief](files/ProjectBrief.pdf).
+Often at the start of a project, you might learn some information about the domain you're working in so that you can better communicate with the client and understand the problem at hand.
+
+:::callout
+### A Note on Coffee Production
+
+A **coffee bean** is a seed from the Coffea plant and the source for coffee. This fruit is often referred to as a coffee cherry, but unlike the cherry, which usually contains a single pit, it is a **berry** with most commonly two seeds with their flat sides together. Even though the seeds are not technically beans, they are referred to as such because of their resemblance to true beans
+
+The two most economically important varieties of coffee plant are the **Arabica** and the **Robusta**; ~60% of the coffee produced worldwide is Arabica and ~40% is Robusta. Arabica beans consist of 0.8–1.4% caffeine and Robusta beans consist of 1.7–4% caffeine.
+
+As coffee is one of the world's **most widely consumed beverages**, coffee beans are a major cash crop and an **important export product**, accounting for over 50% of some developing nations' foreign exchange earnings. The global coffee industry is valued at **$495.50 billion**, as of 2023; the largest producer of coffee and coffee beans is Brazil. Other main exporters of coffee beans are Colombia, Vietnam, and Ethiopia. 
+
+Two methods are primarily used to process coffee berries. The first, **"wet" or "washed" process**, has historically usually been carried out in Central America and areas of Africa. The flesh of the cherries is separated from the seeds and then the seeds are fermented – soaked in water for about two days. This softens the mucilage, which is a sticky pulp residue that is still attached to the seeds. Then this mucilage is washed off with water.
+
+The **"dry processing"** method, cheaper and simpler, was historically used for lower-quality beans in Brazil and much of Africa, but now brings a premium when done well. Twigs and other foreign objects are separated from the berries and the fruit is then spread out in the sun on concrete, bricks or raised beds for 2–3 weeks, turned regularly for even drying. 
+
+**Coffee cupping**, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply **sniffing** the coffee, then loudly **slurping** the coffee so it spreads to the back of the tongue. The coffee taster attempts to measure aspects of the coffee's taste, specifically the **body** (the texture or mouthfeel, such as oiliness), **sweetness**, **acidity** (a sharp and tangy feeling, like when biting into an orange), **flavour** (the characters in the cup), and **aftertaste**. 
+:::
+
+### Project Brief
+
+(Download a [PDF of the Project Brief](files/coffee-beans-project-brief.pdf))
+
+We are a coffee company based in Southampton, UK, and are looking to improve where we
+source our coffee from. The quality of coffee sourced from our existing suppliers has significantly
+reduced in recent years, so we want to change suppliers whilst maintaining our reputation as the
+best artisanal coffee place in town.
+
+We have obtained a wealth of coffee supplier data from the independent Coffee Quality Institute.  We would like to use this data to help us decide where to send our coffee buyers to negotiate a new supply. However, we lack the skills required to analyse the data so we would like the help of your software team. 
+
+We would like an answer to the following question: **"Which country should we send our buyers
+to?”**
+
+-   We need you to provide evidence for your choice, including statistics and visualisations of all relevant
+variables that have impacted your choice
+-   We need the modified code to be supplied in a GitHub repository, with documentation that
+provides instructions for us to easily re-run your analysis code to reproduce your findings
+
+Please bear in mind the following information about the coffee preferences of our business and customers:
+
+-   A survey found that our customers care most about the flavour, aroma, body and uniformity of their coffee. 
+-   Our customers prefer coffee with a lower caffeine content.
+-   We would prefer to send our buyers to a country with lots of coffee producers so that they can visit multiple producers during their visit.
+-   We have a preference for washed/wet processing of beans because it results in a more consistent and predictable flavour profile.
+
+### Dataset
+
+The data comes from the [Coffee Quality Institute](https://database.coffeeinstitute.org/) and was assembled by Data Scientist James LeDoux into the [Coffee Quality Database GitHub Repository](https://github.com/jldbc/coffee-quality-database).  The data contains reviews of 1312 arabica and 28 robusta coffee beans from the Coffee Quality Institute's trained reviewers. The features include:
+
+**Quality measures**
+
+-   Aroma
+-   Flavour
+-   Aftertaste
+-   Acidity
+-   Body
+-   Balance
+-   Uniformity
+-   Cup Cleanliness
+-   Sweetness
+-   Moisture
+-   Defects
+
+**Bean Metadata**
+
+
+-   Processing Method
+-   Colour
+-   Species (arabica / robusta)
+
+**Farm Metadata**
+
+-   Owner
+-   Country of Origin
+-   Farm Name
+-   Lot Number
+-   Mill
+-   Company
+-   Altitude
+-   Region
+
+The data is not perfect, which may present some challenges for analysis. For example:
+Some of the data is missing, largely indicated by NA (not available) for data in some columns, e.g. "mill", "variety" and "processing_method"
+The units used in some columns is inconsistent, e.g. "bag_weight" contains data in both kilograms and pounds
+
+
+### Data Dictionary
+
+We have created a simplified version of the dataset, which contains the following variables:
+
+| Variable               | Class      | Description                                             |
+|-------------------------|-----------|---------------------------------------------------------|
+| species                 | character | Species of coffee bean (arabica or robusta)             |
+| owner                   | character | Owner of the farm                                      |
+| country_of_origin       | character | Where the bean came from                               |
+| farm_name               | character | Name of the farm                                       |
+| lot_number              | character | Lot number of the beans tested                         |
+| mill                    | character | Mill where the beans were processed                    |
+| company                 | character | Company name                                           |
+| altitude                | character | Altitude |
+| region                  | character | Region where bean came from                            |
+| producer                | character | Producer of the roasted bean                           |
+| number_of_bags          | double    | Number of bags tested                                  |
+| bag_weight              | character | Bag weight tested                                      |
+| in_country_partner      | character | Partner for the country                                |
+| harvest_year            | character | When the beans were harvested (year)                   |
+| grading_date            | character | When the beans were graded                             |
+| owner_1                 | character | Who owns the beans                                     |
+| variety                 | character | Variety of the beans                                   |
+| processing_method       | character | Method for processing                                  |
+| aroma                   | double    | Aroma grade                                            |
+| flavor                  | double    | Flavor grade                                           |
+| aftertaste              | double    | Aftertaste grade                                       |
+| acidity                 | double    | Acidity grade                                          |
+| body                    | double    | Body grade                                             |
+| balance                 | double    | Balance grade                                          |
+| uniformity              | double    | Uniformity grade                                       |
+| clean_cup               | double    | Clean cup grade                                        |
+| sweetness               | double    | Sweetness grade                                        |
+| cupper_points           | double    | Cupper Points (higher score = superior quality)        |
+| moisture                | double    | Moisture Grade                                         |
+
+
+### Data Download
+
+You can download a csv file of the data by clicking here: [Download coffee ratings dataset](data/simplified_coffee_ratings.csv)
+
+Note: We found this dataset through TidyTuesday, a weekly social data project organised by the Data Science Learning Community
+
+
+### Existing Code
+
+From the coffee company:
+
+We have some existing code that was developed by a part-time barista who was studying computer science at the University. We would like to build on this existing code, whilst ensuring we're able to run the updated code ourselves in the future.
+
+This code generates a visual plot of United States coffee suppliers in terms of flavor and cupper points, and can be found at [https://github.com/softwaresaved/coffee-analysis](https://github.com/softwaresaved/coffee-analysis). It is not currently documented, but can be run using the following commands:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python analyse-coffee.py
+```
+
+The code produces the following plot:
+
+![](fig/coffee_plot.png)
+
+The plot is quite confusing and doesn't help us, but please use the code as a starting point if it's helpful to you at all.  
+
+### Plan for the Coffee Beans Analysis Project
+
+Over the next five days, you will work in teams on the coffee beans analysis project.
+
+-   On Day 1 (today), you'll develop the product backlog for the project.
+-   On Day 2, you'll meet with the client (someone role playing as the coffee company owner) and you'll have your first Sprint Planning Meeting.
+-   On Day 3, you'll conduct Sprint 1! You'll hold a stand-up meeting, work on the project during a three hour block, then hold a Sprint Review and Sprint Retrospective (we'll explain more about what these are later on).
+-   On Day 4, you'll conduct Sprint 2, including the Sprint Planning Meeting, three hour work block, Sprint Review and Sprint Retrospective.
+-   On Day 5, you'll present your work to the client and a panel of judges.  
+
+![](fig/coffee-beans-project-plan.png)
+
+Bear in mind that this training course focuses on the process of software development rather than the work itself.  You only have a total of 6 hours to actually work on the coffee beans analysis project, so we're not expecting anything complex or large-scale.  
+
+
+## Let's get started with the Coffee Beans Analysis Project!
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -428,7 +592,10 @@ Be sure to add a suitable (and concise) description for the issue.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## References
 
+-   [Wikipedia on coffee beans](https://en.wikipedia.org/wiki/Coffee_bean)
+-   [Wikipedia on coffee cupping](https://en.wikipedia.org/wiki/Coffee_cupping)
 
 
 :::::::::::::::::::::::::::::::::::::: keypoints
