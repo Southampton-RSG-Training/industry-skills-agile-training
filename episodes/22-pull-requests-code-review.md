@@ -102,6 +102,21 @@ and then the pull request is reviewed by another team member (or maybe several).
 If the pull request is judged to be a suitable set of changes,
 the pull request is accepted and the changes are merged using a branch merging strategy as discussed.
 
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Why is it Called "Pull Request"?
+
+It may seem a bit strange that it's referred to as a pull request,
+since what we're really doing is requesting a *merge*,
+so perhaps "push request" may make more sense.
+
+However, consider it from the repository perspective:
+
+- A pull request is you requesting the target repository to grab your changes and merge them
+- A push request would be the target repository requesting you to push your changes
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ![](fig/collab-workflow-pull-request.png){alt="Diagram depicting a feature branch being created off of a main branch, with its own commits, and those commits then being merged onto the main branch."}
 
 However, if the review identifies issues that indicate that it is unsuitable to be merged,
