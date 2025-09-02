@@ -416,8 +416,11 @@ In general, a good requirement is:
 
 15 mins.
 
-As a group, examine the project brief and identify (perhaps around 10-15) key requirements for the project,
-and add these as new issues to our product backlog in GitHub,
+As a group:
+
+1. Examine the project brief and identify (perhaps around 10-15) key requirements for the project,
+noting them down in your shared team GoogleDoc.
+2. Once you have your list, add these as new issues to your product backlog in GitHub,
 assigning an appropriate label to classify the type of issue.
 
 For our purposes it would be good to label some issues as a new `feature` as well
