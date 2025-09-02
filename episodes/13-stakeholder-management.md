@@ -46,6 +46,7 @@ rather than jumping prematurely to solution or technical requirements
 and anchor development in *user outcomes*, not just functionality
 - Prevent requirements ballooning, if not guided by real user goals
 - Prioritise what matters to users
+- Provide a *concise* description of value - they should be short and encapsulate a single aspect
 
 They typically follow the following template,
 to ensure user stories are clear and concise:
@@ -63,6 +64,8 @@ Some examples of user stories include:
 - E-commerce site: as a shopper, I want to add items to my cart so that I can purchase multiple products at once
 - Mobile application: as a user, I want to receive push notifications for important updates so that I stay informed when I'm not using the app
 
+As mentioned, note that they are short and to the point,
+and each encapsulate a single aspect.
 
 FIXME: mention acceptance criteria for functional and non-functional requirements
 
