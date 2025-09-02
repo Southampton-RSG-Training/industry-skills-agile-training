@@ -20,7 +20,6 @@ exercises: 10
 - Describe how workflow relates to process
 - Set up SSH passwordless access to GitHub
 - Describe the purpose of branches in a repository
-- Verify that team is able to developing using project repository locally
 - Define the elements of a feature-branch workflow
 - Describe four major strategies for merging branches
 - Create and use a branch
@@ -359,7 +358,6 @@ there are features we can introduce to using feature branches that aim to mitiga
 - Once you've set up personal SSH access to GitHub from a machine, you do no need to use passwords
 - Separate features or bug fixes should be developed on separate repository branches and merged to the main branch when ready
 - Developing code on feature branches enables the main branch to remain working and clear of unfinished features or bug fixes, and prevents confusion across separate development activities
-- If feature branches end up being unproductive "dead ends", they can simply be deleted
 - A fast-forward merge simply adds commits to the end of a destination branch
 - A 3-way merge with merge commit creates a new commit on the destination branch comprised of the commits on the feature branch
 - A rebase and merge rewrites the history 

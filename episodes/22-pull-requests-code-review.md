@@ -20,6 +20,7 @@ exercises: 15
 
 - Define a pull request and identify some reasons for using pull requests
 - Bullet-point some advantages and limitations of working in a feature-branch workflow
+- Clone our team's repository onto our machines
 - Submit a pull request in GitHub
 - Review a pull request
 - Merge a pull request into its base branch
