@@ -306,9 +306,6 @@ The individual who created the repository thus needs to:
 1. On the `Collaborators and teams` page, under `Manage access`, select `Add people`.
 1. In the pop-up box, you should be able to search for each group member's GitHub account by username, and select `Add to repository` to send an invite.
 1. Each new member will need to accept the invite, which is sent out by email.
-1. Ensure each member has the `Maintain` permission on the repository,
-which will allow them to push commits to the repository,
-and perform other non-destructive repository actions.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
