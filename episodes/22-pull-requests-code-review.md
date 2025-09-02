@@ -132,6 +132,47 @@ In a sense, a pull request is a verification check - or insurance policy - again
 
 This approach is known as *feature branch workflow*.
 
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Solo Exercise: Clone the Repository
+
+5 mins.
+
+In preparation for the work we're about to do,
+let's clone the group's `coffee-analysis` repository
+onto our own machines, e.g.
+
+```bash
+git clone git@github.com:github-username/coffee-analysis
+cd coffee-analysis
+git status
+```
+
+::::::::::::::::::::::::::::: solution
+
+For example, on a Mac:
+
+```output
+Cloning into 'coffee-analysis'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 16 (delta 4), reused 11 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (16/16), 83.40 KiB | 1.08 MiB/s, done.
+Resolving deltas: 100% (4/4), done.
+user@mymachine:$ cd coffee-analysis/
+user@mymachine:coffee-analysis$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
+
+::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 ### Preparing Some Example Work
 
 In order for us to try out feature branch workflow as a team,
@@ -365,6 +406,7 @@ and `Confirm merge` to complete the merge.
 - Code reviews can be short and informal, contribution-oriented, or formal
 - The first hour of code review matters most
 - Code review helps to increase code quality, ensure practices and conventions are met consistently, and increase codebase knowledge across the team
+- If feature branches end up being unproductive "dead ends", they can simply be deleted
 - GitHub supports code review as part of pull requests
 - Aim to close pull requests as soon as is convenient, to avoid increased divergence from the main codebase
 

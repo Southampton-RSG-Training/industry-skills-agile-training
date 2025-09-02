@@ -155,51 +155,6 @@ the commits on this branch are then merged into the `main` branch.
 
 You should consider starting a new branch whenever you are working on a distinct feature or fixing a specific bug.
 
-## Check we can Use the Group Repository
-
-To verify we are able to use the group's `coffee-analysis` repository,
-we'll each clone the repository on our own machines,
-create a unique branch and make some commits to it,
-and push the new branch to the remote repository.
-
-1. Clone the group's repository on your machine, and change directory to it (replacing `github-username` with the username of the user who created the repository)
-
-   ```bash
-   git clone git@github.com:github-username/coffee-analysis
-   cd coffee-analysis
-   ```
-
-1. Create a new branch and switch to it (replacing `unique-branch-name` with a unique name of your choice)
-
-    ```bash
-    git branch unique-branch-name
-    git switch unique-branch-name
-    ```
-
-1. Edit the `README.md` file in an editor of your choice,
-make a small change to it (anything will do),
-and save the file.
-
-1. Commit the change to the repository on your local machine
-
-    ```bash
-    git add README.md
-    git commit -m "A trivial change" README.md
-    ```
-
-1. Push the commit to the remote repository
-
-    ```bash
-    git push -u origin unique-branch-name
-    ```
-
-    Hopefully, you should see this command complete without errors,
-    which will verify you are able to push commits on new branches to the repository.
-
-1. Since it's no longer needed, go to the group repository's list of branches (e.g. https://github.com/github-username/coffee-analysis/branches) and delete the branch you just created by clicking on the dustbin/trash icon on its row on the right (be careful not to delete any others!).
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
 ## Group Exercise: Pros and Cons of Developing Code on Feature Branches
 
 5 mins.
