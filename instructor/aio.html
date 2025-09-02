@@ -750,7 +750,7 @@
 </div>
 </div></section><section id="aio-12-software-development-landscape"><p>Content from <a href="12-software-development-landscape.html">1.2 Software Development Process and the Landscape of Approaches</a></p>
 <hr>
-<p>Last updated on 2025-07-31 |
+<p>Last updated on 2025-09-02 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/12-software-development-landscape.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
@@ -837,15 +837,15 @@ part of it - could be reused in the future.</li>
 <p>Thinking about software engineering from that wider view, there are
 some typical stages that a software development project would go through
 and these are ver similar to the stages of any project.</p>
-<div id="lets-break-it-down" class="callout discussion">
+<div id="solo-exercise-stages-of-a-project" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="lets-break-it-down" class="callout-inner">
-<h3 class="callout-title">Let’s Break it Down</h3>
+<div id="solo-exercise-stages-of-a-project" class="callout-inner">
+<h3 class="callout-title">Solo Exercise: Stages of a Project</h3>
 <div class="callout-content">
-<p><strong>Solo Challenge</strong></p>
+<p>3 mins.</p>
 <p>Think about a project you’ve completed in the past. This could be a
 software project but it doesn’t have to be. It could be anything from
 organising an event to completing a personal goal or managing a work
@@ -1093,22 +1093,6 @@ feedback integration, and rapid deployment.</p>
 </div>
 </div>
 <div class="section level4">
-<h4 id="spiral-model">Spiral Model<a class="anchor" aria-label="anchor" href="#spiral-model"></a>
-</h4>
-<p>The Spiral Model, sometimes known as Boehm’s Spiral, is an iterative,
-risk-driven approach to software development. The approach allows for
-any mixture of software development approaches depending on the pattern
-of risk present in the project. The model guides users to first
-determine objectives, second identify and resolve risks, third develop
-and test, and fourth plan the next iteration. More recently, the spiral
-model has been thought of as a ‘process model generator’ because Boehm
-argues that choices based on a project’s risks generate an appropriate
-process model for the project.</p>
-<p>Decisions about how much effort should be directed into each element
-of the project is guided by the goal of minimising the overall risk.</p>
-<figure><img src="../fig/spiral.png" alt="image of the spiral model of software development" class="figure mx-auto d-block"></figure>
-</div>
-<div class="section level4">
 <h4 id="agile">Agile<a class="anchor" aria-label="anchor" href="#agile"></a>
 </h4>
 <p>Agile software development is a phrase used to describe any iterative
@@ -1189,6 +1173,64 @@ to have cost £15-16 billion.</p>
 </div>
 </div>
 </div>
+</div>
+</section><section><h2 class="section-heading" id="which-model-to-choose">Which Model to Choose?<a class="anchor" aria-label="anchor" href="#which-model-to-choose"></a>
+</h2>
+<hr class="half-width">
+<p>Any model can be used for any software development project. Waterfall
+and V-Model and more likely to be used when all the requirements are
+known at the start of the project. Iterative methods are particularly
+suited to prototyping, where quick development and user feedback help
+shape early versions of a system, and to research software, where
+evolving requirements and experimental objectives demand adaptability.
+However, iterative approaches can be used on any project including those
+which are large scale and safety critical.</p>
+<p>It’s also worth noting that, to some extent, linear approaches become
+iterative in reality, as it is nearly always necessary to return to
+previous stages throughout the software development process. For
+example, knowing 100% of the requirements from the start is nearly
+always impossible. Even if a waterfall approach is applied, changes will
+most likely be made at each of the stages, requiring revision of an
+earlier stage.</p>
+<div id="group-exercise-which-model-is-the-best-fit" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="group-exercise-which-model-is-the-best-fit" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Which Model is the Best
+Fit?</h3>
+<div class="callout-content">
+<p>5 mins.</p>
+<p>Imagine you’ve been hired to develop a web-based system for managing
+applications for public research grants. The portal will be used by
+applicants, reviewers and administrators.</p>
+<ul>
+<li><p>The government has already defined <strong>detailed and fixed
+requirements.</strong></p></li>
+<li><p>There is <strong>no flexibility in the deadline</strong>, as it
+must go live before the start of the next fiscal year.</p></li>
+<li><p>The system must be <strong>fully tested and reliable on day
+one</strong>, as errors could affect funding decisions.</p></li>
+<li><p>Stakeholder involvement is minimal after the requirements have
+been approved.</p></li>
+</ul>
+<p><strong>Your task:</strong></p>
+<ul>
+<li><p>Discuss the project as a group and decide which software
+development model would be most suitable for delivering</p></li>
+<li><p>Consider factors such as the nature of the project, clarity of
+requirements, timeline, risk, and the need for flexibility</p></li>
+<li><p>Be prepared to <strong>justify your choice</strong> - why is this
+model a good fit for the scenario?</p></li>
+</ul>
+</div>
+</div>
+</div>
+<p>In this course, we will focus on Agile, as it is currently a commonly
+used method for software engineering across sectors, and it suits the
+project that you’ll be working on throughout this course. In particular,
+we will focus on a an Agile framework called ‘Scrum’.</p>
 <div class="section level4">
 <h4 id="scrum">Scrum<a class="anchor" aria-label="anchor" href="#scrum"></a>
 </h4>
@@ -1240,63 +1282,6 @@ gets done.</li>
 <p>Later in this course we will talk more about Scrum so that you are
 able to use it to run your own Sprints on a project.</p>
 </div>
-</div>
-</section><section><h2 class="section-heading" id="which-model-to-choose">Which Model to Choose?<a class="anchor" aria-label="anchor" href="#which-model-to-choose"></a>
-</h2>
-<hr class="half-width">
-<p>Any model can be used for any software development project. Waterfall
-and V-Model and more likely to be used when all the requirements are
-known at the start of the project. Iterative methods are particularly
-suited to prototyping, where quick development and user feedback help
-shape early versions of a system, and to research software, where
-evolving requirements and experimental objectives demand adaptability.
-However, iterative approaches can be used on any project including those
-which are large scale and safety critical.</p>
-<p>It’s also worth noting that, to some extent, linear approaches become
-iterative in reality, as it is nearly always necessary to return to
-previous stages throughout the software development process. For
-example, knowing 100% of the requirements from the start is nearly
-always impossible. Even if a waterfall approach is applied, changes will
-most likely be made at each of the stages, requiring revision of an
-earlier stage.</p>
-<div id="model-matchmaking-whats-the-best-fit" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<span class="callout-header">Discussion</span>
-<div id="model-matchmaking-whats-the-best-fit" class="callout-inner">
-<h3 class="callout-title">Model Matchmaking: What’s the Best Fit?</h3>
-<div class="callout-content">
-<p><strong>Group Challenge</strong></p>
-<p>Imagine you’ve been hired to develop a web-based system for managing
-applications for public research grants. The portal will be used by
-applicants, reviewers and administrators.</p>
-<ul>
-<li><p>The government has already defined <strong>detailed and fixed
-requirements.</strong></p></li>
-<li><p>There is <strong>no flexibility in the deadline</strong>, as it
-must go live before the start of the next fiscal year.</p></li>
-<li><p>The system must be <strong>fully tested and reliable on day
-one</strong>, as errors could affect funding decisions.</p></li>
-<li><p>Stakeholder involvement is minimal after the requirements have
-been approved.</p></li>
-</ul>
-<p><strong>Your task:</strong></p>
-<ul>
-<li><p>Discuss the project as a group and decide which software
-development model would be most suitable for delivering</p></li>
-<li><p>Consider factors such as the nature of the project, clarity of
-requirements, timeline, risk, and the need for flexibility</p></li>
-<li><p>Be prepared to <strong>justify your choice</strong> - why is this
-model a good fit for the scenario?</p></li>
-</ul>
-</div>
-</div>
-</div>
-<p>In this course, we will focus on Agile, as it is currently a commonly
-used method for software engineering across sectors, and it suits the
-project that you’ll be working on throughout this course. In particular,
-we will focus on a an Agile framework called ‘Scrum’.</p>
 </section><section><h2 class="section-heading" id="scrum-vs-project-management">Scrum vs Project Management<a class="anchor" aria-label="anchor" href="#scrum-vs-project-management"></a>
 </h2>
 <hr class="half-width">
@@ -1321,16 +1306,15 @@ outlines seven principles, seven themes and seven processes to guide how
 a project should be managed. It is a more heavyweight project management
 framework than Agile Project Management and so is often used in sectors
 where governance and documentation are priorities.</p>
-<div id="software-development-or-project-management" class="callout challenge">
+<div id="group-exercise-software-development-or-project-management" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="software-development-or-project-management" class="callout-inner">
-<h3 class="callout-title">Software Development or Project
-Management?</h3>
+<div id="group-exercise-software-development-or-project-management" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Software Development or
+Project Management?</h3>
 <div class="callout-content">
-<p><strong>Group Challenge</strong></p>
 <p>Below is a list of tasks, discuss whether each task belongs in
 software development models or project management models:</p>
 <ol style="list-style-type: decimal">
@@ -1355,7 +1339,7 @@ team performance</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Software development</li>
@@ -1440,7 +1424,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-13-stakeholder-management"><p>Content from <a href="13-stakeholder-management.html">1.3 User Stories and Capturing Project Requirements</a></p>
 <hr>
-<p>Last updated on 2025-07-31 |
+<p>Last updated on 2025-09-02 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/13-stakeholder-management.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
@@ -1830,14 +1814,380 @@ Wikipedia</a>.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="the-coffee-beans-analysis-project">The Coffee Beans Analysis Project<a class="anchor" aria-label="anchor" href="#the-coffee-beans-analysis-project"></a>
+</section><section><h2 class="section-heading" id="introducing-the-coffee-beans-analysis-project">Introducing the Coffee Beans Analysis Project<a class="anchor" aria-label="anchor" href="#introducing-the-coffee-beans-analysis-project"></a>
 </h2>
 <hr class="half-width">
-<p>For the remainder of the course, we’ll be making use of a
-hypothetical scenario for many exercises, where a fictional coffee
-company is looking for a small software company to do some software
-development and analysis for them on an existing dataset.</p>
-<p>Details for this scenario are found in the <a href="../files/ProjectBrief.pdf">Project Brief</a>.</p>
+<p>Throughout the course, we’ll be making use of a hypothetical scenario
+where a fictional coffee company is looking for a small software company
+to do some software development and analysis for them on an existing
+dataset.</p>
+<p>Often at the start of a project, you might learn some information
+about the domain you’re working in so that you can better communicate
+with the client and understand the problem at hand.</p>
+<div id="a-note-on-coffee-production" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="a-note-on-coffee-production" class="callout-inner">
+<h3 class="callout-title">A Note on Coffee Production</h3>
+<div class="callout-content">
+<p>A <strong>coffee bean</strong> is a seed from the Coffea plant and
+the source for coffee. This fruit is often referred to as a coffee
+cherry, but unlike the cherry, which usually contains a single pit, it
+is a <strong>berry</strong> with most commonly two seeds with their flat
+sides together. Even though the seeds are not technically beans, they
+are referred to as such because of their resemblance to true beans</p>
+<p>The two most economically important varieties of coffee plant are the
+<strong>Arabica</strong> and the <strong>Robusta</strong>; ~60% of the
+coffee produced worldwide is Arabica and ~40% is Robusta. Arabica beans
+consist of 0.8–1.4% caffeine and Robusta beans consist of 1.7–4%
+caffeine.</p>
+<p>As coffee is one of the world’s <strong>most widely consumed
+beverages</strong>, coffee beans are a major cash crop and an
+<strong>important export product</strong>, accounting for over 50% of
+some developing nations’ foreign exchange earnings. The global coffee
+industry is valued at <strong>$495.50 billion</strong>, as of 2023; the
+largest producer of coffee and coffee beans is Brazil. Other main
+exporters of coffee beans are Colombia, Vietnam, and Ethiopia.</p>
+<p>Two methods are primarily used to process coffee berries. The first,
+<strong>“wet” or “washed” process</strong>, has historically usually
+been carried out in Central America and areas of Africa. The flesh of
+the cherries is separated from the seeds and then the seeds are
+fermented – soaked in water for about two days. This softens the
+mucilage, which is a sticky pulp residue that is still attached to the
+seeds. Then this mucilage is washed off with water.</p>
+<p>The <strong>“dry processing”</strong> method, cheaper and simpler,
+was historically used for lower-quality beans in Brazil and much of
+Africa, but now brings a premium when done well. Twigs and other foreign
+objects are separated from the berries and the fruit is then spread out
+in the sun on concrete, bricks or raised beds for 2–3 weeks, turned
+regularly for even drying.</p>
+<p><strong>Coffee cupping</strong>, or coffee tasting, is the practice
+of observing the tastes and aromas of brewed coffee. It is a
+professional practice but can be done informally by anyone or by
+professionals known as “Q Graders”. A standard coffee cupping procedure
+involves deeply <strong>sniffing</strong> the coffee, then loudly
+<strong>slurping</strong> the coffee so it spreads to the back of the
+tongue. The coffee taster attempts to measure aspects of the coffee’s
+taste, specifically the <strong>body</strong> (the texture or mouthfeel,
+such as oiliness), <strong>sweetness</strong>, <strong>acidity</strong>
+(a sharp and tangy feeling, like when biting into an orange),
+<strong>flavour</strong> (the characters in the cup), and
+<strong>aftertaste</strong>.</p>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="project-brief">Project Brief<a class="anchor" aria-label="anchor" href="#project-brief"></a>
+</h3>
+<p>(Download a <a href="../files/coffee-beans-project-brief.pdf">PDF of the
+Project Brief</a>)</p>
+<p>We are a coffee company based in Southampton, UK, and are looking to
+improve where we source our coffee from. The quality of coffee sourced
+from our existing suppliers has significantly reduced in recent years,
+so we want to change suppliers whilst maintaining our reputation as the
+best artisanal coffee place in town.</p>
+<p>We have obtained a wealth of coffee supplier data from the
+independent Coffee Quality Institute. We would like to use this data to
+help us decide where to send our coffee buyers to negotiate a new
+supply. However, we lack the skills required to analyse the data so we
+would like the help of your software team.</p>
+<p>We would like an answer to the following question: <strong>“Which
+country should we send our buyers to?”</strong></p>
+<ul>
+<li>We need you to provide evidence for your choice, including
+statistics and visualisations of all relevant variables that have
+impacted your choice</li>
+<li>We need the modified code to be supplied in a GitHub repository,
+with documentation that provides instructions for us to easily re-run
+your analysis code to reproduce your findings</li>
+</ul>
+<p>Please bear in mind the following information about the coffee
+preferences of our business and customers:</p>
+<ul>
+<li>A survey found that our customers care most about the flavour,
+aroma, body and uniformity of their coffee.</li>
+<li>Our customers prefer coffee with a lower caffeine content.</li>
+<li>We would prefer to send our buyers to a country with lots of coffee
+producers so that they can visit multiple producers during their
+visit.</li>
+<li>We have a preference for washed/wet processing of beans because it
+results in a more consistent and predictable flavour profile.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="dataset">Dataset<a class="anchor" aria-label="anchor" href="#dataset"></a>
+</h3>
+<p>The data comes from the <a href="https://database.coffeeinstitute.org/" class="external-link">Coffee Quality
+Institute</a> and was assembled by Data Scientist James LeDoux into the
+<a href="https://github.com/jldbc/coffee-quality-database" class="external-link">Coffee
+Quality Database GitHub Repository</a>. The data contains reviews of
+1312 arabica and 28 robusta coffee beans from the Coffee Quality
+Institute’s trained reviewers. The features include:</p>
+<p><strong>Quality measures</strong></p>
+<ul>
+<li>Aroma</li>
+<li>Flavour</li>
+<li>Aftertaste</li>
+<li>Acidity</li>
+<li>Body</li>
+<li>Balance</li>
+<li>Uniformity</li>
+<li>Cup Cleanliness</li>
+<li>Sweetness</li>
+<li>Moisture</li>
+<li>Defects</li>
+</ul>
+<p><strong>Bean Metadata</strong></p>
+<ul>
+<li>Processing Method</li>
+<li>Colour</li>
+<li>Species (arabica / robusta)</li>
+</ul>
+<p><strong>Farm Metadata</strong></p>
+<ul>
+<li>Owner</li>
+<li>Country of Origin</li>
+<li>Farm Name</li>
+<li>Lot Number</li>
+<li>Mill</li>
+<li>Company</li>
+<li>Altitude</li>
+<li>Region</li>
+</ul>
+<p>The data is not perfect, which may present some challenges for
+analysis. For example: Some of the data is missing, largely indicated by
+NA (not available) for data in some columns, e.g. “mill”, “variety” and
+“processing_method” The units used in some columns is inconsistent,
+e.g. “bag_weight” contains data in both kilograms and pounds</p>
+</div>
+<div class="section level3">
+<h3 id="data-dictionary">Data Dictionary<a class="anchor" aria-label="anchor" href="#data-dictionary"></a>
+</h3>
+<p>We have created a simplified version of the dataset, which contains
+the following variables:</p>
+<table class="table">
+<colgroup>
+<col width="26%">
+<col width="11%">
+<col width="61%">
+</colgroup>
+<thead><tr class="header">
+<th>Variable</th>
+<th>Class</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>species</td>
+<td>character</td>
+<td>Species of coffee bean (arabica or robusta)</td>
+</tr>
+<tr class="even">
+<td>owner</td>
+<td>character</td>
+<td>Owner of the farm</td>
+</tr>
+<tr class="odd">
+<td>country_of_origin</td>
+<td>character</td>
+<td>Where the bean came from</td>
+</tr>
+<tr class="even">
+<td>farm_name</td>
+<td>character</td>
+<td>Name of the farm</td>
+</tr>
+<tr class="odd">
+<td>lot_number</td>
+<td>character</td>
+<td>Lot number of the beans tested</td>
+</tr>
+<tr class="even">
+<td>mill</td>
+<td>character</td>
+<td>Mill where the beans were processed</td>
+</tr>
+<tr class="odd">
+<td>company</td>
+<td>character</td>
+<td>Company name</td>
+</tr>
+<tr class="even">
+<td>altitude</td>
+<td>character</td>
+<td>Altitude</td>
+</tr>
+<tr class="odd">
+<td>region</td>
+<td>character</td>
+<td>Region where bean came from</td>
+</tr>
+<tr class="even">
+<td>producer</td>
+<td>character</td>
+<td>Producer of the roasted bean</td>
+</tr>
+<tr class="odd">
+<td>number_of_bags</td>
+<td>double</td>
+<td>Number of bags tested</td>
+</tr>
+<tr class="even">
+<td>bag_weight</td>
+<td>character</td>
+<td>Bag weight tested</td>
+</tr>
+<tr class="odd">
+<td>in_country_partner</td>
+<td>character</td>
+<td>Partner for the country</td>
+</tr>
+<tr class="even">
+<td>harvest_year</td>
+<td>character</td>
+<td>When the beans were harvested (year)</td>
+</tr>
+<tr class="odd">
+<td>grading_date</td>
+<td>character</td>
+<td>When the beans were graded</td>
+</tr>
+<tr class="even">
+<td>owner_1</td>
+<td>character</td>
+<td>Who owns the beans</td>
+</tr>
+<tr class="odd">
+<td>variety</td>
+<td>character</td>
+<td>Variety of the beans</td>
+</tr>
+<tr class="even">
+<td>processing_method</td>
+<td>character</td>
+<td>Method for processing</td>
+</tr>
+<tr class="odd">
+<td>aroma</td>
+<td>double</td>
+<td>Aroma grade</td>
+</tr>
+<tr class="even">
+<td>flavor</td>
+<td>double</td>
+<td>Flavor grade</td>
+</tr>
+<tr class="odd">
+<td>aftertaste</td>
+<td>double</td>
+<td>Aftertaste grade</td>
+</tr>
+<tr class="even">
+<td>acidity</td>
+<td>double</td>
+<td>Acidity grade</td>
+</tr>
+<tr class="odd">
+<td>body</td>
+<td>double</td>
+<td>Body grade</td>
+</tr>
+<tr class="even">
+<td>balance</td>
+<td>double</td>
+<td>Balance grade</td>
+</tr>
+<tr class="odd">
+<td>uniformity</td>
+<td>double</td>
+<td>Uniformity grade</td>
+</tr>
+<tr class="even">
+<td>clean_cup</td>
+<td>double</td>
+<td>Clean cup grade</td>
+</tr>
+<tr class="odd">
+<td>sweetness</td>
+<td>double</td>
+<td>Sweetness grade</td>
+</tr>
+<tr class="even">
+<td>cupper_points</td>
+<td>double</td>
+<td>Cupper Points (higher score = superior quality)</td>
+</tr>
+<tr class="odd">
+<td>moisture</td>
+<td>double</td>
+<td>Moisture Grade</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section level3">
+<h3 id="data-download">Data Download<a class="anchor" aria-label="anchor" href="#data-download"></a>
+</h3>
+<p>You can download a csv file of the data by clicking here: <a href="../data/simplified_coffee_ratings.csv">Download coffee ratings
+dataset</a></p>
+<p>Note: We found this dataset through TidyTuesday, a weekly social data
+project organised by the Data Science Learning Community</p>
+</div>
+<div class="section level3">
+<h3 id="existing-code">Existing Code<a class="anchor" aria-label="anchor" href="#existing-code"></a>
+</h3>
+<p>From the coffee company:</p>
+<p>We have some existing code that was developed by a part-time barista
+who was studying computer science at the University. We would like to
+build on this existing code, whilst ensuring we’re able to run the
+updated code ourselves in the future.</p>
+<p>This code generates a visual plot of United States coffee suppliers
+in terms of flavor and cupper points, and can be found at <a href="https://github.com/softwaresaved/coffee-analysis" class="external-link">https://github.com/softwaresaved/coffee-analysis</a>.
+It is not currently documented, but can be run using the following
+commands:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-m</span> venv venv</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="bu">source</span> venv/bin/activate</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="ex">python</span> analyse-coffee.py</span></code></pre>
+</div>
+<p>The code produces the following plot:</p>
+<figure><img src="../fig/coffee_plot.png" class="figure mx-auto d-block"></figure><p>The plot is quite confusing and doesn’t help us, but please use the
+code as a starting point if it’s helpful to you at all.</p>
+</div>
+<div class="section level3">
+<h3 id="plan-for-the-coffee-beans-analysis-project">Plan for the Coffee Beans Analysis Project<a class="anchor" aria-label="anchor" href="#plan-for-the-coffee-beans-analysis-project"></a>
+</h3>
+<p>Over the next five days, you will work in teams on the coffee beans
+analysis project.</p>
+<ul>
+<li>On Day 1 (today), you’ll develop the product backlog for the
+project.</li>
+<li>On Day 2, you’ll meet with the client (someone role playing as the
+coffee company owner) and you’ll have your first Sprint Planning
+Meeting.</li>
+<li>On Day 3, you’ll conduct Sprint 1! You’ll hold a stand-up meeting,
+work on the project during a three hour block, then hold a Sprint Review
+and Sprint Retrospective (we’ll explain more about what these are later
+on).</li>
+<li>On Day 4, you’ll conduct Sprint 2, including the Sprint Planning
+Meeting, three hour work block, Sprint Review and Sprint
+Retrospective.</li>
+<li>On Day 5, you’ll present your work to the client and a panel of
+judges.</li>
+</ul>
+<figure><img src="../fig/coffee-beans-project-plan.png" class="figure mx-auto d-block"></figure><p>Bear in mind that this training course focuses on the process of
+software development rather than the work itself. You only have a total
+of 6 hours to actually work on the coffee beans analysis project, so
+we’re not expecting anything complex or large-scale.</p>
+</div>
+</section><section><h2 class="section-heading" id="lets-get-started-with-the-coffee-beans-analysis-project">Let’s get started with the Coffee Beans Analysis Project!<a class="anchor" aria-label="anchor" href="#lets-get-started-with-the-coffee-beans-analysis-project"></a>
+</h2>
+<hr class="half-width">
 <div id="solo-exercise-develop-user-stories" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -2091,6 +2441,16 @@ issue.</p>
 </div>
 </div>
 </div>
+</div>
+</section><section><h2 class="section-heading" id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Coffee_bean" class="external-link">Wikipedia on
+coffee beans</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Coffee_cupping" class="external-link">Wikipedia on
+coffee cupping</a></li>
+</ul>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -2123,7 +2483,6 @@ functionality owned by the product owner (typically the client)</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</div>
 </section></section><section id="aio-14-estimation-prioritisation"><p>Content from <a href="14-estimation-prioritisation.html">1.4 Estimation, Prioritisation, and Stakeholder Management</a></p>
 <hr>
 <p>Last updated on 2025-08-11 |
@@ -2701,7 +3060,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-15-working-with-clients"><p>Content from <a href="15-working-with-clients.html">1.5 Working with Clients</a></p>
 <hr>
-<p>Last updated on 2025-07-31 |
+<p>Last updated on 2025-09-02 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/15-working-with-clients.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
@@ -2752,7 +3111,10 @@ context.</li>
 </h1>
 <figure><img src="../fig/communicating_with_clients.png" alt="Illustration of two people at a table with laptops" class="figure mx-auto d-block"><div class="figcaption">Illustration by Muhammad Noor on Unsplash</div>
 </figure><p>One of the most important skills for a software engineer working in
-industry is the ability to communicate effectively with clients.</p>
+industry is the ability to communicate effectively with clients. At the
+end of this episode, you will conduct a meeting with one of the helpers
+who will be role playing as the client for the Coffee Beans Analysis
+Project.</p>
 <p>Clear communication builds trust, prevents expensive
 misunderstandings, and ensures that the business goals and technical
 implementation are aligned.</p>
@@ -2806,15 +3168,15 @@ relying on jargon.</p></li>
 </ul>
 <p>By learning to speak the client’s language you build their trust,
 enable better decision making, and avoid frustration on both sides.</p>
-<div id="pair-challenge-explain-a-technical-topic" class="callout discussion">
+<div id="pair-exercise-explain-a-technical-topic" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="pair-challenge-explain-a-technical-topic" class="callout-inner">
-<h3 class="callout-title">Pair Challenge: Explain a Technical Topic</h3>
+<div id="pair-exercise-explain-a-technical-topic" class="callout-inner">
+<h3 class="callout-title">Pair Exercise: Explain a Technical Topic</h3>
 <div class="callout-content">
-<p>(7 minutes)</p>
+<p>7 mins.</p>
 <p>Practice overcoming the expert awareness gap by explaining a familiar
 topic clearly to someone with no background in it.</p>
 <ol style="list-style-type: decimal">
@@ -2897,16 +3259,15 @@ toward trade-offs based on their priorities.</p></li>
 <p>By setting realistic expectations from the start, you’re managing
 risk, building your client’s confidence in your team and keeping the
 project on track.</p>
-<div id="group-challenge-responding-to-scope-creep" class="callout discussion">
+<div id="group-exercise-responding-to-scope-creep" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="group-challenge-responding-to-scope-creep" class="callout-inner">
-<h3 class="callout-title">Group Challenge: Responding to Scope
-Creep</h3>
+<div id="group-exercise-responding-to-scope-creep" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Responding to Scope Creep</h3>
 <div class="callout-content">
-<p>(10 minutes)</p>
+<p>10 mins.</p>
 <p>Your team has already agreed with the client on the project’s scope
 and timeline. You’re midway through the first sprint when the client
 sends an email saying:</p>
@@ -3063,16 +3424,15 @@ bare essentials are in place.</li>
 <p>By leading productive prioritisation conversations, you help clients
 make better decisions, reduce risk, and increase the likelihood of a
 successful product launch.</p>
-<div id="solo-challenge-from-product-vision-to-mvp" class="callout discussion">
+<div id="solo-exercise-from-product-vision-to-mvp" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="solo-challenge-from-product-vision-to-mvp" class="callout-inner">
-<h3 class="callout-title">Solo Challenge: From Product Vision to
-MVP</h3>
+<div id="solo-exercise-from-product-vision-to-mvp" class="callout-inner">
+<h3 class="callout-title">Solo Exercise: From Product Vision to MVP</h3>
 <div class="callout-content">
-<p>(5 minutes)</p>
+<p>5 mins.</p>
 <p>Your client wants to launch a DIY pizza kit delivered to customers’
 homes. The big vision includes:</p>
 <ul>
@@ -3144,16 +3504,16 @@ It’s okay to say:<br><em>“I’m not sure I follow, please could you walk me 
 example?”</em><br>
 Honesty prevents costly mistakes later.</p></li>
 </ul>
-<div id="group-challenge-theres-no-such-thing-as-a-silly-question" class="callout discussion">
+<div id="group-exercise-questions-about-the-coffee-beans-project-brief" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="group-challenge-theres-no-such-thing-as-a-silly-question" class="callout-inner">
-<h3 class="callout-title">Group Challenge: There’s No Such Thing as a
-Silly Question</h3>
+<div id="group-exercise-questions-about-the-coffee-beans-project-brief" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Questions about the Coffee
+Beans Project Brief</h3>
 <div class="callout-content">
-<p>(15 minutes)</p>
+<p>15 mins.</p>
 <p>Re-read the project brief for the coffee beans project.</p>
 <p>First, individually, take a few minutes to think about what is
 unclear to you in the project brief and formulate a list of questions
@@ -3274,15 +3634,15 @@ post-meeting email, shared document).</li>
 <li>End the meeting by inviting final questions or concerns and
 confirming that the client is happy and confident about the plan.</li>
 </ul>
-<div id="group-challenge-agenda-assembly" class="callout discussion">
+<div id="group-exercise-agenda-assembly" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="group-challenge-agenda-assembly" class="callout-inner">
-<h3 class="callout-title">Group Challenge: Agenda Assembly</h3>
+<div id="group-exercise-agenda-assembly" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Agenda Assembly</h3>
 <div class="callout-content">
-<p>(15 minutes)</p>
+<p>15 mins.</p>
 <p>Create an agenda for a 30 minute kickoff meeting with the client for
 the Coffee Beans Analysis project.</p>
 <p>The agenda should take the form of either a bullet list or a
@@ -3303,26 +3663,30 @@ table.</p>
 <h2 id="chairing-the-meeting">Chairing the Meeting<a class="anchor" aria-label="anchor" href="#chairing-the-meeting"></a>
 </h2>
 <figure><img src="../fig/chairing_the_meeting.jpg" alt="four people in a meeting" class="figure mx-auto d-block"><div class="figcaption">Photo by Mapbox on Unsplash</div>
-</figure><p>In a client meeting, the software development team (the supplier)
-should take responsibility for leading the meeting. As an analogy, when
-an electrician comes to your house, they don’t expect you to explain
-wiring protocols, instead they ask questions to diagnose the problem and
-recommend solutions. Similarly, the development team should guide the
-meeting to get the clarity they need to do their job.</p>
-<ul>
-<li>Nominate one person to chair the meeting, it’s their job to ensure
-that the meeting stays on track and follows the agenda. The rest of the
-group can add questions or comments but it’s more straightforward if
-there is a single person leading the meeting.</li>
-<li>Make sure you get the information you need from the meeting. Don’t
-assume that the client will volunteer all necessary information - you
-may need to draw it out of them through asking lots of questions.</li>
-<li>Clients often don’t know what’s important to developers. They may
-focus on the appearance of the product or general ideas rather than
-technical details. It’s your job to lead the discussion towards finding
-the details you need. You could use diagrams, examples, or “what-if”
-scenarios to help clients think through their needs.</li>
-</ul>
+</figure><p>In a client meeting, the software development team should take
+responsibility for leading the meeting.</p>
+<p>As an analogy, when an electrician comes to your house, they don’t
+expect you to explain wiring protocols, instead they ask questions to
+diagnose the problem and recommend solutions.</p>
+<p>Similarly, the development team should guide the meeting to get the
+clarity they need to do their job. Clients often don’t know what’s
+important to developers. They may focus on the appearance of the product
+or general ideas rather than technical details. It’s your job to lead
+the discussion towards finding the details you need. You could use
+diagrams, examples, or “what-if” scenarios to help clients think through
+their needs. Make sure you get the information you need from the
+meeting. Don’t assume that the client will volunteer all necessary
+information - you may need to draw it out of them through asking lots of
+questions.</p>
+<p>You would normally have one person to chair the meeting, it’s their
+job to ensure that the meeting stays on track and follows the agenda.
+However, for the Coffee Beans Project client meeting, everyone in the
+should have an opportunity to chair a section of the meeting. Split up
+the agenda and allocate each section to a different person in your
+group. See this as an opportunity to practice chairing a meeting - an
+opportunity which you might not have until several years into your
+career. There’s absolutely nothing at stake so have fun with it, enjoy
+the process, and don’t worry if something goes wrong.</p>
 </div>
 <div class="section level2">
 <h2 id="meeting-notes">Meeting Notes<a class="anchor" aria-label="anchor" href="#meeting-notes"></a>
@@ -3341,43 +3705,41 @@ any open questions.</li>
 <strong>Actions</strong>: Who is doing what and by when. Include
 actions on the software development team and on the client.</li>
 </ul>
-<p>It’s helpful to take notes in a shared document (e.g., google doc)
-that everyone can access. This way, if any updates are made, everyone
-can see them straight away.</p>
-<p>Send a summary email containing the meeting notes within 24 hours of
-the meeting to confirm that everyone is on the same page.</p>
-<p>It can be helpful to use consistent formating across meetings for
+<p>It can be helpful to use consistent formatting across meetings for
 clarity (e.g., bullet points or a table).</p>
-<div id="group-challenge-client-meeting" class="callout discussion">
+<p>After a real client meeting, it’s good practice to send a summary
+email containing the meeting notes within 24 hours of the meeting to
+confirm that everyone is on the same page. You don’t need to do this for
+the Coffee Beans Project.</p>
+<div id="group-exercise-client-meeting" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="group-challenge-client-meeting" class="callout-inner">
-<h3 class="callout-title">Group Challenge: Client Meeting</h3>
+<div id="group-exercise-client-meeting" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Client Meeting</h3>
 <div class="callout-content">
-<p>(30 minutes)</p>
+<p>30 mins + 5 mins to set up meeting.</p>
 <p>You have a 30 minute meeting with the owner of the coffee
 company.</p>
-<p>Choose a chair for your meeting and someone to be in charge of note
-taking.</p>
+<p>Choose a chair for each section of your meeting and someone to be in
+charge of note taking throughout the meeting.</p>
 <p>Conduct the kickoff meeting for the project according to the agenda
 you produced earlier. Make sure you get answers to all your questions
 and agree the priorities for the project with the client.</p>
-<p>Remember to send the client the meeting notes afterwards.</p>
 </div>
 </div>
 </div>
-<div id="group-challenge-refine-the-product-backlog" class="callout discussion">
+<div id="group-exercise-refine-the-product-backlog" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="group-challenge-refine-the-product-backlog" class="callout-inner">
-<h3 class="callout-title">Group Challenge: Refine the Product
+<div id="group-exercise-refine-the-product-backlog" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Refine the Product
 Backlog</h3>
 <div class="callout-content">
-<p>(15 minutes)</p>
+<p>15 mins.</p>
 <p>Refine your product backlog following the client meeting.</p>
 <p>Add or edit any product backlog items and adjust the priorities
 according to the prioritisation you agreed with the client.</p>
@@ -3761,7 +4123,7 @@ exercise!</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Advantages:</p>
 <ul>
@@ -4014,7 +4376,7 @@ branches in a team environment.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Here are several non-exhaustive reasons:</p>
 <ul>
@@ -5114,7 +5476,7 @@ calling <code>factorial</code> with 5 equals the expected result of
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Add to <code>tests/test_factorial.py</code>:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -5851,7 +6213,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-26-agile-development-process"><p>Content from <a href="26-agile-development-process.html">2.6 The Agile Development Process</a></p>
 <hr>
-<p>Last updated on 2025-08-07 |
+<p>Last updated on 2025-09-02 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/26-agile-development-process.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
@@ -5946,14 +6308,15 @@ learning.</li>
 <strong>Lean Thinking</strong>: Focus on delivering value while
 eliminating waste i.e. doing only what matters most.</li>
 </ul>
-<figure><img src="../fig/scrum_philosophy.png" alt="diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with scrum philosophy highlighted as the foundations" class="figure mx-auto d-block"></figure><div id="solo-challenge-fill-in-the-blanks" class="callout challenge">
+<figure><img src="../fig/scrum_philosophy.png" alt="diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with scrum philosophy highlighted as the foundations" class="figure mx-auto d-block"></figure><div id="solo-exercise-fill-in-the-blanks" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="solo-challenge-fill-in-the-blanks" class="callout-inner">
-<h3 class="callout-title">Solo Challenge: Fill in the Blanks</h3>
+<div id="solo-exercise-fill-in-the-blanks" class="callout-inner">
+<h3 class="callout-title">Solo Exercise: Fill in the Blanks</h3>
 <div class="callout-content">
+<p>3 mins.</p>
 <p>We’ve just introduced some key concepts of Scrum philosophy. To
 reinforce your learning, think about the information you’ve just read
 (or heard) and fill in the blanks to create sentences that accurately
@@ -5976,7 +6339,7 @@ and adapt regularly.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>incomplete</li>
@@ -6024,16 +6387,16 @@ of Scrum)</p>
 </div>
 </div>
 </div>
-<figure><img src="../fig/scrum_values.png" alt="diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the steps to the temple highlighted and each step showing a value" class="figure mx-auto d-block"></figure><div id="solo-challenge-scrum-values-in-practice" class="callout discussion">
+<figure><img src="../fig/scrum_values.png" alt="diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the steps to the temple highlighted and each step showing a value" class="figure mx-auto d-block"></figure><div id="pair-exercise-scrum-values-in-practice" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="solo-challenge-scrum-values-in-practice" class="callout-inner">
-<h3 class="callout-title">Solo Challenge: Scrum Values in Practice</h3>
+<div id="pair-exercise-scrum-values-in-practice" class="callout-inner">
+<h3 class="callout-title">Pair Exercise: Scrum Values in Practice</h3>
 <div class="callout-content">
-<p>Think about the following questions and note down your thoughts in
-the shared document:</p>
+<p>3 mins.</p>
+<p>Discuss the following questions with your partner:</p>
 <ul>
 <li>Which Scrum Value do you think you would find hardest to put into
 practice?</li>
@@ -6098,15 +6461,16 @@ transparency can have.</p>
 </div>
 </div>
 </div>
-<div id="group-challenge-what-happens-when-the-pillar-of-transparency-crumbles" class="callout discussion">
+<div id="group-exercise-what-happens-when-the-pillar-of-transparency-crumbles" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="group-challenge-what-happens-when-the-pillar-of-transparency-crumbles" class="callout-inner">
-<h3 class="callout-title">Group Challenge: What happens when the Pillar
+<div id="group-exercise-what-happens-when-the-pillar-of-transparency-crumbles" class="callout-inner">
+<h3 class="callout-title">Group Exercise: What happens when the Pillar
 of Transparency Crumbles?</h3>
 <div class="callout-content">
+<p>3 mins.</p>
 <p>Discuss in small groups the following questions:</p>
 <ul>
 <li><p>What’s an example of “transparency” you’ve seen - or failed to
@@ -6116,14 +6480,15 @@ see - in a previous project?</p></li>
 </div>
 </div>
 </div>
-<div id="group-challenge-inspecting-and-adapting" class="callout challenge">
+<div id="group-exercise-inspecting-and-adapting" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="group-challenge-inspecting-and-adapting" class="callout-inner">
-<h3 class="callout-title">Group Challenge: Inspecting and Adapting</h3>
+<div id="group-exercise-inspecting-and-adapting" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Inspecting and Adapting</h3>
 <div class="callout-content">
+<p>3 mins.</p>
 <p>During a Daily Stand-Up Meeting, inspecting the progress on the
 project reveals some problems:</p>
 <ul>
@@ -6148,7 +6513,7 @@ problems?</strong></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Suggested <strong>adaptations</strong> (others are also
 possible):</p>
@@ -6284,15 +6649,16 @@ stepping stone in the right direction.</p>
 </div>
 </div>
 </div>
-<div id="group-challenge-sprint-backlog-for-the-sail-away" class="callout challenge">
+<div id="group-exercise-sprint-backlog-for-the-sail-away" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="group-challenge-sprint-backlog-for-the-sail-away" class="callout-inner">
-<h3 class="callout-title">Group Challenge: Sprint Backlog for the Sail
+<div id="group-exercise-sprint-backlog-for-the-sail-away" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Sprint Backlog for the Sail
 Away</h3>
 <div class="callout-content">
+<p>3 mins.</p>
 <p>You have the Sprint Goal: “Test the basic turn system with 2 players
 using paper placeholders.”</p>
 <p>Discuss in your group:</p>
@@ -6306,7 +6672,7 @@ Sprint?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Your Sprint Backlog might include:</p>
 <ul>
@@ -6368,14 +6734,15 @@ better cards.</p>
 </div>
 </div>
 </div>
-<div id="group-challenge-voyage-complete" class="callout challenge">
+<div id="group-exercise-voyage-complete" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="group-challenge-voyage-complete" class="callout-inner">
-<h3 class="callout-title">Group Challenge: Voyage Complete?</h3>
+<div id="group-exercise-voyage-complete" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Voyage Complete?</h3>
 <div class="callout-content">
+<p>5 mins.</p>
 <p>The Definition of Done is an important checklist of the quality
 standards that each Increment must meet.</p>
 <p>Discuss and write down a possible Definition of Done for the Solent
@@ -6388,7 +6755,7 @@ Voyage project?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>The Definition of Done in this case might be:</p>
 <ul>
@@ -6502,15 +6869,16 @@ context.</p>
 </div>
 </div>
 </div>
-<div id="group-challenge-getting-in-the-mindset-of-a-scrum-team-member" class="callout discussion">
+<div id="group-exercise-getting-in-the-mindset-of-a-scrum-team-member" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="group-challenge-getting-in-the-mindset-of-a-scrum-team-member" class="callout-inner">
-<h3 class="callout-title">Group Challenge: Getting in the Mindset of a
+<div id="group-exercise-getting-in-the-mindset-of-a-scrum-team-member" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Getting in the Mindset of a
 Scrum Team Member</h3>
 <div class="callout-content">
+<p>5 mins.</p>
 <p>Pick one of the Scrum Team roles and discuss within your group:</p>
 <ul>
 <li>What challenges might you face in the role?</li>
@@ -6573,7 +6941,7 @@ any links that you are not going to use.
 </div>
 </div></section><section id="aio-27-anatomy-of-an-agile-sprint"><p>Content from <a href="27-anatomy-of-an-agile-sprint.html">2.7 Anatomy of an Agile Sprint</a></p>
 <hr>
-<p>Last updated on 2025-08-07 |
+<p>Last updated on 2025-09-02 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/27-anatomy-of-an-agile-sprint.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 0 minutes</p>
@@ -6705,14 +7073,15 @@ this Sprint</li>
 hours for a one month Sprint, and should be shorter for shorter Sprints.
 Time-boxing the meeting keeps the discussion focussed and allows the
 Scrum Team to start making delivering value fast.</p>
-<div id="group-challenge-puppy-playdate-planner" class="callout challenge">
+<div id="group-exercise-puppy-playdate-planner" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="group-challenge-puppy-playdate-planner" class="callout-inner">
-<h3 class="callout-title">Group Challenge: Puppy Playdate Planner</h3>
+<div id="group-exercise-puppy-playdate-planner" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Puppy Playdate Planner</h3>
 <div class="callout-content">
+<p>10 mins.</p>
 <p>Read the following scenario about the Puppy Playdate Planner app and
 discuss the questions at the end.</p>
 <p><strong>Sprint Planning Meeting Scenario</strong></p>
@@ -6756,7 +7125,7 @@ improved?</strong></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><strong>1. What aspects of the Sprint Planning went
 well?</strong></p>
@@ -6825,14 +7194,15 @@ others in the group not just talking about what you’ve been doing.</p>
 <p>The Daily Scrum Meeting isn’t the only time that Developers can
 discuss and adjust their plans. Developers can also meet throughout the
 day to re-adjust plans or to have more detailed discussions.</p>
-<div id="group-challenge-exchange-and-unblock" class="callout challenge">
+<div id="group-exercise-exchange-and-unblock" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="group-challenge-exchange-and-unblock" class="callout-inner">
-<h3 class="callout-title">Group Challenge: Exchange and Unblock</h3>
+<div id="group-exercise-exchange-and-unblock" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Exchange and Unblock</h3>
 <div class="callout-content">
+<p>10 mins.</p>
 <p>In this challenge, you’re going to practice conducting a Daily Scrum
 Meeting in groups of four.</p>
 <p>Assign one person to the Scrum Master role, they are responsible for
@@ -6855,7 +7225,7 @@ their day and are aware of any dependencies or issues.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Useful information exchanged and possible outcomes from the
 meeting:</p>
@@ -6882,7 +7252,7 @@ they could take.</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Developer 1 </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
 <ul>
 <li>I’m planning to develop a user interface for viewing user
@@ -6903,7 +7273,7 @@ tasks.</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
   <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Developer 2 </h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
 <div class="accordion-body">
 <ul>
 <li>Yesterday I developed an API endpoint for fetching user information.
@@ -6925,7 +7295,7 @@ failing, does anyone know why this is?</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler3" aria-expanded="false" aria-controls="collapseSpoiler3">
   <h3 class="accordion-header" id="headingSpoiler3">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Developer 3 </h3>
 </button>
-<div id="collapseSpoiler3" class="accordion-collapse collapse" aria-labelledby="headingSpoiler3" data-bs-parent="#accordionSpoiler3">
+<div id="collapseSpoiler3" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler3" aria-labelledby="headingSpoiler3">
 <div class="accordion-body">
 <ul>
 <li>Yesterday I changed one of the calculations in the app (as was
@@ -6985,15 +7355,16 @@ Retrospective after you’ve conducted your first Sprint.</p>
 <p>Now, it’s time to put all of this theory into practice and conduct a
 Sprint Planning Meeting for the first Sprint of the Coffee Beans
 Analysis Project.</p>
-<div id="group-challenge-sprint-planning-for-coffee-beans-analysis" class="callout discussion">
+<div id="group-exercise-sprint-planning-for-coffee-beans-analysis" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="group-challenge-sprint-planning-for-coffee-beans-analysis" class="callout-inner">
-<h3 class="callout-title">Group Challenge: Sprint Planning for Coffee
+<div id="group-exercise-sprint-planning-for-coffee-beans-analysis" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Sprint Planning for Coffee
 Beans Analysis</h3>
 <div class="callout-content">
+<p>20 mins.</p>
 <p>Conduct the Sprint Planning Meeting for Sprint 1 of the Coffee Beans
 Analysis Project.</p>
 <p><strong>Roles</strong></p>
@@ -7003,8 +7374,9 @@ helps the group apply Scrum effectively, removes blockers and improves
 flow for the Scrum Team.</li>
 <li>One person should role play as the Product Owner. You should
 represent the interests of the client throughout the meeting.</li>
-<li>The rest of the group should be developers. The Scrum Master and
-acting Product Owner can also be developers.</li>
+<li>The rest of the group should be developers. <strong>The Scrum Master
+and acting Product Owner can also be developers.</strong>
+</li>
 </ul>
 <p><strong>Questions for Sprint Planning</strong></p>
 <p>Remember to answer the following questions during the Sprint Planning
@@ -7900,7 +8272,7 @@ roles for the session</li>
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
-  "dateCreated": "2025-08-13",
+  "dateCreated": "2025-09-02",
   "dateModified": "2025-09-02",
   "datePublished": "2025-09-02"
 }

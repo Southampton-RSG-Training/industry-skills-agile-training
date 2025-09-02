@@ -247,8 +247,10 @@
 Perspective</a></li>
 <li><a href="#what-exactly-is-a-requirement-and-why-are-they-important">What Exactly is a Requirement, and Why are they Important?</a></li>
 <li><a href="#requirements-are-more-than-just-features">Requirements are More than just Features</a></li>
-<li><a href="#the-coffee-beans-analysis-project">The Coffee Beans Analysis Project</a></li>
+<li><a href="#introducing-the-coffee-beans-analysis-project">Introducing the Coffee Beans Analysis Project</a></li>
+<li><a href="#lets-get-started-with-the-coffee-beans-analysis-project">Let’s get started with the Coffee Beans Analysis Project!</a></li>
 <li><a href="#capturing-requirements-in-a-product-backlog">Capturing Requirements in a Product Backlog</a></li>
+<li><a href="#references">References</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -547,7 +549,7 @@ Perspective</a></li>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>1.3 User Stories and Capturing Project Requirements</h1>
-        <p>Last updated on 2025-07-31 |
+        <p>Last updated on 2025-09-02 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/13-stakeholder-management.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -880,13 +882,290 @@ Wikipedia</a>.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="the-coffee-beans-analysis-project">The Coffee Beans Analysis Project<a class="anchor" aria-label="anchor" href="#the-coffee-beans-analysis-project"></a></h2>
-<hr class="half-width"><p>For the remainder of the course, we’ll be making use of a
-hypothetical scenario for many exercises, where a fictional coffee
-company is looking for a small software company to do some software
-development and analysis for them on an existing dataset.</p>
-<p>Details for this scenario are found in the <a href="../files/ProjectBrief.pdf">Project Brief</a>.</p>
-<div id="solo-exercise-develop-user-stories" class="callout challenge">
+</section><section><h2 class="section-heading" id="introducing-the-coffee-beans-analysis-project">Introducing the Coffee Beans Analysis Project<a class="anchor" aria-label="anchor" href="#introducing-the-coffee-beans-analysis-project"></a></h2>
+<hr class="half-width"><p>Throughout the course, we’ll be making use of a hypothetical scenario
+where a fictional coffee company is looking for a small software company
+to do some software development and analysis for them on an existing
+dataset.</p>
+<p>Often at the start of a project, you might learn some information
+about the domain you’re working in so that you can better communicate
+with the client and understand the problem at hand.</p>
+<div id="a-note-on-coffee-production" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="a-note-on-coffee-production" class="callout-inner">
+<h3 class="callout-title">A Note on Coffee Production</h3>
+<div class="callout-content">
+<p>A <strong>coffee bean</strong> is a seed from the Coffea plant and
+the source for coffee. This fruit is often referred to as a coffee
+cherry, but unlike the cherry, which usually contains a single pit, it
+is a <strong>berry</strong> with most commonly two seeds with their flat
+sides together. Even though the seeds are not technically beans, they
+are referred to as such because of their resemblance to true beans</p>
+<p>The two most economically important varieties of coffee plant are the
+<strong>Arabica</strong> and the <strong>Robusta</strong>; ~60% of the
+coffee produced worldwide is Arabica and ~40% is Robusta. Arabica beans
+consist of 0.8–1.4% caffeine and Robusta beans consist of 1.7–4%
+caffeine.</p>
+<p>As coffee is one of the world’s <strong>most widely consumed
+beverages</strong>, coffee beans are a major cash crop and an
+<strong>important export product</strong>, accounting for over 50% of
+some developing nations’ foreign exchange earnings. The global coffee
+industry is valued at <strong>$495.50 billion</strong>, as of 2023; the
+largest producer of coffee and coffee beans is Brazil. Other main
+exporters of coffee beans are Colombia, Vietnam, and Ethiopia.</p>
+<p>Two methods are primarily used to process coffee berries. The first,
+<strong>“wet” or “washed” process</strong>, has historically usually
+been carried out in Central America and areas of Africa. The flesh of
+the cherries is separated from the seeds and then the seeds are
+fermented – soaked in water for about two days. This softens the
+mucilage, which is a sticky pulp residue that is still attached to the
+seeds. Then this mucilage is washed off with water.</p>
+<p>The <strong>“dry processing”</strong> method, cheaper and simpler,
+was historically used for lower-quality beans in Brazil and much of
+Africa, but now brings a premium when done well. Twigs and other foreign
+objects are separated from the berries and the fruit is then spread out
+in the sun on concrete, bricks or raised beds for 2–3 weeks, turned
+regularly for even drying.</p>
+<p><strong>Coffee cupping</strong>, or coffee tasting, is the practice
+of observing the tastes and aromas of brewed coffee. It is a
+professional practice but can be done informally by anyone or by
+professionals known as “Q Graders”. A standard coffee cupping procedure
+involves deeply <strong>sniffing</strong> the coffee, then loudly
+<strong>slurping</strong> the coffee so it spreads to the back of the
+tongue. The coffee taster attempts to measure aspects of the coffee’s
+taste, specifically the <strong>body</strong> (the texture or mouthfeel,
+such as oiliness), <strong>sweetness</strong>, <strong>acidity</strong>
+(a sharp and tangy feeling, like when biting into an orange),
+<strong>flavour</strong> (the characters in the cup), and
+<strong>aftertaste</strong>.</p>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="project-brief">Project Brief<a class="anchor" aria-label="anchor" href="#project-brief"></a></h3>
+<p>(Download a <a href="../files/coffee-beans-project-brief.pdf">PDF of the
+Project Brief</a>)</p>
+<p>We are a coffee company based in Southampton, UK, and are looking to
+improve where we source our coffee from. The quality of coffee sourced
+from our existing suppliers has significantly reduced in recent years,
+so we want to change suppliers whilst maintaining our reputation as the
+best artisanal coffee place in town.</p>
+<p>We have obtained a wealth of coffee supplier data from the
+independent Coffee Quality Institute. We would like to use this data to
+help us decide where to send our coffee buyers to negotiate a new
+supply. However, we lack the skills required to analyse the data so we
+would like the help of your software team.</p>
+<p>We would like an answer to the following question: <strong>“Which
+country should we send our buyers to?”</strong></p>
+<ul><li>We need you to provide evidence for your choice, including
+statistics and visualisations of all relevant variables that have
+impacted your choice</li>
+<li>We need the modified code to be supplied in a GitHub repository,
+with documentation that provides instructions for us to easily re-run
+your analysis code to reproduce your findings</li>
+</ul><p>Please bear in mind the following information about the coffee
+preferences of our business and customers:</p>
+<ul><li>A survey found that our customers care most about the flavour,
+aroma, body and uniformity of their coffee.</li>
+<li>Our customers prefer coffee with a lower caffeine content.</li>
+<li>We would prefer to send our buyers to a country with lots of coffee
+producers so that they can visit multiple producers during their
+visit.</li>
+<li>We have a preference for washed/wet processing of beans because it
+results in a more consistent and predictable flavour profile.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="dataset">Dataset<a class="anchor" aria-label="anchor" href="#dataset"></a></h3>
+<p>The data comes from the <a href="https://database.coffeeinstitute.org/" class="external-link">Coffee Quality
+Institute</a> and was assembled by Data Scientist James LeDoux into the
+<a href="https://github.com/jldbc/coffee-quality-database" class="external-link">Coffee
+Quality Database GitHub Repository</a>. The data contains reviews of
+1312 arabica and 28 robusta coffee beans from the Coffee Quality
+Institute’s trained reviewers. The features include:</p>
+<p><strong>Quality measures</strong></p>
+<ul><li>Aroma</li>
+<li>Flavour</li>
+<li>Aftertaste</li>
+<li>Acidity</li>
+<li>Body</li>
+<li>Balance</li>
+<li>Uniformity</li>
+<li>Cup Cleanliness</li>
+<li>Sweetness</li>
+<li>Moisture</li>
+<li>Defects</li>
+</ul><p><strong>Bean Metadata</strong></p>
+<ul><li>Processing Method</li>
+<li>Colour</li>
+<li>Species (arabica / robusta)</li>
+</ul><p><strong>Farm Metadata</strong></p>
+<ul><li>Owner</li>
+<li>Country of Origin</li>
+<li>Farm Name</li>
+<li>Lot Number</li>
+<li>Mill</li>
+<li>Company</li>
+<li>Altitude</li>
+<li>Region</li>
+</ul><p>The data is not perfect, which may present some challenges for
+analysis. For example: Some of the data is missing, largely indicated by
+NA (not available) for data in some columns, e.g. “mill”, “variety” and
+“processing_method” The units used in some columns is inconsistent,
+e.g. “bag_weight” contains data in both kilograms and pounds</p>
+</div>
+<div class="section level3">
+<h3 id="data-dictionary">Data Dictionary<a class="anchor" aria-label="anchor" href="#data-dictionary"></a></h3>
+<p>We have created a simplified version of the dataset, which contains
+the following variables:</p>
+<table class="table"><colgroup><col width="26%"><col width="11%"><col width="61%"></colgroup><thead><tr class="header"><th>Variable</th>
+<th>Class</th>
+<th>Description</th>
+</tr></thead><tbody><tr class="odd"><td>species</td>
+<td>character</td>
+<td>Species of coffee bean (arabica or robusta)</td>
+</tr><tr class="even"><td>owner</td>
+<td>character</td>
+<td>Owner of the farm</td>
+</tr><tr class="odd"><td>country_of_origin</td>
+<td>character</td>
+<td>Where the bean came from</td>
+</tr><tr class="even"><td>farm_name</td>
+<td>character</td>
+<td>Name of the farm</td>
+</tr><tr class="odd"><td>lot_number</td>
+<td>character</td>
+<td>Lot number of the beans tested</td>
+</tr><tr class="even"><td>mill</td>
+<td>character</td>
+<td>Mill where the beans were processed</td>
+</tr><tr class="odd"><td>company</td>
+<td>character</td>
+<td>Company name</td>
+</tr><tr class="even"><td>altitude</td>
+<td>character</td>
+<td>Altitude</td>
+</tr><tr class="odd"><td>region</td>
+<td>character</td>
+<td>Region where bean came from</td>
+</tr><tr class="even"><td>producer</td>
+<td>character</td>
+<td>Producer of the roasted bean</td>
+</tr><tr class="odd"><td>number_of_bags</td>
+<td>double</td>
+<td>Number of bags tested</td>
+</tr><tr class="even"><td>bag_weight</td>
+<td>character</td>
+<td>Bag weight tested</td>
+</tr><tr class="odd"><td>in_country_partner</td>
+<td>character</td>
+<td>Partner for the country</td>
+</tr><tr class="even"><td>harvest_year</td>
+<td>character</td>
+<td>When the beans were harvested (year)</td>
+</tr><tr class="odd"><td>grading_date</td>
+<td>character</td>
+<td>When the beans were graded</td>
+</tr><tr class="even"><td>owner_1</td>
+<td>character</td>
+<td>Who owns the beans</td>
+</tr><tr class="odd"><td>variety</td>
+<td>character</td>
+<td>Variety of the beans</td>
+</tr><tr class="even"><td>processing_method</td>
+<td>character</td>
+<td>Method for processing</td>
+</tr><tr class="odd"><td>aroma</td>
+<td>double</td>
+<td>Aroma grade</td>
+</tr><tr class="even"><td>flavor</td>
+<td>double</td>
+<td>Flavor grade</td>
+</tr><tr class="odd"><td>aftertaste</td>
+<td>double</td>
+<td>Aftertaste grade</td>
+</tr><tr class="even"><td>acidity</td>
+<td>double</td>
+<td>Acidity grade</td>
+</tr><tr class="odd"><td>body</td>
+<td>double</td>
+<td>Body grade</td>
+</tr><tr class="even"><td>balance</td>
+<td>double</td>
+<td>Balance grade</td>
+</tr><tr class="odd"><td>uniformity</td>
+<td>double</td>
+<td>Uniformity grade</td>
+</tr><tr class="even"><td>clean_cup</td>
+<td>double</td>
+<td>Clean cup grade</td>
+</tr><tr class="odd"><td>sweetness</td>
+<td>double</td>
+<td>Sweetness grade</td>
+</tr><tr class="even"><td>cupper_points</td>
+<td>double</td>
+<td>Cupper Points (higher score = superior quality)</td>
+</tr><tr class="odd"><td>moisture</td>
+<td>double</td>
+<td>Moisture Grade</td>
+</tr></tbody></table></div>
+<div class="section level3">
+<h3 id="data-download">Data Download<a class="anchor" aria-label="anchor" href="#data-download"></a></h3>
+<p>You can download a csv file of the data by clicking here: <a href="../data/simplified_coffee_ratings.csv">Download coffee ratings
+dataset</a></p>
+<p>Note: We found this dataset through TidyTuesday, a weekly social data
+project organised by the Data Science Learning Community</p>
+</div>
+<div class="section level3">
+<h3 id="existing-code">Existing Code<a class="anchor" aria-label="anchor" href="#existing-code"></a></h3>
+<p>From the coffee company:</p>
+<p>We have some existing code that was developed by a part-time barista
+who was studying computer science at the University. We would like to
+build on this existing code, whilst ensuring we’re able to run the
+updated code ourselves in the future.</p>
+<p>This code generates a visual plot of United States coffee suppliers
+in terms of flavor and cupper points, and can be found at <a href="https://github.com/softwaresaved/coffee-analysis" class="external-link">https://github.com/softwaresaved/coffee-analysis</a>.
+It is not currently documented, but can be run using the following
+commands:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-m</span> venv venv</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="bu">source</span> venv/bin/activate</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="ex">python</span> analyse-coffee.py</span></code></pre>
+</div>
+<p>The code produces the following plot:</p>
+<figure><img src="../fig/coffee_plot.png" class="figure mx-auto d-block"></figure><p>The plot is quite confusing and doesn’t help us, but please use the
+code as a starting point if it’s helpful to you at all.</p>
+</div>
+<div class="section level3">
+<h3 id="plan-for-the-coffee-beans-analysis-project">Plan for the Coffee Beans Analysis Project<a class="anchor" aria-label="anchor" href="#plan-for-the-coffee-beans-analysis-project"></a></h3>
+<p>Over the next five days, you will work in teams on the coffee beans
+analysis project.</p>
+<ul><li>On Day 1 (today), you’ll develop the product backlog for the
+project.</li>
+<li>On Day 2, you’ll meet with the client (someone role playing as the
+coffee company owner) and you’ll have your first Sprint Planning
+Meeting.</li>
+<li>On Day 3, you’ll conduct Sprint 1! You’ll hold a stand-up meeting,
+work on the project during a three hour block, then hold a Sprint Review
+and Sprint Retrospective (we’ll explain more about what these are later
+on).</li>
+<li>On Day 4, you’ll conduct Sprint 2, including the Sprint Planning
+Meeting, three hour work block, Sprint Review and Sprint
+Retrospective.</li>
+<li>On Day 5, you’ll present your work to the client and a panel of
+judges.</li>
+</ul><figure><img src="../fig/coffee-beans-project-plan.png" class="figure mx-auto d-block"></figure><p>Bear in mind that this training course focuses on the process of
+software development rather than the work itself. You only have a total
+of 6 hours to actually work on the coffee beans analysis project, so
+we’re not expecting anything complex or large-scale.</p>
+</div>
+</section><section><h2 class="section-heading" id="lets-get-started-with-the-coffee-beans-analysis-project">Let’s get started with the Coffee Beans Analysis Project!<a class="anchor" aria-label="anchor" href="#lets-get-started-with-the-coffee-beans-analysis-project"></a></h2>
+<hr class="half-width"><div id="solo-exercise-develop-user-stories" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -1124,7 +1403,13 @@ issue.</p>
 </div>
 </div>
 </div>
-<div id="keypoints1" class="callout keypoints">
+</div>
+</section><section><h2 class="section-heading" id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
+<hr class="half-width"><ul><li><a href="https://en.wikipedia.org/wiki/Coffee_bean" class="external-link">Wikipedia on
+coffee beans</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Coffee_cupping" class="external-link">Wikipedia on
+coffee cupping</a></li>
+</ul><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -1154,7 +1439,6 @@ functionality owned by the product owner (typically the client)</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/12-software-development-landscape.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
@@ -1212,8 +1496,8 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/13-stakeholder-management.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/13-stakeholder-management.html",
-  "dateCreated": "2025-08-13",
-  "dateModified": "2025-07-31",
+  "dateCreated": "2025-09-02",
+  "dateModified": "2025-09-02",
   "datePublished": "2025-09-02"
 }
 

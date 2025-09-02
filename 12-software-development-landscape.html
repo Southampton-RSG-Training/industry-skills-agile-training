@@ -546,7 +546,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>1.2 Software Development Process and the Landscape of Approaches</h1>
-        <p>Last updated on 2025-07-31 |
+        <p>Last updated on 2025-09-02 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/12-software-development-landscape.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -629,15 +629,15 @@ part of it - could be reused in the future.</li>
 </ul><p>Thinking about software engineering from that wider view, there are
 some typical stages that a software development project would go through
 and these are ver similar to the stages of any project.</p>
-<div id="lets-break-it-down" class="callout discussion">
+<div id="solo-exercise-stages-of-a-project" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="lets-break-it-down" class="callout-inner">
-<h3 class="callout-title">Let’s Break it Down</h3>
+<div id="solo-exercise-stages-of-a-project" class="callout-inner">
+<h3 class="callout-title">Solo Exercise: Stages of a Project</h3>
 <div class="callout-content">
-<p><strong>Solo Challenge</strong></p>
+<p>3 mins.</p>
 <p>Think about a project you’ve completed in the past. This could be a
 software project but it doesn’t have to be. It could be anything from
 organising an event to completing a personal goal or managing a work
@@ -862,20 +862,6 @@ feedback integration, and rapid deployment.</p>
 </div>
 </div>
 <div class="section level4">
-<h4 id="spiral-model">Spiral Model<a class="anchor" aria-label="anchor" href="#spiral-model"></a></h4>
-<p>The Spiral Model, sometimes known as Boehm’s Spiral, is an iterative,
-risk-driven approach to software development. The approach allows for
-any mixture of software development approaches depending on the pattern
-of risk present in the project. The model guides users to first
-determine objectives, second identify and resolve risks, third develop
-and test, and fourth plan the next iteration. More recently, the spiral
-model has been thought of as a ‘process model generator’ because Boehm
-argues that choices based on a project’s risks generate an appropriate
-process model for the project.</p>
-<p>Decisions about how much effort should be directed into each element
-of the project is guided by the goal of minimising the overall risk.</p>
-<figure><img src="fig/spiral.png" alt="image of the spiral model of software development" class="figure mx-auto d-block"></figure></div>
-<div class="section level4">
 <h4 id="agile">Agile<a class="anchor" aria-label="anchor" href="#agile"></a></h4>
 <p>Agile software development is a phrase used to describe any iterative
 method which broadly follows a set of principles determined by a group
@@ -949,6 +935,58 @@ to have cost £15-16 billion.</p>
 </div>
 </div>
 </div>
+</div>
+</section><section><h2 class="section-heading" id="which-model-to-choose">Which Model to Choose?<a class="anchor" aria-label="anchor" href="#which-model-to-choose"></a></h2>
+<hr class="half-width"><p>Any model can be used for any software development project. Waterfall
+and V-Model and more likely to be used when all the requirements are
+known at the start of the project. Iterative methods are particularly
+suited to prototyping, where quick development and user feedback help
+shape early versions of a system, and to research software, where
+evolving requirements and experimental objectives demand adaptability.
+However, iterative approaches can be used on any project including those
+which are large scale and safety critical.</p>
+<p>It’s also worth noting that, to some extent, linear approaches become
+iterative in reality, as it is nearly always necessary to return to
+previous stages throughout the software development process. For
+example, knowing 100% of the requirements from the start is nearly
+always impossible. Even if a waterfall approach is applied, changes will
+most likely be made at each of the stages, requiring revision of an
+earlier stage.</p>
+<div id="group-exercise-which-model-is-the-best-fit" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="group-exercise-which-model-is-the-best-fit" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Which Model is the Best
+Fit?</h3>
+<div class="callout-content">
+<p>5 mins.</p>
+<p>Imagine you’ve been hired to develop a web-based system for managing
+applications for public research grants. The portal will be used by
+applicants, reviewers and administrators.</p>
+<ul><li><p>The government has already defined <strong>detailed and fixed
+requirements.</strong></p></li>
+<li><p>There is <strong>no flexibility in the deadline</strong>, as it
+must go live before the start of the next fiscal year.</p></li>
+<li><p>The system must be <strong>fully tested and reliable on day
+one</strong>, as errors could affect funding decisions.</p></li>
+<li><p>Stakeholder involvement is minimal after the requirements have
+been approved.</p></li>
+</ul><p><strong>Your task:</strong></p>
+<ul><li><p>Discuss the project as a group and decide which software
+development model would be most suitable for delivering</p></li>
+<li><p>Consider factors such as the nature of the project, clarity of
+requirements, timeline, risk, and the need for flexibility</p></li>
+<li><p>Be prepared to <strong>justify your choice</strong> - why is this
+model a good fit for the scenario?</p></li>
+</ul></div>
+</div>
+</div>
+<p>In this course, we will focus on Agile, as it is currently a commonly
+used method for software engineering across sectors, and it suits the
+project that you’ll be working on throughout this course. In particular,
+we will focus on a an Agile framework called ‘Scrum’.</p>
 <div class="section level4">
 <h4 id="scrum">Scrum<a class="anchor" aria-label="anchor" href="#scrum"></a></h4>
 <p>Scrum is one of the most popular Agile frameworks. Scrum is defined
@@ -995,57 +1033,6 @@ gets done.</li>
 <p>Later in this course we will talk more about Scrum so that you are
 able to use it to run your own Sprints on a project.</p>
 </div>
-</div>
-</section><section><h2 class="section-heading" id="which-model-to-choose">Which Model to Choose?<a class="anchor" aria-label="anchor" href="#which-model-to-choose"></a></h2>
-<hr class="half-width"><p>Any model can be used for any software development project. Waterfall
-and V-Model and more likely to be used when all the requirements are
-known at the start of the project. Iterative methods are particularly
-suited to prototyping, where quick development and user feedback help
-shape early versions of a system, and to research software, where
-evolving requirements and experimental objectives demand adaptability.
-However, iterative approaches can be used on any project including those
-which are large scale and safety critical.</p>
-<p>It’s also worth noting that, to some extent, linear approaches become
-iterative in reality, as it is nearly always necessary to return to
-previous stages throughout the software development process. For
-example, knowing 100% of the requirements from the start is nearly
-always impossible. Even if a waterfall approach is applied, changes will
-most likely be made at each of the stages, requiring revision of an
-earlier stage.</p>
-<div id="model-matchmaking-whats-the-best-fit" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<span class="callout-header">Discussion</span>
-<div id="model-matchmaking-whats-the-best-fit" class="callout-inner">
-<h3 class="callout-title">Model Matchmaking: What’s the Best Fit?</h3>
-<div class="callout-content">
-<p><strong>Group Challenge</strong></p>
-<p>Imagine you’ve been hired to develop a web-based system for managing
-applications for public research grants. The portal will be used by
-applicants, reviewers and administrators.</p>
-<ul><li><p>The government has already defined <strong>detailed and fixed
-requirements.</strong></p></li>
-<li><p>There is <strong>no flexibility in the deadline</strong>, as it
-must go live before the start of the next fiscal year.</p></li>
-<li><p>The system must be <strong>fully tested and reliable on day
-one</strong>, as errors could affect funding decisions.</p></li>
-<li><p>Stakeholder involvement is minimal after the requirements have
-been approved.</p></li>
-</ul><p><strong>Your task:</strong></p>
-<ul><li><p>Discuss the project as a group and decide which software
-development model would be most suitable for delivering</p></li>
-<li><p>Consider factors such as the nature of the project, clarity of
-requirements, timeline, risk, and the need for flexibility</p></li>
-<li><p>Be prepared to <strong>justify your choice</strong> - why is this
-model a good fit for the scenario?</p></li>
-</ul></div>
-</div>
-</div>
-<p>In this course, we will focus on Agile, as it is currently a commonly
-used method for software engineering across sectors, and it suits the
-project that you’ll be working on throughout this course. In particular,
-we will focus on a an Agile framework called ‘Scrum’.</p>
 </section><section><h2 class="section-heading" id="scrum-vs-project-management">Scrum vs Project Management<a class="anchor" aria-label="anchor" href="#scrum-vs-project-management"></a></h2>
 <hr class="half-width"><p>Scrum is an Agile delivery technique that guides the actual software
 development process. Scrum is concerned with delivering a project
@@ -1068,16 +1055,15 @@ outlines seven principles, seven themes and seven processes to guide how
 a project should be managed. It is a more heavyweight project management
 framework than Agile Project Management and so is often used in sectors
 where governance and documentation are priorities.</p>
-<div id="software-development-or-project-management" class="callout challenge">
+<div id="group-exercise-software-development-or-project-management" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="software-development-or-project-management" class="callout-inner">
-<h3 class="callout-title">Software Development or Project
-Management?</h3>
+<div id="group-exercise-software-development-or-project-management" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Software Development or
+Project Management?</h3>
 <div class="callout-content">
-<p><strong>Group Challenge</strong></p>
 <p>Below is a list of tasks, discuss whether each task belongs in
 software development models or project management models:</p>
 <ol style="list-style-type: decimal"><li>Writing and testing code for a new feature</li>
@@ -1100,7 +1086,7 @@ team performance</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal"><li>Software development</li>
 <li>Software development</li>
@@ -1232,8 +1218,8 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/12-software-development-landscape.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/12-software-development-landscape.html",
-  "dateCreated": "2025-08-13",
-  "dateModified": "2025-07-31",
+  "dateCreated": "2025-09-02",
+  "dateModified": "2025-09-02",
   "datePublished": "2025-09-02"
 }
 
