@@ -251,6 +251,7 @@ where a fictional coffee company is looking for a small software company to do s
 
 Often at the start of a project, you might learn some information about the domain you're working in so that you can better communicate with the client and understand the problem at hand.
 
+:::callout
 ### A Note on Coffee Production
 
 A **coffee bean** is a seed from the Coffea plant and the source for coffee. This fruit is often referred to as a coffee cherry, but unlike the cherry, which usually contains a single pit, it is a **berry** with most commonly two seeds with their flat sides together. Even though the seeds are not technically beans, they are referred to as such because of their resemblance to true beans
@@ -264,7 +265,7 @@ Two methods are primarily used to process coffee berries. The first, **"wet" or 
 The **"dry processing"** method, cheaper and simpler, was historically used for lower-quality beans in Brazil and much of Africa, but now brings a premium when done well. Twigs and other foreign objects are separated from the berries and the fruit is then spread out in the sun on concrete, bricks or raised beds for 2–3 weeks, turned regularly for even drying. 
 
 **Coffee cupping**, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply **sniffing** the coffee, then loudly **slurping** the coffee so it spreads to the back of the tongue. The coffee taster attempts to measure aspects of the coffee's taste, specifically the **body** (the texture or mouthfeel, such as oiliness), **sweetness**, **acidity** (a sharp and tangy feeling, like when biting into an orange), **flavour** (the characters in the cup), and **aftertaste**. 
-
+:::
 
 ### Project Brief
 
