@@ -154,6 +154,8 @@ the commits on this branch are then merged into the `main` branch.
 
 You should consider starting a new branch whenever you are working on a distinct feature or fixing a specific bug.
 
+:::::::::::::::::::::::::::::::::::::::  challenge
+
 ## Group Exercise: Pros and Cons of Developing Code on Feature Branches
 
 5 mins.
