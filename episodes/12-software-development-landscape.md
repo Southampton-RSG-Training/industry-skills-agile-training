@@ -191,11 +191,15 @@ Disadvantages
 -   No support for development activities to occur concurrently or to iterate.
 
 ::: callout
-The V-Model was used by [Siemens Healthineers](https://www.mdpi.com/2079-9292/13/11/2051) to develop their ultrasound systems Acuson SC2000 PRIME (from 2006) and Sequoia (from 2017).
+When developing ultrasound systems, [Siemens Healthineers](https://www.mdpi.com/2079-9292/13/11/2051) used a combination of V-Model and Agile (SAFe, SCRUM, Kanban) to balance regulatory compliance with flexibility.
 
-The product had to be aligned with medical device regulations and so required the rigorous traceability that the V-Model enables.
+The V-Model and Product Lifecycle Process provided the backbone, defining phases, milestones, and quality gates for verification, validation, and documentation, while Agile teams delivered iteratively within those phases.
 
-Both projects used the V-Model alongside iterative approaches including Scrum.
+Each Agile increment was aligned to V-Model requirements, meaning that each increment included test evidence, documentation, and traceability, as well as the software itself.
+
+Regular clinical feedback was fed into the development early and often, allowing the team to adapt to changes without breaking compliance.
+
+This hybrid process has improved efficiency (release cycles take nearly half the time) and improved predictability.  This demonstrates how writing code iteratively (Agile) and engineering software with a focus on validation and verification (V-Model) can complement each other in practice.
 :::
 
 ### Iterative
