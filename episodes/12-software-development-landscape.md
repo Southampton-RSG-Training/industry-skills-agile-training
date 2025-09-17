@@ -64,7 +64,7 @@ Thinking about software engineering from that wider view, there are some typical
 
 3 mins.
 
-What are the typical stages of a software development project? 
+**What are the typical stages of a software development project?** (Assume that the broader project management aspects have already been done)
 
 -   R___________
 -   D_____
