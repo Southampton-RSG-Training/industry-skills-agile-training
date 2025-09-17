@@ -328,13 +328,64 @@ Scrum is concerned with delivering a project i.e. doing the actual software engi
 Project management is concerned with all aspects of a project including planning, executing, and closing projects, as well as managing change and risk within a project.
 Project management may contain Scrum but will also cover the wider project aspects including ensuring that a project meets its goals, timeline, and budget.
 
-There are lots of project management frameworks.
+There are lots of project management frameworks, we'll briefly mention two of them here: Agile Project Management and PRINCE2.
 
-To avoid confusion we should distinguish between Scrum (an Agile delivery technique) and Agile Project Management (AgilePM), which involves the application of Agile principles to managing projects.
-AgilePM emphasises transparency, flexibility and meeting customer need, as well as allowing teams to have autonomy, make shared decisions and self-organise.
+### Agile Project Management
 
-Another popular project management framework is PRINCE2 (PRojects IN Controlled Environments), which was developed by the UK government, and outlines seven principles, seven themes and seven processes to guide how a project should be managed.
-It is a more heavyweight project management framework than Agile Project Management and so is often used in sectors where governance and documentation are priorities.
+Agile practices aren't just used for software development anymore.  Agile has been applied to the whole project management lifecycle in project management frameworks such as AgilePM.
+
+AgilePM also follows the core values of the Agile Manifesto:
+
+1. Individuals and interactions over processes and tools.
+2. Working software over comprehensive documentation.
+3. Customer collaboration over contract negotiation.
+4. Responding to change over following a plan.
+
+There are foundation and practitioner certifications available for Agile Project Management through [APMG International](https://apmg-international.com/).  The foundation stage focuses on understanding the Agile framework whereas the practitioner stage transitions the understanding into effective application of the Agile framework to real-life projects.
+### PRINCE2
+
+PRINCE2 (PRojects IN Controlled Environments) is the world's most practiced method for project management ([Axelos](https://www.axelos.com/)), it's a flexible method that guides you through the essentials of managing any project. PRINCE2 was developed by the UK government for information systems projects and is currently maintained by Axelos.
+
+PRINCE2 is more heavyweight than AgilePM and is often used in sectors where governance and documentation are priorities.
+
+PRINCE2 is built on seven principles, seven themes and seven processes.
+
+**Seven Principles (The Why)**
+
+-   Continued business justification
+-   Learn from experience
+-   Defined roles and responsibilities
+-   Manage by stages
+-   Manage by exception (people should be given the right amount of authority and only have to escalate to a higher management level if there is an exceptional circumstance)
+-   Focus on products
+-   Tailor to suit the project environment
+
+**Seven Themes (The What)**
+
+-   Business case
+-   Organisation
+-   Quality
+-   Plans
+-   Risk
+-   Change
+-   Progress
+
+
+**Seven Processes (The How)**
+
+-   Starting up a project
+-   Directing a project
+-   Initiating a project
+-   Controlling a stage
+-   Managing product delivery
+-   Managing stage boundaries
+-   Closing a project
+
+
+There are foundation and practitioner certifications in PRINCE2 available.  Similar to the AgilePM certification, understanding of the PRINCE2 framework is the goal of the foundation stage and application is the goal of the practitioner stage.
+
+It's possible to combine Agile and PRINCE2, and there is even an 'Agile PRINCE2' qualification.
+
 
 :::: challenge
 ## Group Exercise: Software Development or Project Management?
@@ -379,6 +430,8 @@ Below is a list of tasks, discuss whether each task belongs in software developm
 -   Iterative ideas from [Eastern Peak](https://easternpeak.com/definition/iterative-development/#:~:text=Iterative%20development%20is%20a%20software,%2C%20development%2C%20and%20testing%20steps.)
 -   [Agile](https://en.wikipedia.org/wiki/Agile_software_development)
 -   [PRINCE2](https://en.wikipedia.org/wiki/PRINCE2)
+-   [APMG International](https://apmg-international.com/)
+-   [AXELOS](https://www.axelos.com/)
 
 ::: keypoints
 -   The typical stages of a software development process are: requirements gathering, design, implementation, testing, deployment and maintenance
