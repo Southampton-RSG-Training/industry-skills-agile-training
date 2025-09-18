@@ -3846,7 +3846,7 @@ any links that you are not going to use.
 </div>
 </div></section><section id="aio-21-collaborative-workflow"><p>Content from <a href="21-collaborative-workflow.html">2.1 Collaborative Workflow: Branches and Merging Strategies</a></p>
 <hr>
-<p>Last updated on 2025-08-01 |
+<p>Last updated on 2025-09-18 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/21-collaborative-workflow.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 10 minutes</p>
@@ -3912,110 +3912,20 @@ produced.</p>
 well-established practices for using version control, using Git and
 GitHub as an example, to illustrate how it can support software
 developed using an agile approach.</p>
-<div id="solo-exercise-set-up-ssh-keypair-for-use-with-github" class="callout discussion">
+<div id="optional-solo-exercise-set-up-ssh-keypair-for-use-with-github" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="solo-exercise-set-up-ssh-keypair-for-use-with-github" class="callout-inner">
-<h3 class="callout-title">Solo Exercise: Set up SSH Keypair for use with
-GitHub</h3>
+<div id="optional-solo-exercise-set-up-ssh-keypair-for-use-with-github" class="callout-inner">
+<h3 class="callout-title">(Optional) Solo Exercise: Set up SSH Keypair
+for use with GitHub</h3>
 <div class="callout-content">
 <p>5 mins.</p>
-<p>In order to access GitHub using Git from your machine securely, you
-need to set up a way of authenticating yourself with GitHub through Git.
-The recommended way to do that for this course is to set up <a href="https://www.ssh.com/academy/ssh/public-key-authentication" class="external-link"><em>SSH
-authentication</em></a> - a method of authentication that is more secure
-than sending <a href="https://security.stackexchange.com/questions/110415/is-it-ok-to-send-plain-text-password-over-https" class="external-link"><em>passwords
-over HTTPS</em></a> and which requires a pair of keys - one public that
-you upload to your GitHub account, and one private that remains on your
-machine.</p>
-<p>GitHub provides full documentation and guides on how to:</p>
-<ul>
-<li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" class="external-link">Generate
-an SSH key</a></li>
-<li>
-<a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account" class="external-link">Add
-an SSH key to a GitHub account</a>.</li>
-</ul>
-<p>To generate an SSH key pair, you will need to run the
-<code>ssh-keygen</code> command from your command line tool/GitBash and
-provide <strong>your identity for the key pair</strong> (e.g. the email
-address you used to register with GitHub) via the <code>-C</code>
-parameter as shown below. Note that the <code>ssh-keygen</code> command
-can be run with different parameters - e.g. to select a specific public
-key algorithm and key length; if you do not use them
-<code>ssh-keygen</code> will generate an <a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)#:~:text=RSA%20involves%20a%20public%20key,by%20using%20the%20private%20key." class="external-link">RSA</a>
-key pair for you by default. GitHub now recommends that you use a newer
-cryptographic standard (such as <a href="https://en.wikipedia.org/wiki/EdDSA" class="external-link">EdDSA</a> variant algorithm
-<a href="https://cryptobook.nakov.com/digital-signatures/eddsa-and-ed25519" class="external-link">Ed25519</a>),
-so please be sure to specify it using the <code>-t</code> flag as shown
-below. It will also prompt you to answer a few questions - e.g. where to
-save the keys on your machine and a passphrase to use to protect your
-private key. Pressing ‘Enter’ on these prompts will get
-<code>ssh-keygen</code> to use the default key location (within
-<code>.ssh</code> folder in your home directory) and set the passphrase
-to empty.</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"your-github-email@example.com"</span></span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>Generating public/private ed25519 key pair.
-Enter file in which to save the key (/Users/&lt;YOUR_USERNAME&gt;/.ssh/id_ed25519):
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-Your identification has been saved in /Users/&lt;YOUR_USERNAME&gt;/.ssh/id_ed25519
-Your public key has been saved in /Users/&lt;YOUR_USERNAME&gt;/.ssh/id_ed25519.pub
-The key fingerprint is:
-SHA256:qjhN/iO42nnYmlpink2UTzaJpP8084yx6L2iQkVKdHk your-github-email@example.com
-The key's randomart image is:
-+--[ED25519 256]--+
-|.. ..            |
-| ..o A           |
-|. o..            |
-| .o.o .          |
-| ..+ =  B        |
-| .o = ..         |
-|o..X *.          |
-|++B=@.X          |
-|+*XOoOo+         |
-+----[SHA256]-----+</code></pre>
-</div>
-<p>Next, you need to copy your public key (<strong>not your private key
-- this is important!</strong>) over to your GitHub account. The
-<code>ssh-keygen</code> command above will let you know where your
-public key is saved (the file should have the extension “.pub”), and you
-can get its contents (e.g. on a Mac OS system) as follows:</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">cat</span> /Users/<span class="op">&lt;</span>YOUR_USERNAME<span class="op">&gt;</span>/.ssh/id_ed25519.pub</span></code></pre>
-</div>
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>ssh-ed25519 AABAC3NzaC1lZDI1NTE5AAAAICWGVRsl/pZsxx85QHLwSgJWyfMB1L8RCkEvYNkP4mZC your-github-email@example.com</code></pre>
-</div>
-<p>Copy the line of output that starts with “ssh-ed25519” and ends with
-your email address (it may start with a different algorithm name based
-on which one you used to generate the key pair and it may have gone over
-multiple lines if your command line window is not wide enough).</p>
-<p>Finally, go to your <a href="https://github.com/settings/ssh/new" class="external-link">GitHub Settings -&gt; SSH and
-GPG keys -&gt; Add New</a> page to add a new SSH public key. Give your
-key a memorable name (e.g. the name of the computer you are working on
-that contains the private key counterpart), paste the public key from
-your clipboard into the box labelled “Key” (making sure it does not
-contain any line breaks), then click the “Add SSH key” button.</p>
-<p>Now, we can check that the SSH connection is working:</p>
-<div class="codewrapper sourceCode" id="cb5">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-T</span> git@github.com</span></code></pre>
-</div>
+<p>If you haven’t already, you may want to set up passwordless SSH
+access to GitHub which is a more secure way to access it. If so, refer
+to the <a href="index.html#ssh-key-setup">SSH Key Setup</a> in the setup
+instructions.</p>
 </div>
 </div>
 </div>
@@ -4055,21 +3965,21 @@ the remote repository.</p>
 <p>Clone the group’s repository on your machine, and change
 directory to it (replacing <code>github-username</code> with the
 username of the user who created the repository)</p>
-<div class="codewrapper sourceCode" id="cb6">
+<div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:github-username/coffee-analysis</span>
-<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="bu">cd</span> coffee-analysis</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:github-username/coffee-analysis</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="bu">cd</span> coffee-analysis</span></code></pre>
 </div>
 </li>
 <li>
 <p>Create a new branch and switch to it (replacing
 <code>unique-branch-name</code> with a unique name of your choice)</p>
-<div class="codewrapper sourceCode" id="cb7">
+<div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">git</span> branch unique-branch-name</span>
-<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="fu">git</span> switch unique-branch-name</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">git</span> branch unique-branch-name</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="fu">git</span> switch unique-branch-name</span></code></pre>
 </div>
 </li>
 <li><p>Edit the <code>README.md</code> file in an editor of your choice,
@@ -4077,19 +3987,19 @@ make a small change to it (anything will do), and save the
 file.</p></li>
 <li>
 <p>Commit the change to the repository on your local machine</p>
-<div class="codewrapper sourceCode" id="cb8">
+<div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">git</span> add README.md</span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"A trivial change"</span> README.md</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">git</span> add README.md</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"A trivial change"</span> README.md</span></code></pre>
 </div>
 </li>
 <li>
 <p>Push the commit to the remote repository</p>
-<div class="codewrapper sourceCode" id="cb9">
+<div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin unique-branch-name</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin unique-branch-name</span></code></pre>
 </div>
 <p>Hopefully, you should see this command complete without errors, which
 will verify you are able to push commits on new branches to the
@@ -5476,7 +5386,7 @@ calling <code>factorial</code> with 5 equals the expected result of
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Add to <code>tests/test_factorial.py</code>:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -6339,7 +6249,7 @@ and adapt regularly.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>incomplete</li>
@@ -6513,7 +6423,7 @@ problems?</strong></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Suggested <strong>adaptations</strong> (others are also
 possible):</p>
@@ -6672,7 +6582,7 @@ Sprint?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Your Sprint Backlog might include:</p>
 <ul>
@@ -6755,7 +6665,7 @@ Voyage project?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>The Definition of Done in this case might be:</p>
 <ul>
@@ -7125,7 +7035,7 @@ improved?</strong></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p><strong>1. What aspects of the Sprint Planning went
 well?</strong></p>
@@ -7225,7 +7135,7 @@ their day and are aware of any dependencies or issues.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Useful information exchanged and possible outcomes from the
 meeting:</p>
@@ -7252,7 +7162,7 @@ they could take.</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Developer 1 </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <ul>
 <li>I’m planning to develop a user interface for viewing user
@@ -7273,7 +7183,7 @@ tasks.</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
   <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Developer 2 </h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
 <ul>
 <li>Yesterday I developed an API endpoint for fetching user information.
@@ -7295,7 +7205,7 @@ failing, does anyone know why this is?</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler3" aria-expanded="false" aria-controls="collapseSpoiler3">
   <h3 class="accordion-header" id="headingSpoiler3">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Developer 3 </h3>
 </button>
-<div id="collapseSpoiler3" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler3" aria-labelledby="headingSpoiler3">
+<div id="collapseSpoiler3" class="accordion-collapse collapse" aria-labelledby="headingSpoiler3" data-bs-parent="#accordionSpoiler3">
 <div class="accordion-body">
 <ul>
 <li>Yesterday I changed one of the calculations in the app (as was
@@ -8272,9 +8182,9 @@ roles for the session</li>
   "creativeWorkStatus": "active",
   "url": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
-  "dateCreated": "2025-09-02",
-  "dateModified": "2025-09-16",
-  "datePublished": "2025-09-16"
+  "dateCreated": "2025-09-18",
+  "dateModified": "2025-09-18",
+  "datePublished": "2025-09-18"
 }
 
   </script><script>
