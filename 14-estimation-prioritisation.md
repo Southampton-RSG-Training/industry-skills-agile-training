@@ -98,7 +98,6 @@ the project board also needs to be shared:
   ![](fig/github-board-settings.png){alt='Access settings for a project board' .image-with-shadow width="1000px"}
 1. Select `Manage access` from the navigation bar on the left.
 1. Under `Invite collaborators`, add each member of the group by adding their username.
-1. Set each member's permissions under `Manage access` to `Write` or `Admin` so they are able to make changes to the board.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

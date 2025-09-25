@@ -20,6 +20,7 @@ exercises: 15
 
 - Define a pull request and identify some reasons for using pull requests
 - Bullet-point some advantages and limitations of working in a feature-branch workflow
+- Clone our team's repository onto our machines
 - Submit a pull request in GitHub
 - Review a pull request
 - Merge a pull request into its base branch
@@ -102,6 +103,21 @@ and then the pull request is reviewed by another team member (or maybe several).
 If the pull request is judged to be a suitable set of changes,
 the pull request is accepted and the changes are merged using a branch merging strategy as discussed.
 
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## Why is it Called "Pull Request"?
+
+It may seem a bit strange that it's referred to as a pull request,
+since what we're really doing is requesting a *merge*,
+so perhaps "push request" may make more sense.
+
+However, consider it from the repository perspective:
+
+- A pull request is you requesting the target repository to grab your changes and merge them
+- A push request would be the target repository requesting you to push your changes
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ![](fig/collab-workflow-pull-request.png){alt="Diagram depicting a feature branch being created off of a main branch, with its own commits, and those commits then being merged onto the main branch."}
 
 However, if the review identifies issues that indicate that it is unsuitable to be merged,
@@ -116,6 +132,47 @@ and then the pull request reviewed again at a later time and perhaps accepted an
 In a sense, a pull request is a verification check - or insurance policy - against merging bad commits to the `main` branch.
 
 This approach is known as *feature branch workflow*.
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Solo Exercise: Clone the Repository
+
+5 mins.
+
+In preparation for the work we're about to do,
+let's clone the group's `coffee-analysis` repository
+onto our own machines, e.g.
+
+```bash
+git clone git@github.com:github-username/coffee-analysis
+cd coffee-analysis
+git status
+```
+
+::::::::::::::::::::::::::::: solution
+
+For example, on a Mac:
+
+```output
+Cloning into 'coffee-analysis'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 16 (delta 4), reused 11 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (16/16), 83.40 KiB | 1.08 MiB/s, done.
+Resolving deltas: 100% (4/4), done.
+user@mymachine:$ cd coffee-analysis/
+user@mymachine:coffee-analysis$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
+
+::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 ### Preparing Some Example Work
 
@@ -350,6 +407,7 @@ and `Confirm merge` to complete the merge.
 - Code reviews can be short and informal, contribution-oriented, or formal
 - The first hour of code review matters most
 - Code review helps to increase code quality, ensure practices and conventions are met consistently, and increase codebase knowledge across the team
+- If feature branches end up being unproductive "dead ends", they can simply be deleted
 - GitHub supports code review as part of pull requests
 - Aim to close pull requests as soon as is convenient, to avoid increased divergence from the main codebase
 
