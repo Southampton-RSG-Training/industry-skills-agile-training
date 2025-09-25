@@ -43,7 +43,7 @@ using Git and GitHub as an example, to illustrate how it can support software de
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Solo Exercise: Set up SSH Keypair for use with GitHub
+## (Optional) Solo Exercise: Set up SSH Keypair for use with GitHub
 
 5 mins.
 

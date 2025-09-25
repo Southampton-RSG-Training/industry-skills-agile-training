@@ -55,7 +55,9 @@ There are two key principles of Scrum Theory:
 ![](fig/scrum_philosophy.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with scrum philosophy highlighted as the foundations'}
 
 :::: challenge
-## Solo Challenge: Fill in the Blanks
+## Solo Exercise: Fill in the Blanks
+
+3 mins.
 
 We've just introduced some key concepts of Scrum philosophy.  To reinforce your learning, think about the information you've just read (or heard) and fill in the blanks to create sentences that accurately describe the philosophy of Scrum. 
 
@@ -96,9 +98,11 @@ Scrum only works when the team truly adopts the values it was built to support.
 
 
 ::: challenge
-## Solo Challenge: Scrum Values in Practice
+## Pair Exercise: Scrum Values in Practice
 
-Think about the following questions and note down your thoughts in the shared document:
+3 mins.
+
+Discuss the following questions with your partner:
 
 -   Which Scrum Value do you think you would find hardest to put into practice?
 -   Why?
@@ -142,7 +146,9 @@ This highlights the disastrous consequences that a lack of transparency can have
 :::
 
 ::: discussion
-## Group Challenge: What happens when the Pillar of Transparency Crumbles?
+## Group Exercise: What happens when the Pillar of Transparency Crumbles?
+
+3 mins.
 
 Discuss in small groups the following questions:
 
@@ -153,7 +159,9 @@ Discuss in small groups the following questions:
 
 :::: challenge
 
-## Group Challenge: Inspecting and Adapting
+## Group Exercise: Inspecting and Adapting
+
+3 mins.
 
 During a Daily Stand-Up Meeting, inspecting the progress on the project reveals some problems:
 
@@ -262,7 +270,9 @@ If you completed all the items in the Sprint Backlog, you would still be far fro
 :::
 
 :::: challenge
-## Group Challenge: Sprint Backlog for the Sail Away
+## Group Exercise: Sprint Backlog for the Sail Away
+
+3 mins.
 
 You have the Sprint Goal: “Test the basic turn system with 2 players using paper placeholders.”
 
@@ -319,7 +329,9 @@ Next Sprint, you might improve the experience further, possibly by expanding the
 :::
 
 :::: challenge
-## Group Challenge: Voyage Complete?
+## Group Exercise: Voyage Complete?
+
+5 mins.
 
 The Definition of Done is an important checklist of the quality standards that each Increment must meet.
 
@@ -410,7 +422,9 @@ Scrum defines the roles but teams can adapt them to fit their context.
 :::
 
 ::: challenge
-## Group Challenge: Getting in the Mindset of a Scrum Team Member
+## Group Exercise: Getting in the Mindset of a Scrum Team Member
+
+5 mins.
 
 Pick one of the Scrum Team roles and discuss within your group:
 

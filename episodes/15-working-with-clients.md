@@ -30,7 +30,7 @@ exercises: 0
 ![Illustration by Muhammad Noor on Unsplash](fig/communicating_with_clients.png){alt='Illustration of two people at a table with laptops'}
 
 
-One of the most important skills for a software engineer working in industry is the ability to communicate effectively with clients. 
+One of the most important skills for a software engineer working in industry is the ability to communicate effectively with clients. At the end of this episode, you will conduct a meeting with one of the helpers who will be role playing as the client for the Coffee Beans Analysis Project. 
 
 Clear communication builds trust, prevents expensive misunderstandings, and ensures that the business goals and technical implementation are aligned.
 
@@ -70,9 +70,9 @@ By learning to speak the client’s language you build their trust, enable bette
 
 ::: challenge
 
-## Pair Challenge: Explain a Technical Topic
+## Pair Exercise: Explain a Technical Topic
 
-(7 minutes)
+7 mins.
 
 Practice overcoming the expert awareness gap by explaining a familiar topic clearly to someone with no background in it.
 
@@ -144,9 +144,9 @@ By setting realistic expectations from the start, you're managing risk, building
 
 ::: challenge
 
-## Group Challenge: Responding to Scope Creep
+## Group Exercise: Responding to Scope Creep
 
-(10 minutes)
+10 mins.
 
 Your team has already agreed with the client on the project's scope and timeline. You're midway through the first sprint when the client sends an email saying:
 
@@ -241,9 +241,9 @@ By leading productive prioritisation conversations, you help clients make better
 
 ::: challenge
 
-## Solo Challenge: From Product Vision to MVP
+## Solo Exercise: From Product Vision to MVP
 
-(5 minutes)
+5 mins.
 
 Your client wants to launch a DIY pizza kit delivered to customers' homes. The big vision includes:
 
@@ -305,9 +305,9 @@ Small misunderstandings can grow into major issues if left unchecked. Assumption
 
 
 ::: challenge
-## Group Challenge: There's No Such Thing as a Silly Question
+## Group Exercise: Questions about the Coffee Beans Project Brief
 
-(15 minutes)
+15 mins.
 
 Re-read the project brief for the coffee beans project.  
 
@@ -374,9 +374,9 @@ Note: Be conservative in time estimates to allow for unforeseen delays.
 -   End the meeting by inviting final questions or concerns and confirming that the client is happy and confident about the plan.
 
 ::: challenge
-## Group Challenge: Agenda Assembly
+## Group Exercise: Agenda Assembly
 
-(15 minutes)
+15 mins.
 
 Create an agenda for a 30 minute kickoff meeting with the client for the Coffee Beans Analysis project.  
 
@@ -395,11 +395,15 @@ Use the structure above to develop your agenda ensuring it:
 
 ![Photo by Mapbox on Unsplash](fig/chairing_the_meeting.jpg){alt='four people in a meeting'}
 
-In a client meeting, the software development team (the supplier) should take responsibility for leading the meeting. As an analogy, when an electrician comes to your house, they don’t expect you to explain wiring protocols, instead they ask questions to diagnose the problem and recommend solutions. Similarly, the development team should guide the meeting to get the clarity they need to do their job.
+In a client meeting, the software development team should take responsibility for leading the meeting. 
 
--   Nominate one person to chair the meeting, it's their job to ensure that the meeting stays on track and follows the agenda. The rest of the group can add questions or comments but it's more straightforward if there is a single person leading the meeting.
--   Make sure you get the information you need from the meeting.  Don't assume that the client will volunteer all necessary information - you may need to draw it out of them through asking lots of questions.
--   Clients often don’t know what’s important to developers.  They may focus on the appearance of the product or general ideas rather than technical details. It's your job to lead the discussion towards finding the details you need.  You could use diagrams, examples, or “what-if” scenarios to help clients think through their needs.
+As an analogy, when an electrician comes to your house, they don’t expect you to explain wiring protocols, instead they ask questions to diagnose the problem and recommend solutions. 
+
+Similarly, the development team should guide the meeting to get the clarity they need to do their job. Clients often don’t know what’s important to developers.  They may focus on the appearance of the product or general ideas rather than technical details. It's your job to lead the discussion towards finding the details you need.  You could use diagrams, examples, or “what-if” scenarios to help clients think through their needs.  Make sure you get the information you need from the meeting.  Don't assume that the client will volunteer all necessary information - you may need to draw it out of them through asking lots of questions.
+
+
+You would normally have one person to chair the meeting, it's their job to ensure that the meeting stays on track and follows the agenda. However, for the Coffee Beans Project client meeting, everyone in the should have an opportunity to chair a section of the meeting.  Split up the agenda and allocate each section to a different person in your group. See this as an opportunity to practice chairing a meeting - an opportunity which you might not have until several years into your career. There's absolutely nothing at stake so have fun with it, enjoy the process, and don’t worry if something goes wrong. 
+
 
 
 ## Meeting Notes
@@ -412,35 +416,30 @@ Meeting notes should capture:
 -   **Ambiguity**: Any areas that are still unclear and/or any open questions.
 -   **Actions**: Who is doing what and by when. Include actions on the software development team and on the client.
 
-It's helpful to take notes in a shared document (e.g., google doc) that everyone can access.  This way, if any updates are made, everyone can see them straight away.
+It can be helpful to use consistent formatting across meetings for clarity (e.g., bullet points or a table).
 
-Send a summary email containing the meeting notes within 24 hours of the meeting to confirm that everyone is on the same page.
-
-It can be helpful to use consistent formating across meetings for clarity (e.g., bullet points or a table).
-
+After a real client meeting, it's good practice to send a summary email containing the meeting notes within 24 hours of the meeting to confirm that everyone is on the same page.  You don't need to do this for the Coffee Beans Project.
 
 
 ::: challenge
 
-## Group Challenge: Client Meeting
+## Group Exercise: Client Meeting
 
-(30 minutes)
+30 mins + 5 mins to set up meeting.
 
 You have a 30 minute meeting with the owner of the coffee company.  
 
-Choose a chair for your meeting and someone to be in charge of note taking. 
+Choose a chair for each section of your meeting and someone to be in charge of note taking throughout the meeting. 
 
 Conduct the kickoff meeting for the project according to the agenda you produced earlier.  Make sure you get answers to all your questions and agree the priorities for the project with the client.
-
-Remember to send the client the meeting notes afterwards.
 
 :::
 
 ::: challenge
 
-## Group Challenge: Refine the Product Backlog
+## Group Exercise: Refine the Product Backlog
 
-(15 minutes)
+15 mins.
 
 Refine your product backlog following the client meeting.
 
