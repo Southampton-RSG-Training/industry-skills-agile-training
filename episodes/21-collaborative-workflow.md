@@ -20,7 +20,6 @@ exercises: 10
 - Describe how workflow relates to process
 - Set up SSH passwordless access to GitHub
 - Describe the purpose of branches in a repository
-- Verify that team is able to developing using project repository locally
 - Define the elements of a feature-branch workflow
 - Describe four major strategies for merging branches
 - Create and use a branch
@@ -48,8 +47,7 @@ using Git and GitHub as an example, to illustrate how it can support software de
 
 5 mins.
 
-If you haven't already, you may want to set up passwordless SSH access to GitHub which is a more secure way to access it.
-If so, refer to the [SSH Key Setup](../index.md#ssh-key-setup) in the setup instructions.
+If you haven't already, set up SSH keypair passwordless access following the [SSH Key Setup](/#additional-git-setup) instructions.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -73,49 +71,6 @@ the commits on this branch are then merged into the `main` branch.
 ![](fig/collab-workflow-branches-merging.png){alt="Diagram depicting a feature branch being created off of a main branch, with its own commits, and those commits then being merged onto the main branch."}
 
 You should consider starting a new branch whenever you are working on a distinct feature or fixing a specific bug.
-
-## Check we can Use the Group Repository
-
-To verify we are able to use the group's `coffee-analysis` repository,
-we'll each clone the repository on our own machines,
-create a unique branch and make some commits to it,
-and push the new branch to the remote repository.
-
-1. Clone the group's repository on your machine, and change directory to it (replacing `github-username` with the username of the user who created the repository)
-
-   ```bash
-   git clone git@github.com:github-username/coffee-analysis
-   cd coffee-analysis
-   ```
-
-1. Create a new branch and switch to it (replacing `unique-branch-name` with a unique name of your choice)
-
-    ```bash
-    git branch unique-branch-name
-    git switch unique-branch-name
-    ```
-
-1. Edit the `README.md` file in an editor of your choice,
-make a small change to it (anything will do),
-and save the file.
-
-1. Commit the change to the repository on your local machine
-
-    ```bash
-    git add README.md
-    git commit -m "A trivial change" README.md
-    ```
-
-1. Push the commit to the remote repository
-
-    ```bash
-    git push -u origin unique-branch-name
-    ```
-
-    Hopefully, you should see this command complete without errors,
-    which will verify you are able to push commits on new branches to the repository.
-
-1. Since it's no longer needed, go to the group repository's list of branches (e.g. https://github.com/github-username/coffee-analysis/branches) and delete the branch you just created by clicking on the dustbin/trash icon on its row on the right (be careful not to delete any others!).
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -323,7 +278,6 @@ there are features we can introduce to using feature branches that aim to mitiga
 - Once you've set up personal SSH access to GitHub from a machine, you do no need to use passwords
 - Separate features or bug fixes should be developed on separate repository branches and merged to the main branch when ready
 - Developing code on feature branches enables the main branch to remain working and clear of unfinished features or bug fixes, and prevents confusion across separate development activities
-- If feature branches end up being unproductive "dead ends", they can simply be deleted
 - A fast-forward merge simply adds commits to the end of a destination branch
 - A 3-way merge with merge commit creates a new commit on the destination branch comprised of the commits on the feature branch
 - A rebase and merge rewrites the history 

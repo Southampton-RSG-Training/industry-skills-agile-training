@@ -46,6 +46,7 @@ rather than jumping prematurely to solution or technical requirements
 and anchor development in *user outcomes*, not just functionality
 - Prevent requirements ballooning, if not guided by real user goals
 - Prioritise what matters to users
+- Provide a *concise* description of value - they should be short and encapsulate a single aspect
 
 They typically follow the following template,
 to ensure user stories are clear and concise:
@@ -63,6 +64,8 @@ Some examples of user stories include:
 - E-commerce site: as a shopper, I want to add items to my cart so that I can purchase multiple products at once
 - Mobile application: as a user, I want to receive push notifications for important updates so that I stay informed when I'm not using the app
 
+As mentioned, note that they are short and to the point,
+and each encapsulate a single aspect.
 
 FIXME: mention acceptance criteria for functional and non-functional requirements
 
@@ -161,59 +164,6 @@ They may appear similar, but examining the environments in which they are develo
 Therefore, whilst a single piece of software may provide the same *functionality* on a mobile app or embedded device (for example, a photo frame application),
 the other *non-functional* considerations describe facets of how the software must be developed and how it must operate (often as constraints),
 and we must account for them in our requirements.
-
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## Solo Exercise: Types of Software
-
-5 mins.
-
-Think about some software you are familiar with
-(could be software you have written yourself or by someone else)
-and how the environment it is used in has affected its design or development.
-Here are some examples of questions you can use to get started:
-
-- What environment does the software run in?
-- How do people interact with it?
-- What features of the software have been affected by these factors?
-
-### Some Examples
-
-To get you thinking, consider the following examples:
-
-Desktop Application
-
--   Has a graphical interface for use with mouse and keyboard
--   May need to work on multiple, very different operating systems
--   May be intended for users to modify / compile themselves
--   Should work on a wide range of hardware configurations
--   Documentation probably either in a manual or in the software itself
-
-Command-line Application - Linux Tool
-
--   User interface is text based, probably via command-line arguments
--   Intended to be modified / compiled by users - though most will choose not to
--   Documentation has standard formats - also accessible from the command line
--   Should be usable as part of a pipeline
-
-Command-line Application - High Performance Computing
-
--   Similar to a UNIX Tool
--   Usually supports running across multiple networked machines simultaneously
--   Usually operated via a scheduler - interface should be scriptable
--   May need to run on a wide range of hardware (e.g. different CPU architectures)
--   May need to process large amounts of data
--   Often entirely or partially written in a lower-level language for performance (e.g. C, C++, Fortran)
-
-Web Application
-
--   Usually has components which run on server and components which run on the user's device
--   Graphical interface should usually support both Desktop and Mobile devices
--   Client-side component should run on a range of browsers and operating systems
--   Documentation probably part of the software itself
--   Client-side component typically written in JavaScript
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -470,9 +420,6 @@ The individual who created the repository thus needs to:
 1. On the `Collaborators and teams` page, under `Manage access`, select `Add people`.
 1. In the pop-up box, you should be able to search for each group member's GitHub account by username, and select `Add to repository` to send an invite.
 1. Each new member will need to accept the invite, which is sent out by email.
-1. Ensure each member has the `Maintain` permission on the repository,
-which will allow them to push commits to the repository,
-and perform other non-destructive repository actions.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -580,13 +527,16 @@ In general, a good requirement is:
 
 15 mins.
 
-As a group, examine the project brief and identify (perhaps around 10-15) key requirements for the project,
-and add these as new issues to our product backlog in GitHub,
+As a group:
+
+1. Examine the project brief and identify (perhaps around 10-15) key requirements for the project,
+noting them down in your shared team GoogleDoc.
+2. Once you have your list, add these as new issues to your product backlog in GitHub,
 assigning an appropriate label to classify the type of issue.
 
 For our purposes it would be good to label some issues as a new `feature` as well
 (as opposed to an `enhancement` of existing code),
-so add this as a new type of label and use that where appropriate.
+so have one member of the team add this as a new type of label and use that where appropriate.
 
 Be sure to add a suitable (and concise) description for the issue.
 
