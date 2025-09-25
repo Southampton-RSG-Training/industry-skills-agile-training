@@ -543,7 +543,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>2.2 Collaborative Workflow: Pull Requests and Code Reviews</h1>
-        <p>Last updated on 2025-08-07 |
+        <p>Last updated on 2025-09-25 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/22-pull-requests-code-review.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -581,6 +581,7 @@ across a team?</li>
 requests</li>
 <li>Bullet-point some advantages and limitations of working in a
 feature-branch workflow</li>
+<li>Clone our team’s repository onto our machines</li>
 <li>Submit a pull request in GitHub</li>
 <li>Review a pull request</li>
 <li>Merge a pull request into its base branch</li>
@@ -698,6 +699,25 @@ request, and then the pull request is reviewed by another team member
 (or maybe several). If the pull request is judged to be a suitable set
 of changes, the pull request is accepted and the changes are merged
 using a branch merging strategy as discussed.</p>
+<div id="why-is-it-called-pull-request" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="why-is-it-called-pull-request" class="callout-inner">
+<h3 class="callout-title">Why is it Called “Pull Request”?</h3>
+<div class="callout-content">
+<p>It may seem a bit strange that it’s referred to as a pull request,
+since what we’re really doing is requesting a <em>merge</em>, so perhaps
+“push request” may make more sense.</p>
+<p>However, consider it from the repository perspective:</p>
+<ul><li>A pull request is you requesting the target repository to grab your
+changes and merge them</li>
+<li>A push request would be the target repository requesting you to push
+your changes</li>
+</ul></div>
+</div>
+</div>
 <figure><img src="fig/collab-workflow-pull-request.png" alt="Diagram depicting a feature branch being created off of a main branch, with its own commits, and those commits then being merged onto the main branch." class="figure mx-auto d-block"></figure><p>However, if the review identifies issues that indicate that it is
 unsuitable to be merged, the pull request is rejected. This does not
 necessarily mean the pull request has to be closed. Development on the
@@ -709,6 +729,57 @@ merged.</p>
 policy - against merging bad commits to the <code>main</code>
 branch.</p>
 <p>This approach is known as <em>feature branch workflow</em>.</p>
+<div id="solo-exercise-clone-the-repository" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="solo-exercise-clone-the-repository" class="callout-inner">
+<h3 class="callout-title">Solo Exercise: Clone the Repository</h3>
+<div class="callout-content">
+<p>5 mins.</p>
+<p>In preparation for the work we’re about to do, let’s clone the
+group’s <code>coffee-analysis</code> repository onto our own machines,
+e.g.</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:github-username/coffee-analysis</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="bu">cd</span> coffee-analysis</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>For example, on a Mac:</p>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>Cloning into 'coffee-analysis'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 16 (delta 4), reused 11 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (16/16), 83.40 KiB | 1.08 MiB/s, done.
+Resolving deltas: 100% (4/4), done.
+user@mymachine:$ cd coffee-analysis/
+user@mymachine:coffee-analysis$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="section level3">
 <h3 id="preparing-some-example-work">Preparing Some Example Work<a class="anchor" aria-label="anchor" href="#preparing-some-example-work"></a></h3>
 <p>In order for us to try out feature branch workflow as a team, let’s
@@ -761,12 +832,12 @@ to that member.</li>
 </ol></div>
 </div>
 </div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>For example:</p>
 <figure><img src="fig/collab-workflow-add-issue.png" alt="Adding a new GitHub issue to the group repository for writing a description to the README, ensuring it has a quick summary, is assigned to someone, and has a documentation label" class="figure mx-auto d-block"></figure></div>
@@ -951,12 +1022,12 @@ Feedback</h3>
 your editor to <code>README.md</code>, saving the file and re-committing
 it to the repository, and pushing the changes. e.g. after editing
 <code>README.md</code>:</p>
-<div class="codewrapper sourceCode" id="cb1">
+<div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> add README.md</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Address review feedback"</span></span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">git</span> add README.md</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Address review feedback"</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre>
 </div>
 </div>
 </div>
@@ -992,6 +1063,8 @@ formal</li>
 <li>Code review helps to increase code quality, ensure practices and
 conventions are met consistently, and increase codebase knowledge across
 the team</li>
+<li>If feature branches end up being unproductive “dead ends”, they can
+simply be deleted</li>
 <li>GitHub supports code review as part of pull requests</li>
 <li>Aim to close pull requests as soon as is convenient, to avoid
 increased divergence from the main codebase</li>
@@ -1061,7 +1134,7 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/22-pull-requests-code-review.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/22-pull-requests-code-review.html",
   "dateCreated": "2025-09-25",
-  "dateModified": "2025-08-07",
+  "dateModified": "2025-09-25",
   "datePublished": "2025-09-25"
 }
 

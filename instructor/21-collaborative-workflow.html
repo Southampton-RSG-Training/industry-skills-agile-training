@@ -281,7 +281,6 @@
       <div class="accordion-body">
         <ul><li><a href="#how-are-a-development-process-and-version-control-related">How are a Development Process and Version Control Related?</a></li>
 <li><a href="#introduction-to-feature-branches">Introduction to Feature Branches</a></li>
-<li><a href="#check-we-can-use-the-group-repository">Check we can Use the Group Repository</a></li>
 <li><a href="#branch-merging-strategies">Branch Merging Strategies</a></li>
 <li><a href="#summary">Summary</a></li>
         </ul></div><!--/div.accordion-body-->
@@ -546,7 +545,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>2.1 Collaborative Workflow: Branches and Merging Strategies</h1>
-        <p>Last updated on 2025-09-18 |
+        <p>Last updated on 2025-09-25 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/21-collaborative-workflow.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -585,8 +584,6 @@ branch?</li>
 <ul><li>Describe how workflow relates to process</li>
 <li>Set up SSH passwordless access to GitHub</li>
 <li>Describe the purpose of branches in a repository</li>
-<li>Verify that team is able to developing using project repository
-locally</li>
 <li>Define the elements of a feature-branch workflow</li>
 <li>Describe four major strategies for merging branches</li>
 <li>Create and use a branch</li>
@@ -623,9 +620,8 @@ developed using an agile approach.</p>
 for use with GitHub</h3>
 <div class="callout-content">
 <p>5 mins.</p>
-<p>If you haven’t already, you may want to set up passwordless SSH
-access to GitHub which is a more secure way to access it. If so, refer
-to the <a href="index.html#ssh-key-setup">SSH Key Setup</a> in the setup
+<p>If you haven’t already, set up SSH keypair passwordless access
+following the <a href="/#additional-git-setup">SSH Key Setup</a>
 instructions.</p>
 </div>
 </div>
@@ -652,61 +648,7 @@ commits on this branch are then merged into the <code>main</code>
 branch.</p>
 <figure><img src="../fig/collab-workflow-branches-merging.png" alt="Diagram depicting a feature branch being created off of a main branch, with its own commits, and those commits then being merged onto the main branch." class="figure mx-auto d-block"></figure><p>You should consider starting a new branch whenever you are working on
 a distinct feature or fixing a specific bug.</p>
-</section><section><h2 class="section-heading" id="check-we-can-use-the-group-repository">Check we can Use the Group Repository<a class="anchor" aria-label="anchor" href="#check-we-can-use-the-group-repository"></a></h2>
-<hr class="half-width"><p>To verify we are able to use the group’s <code>coffee-analysis</code>
-repository, we’ll each clone the repository on our own machines, create
-a unique branch and make some commits to it, and push the new branch to
-the remote repository.</p>
-<ol style="list-style-type: decimal"><li>
-<p>Clone the group’s repository on your machine, and change
-directory to it (replacing <code>github-username</code> with the
-username of the user who created the repository)</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:github-username/coffee-analysis</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="bu">cd</span> coffee-analysis</span></code></pre>
-</div>
-</li>
-<li>
-<p>Create a new branch and switch to it (replacing
-<code>unique-branch-name</code> with a unique name of your choice)</p>
-<div class="codewrapper sourceCode" id="cb2">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">git</span> branch unique-branch-name</span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="fu">git</span> switch unique-branch-name</span></code></pre>
-</div>
-</li>
-<li><p>Edit the <code>README.md</code> file in an editor of your choice,
-make a small change to it (anything will do), and save the
-file.</p></li>
-<li>
-<p>Commit the change to the repository on your local machine</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">git</span> add README.md</span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"A trivial change"</span> README.md</span></code></pre>
-</div>
-</li>
-<li>
-<p>Push the commit to the remote repository</p>
-<div class="codewrapper sourceCode" id="cb4">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin unique-branch-name</span></code></pre>
-</div>
-<p>Hopefully, you should see this command complete without errors, which
-will verify you are able to push commits on new branches to the
-repository.</p>
-</li>
-<li><p>Since it’s no longer needed, go to the group repository’s list of
-branches (e.g. <a href="https://github.com/github-username/coffee-analysis/branches" class="external-link uri">https://github.com/github-username/coffee-analysis/branches</a>)
-and delete the branch you just created by clicking on the dustbin/trash
-icon on its row on the right (be careful not to delete any
-others!).</p></li>
-</ol><div id="group-exercise-pros-and-cons-of-developing-code-on-feature-branches" class="callout challenge">
+<div id="group-exercise-pros-and-cons-of-developing-code-on-feature-branches" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -991,8 +933,6 @@ repository branches and merged to the main branch when ready</li>
 <li>Developing code on feature branches enables the main branch to
 remain working and clear of unfinished features or bug fixes, and
 prevents confusion across separate development activities</li>
-<li>If feature branches end up being unproductive “dead ends”, they can
-simply be deleted</li>
 <li>A fast-forward merge simply adds commits to the end of a destination
 branch</li>
 <li>A 3-way merge with merge commit creates a new commit on the
@@ -1063,7 +1003,7 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/instructor/21-collaborative-workflow.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/21-collaborative-workflow.html",
   "dateCreated": "2025-09-25",
-  "dateModified": "2025-09-18",
+  "dateModified": "2025-09-25",
   "datePublished": "2025-09-25"
 }
 
