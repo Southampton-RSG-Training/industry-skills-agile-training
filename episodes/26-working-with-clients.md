@@ -1,5 +1,5 @@
 ---
-title: "1.5 Working with Clients"
+title: "2.6 Working with Clients"
 teaching: 0
 exercises: 0
 ---
@@ -444,6 +444,41 @@ Conduct the kickoff meeting for the project according to the agenda you produced
 Refine your product backlog following the client meeting.
 
 Add or edit any product backlog items and adjust the priorities according to the prioritisation you agreed with the client.
+
+:::
+
+# Sprint Planning for the Coffee Beans Analysis Project
+
+Now you've refined the product backlog, it's time to conduct your first Sprint Planning Meeting for the first Sprint of the Coffee Beans Analysis Project.  
+
+
+::: challenge
+
+## Group Exercise: Sprint Planning for Coffee Beans Analysis
+
+20 mins.
+
+Conduct the Sprint Planning Meeting for Sprint 1 of the Coffee Beans Analysis Project.
+
+**Roles**
+
+-   One person should be Scrum Master.  You are the servant leader who helps the group apply Scrum effectively, removes blockers and improves flow for the Scrum Team.
+-   One person should role play as the Product Owner.  You should represent the interests of the client throughout the meeting.
+-   The rest of the group should be developers.  **The Scrum Master and acting Product Owner can also be developers.**
+
+**Questions for Sprint Planning**
+
+Remember to answer the following questions during the Sprint Planning Meeting:
+
+-   Why is this Sprint valuable?
+-   What can be Done this Sprint?
+-   How will the chosen work get Done?
+
+The output from your Sprint Planning Meeting should be your Sprint Backlog including:
+
+-   A Sprint Goal
+-   The subset of items from the Product Backlog that you will work on this Sprint
+-   A plan for delivering the Increment by the end of the Sprint
 
 :::
 
