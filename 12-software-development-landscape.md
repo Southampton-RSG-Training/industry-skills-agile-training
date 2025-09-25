@@ -15,45 +15,65 @@ exercises: 0
 -   Highlight the main stages in a software development process
 -   Order and describe the stages within a typical software development process and how these apply within waterfall and iterative approaches
 -   Summarise the V-Model approach to software development
--   Describe how software development models compare and relate to project management frameworks [AgilePM, PRINCE2]
+-   Describe how software development models compare and relate to project management frameworks (AgilePM, PRINCE2)
 :::
 
 ## The Stages of a Typical Software Development Process
 
 ### Writing Code vs Engineering Software
 
-Traditionally in academia, software and the process of writing it is often seen as a necessary but throwaway artefact in research.
-For example, there may be research questions for a given research project, code is created to answer those questions, the code is run over some data and analysed, and finally a publication is written based on those results.
-These steps are often taken informally.
+Within academic research, software is often seen as a necessary but throwaway artefact.
+For example, there may be research questions for a given research project, code is created to answer those questions, the code is run over some data and analysed, and finally a publication is written based on those results.  After this the code may be discarded or stored on a laptop somewhere, unlikely to ever be run again.
 
-The terms *programming* (or even *coding*) and *software engineering* are often used interchangeably.
-They are not.
-Programmers or coders tend to focus on one part of software development: implementation, more than any other.
-In academic research, often they are writing software for themselves, where they are their own stakeholders.
-And ideally, they write software from a design that fulfills a research goal to publish research papers.
+In this context, the terms *programming* (or even *coding*) and *software engineering* are often used interchangeably, but there are actually a great number of differences between them.
 
-Someone who is engineering software takes a wider view:
-
--   The *lifecycle* of software: recognises that software development is a *process* that proceeds from understanding what is needed, to writing the software and using/releasing it, to what happens afterwards.
--   Who will (or may) be involved: software is written for *stakeholders*. This may only be the researcher initially, but there is an understanding that others may become involved later (even if that is not evident yet). A good rule of thumb is to always assume that code will be read and used by others later on, which includes yourself!
--   Software (or code) is an asset: software inherently contains value - for example, in terms of what it can do, the lessons learned throughout its development, and as an implementation of a research approach (i.e. a particular research algorithm, process, or technical approach).
--   As an asset, it could be reused: again, it may not be evident initially that the software will have use beyond its initial purpose or project, but there is an assumption that the software - or even just a part of it - could be reused in the future.
-
-Thinking about software engineering from that wider view, there are some typical stages that a software development project would go through and these are ver similar to the stages of any project.
-
-::: challenge
-## Solo Exercise: Stages of a Project
+:::: challenge
+## Pairs exercise: Writing Code vs Engineering Software
 
 3 mins.
 
-Think about a project you've completed in the past.
-This could be a software project but it doesn't have to be.
-It could be anything from organising an event to completing a personal goal or managing a work task.
+With your partner, discuss the following question: What's the difference between writing code and engineering software?
 
-If you were to break down that project into stages, what would the stages be?
+Consider your own experiences, for example:
+
+-   University modules
+-   Work placements or interships
+-   Personal or group projects
+
+::: solution
+
+Programmers or coders tend to focus on one part of software development: implementation, more than any other. In academic research, often they are writing software for themselves, where they are their own stakeholders. And ideally, they write software from a design that fulfills a research goal to publish research papers.
+
+Someone who is engineering software takes a wider view.  They would likely consider:
+
+-   The *lifecycle* of software: software development is a *process* that proceeds from understanding what is needed, to writing the software and using/releasing it, to what happens afterwards.
+-   Who will be involved: software is written for *stakeholders*. This may only be the researcher initially, but there is an understanding that others may become involved later (even if that is not evident yet). 
+-   Software as an asset: software inherently contains value - for example, in terms of what it can do, the lessons learned throughout its development, and as an implementation of a research approach (i.e. a particular research algorithm, process, or technical approach).
+-   Possibilities of software reuse: it may not be evident initially that the software will have use beyond its initial purpose or project, but there is an assumption that the software - or even just a part of it - could be reused in the future.
+
 :::
 
+::::
+
 ### Software Development Process
+
+Thinking about software engineering from that wider view, there are some typical stages that a software development project would go through.
+
+:::: challenge
+## Class Exercise: Stages of a Project
+
+3 mins.
+
+**What are the typical stages of a software development project?** (Assume that the broader project management aspects have already been done)
+
+-   R___________
+-   D_____
+-   I__________
+-   T______
+-   D_________
+-   M_________
+
+::: solution
 
 The typical stages of a software development process are:
 
@@ -64,7 +84,12 @@ The typical stages of a software development process are:
 -   **Deployment:** where the software is deployed or in some way released, and used for its intended purpose within its intended environment.
 -   **Maintenance:** where updates are made to the software to ensure it remains fit for purpose, which typically involves fixing any further discovered issues and evolving it to meet new or changing requirements.
 
+:::
+::::
+
+
 These stages are followed implicitly or explicitly in every software project but there are many different ways to arrange them.
+
 The stages may be arranged according to an established model of software development.
 
 ## Models of Software Development
@@ -166,11 +191,15 @@ Disadvantages
 -   No support for development activities to occur concurrently or to iterate.
 
 ::: callout
-The V-Model was used by [Siemens Healthineers](https://www.mdpi.com/2079-9292/13/11/2051) to develop their ultrasound systems Acuson SC2000 PRIME (from 2006) and Sequoia (from 2017).
+When developing ultrasound systems, [Siemens Healthineers](https://www.mdpi.com/2079-9292/13/11/2051) used a combination of V-Model and Agile (SAFe, SCRUM, Kanban) to balance regulatory compliance with flexibility.
 
-The product had to be aligned with medical device regulations and so required the rigorous traceability that the V-Model enables.
+The V-Model and Product Lifecycle Process provided the backbone, defining phases, milestones, and quality gates for verification, validation, and documentation, while Agile teams delivered iteratively within those phases.
 
-Both projects used the V-Model alongside iterative approaches including Scrum.
+Each Agile increment was aligned to V-Model requirements, meaning that each increment included test evidence, documentation, and traceability, as well as the software itself.
+
+Regular clinical feedback was fed into the development early and often, allowing the team to adapt to changes without breaking compliance.
+
+This hybrid process has improved efficiency (release cycles take nearly half the time) and improved predictability.  This demonstrates how writing code iteratively (Agile) and engineering software with a focus on validation and verification (V-Model) can complement each other in practice.
 :::
 
 ### Iterative
@@ -328,13 +357,64 @@ Scrum is concerned with delivering a project i.e. doing the actual software engi
 Project management is concerned with all aspects of a project including planning, executing, and closing projects, as well as managing change and risk within a project.
 Project management may contain Scrum but will also cover the wider project aspects including ensuring that a project meets its goals, timeline, and budget.
 
-There are lots of project management frameworks.
+There are lots of project management frameworks, we'll briefly mention two of them here: Agile Project Management and PRINCE2.
 
-To avoid confusion we should distinguish between Scrum (an Agile delivery technique) and Agile Project Management (AgilePM), which involves the application of Agile principles to managing projects.
-AgilePM emphasises transparency, flexibility and meeting customer need, as well as allowing teams to have autonomy, make shared decisions and self-organise.
+### Agile Project Management
 
-Another popular project management framework is PRINCE2 (PRojects IN Controlled Environments), which was developed by the UK government, and outlines seven principles, seven themes and seven processes to guide how a project should be managed.
-It is a more heavyweight project management framework than Agile Project Management and so is often used in sectors where governance and documentation are priorities.
+Whilst agile practices originated within software development, it is increasingly being used in other areas.  For example, the agile approach as taught in the [AgilePM project management framework](https://apmg-international.com/product/agile-project-management-agilepmr-certification) is applicable to any project where *change* needs to be managed.
+
+AgilePM also follows the core values of the Agile Manifesto:
+
+1. Individuals and interactions over processes and tools.
+2. Working software over comprehensive documentation.
+3. Customer collaboration over contract negotiation.
+4. Responding to change over following a plan.
+
+There are foundation and practitioner certifications available for Agile Project Management through [APMG International](https://apmg-international.com/).  The foundation stage focuses on understanding the Agile framework whereas the practitioner stage transitions the understanding into effective application of the Agile framework to real-life projects.
+### PRINCE2
+
+PRINCE2 (PRojects IN Controlled Environments) is the world's most practiced method for project management ([Axelos](https://www.axelos.com/)), it's a flexible method that guides you through the essentials of managing any project. PRINCE2 was developed by the UK government for information systems projects and is currently maintained by Axelos.
+
+PRINCE2 is more heavyweight than AgilePM and is often used in sectors where governance and documentation are priorities.
+
+PRINCE2 is built on seven principles, seven themes and seven processes.
+
+**Seven Principles (The Why)**
+
+-   Continued business justification
+-   Learn from experience
+-   Defined roles and responsibilities
+-   Manage by stages
+-   Manage by exception (people should be given the right amount of authority and only have to escalate to a higher management level if there is an exceptional circumstance)
+-   Focus on products
+-   Tailor to suit the project environment
+
+**Seven Themes (The What)**
+
+-   Business case
+-   Organisation
+-   Quality
+-   Plans
+-   Risk
+-   Change
+-   Progress
+
+
+**Seven Processes (The How)**
+
+-   Starting up a project
+-   Directing a project
+-   Initiating a project
+-   Controlling a stage
+-   Managing product delivery
+-   Managing stage boundaries
+-   Closing a project
+
+
+There are foundation and practitioner certifications in PRINCE2 available.  Similar to the AgilePM certification, understanding of the PRINCE2 framework is the goal of the foundation stage and application is the goal of the practitioner stage.
+
+It's possible to combine Agile and PRINCE2, and there is even an 'Agile PRINCE2' qualification.
+
 
 :::: challenge
 ## Group Exercise: Software Development or Project Management?
@@ -379,6 +459,8 @@ Below is a list of tasks, discuss whether each task belongs in software developm
 -   Iterative ideas from [Eastern Peak](https://easternpeak.com/definition/iterative-development/#:~:text=Iterative%20development%20is%20a%20software,%2C%20development%2C%20and%20testing%20steps.)
 -   [Agile](https://en.wikipedia.org/wiki/Agile_software_development)
 -   [PRINCE2](https://en.wikipedia.org/wiki/PRINCE2)
+-   [APMG International](https://apmg-international.com/)
+-   [AXELOS](https://www.axelos.com/)
 
 ::: keypoints
 -   The typical stages of a software development process are: requirements gathering, design, implementation, testing, deployment and maintenance
