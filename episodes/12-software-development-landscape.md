@@ -361,7 +361,7 @@ There are lots of project management frameworks, we'll briefly mention two of th
 
 ### Agile Project Management
 
-Agile practices aren't just used for software development anymore.  Agile has been applied to the whole project management lifecycle in project management frameworks such as AgilePM.
+Whilst agile practices originated within software development, it is increasingly being used in other areas.  For example, the agile approach as taught in the [AgilePM project management framework](https://apmg-international.com/product/agile-project-management-agilepmr-certification) is applicable to any project where *change* needs to be managed.
 
 AgilePM also follows the core values of the Agile Manifesto:
 
