@@ -1,5 +1,5 @@
 ---
-title: "2.4 Writing Unit Tests"
+title: "2.2 Writing Unit Tests"
 teaching: 0
 exercises: 0
 ---

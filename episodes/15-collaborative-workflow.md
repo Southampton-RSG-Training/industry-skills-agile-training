@@ -1,5 +1,5 @@
 ---
-title: "2.1 Collaborative Workflow: Branches and Merging Strategies"
+title: "1.5 Collaborative Workflow: Branches and Merging Strategies"
 teaching: 0
 exercises: 10
 ---

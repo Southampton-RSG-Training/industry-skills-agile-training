@@ -1,5 +1,5 @@
 ---
-title: "2.3 Introduction to Automated Testing"
+title: "2.1 Introduction to Automated Testing"
 teaching: 0
 exercises: 0
 ---

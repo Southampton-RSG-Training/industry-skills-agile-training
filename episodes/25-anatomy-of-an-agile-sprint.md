@@ -1,5 +1,5 @@
 ---
-title: "2.7 Anatomy of an Agile Sprint"
+title: "2.5 Anatomy of an Agile Sprint"
 teaching: 0
 exercises: 0
 ---
@@ -249,40 +249,6 @@ The Sprint Retrospective:
 
 We'll go into more detail about the Sprint Review and Sprint Retrospective after you've conducted your first Sprint.
 
-# Sprint Planning for the Coffee Beans Analysis Project
-
-Now, it's time to put all of this theory into practice and conduct a Sprint Planning Meeting for the first Sprint of the Coffee Beans Analysis Project.  
-
-
-::: challenge
-
-## Group Exercise: Sprint Planning for Coffee Beans Analysis
-
-20 mins.
-
-Conduct the Sprint Planning Meeting for Sprint 1 of the Coffee Beans Analysis Project.
-
-**Roles**
-
--   One person should be Scrum Master.  You are the servant leader who helps the group apply Scrum effectively, removes blockers and improves flow for the Scrum Team.
--   One person should role play as the Product Owner.  You should represent the interests of the client throughout the meeting.
--   The rest of the group should be developers.  **The Scrum Master and acting Product Owner can also be developers.**
-
-**Questions for Sprint Planning**
-
-Remember to answer the following questions during the Sprint Planning Meeting:
-
--   Why is this Sprint valuable?
--   What can be Done this Sprint?
--   How will the chosen work get Done?
-
-The output from your Sprint Planning Meeting should be your Sprint Backlog including:
-
--   A Sprint Goal
--   The subset of items from the Product Backlog that you will work on this Sprint
--   A plan for delivering the Increment by the end of the Sprint
-
-:::
 
 ## References
 

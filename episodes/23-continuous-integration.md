@@ -1,5 +1,5 @@
 ---
-title: "2.5 Using Continuous Integration"
+title: "2.3 Using Continuous Integration"
 teaching: 0
 exercises: 0
 ---
