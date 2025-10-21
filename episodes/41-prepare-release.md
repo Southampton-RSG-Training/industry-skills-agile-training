@@ -6,7 +6,12 @@ exercises: 0
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- FIXME
+- What preparation should be considered prior to releasing software?
+- How should I document my code?
+- What tools help teams write and generate documentation?
+- Why is licensing software important?
+- How do I apply a software licence to code?
+- What is the typical process to create a release on GitHub?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
