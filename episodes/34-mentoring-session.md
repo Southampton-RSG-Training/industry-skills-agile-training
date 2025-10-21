@@ -34,3 +34,14 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+FIXME: successful projects create positive environments of knowledge exchange and learning; scrum pillar - openness about work and challenges; types of learning e.g. collaborative, training, mentorship (traditional senior/junior, and peer-to-peer)
+
+FIXME: what is mentorship, roles in mentorship, why mentorship matters, typical mentorship activities
+
+FIXME: how mentorship typically works, typical flow of mentorship in practice
+
+FIXME: keys to successful mentorship
+
+FIXME: practical, two parts: 1. based on findings from sprint 1 reflection, decide as a group on strengths and weaknesses as a team, decide what areas team wants to improve; 2. have meeting with mentor, discuss areas of improvement and decide on a set of three goals for improvement as a team (approx.), and how this will be done in the next sprint
+
+FIXME: practical: refine updated backlog (if needed) based on suggestions (does this make sense?)
