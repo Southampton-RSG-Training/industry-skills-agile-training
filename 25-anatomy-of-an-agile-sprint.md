@@ -219,36 +219,6 @@ Useful information exchanged and possible outcomes from the meeting:
 :::
 
 
-## Sprint Review
-
-![](fig/scrum_review.png){alt='diagram of scrum events and artifacts with sprint review highlighted'}
-
-The Sprint Review is where the Scrum Team and stakeholders inspect the work completed during the Sprint and discuss what to do next.
-
-It’s a chance to show progress, gather feedback, and adapt the Product Backlog if needed. 
-
-The Sprint Review may take the form of a demonstration and discussion, but it should be a working session, not just a presentation.
-
-The Sprint Review:
-
--   Is held at the end of the Sprint
--   Focuses on how the Increment moves the product toward the Product Goal
--   Aims to enable collaboration between the Scrum Team and stakeholders of the product.
-
-## Sprint Retrospective
-
-![](fig/scrum_retrospective.png){alt='diagram of scrum events and artifacts with sprint retrospective highlighted'}
-
-The Sprint Retrospective is a reflective session for the Scrum Team only to inspect what went well and what could be improved from the previous Sprint.
-
-The Sprint Retrospective:
-
--   Is the last event of the Sprint - held after the Sprint Review but before the next Sprint Planning Meeting.
--   Focuses on inspection of team collaboration, tools, processes and anything else that affected the Sprint to identify any changes that can improve effectiveness. 
--   Addresses any assumptions that led the team away from the Product Goal and determines where they came from. 
-
-We'll go into more detail about the Sprint Review and Sprint Retrospective after you've conducted your first Sprint.
-
 
 ## References
 
@@ -261,7 +231,5 @@ We'll go into more detail about the Sprint Review and Sprint Retrospective after
 -   Sprint Planning answers: Why is this Sprint valuable? What can be done? How will the work get done?  
 -   The outcome from the Sprint Planning Meeting is the Sprint Backlog containing the Sprint Goal, subset of Product Backlog items, and a plan for delivering the Increment. 
 -   The Daily Scrum Meeting is a 15-minute meeting for the Scrum Master and Developers to inspect progress, adjust plans, and resolve blockers.  
--   The Sprint Review allows the Scrum Team and stakeholders to inspect the Increment and adapt the Product Backlog.  
--   The Sprint Retrospective is a time for the Scrum Team to reflect on the Sprint and identify improvements.  
 -   All Scrum Events promote transparency, inspection, and adaptation to improve product and team effectiveness.  
 :::
