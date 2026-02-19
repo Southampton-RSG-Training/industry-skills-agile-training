@@ -1,5 +1,5 @@
 ---
-title: "3.3 Sprint 1 Retrospective"
+title: "3.3 Sprint Retrospective"
 teaching: 15
 exercises: 30
 ---
@@ -23,11 +23,22 @@ exercises: 30
 
 Introduction to Sprint Retrospectives (15 mins)
 
+## Introduction to Sprint Retrospectives
+
+![](fig/scrum_retrospective.png){alt='diagram of scrum events and artifacts with sprint retrospective highlighted'}
+
+The Sprint Retrospective is a reflective session for the Scrum Team only to inspect what went well and what could be improved from the previous Sprint.
+
+The Sprint Retrospective:
+
+-   Is the last event of the Sprint - held after the Sprint Review but before the next Sprint Planning Meeting.
+-   Focuses on inspection of team collaboration, tools, processes and anything else that affected the Sprint to identify any changes that can improve effectiveness. 
+-   Addresses any assumptions that led the team away from the Product Goal and determines where they came from. 
+
 - How to measure effort and improve predictions for the next sprint
 
 Sprint 1 Retrospective (15 mins)
 
-Update Product Backlog (15 mins)
 
 :::::::::::::::::::::::::::::::::::::: keypoints
 
