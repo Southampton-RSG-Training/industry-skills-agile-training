@@ -46,6 +46,8 @@ The Sprint Review would be timeboxed to four hours for a one month Sprint but wi
 
 ## Group Exercise: Communicating Effectively
 
+(5 minutes)
+
 Read the example statements below. For each one, discuss in your groups whether it is effective or ineffective communication during a Sprint Review.
 
 1. “We implemented the login feature. Let us show you how it works.”
@@ -88,6 +90,8 @@ When you've invested a lot of time and effort in a piece of work, it can feel re
 :::: challenge
 
 ## Group Exercise: Feedback -> Backlog Items
+
+(5 minutes)
 
 Imagine your group has demonstrated a data processing pipeline that analyses experimental results and produces summary statistics.
 
