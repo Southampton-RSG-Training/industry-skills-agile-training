@@ -25,15 +25,6 @@ exercises: 45
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::: keypoints
-
-- A mentee (a team in this case) develops and drives the goals of the mentorship
-- A mentor provides structure, guidance, and advice to assist the mentee to achieve their goals
-- Prior to beginning a mentorship, work to identify the areas in your work (or team) that you wish to improve or learn more about
-- Work with a mentor to develop achievable goals that you (or team) will work towards
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
 ## Mentorship within Scrum
 
 As we've seen already, good team communication within a project is an indicator of project success.
@@ -141,3 +132,12 @@ Discuss and decide on how to integrate your improvement goals into how you will 
 Refine your product backlog as needed (e.g. reprioritising items, or other such changes) to reflect this.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::: keypoints
+
+- A mentee (a team in this case) develops and drives the goals of the mentorship
+- A mentor provides structure, guidance, and advice to assist the mentee to achieve their goals
+- Prior to beginning a mentorship, work to identify the areas in your work (or team) that you wish to improve or learn more about
+- Work with a mentor to develop achievable goals that you (or team) will work towards
+
+::::::::::::::::::::::::::::::::::::::::::::::::
