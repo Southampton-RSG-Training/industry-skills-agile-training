@@ -82,6 +82,8 @@ Finally, when the mentorship has run its course, you decide when it ends.
 
 ## A Typical Mentorship
 
+### For an Individual
+
 How it looks in practice is up to the mentee and the mentor, but typically, mentorship tends towards a common pattern.
 
 When meeting with the mentor:
@@ -96,6 +98,12 @@ When outside of mentoring sessions, the mentee:
 
 - Works towards implementing changes and working towards goals when time and available effort allows
 - Thinks about whether mentorship direction or goals need to change to be more useful
+
+### For a Team
+
+When the mentee is a team and the mentor is a more experienced Research Software Engineer (RSE) (as it will be in this session),
+the mentorship typically focuses on improving the team’s technical practices, processes, adherence to Scrum, and long-term sustainability,
+rather than supporting a single individual.
 
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -119,6 +127,10 @@ In your groups:
 
 Discuss your identified weaknesses with your mentor, using the list of discussion points and questions to help drive the conversation.
 The goal of the meeting should be to identify and decide on a set of at least three clear and specific goals for improvement as a team to address your weaknesses.
+
+The mentor will already be aware of the project and its goals,
+and within this single meeting their task will be to help you improve as a team -
+so see it as an opportunity to leverage their experience and explore ways to do even better!
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
