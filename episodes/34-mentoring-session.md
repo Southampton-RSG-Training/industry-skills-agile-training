@@ -79,6 +79,21 @@ It also offers a reflective, strategic perspective, providing space to think abo
 In turn, it can lead to a mindset of self-reflection and improvement that you can take forward beyond the mentorship.
 Finally, when the mentorship has run its course, you decide when it ends.
 
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Solo Exercise: How Could Mentoring Help Me?
+
+3 mins.
+
+Assume for a moment that you have an opportunity to obtain a mentorship for yourself with a more experienced colleague,
+outside of this workshop.
+
+Consider what you'd like to personally learn more about or improve how you do things.
+This could be from your experiences so far within this workshop,
+or perhaps something you've already acknowledged in your day-to-day working you'd like to improve.
+List 5 things you'd like to work on.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## A Typical Mentorship
 
