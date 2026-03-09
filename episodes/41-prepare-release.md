@@ -1,5 +1,5 @@
 ---
-title: "4.1 Prepare Code for Release"
+title: "4.1 Preparing Code for Release"
 teaching: 0
 exercises: 0
 ---
@@ -177,208 +177,6 @@ This helps avoid technical debt accruing over time, which applies equally to doc
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Code Commenting
-
-Code comments are non-executable notes written within source code that explain what the code is doing, why certain decisions were made, or how particular parts of the program work.
-They are ignored by the compiler or interpreter and exist solely to help developers understand, maintain, and collaborate on the code more effectively.
-Comments are typically used to clarify complex logic, describe functions or sections of code,
-and provide context that may not be obvious from the code itself.
-
-Importantly, clear comments improve the readability of code, support collaboration within development teams, and reduce the risk of misunderstandings or errors when the code is revisited later.
-With code commenting, typically explaining the *why* is more important than the *what*,
-except where behaviour is complex or counter-intuitive and requires explanation.
-
-In Python, we can comment by beginning with a `#`, and the rest of the line is ignored.
-
-However, a special kind of comment exists called a documentation string, or *docstring*.
-Docstrings are a special kind of comment for a function,
-that explain what the function does, the parameters it expects, and what is returned.
-You can also write docstrings for classes, methods, and modules,
-but you should usually aim to add docstring comments to your code wherever you can,
-particularly for critical or complex functions.
-
-Docstrings are formatted using enclosing triple-quotes `"""`, e.g.
-
-```python
-def a_function(greeting, name):
-    """Provide a greeting to an individual.
-
-    Prints the provided greeting and name on the same line.
-
-    :param greeting: the greeting to output
-    :param name: name of person to greet
-    """
-    print(str, name)
-
-a_function("Hello", "Charlie")
-```
-
-FIXME: add short exercise
-
-## Writing a Project README
-
-A repository README file is the first piece of documentation that people should read to acquaint themselves with the software.
-It concisely explains what the software is about and what it is for,
-and covers the steps necessary to obtain and install the software
-and use it to accomplish basic tasks.
-
-In short, it provides enough information across the documentation areas we looked at earlier for people to get started.
-Think of it not as a comprehensive reference of all functionality,
-but more a short tutorial with links to further information -
-hence it should contain brief explanations and be focused on instructional steps.
-
-Repository README files are typically written in Markdown format.
-a lightweight markup language which is basically a text file with
-some additional basic syntax to provide ways of formatting them.
-A big advantage of them is that they can be read as plain-text files
-or as source files for rendering them with formatting structures,
-and are very quick to write.
-GitHub provides a very useful [guide to writing Markdown][https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax] for its repositories.
-
-Our repository already has a `README.md` file with a number of example headings:
-
-```markdown
-# coffee-analysis
-
-## Description
-
-## Pre-requisites
-
-## Installation
-
-## Usage
-
-## Running Tests
-
-## Maintainers
-
-## Licence
-
-## Authors
-
-## Acknowledgements
-```
-
-Therefore, these elements together practically assists a new user coming to this repository with how to get started using and developing it,
-with a clear, simple step-by-step narrative and supporting information that avoids overwhelming them.
-These headings are not a definitive set,
-and sections are dependent on the nature of the software.
-For some good example READMEs, see [matiassingers' collection of Awesome README links](https://github.com/matiassingers/awesome-readme).
-
-
-FIXME: add The Software Sustainability Institute’s [guide on naming projects and products](https://www.software.ac.uk/guide/choosing-project-and-product-names) may provide some helpful pointers.
-
-## Adding Supporting Technical Documentation
-
-FIXME: adapt to a group setting, e.g. get them to follow along, then near the end, elect one from their group to commit their changes, remove their own changes, pull their team member's changes down, and test rebuilding
-
-[MKDocs](https://www.mkdocs.org/) generates project documentation as a static website from Markdown files. The website can then be hosted on GitHub Pages or other static site hosting services, providing a user-friendly interface for accessing the documentation.
-
-We can install MKDocs package using `pip`. Here we also install a plugin `mkdocstrings`, which will be used later.
-We advise you to do this within a virtual environment you created before:
-
-```bash
-python3 -m pip install mkdocs mkdocstrings[python]
-```
-
-By default, `mkdocstrings` does not provide support for a specific language. Therefore, we specify `[python]` to install extra dependencies of `mkdocstrings` for Python language support.
-
-After installation, you can intialize a new MKDocs project in our Python project:
-
-```bash
-python3 -m mkdocs new .
-```
-
-This will create two files in your project: `mkdocs.yml` and `docs/index.md`. The first file `mkdocs.yml` is the configuration file for your documentation site. It serves as the central configuration hub for your MKDocs documentation. It tells MKDocs how to structure your documentation site, which plugins and themes to use,
-how to organize navigation, etc.
-
-`docs/index.md` is the main page of your documentation. It is usually the landing page of your documentation site.
-
-Let's first look at the `mkdocs.yml` file. It is almost empty now. We can edit it with the following basic configurations:
-
-```yaml
-site_name: Coffee Analysis
-
-nav:
-  - Overview: index.md
-
-plugins:
-  - search
-  - mkdocstrings
-```
-
-Here we give a name to our documentation site, `Coffee Analysis`.
-We set up the navigation menu with one item `Overview` that links to `index.md`. We also enable two plugins, `search` to provide search functionality in the documentation site, and `mkdocstrings` to automatically generate API reference documentation from Python docstrings, which we will see later.
-
-We can try to render the documentation site locally and see how it looks like:
-
-```bash
-python3 -m mkdocs serve
-```
-
-This will start to build a local static documentation site and serve it at a local web server. 
-By default, it will be available at `http://127.0.0.1:8000/`, which will also show in the terminal output.
-You can open this URL in your web browser to view the documentation site.
-
-The documentation site now consists of some default content about MKDocs. It is rendered from the `docs/index.md` file. Let's edit this file to add some relevant content about our project. For simplicity, we can borrow the content from our `README.md` file.
-
-You can also add more pages to your documentation site by creating more Markdown files in the `docs/` directory, and update the `nav` section in `mkdocs.yml` to include these new pages. For example, we can create a new page for API (Application Programming Interface) reference documentation.
-
-An API reference documents the functions, classes, and methods provided by your software, along with their parameters, return values, and usage examples. This is particularly useful for understanding how to interact with your code programmatically. With `mkdocs` and `mkdocstrings` plugin, we can automatically generate API reference documentation from the docstrings in our Python code.
-
-Let's first create `docs/API.md` with the following content:
-
-```markdown
-# API Reference
-
-:::analyse-coffee
-```
-
-Apart from the title, there is only one line `:::analyse-coffee` in this file.
-This is a special syntax provided by the `mkdocstrings` plugin to indicate that we want to generate API documentation for the `analyse-coffee` module.
-The plugin will parse the docstrings in this module and generate the corresponding documentation.
-
-Now we can call `mkdocs serve` again to render the documentation site locally and check how the API reference page looks like.
-
-Now we can see that all the functions defined in the `analyse-coffee` module are automatically documented with their docstrings.
-
-And also configure `mkdocs.yml` to use `numpy` style docstring format for `mkdocstrings` plugin:
-
-```yaml
-site_name: Coffee Analysis
-
-nav:
-  - Overview: index.md
-  - API Reference: api.md
-
-plugins:
-  - search
-  - mkdocstrings:
-      handlers:
-        python:
-          options:
-            docstring_style: numpy
-```
-
-Then we can render the documentation site locally again with `mkdocs serve`, the input parameters and return values of the `load_csv` function are now nicely formatted in a table.
-
-Once you are happy with the documentation site, you can deploy it to GitHub Pages so that others can access it online.
-Do to this:
-
-- Commit the changes we made to the repository:
-
-```bash
-git add inflammation/models.py mkdocs.yml docs/
-git commit -m "Add documentation with MKDocs"
-```
-
-To deploy the documentation to GitHub Pages, you can use the following command:
-
-```bash
-mkdocs gh-deploy
-```
-
-This command assumes you have access to the GitHub repository of the current project. It will automatically create a new branch called `gh-pages` in your repository, which will contain the static files of your documentation site, and push this branch to GitHub.
 
 ## Licensing
 
@@ -448,6 +246,323 @@ If you want more information, or help choosing a licence,
 the [Choose An Open-Source Licence](https://choosealicense.com/)
 or [tl;dr Legal](https://tldrlegal.com/) sites can help.
 
+
+## Creating a Copy of the Example Code Repository
+
+For this lesson we'll need to create a new GitHub repository based on the contents of another repository.
+
+1. Once logged into GitHub in a web browser,
+go to https://github.com/carpentries-incubator/bbrs-software-project
+1. Select `Use this template`, and then select `Create a new repository` from the dropdown menu
+1. On the next screen, ensure your personal GitHub account is selected in the `Owner` field, and fill in `Repository name` with `industry-skills-prepare-release`
+1. Ensure the repository is set to `Public`
+1. Select `Create repository`
+
+You should be presented with the new repository's main page.
+Next, we need to clone this repository onto our own machines,
+using the Bash shell.
+So firstly open a Bash shell (via Git Bash in Windows or Terminal on a Mac).
+Then, on the command line,
+navigate to where you'd like the example code to reside,
+and use Git to clone it.
+
+For example, to clone the repository in our home directory (replacing `github-account-name` with our own account),
+and change directory to the repository contents:
+
+```bash
+cd
+git clone https://github.com/github-account-name/industry-skills-prepare-release
+cd industry-skills-prepare-release
+```
+
+We also need to switch to a particular branch in the repository for this episode:
+
+```bash
+git switch 07-software-documentation
+```
+
+## Examining the Example Code
+
+Let's take a look at the example code, which resides in a single `eva_data_analysis.py` script by opening this in an editor.
+
+The script is designed to analyse Extra Vehicular Activity (EVA) data from NASA missions,
+generating a plot of cumulative time spent in "space walks" over the years.
+The code makes use of the well-established [Pandas](https://pandas.pydata.org/) data analysis and [Matplotlib](https://matplotlib.org/) graph plotting libraries.
+
+By looking at the `main()` function, we can see the script invokes a series of functions within the same script file to generate this plot:
+
+- `read_json_to_dataframe()` - load the raw EVA data from a file in JSON format into a Pandas dataframe (a row/column structure that holds the data) so it can be analysed, and "clean" the data so it's usable
+- `add_crew_size_column()` - add a new column to the dataframe that contains the number of crew on a particular mission
+- `write_dataframe_to_csv()` - output the amended dataframe to a file using a Comma-Separate Value (CSV) format
+- `plot_cumulative_time_in_space()` - once the data is sorted by date, call this function to generate a plot of cumulative time in space over time
+
+There are also some other lower-level functions used by these higher-level functions - `text_to_duration()`, `add_duration_hours()`, `calculate_crew_size()`, and `add_crew_size_column()`.
+
+Let us assume that we've been tasked with documenting this example code for reuse in a larger project.
+Whilst the code already contains good code commenting, we also need to provide human-readable documentation outside of the codebase,
+and then create a stable release of the code.
+But let's check the code commenting first.
+
+We run the code by first creating a virtual environment as we've done before,
+activating it, and loading in the Python dependencies from a `requirements.txt` file,
+and then running the script, e.g. on Linux or Mac:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install -r requirements.txt
+python eva_data_analysis.py
+```
+
+And we should be presented with our plot of total time in space over time.
+
+The repository also contains some Pytest unit tests in `tests/test_eva_analysis.py` which contain tests for some of the functions.
+We can run also these tests as we have before, which complete successfully:
+
+```bash
+python -m pytest tests/test_eva_analysis.py
+```
+
+
+## Code Commenting
+
+Fortunately, our `eva_data_analysis.py` script is well commented,
+and contains normal code comments as well as a number of a special type of comment known as a *docstring*.
+
+Code comments are non-executable notes written within source code that explain what the code is doing, why certain decisions were made, or how particular parts of the program work.
+They are ignored by the compiler or interpreter and exist solely to help developers understand, maintain, and collaborate on the code more effectively.
+Comments are typically used to clarify complex logic, describe functions or sections of code,
+and provide context that may not be obvious from the code itself.
+
+Importantly, clear comments improve the readability of code, support collaboration within development teams, and reduce the risk of misunderstandings or errors when the code is revisited later.
+With code commenting, typically explaining the *why* is more important than the *what*,
+except where behaviour is complex or counter-intuitive and requires explanation.
+
+In Python, we can comment by beginning with a `#`, and the rest of the line is ignored.
+
+However, a special kind of comment exists called a documentation string, or *docstring*.
+Docstrings are a special kind of comment for a function,
+that explain what the function does, the parameters it expects, and what is returned.
+You can also write docstrings for classes, methods, and modules,
+but you should usually aim to add docstring comments to your code wherever you can,
+particularly for critical or complex functions.
+
+Docstrings are formatted using enclosing triple-quotes `"""`.
+
+Let's look at an example docstring in `eva_data_analysis.py`, for the function `read_json_to_dataframe()`:
+
+```python
+def read_json_to_dataframe(input_file):
+    """
+    Read the data from a JSON file into a Pandas dataframe.
+    Clean the data by removing any rows where the 'duration' value is missing.
+
+    Args:
+        input_file (file or str): The file object or path to the JSON file.
+
+    Returns:
+         eva_df (pd.DataFrame): The cleaned data as a dataframe structure
+    """
+    print(f'Reading JSON file {input_file}')
+    # Read the data from a JSON file into a Pandas dataframe
+    eva_df = pd.read_json(input_file, convert_dates=['date'], encoding='ascii')
+    eva_df['eva'] = eva_df['eva'].astype(float)
+    # Clean the data by removing any rows where duration is missing
+    eva_df.dropna(axis=0, subset=['duration', 'date'], inplace=True)
+    return eva_df
+```
+
+Here we can see a concise description of the function, which takes a path to an input file in JSON format, loads that file into a Pandas dataframe, cleans the data so it's usable, and returns that resulting dataframe.
+
+FIXME: add short exercise
+
+## Documenting a Repository
+
+### Project Documentation
+
+A common approach to providing project-level documentation is to include a set of metadata files within the software repository alongside the source code.
+Many of these files function as “social documentation”, describing the expectations and guidelines for how users and contributors should interact with the project.
+The table below highlights some common examples of repository metadata files and their roles.
+
+| File               | Description |
+|--------------------|-------------|
+| README.md          | Provides an overview of the project. It can either include inline information or pointers to separate installation instructions and dependencies, usage instructions for running the code or example use cases, links to other metadata files and technical documentation |
+| CONTRIBUTING.md    | Explains to developers how to contribute code to the project including processes and standards that should be followed. It typically explains how to report issues, propose changes, submit pull requests, follow coding standards, and adhere to the project’s workflow (such as branching strategies or review processes). |
+| CODE_OF_CONDUCT.md | Defines expected standards of conduct when engaging in a software project |
+| LICENSE.md         | Defines the legal terms of using, modifying and distributing the code |
+| CITATION.md        | Provides instructions on how to cite the code, e.g. referencing a technical paper |
+| AUTHORS.md         | Provides information on who authored the code |
+
+In a typical industrial setup there will likely be a policy or expectations for which files to use and how to use them,
+possibly with pre-existing templates or boilerplate for such files,
+since a uniform approach for multiple projects will facilitate easier and more efficient reuse for team members.
+
+### Writing a Project README
+
+A repository README file is the first piece of documentation that people should read to acquaint themselves with the software.
+It concisely explains what the software is about and what it is for,
+and covers the steps necessary to obtain and install the software
+and use it to accomplish basic tasks.
+
+In short, it provides enough information across the documentation areas we looked at earlier for people to get started.
+Think of it not as a comprehensive reference of all functionality,
+but more a short tutorial with links to further information -
+hence it should contain brief explanations and be focused on instructional steps.
+
+Repository README files are typically written in Markdown format.
+a lightweight markup language which is basically a text file with
+some additional basic syntax to provide ways of formatting them.
+A big advantage of them is that they can be read as plain-text files
+or as source files for rendering them with formatting structures,
+and are very quick to write.
+GitHub provides a very useful [guide to writing Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for its repositories.
+
+Our repository already has a `README.md` file with a number of example headings:
+
+```markdown
+# eva-data-analysis
+
+## Description
+
+## Pre-requisites
+
+## Usage
+
+## Running Tests
+
+## Maintainers
+
+## Licence
+
+## Authors
+
+## Acknowledgements
+```
+
+Therefore, these elements together practically assists a new user coming to this repository with how to get started using and developing it,
+with a clear, simple step-by-step narrative and supporting information that avoids overwhelming them.
+These headings are not a definitive set,
+and sections are dependent on the nature of the software.
+For some good example READMEs, see [matiassingers' collection of Awesome README links](https://github.com/matiassingers/awesome-readme).
+
+
+FIXME: add The Software Sustainability Institute’s [guide on naming projects and products](https://www.software.ac.uk/guide/choosing-project-and-product-names) may provide some helpful pointers.
+
+## Adding Supporting Technical Documentation
+
+[MKDocs](https://www.mkdocs.org/) generates project documentation as a static website from Markdown files. The website can then be hosted on GitHub Pages or other static site hosting services, providing a user-friendly interface for accessing the documentation.
+
+We can install MKDocs package using `pip`. Here we also install a plugin `mkdocstrings`, which will be used later.
+We advise you to do this within a virtual environment you created before:
+
+```bash
+python3 -m pip install mkdocs mkdocstrings[python]
+```
+
+By default, `mkdocstrings` does not provide support for a specific language. Therefore, we specify `[python]` to install extra dependencies of `mkdocstrings` for Python language support.
+
+After installation, you can intialize a new MKDocs project in our Python project:
+
+```bash
+python3 -m mkdocs new .
+```
+
+This will create two files in your project: `mkdocs.yml` and `docs/index.md`. The first file `mkdocs.yml` is the configuration file for your documentation site. It serves as the central configuration hub for your MKDocs documentation. It tells MKDocs how to structure your documentation site, which plugins and themes to use,
+how to organize navigation, etc.
+
+`docs/index.md` is the main page of your documentation. It is usually the landing page of your documentation site.
+
+Let's first look at the `mkdocs.yml` file. It is almost empty now. We can edit it with the following basic configurations:
+
+```yaml
+site_name: EVA Data Analysis
+
+nav:
+  - Overview: index.md
+
+plugins:
+  - search
+  - mkdocstrings
+```
+
+Here we give a name to our documentation site, `EVA Data Analysis`.
+We set up the navigation menu with one item `Overview` that links to `index.md`. We also enable two plugins, `search` to provide search functionality in the documentation site, and `mkdocstrings` to automatically generate API reference documentation from Python docstrings, which we will see later.
+
+We can try to render the documentation site locally and see what it looks like:
+
+```bash
+python3 -m mkdocs serve
+```
+
+This will start to build a local static documentation site and serve it at a local web server. 
+By default, it will be available at `http://127.0.0.1:8000/`, which will also show in the terminal output.
+You can open this URL in your web browser to view the documentation site.
+
+The documentation site now consists of some default content about MKDocs. It is rendered from the `docs/index.md` file. Let's edit this file to add some relevant content about our project. For simplicity, we can borrow the content from our `README.md` file.
+
+You can also add more pages to your documentation site by creating more Markdown files in the `docs/` directory, and update the `nav` section in `mkdocs.yml` to include these new pages. For example, we can create a new page for API (Application Programming Interface) reference documentation.
+
+An API reference documents the functions, classes, and methods provided by your software, along with their parameters, return values, and usage examples. This is particularly useful for understanding how to interact with your code programmatically. With `mkdocs` and `mkdocstrings` plugin, we can automatically generate API reference documentation from the docstrings in our Python code.
+
+Let's first create `docs/api.md` with the following content:
+
+```markdown
+# API Reference
+
+:::analyse-coffee
+```
+
+Apart from the title, there is only one line `:::eva_data_analysis` in this file.
+This is a special syntax provided by the `mkdocstrings` plugin to indicate that we want to generate API documentation for the `eva_data_analysis` module.
+The plugin will parse the docstrings in this module and generate the corresponding documentation.
+
+Now we can call `mkdocs serve` again to render the documentation site locally and check how the API reference page looks like.
+
+Now we can see that all the functions defined in the `eva_data_analysis` module are automatically documented with their docstrings.
+
+And also configure `mkdocs.yml` to use `google` style docstring format for `mkdocstrings` plugin:
+
+```yaml
+site_name: EVA Data Analysis
+
+nav:
+  - Overview: index.md
+  - API Reference: api.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+```
+
+Then we can render the documentation site locally again with `mkdocs serve`, the input parameters and return values of the `load_csv` function are now nicely formatted in a table.
+
+Once you are happy with the documentation site, you can deploy it to GitHub Pages so that others can access it online.
+Do to this:
+
+- Commit the changes we made to the repository:
+
+```bash
+git add mkdocs.yml docs/
+git commit -m "Add documentation with MKDocs"
+```
+
+To deploy the documentation to GitHub Pages, you can use the following command:
+
+```bash
+mkdocs gh-deploy
+```
+
+This command assumes you have access to the GitHub repository of the current project.
+It will automatically create a new branch called `gh-pages` in your repository,
+which will contain the static files of your documentation site, and push this branch to GitHub.
+
+FIXME: add bit on showing the generated docs, with screenshot
+
+
 ## Tagging a Release in GitHub
 
 There are many ways in which Git and GitHub can help us make a software release from our code.
@@ -510,7 +625,7 @@ which is very useful for *reproducibility and reuse* purposes.
 
 ## Summary
 
-FIXME: note that the tools and techniques we show are examples and illustrative; an industrial outfit will have their own policy (approaches, tools) for documenting and creating releases, but the principles here are transferrable
+FIXME: note that the tools and techniques we show are examples and illustrative; an industrial outfit will have their own policy (approaches, tools) for documenting and creating releases, but the principles here are transferrable and the important part is the continual (and normalised) process of coding, commenting, documenting, releasing w.r.t. agile, and doing this rapidly
 
 :::::::::::::::::::::::::::::::::::::: keypoints
 
