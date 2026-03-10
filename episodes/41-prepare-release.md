@@ -1,7 +1,7 @@
 ---
 title: "4.1 Preparing Code for Release"
-teaching: 0
-exercises: 0
+teaching: 38
+exercises: 7
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -44,8 +44,6 @@ The overall aim is to provide you with some practical experience for these which
 
 
 ## What do we Mean by Reusability?
-
-FIXME: consider just removing in favour of the next section
 
 In industrial software development software reuse is a deliberate strategy for improving productivity,
 quality, and delivery speed, by building on existing assets instead of developing everything from scratch.
@@ -180,8 +178,6 @@ This helps avoid technical debt accruing over time, which applies equally to doc
 
 ## Licensing
 
-FIXME: licensing w.r.t. types of licences, reusing external software, compatibility, and industrial practices
-
 Software licensing is a whole topic in itself, so we'll just summarise here.
 Typically in industrial settings a licensing policy will already be in place,
 whether the software is proprietary or being released as open source,
@@ -196,7 +192,7 @@ This copyright will usually belong to your employer.
 
 ## Class Exercise: No Licence?
 
-1 mins.
+2 min.
 
 By default, what do you think you are legally allowed to do with software that isn't licensed?
 
@@ -241,8 +237,14 @@ Within the open source licences, there are two categories, **copyleft** and **pe
   and the variants all have slightly different conditions and applicability,
   but this is the core of the licence.
 
-Which of these types of licence you prefer is up to you and those you develop code with.
-If you want more information, or help choosing a licence,
+Without understanding a given software licence, developers risk violating legal restrictions, e.g.
+by incorporating code into a project that requires derivative work to be open source, or that prohibits certain types of redistribution.
+Licences also affect how software can be integrated with other code,
+shared with collaborators, and released to users.
+Being aware of licensing requirements helps developers ensure compliance, avoid legal issues,
+and make informed decisions about which software components can be safely reused within their projects.
+
+If you want more information on particular licences,
 the [Choose An Open-Source Licence](https://choosealicense.com/)
 or [tl;dr Legal](https://tldrlegal.com/) sites can help.
 
@@ -389,8 +391,8 @@ The table below highlights some common examples of repository metadata files and
 | README.md          | Provides an overview of the project. It can either include inline information or pointers to separate installation instructions and dependencies, usage instructions for running the code or example use cases, links to other metadata files and technical documentation |
 | CONTRIBUTING.md    | Explains to developers how to contribute code to the project including processes and standards that should be followed. It typically explains how to report issues, propose changes, submit pull requests, follow coding standards, and adhere to the project’s workflow (such as branching strategies or review processes). |
 | CODE_OF_CONDUCT.md | Defines expected standards of conduct when engaging in a software project |
-| LICENSE.md         | Defines the legal terms of using, modifying and distributing the code |
-| CITATION.md        | Provides instructions on how to cite the code, e.g. referencing a technical paper |
+| LICENSE            | Defines the legal terms of using, modifying and distributing the code |
+| CITATION.cff       | Provides instructions on how to cite the code, e.g. referencing a technical paper |
 | AUTHORS.md         | Provides information on who authored the code |
 
 In a typical industrial setup there will likely be a policy or expectations for which files to use and how to use them,
@@ -417,36 +419,17 @@ or as source files for rendering them with formatting structures,
 and are very quick to write.
 GitHub provides a very useful [guide to writing Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for its repositories.
 
-Our repository already has a `README.md` file with a number of example headings:
-
-```markdown
-# eva-data-analysis
-
-## Description
-
-## Pre-requisites
-
-## Usage
-
-## Running Tests
-
-## Maintainers
-
-## Licence
-
-## Authors
-
-## Acknowledgements
-```
-
-Therefore, these elements together practically assists a new user coming to this repository with how to get started using and developing it,
-with a clear, simple step-by-step narrative and supporting information that avoids overwhelming them.
+Our repository already has a `README.md` split into typical sections,
+briefly covering a brief description, technical pre-requisites needed for using the code,
+as well as concise instructions for running it and its included unit tests.
+It also includes information on the current maintainers, the licence used, the original authors and any other acknowledgements.
+These elements together practically assists a new user coming to this repository with how to get started using and developing it,
+with a clear, simple step-by-step narrative - importantly in a concise way that avoids overwhelming them.
+It also includes supporting contact information if they want to get in touch with developers of the code.
 These headings are not a definitive set,
 and sections are dependent on the nature of the software.
 For some good example READMEs, see [matiassingers' collection of Awesome README links](https://github.com/matiassingers/awesome-readme).
 
-
-FIXME: add The Software Sustainability Institute’s [guide on naming projects and products](https://www.software.ac.uk/guide/choosing-project-and-product-names) may provide some helpful pointers.
 
 ## Adding Supporting Technical Documentation
 
@@ -625,7 +608,17 @@ which is very useful for *reproducibility and reuse* purposes.
 
 ## Summary
 
-FIXME: note that the tools and techniques we show are examples and illustrative; an industrial outfit will have their own policy (approaches, tools) for documenting and creating releases, but the principles here are transferrable and the important part is the continual (and normalised) process of coding, commenting, documenting, releasing w.r.t. agile, and doing this rapidly
+Software reuse is an important strategy in software development that improves productivity, quality, and delivery speed by building on existing components rather than creating everything from scratch.
+Achieving this requires clear documentation, well-structured projects, and a clear release process, as well as practices that allow other developers (both within and outside a team) to understand and adapt the software.
+Importantly, documentation acts as the collective memory of a software project, helping developers understand how it works, how to use it, and how it was developed.
+
+Note that the tools and techniques we show are illustrative examples.
+An industrial outfit will have their own policies, approaches and tools for documenting and creating releases,
+but the principles here are transferrable and the important part is the continual (and normalised) process of coding, documenting and releasing within an agile process that is repeatable and efficient.
+
+
+FIXME: for sprint, add The Software Sustainability Institute’s [guide on naming projects and products](https://www.software.ac.uk/guide/choosing-project-and-product-names) may provide some helpful pointers.
+
 
 :::::::::::::::::::::::::::::::::::::: keypoints
 
