@@ -1,5 +1,5 @@
 ---
-title: "5.1 Prepare to Delivery"
+title: "5.1 Prepare to Deliver"
 teaching: 0
 exercises: 0
 ---
@@ -21,6 +21,12 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+Earlier in the course we covered the importance of effective communication with clients.
+This is also important when presenting delivery of a final solution - as a completed project - to clients,
+since it provides the ultimate opportunity to clearly demonstrate the value of the product and show how it meets the client's requirements and goals. 
+They allow the development team to explain key design decisions, highlight features,
+and show how the software can be used in practice, helping to build trust and confidence in the solution.
+The presentation also creates a space for feedback, questions, and clarification, ensuring that the client understands the delivered system and that any final issues or expectations can be addressed.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -63,6 +69,53 @@ Second video:
 - Allowed time for questions at the end
 
 :::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Delivering an Effective Client Presentation
+
+A successful client presentation clearly communicates the outcome of a project,
+and effectively demonstrates how the developed software meets the client's requirements and objectives.
+They provide an opportunity to showcase the functionality and value of the solution, explain key design decisions,
+and ensure that the client understands how the software can be used in practice.
+
+Consider the following when planning and writing a presentation:
+
+- Have a clear narrative - it should be clear what will be presented, and what is being presented, within a logical and clear structure
+- Focus on value - emphasise how the solution solves the client's problem and improves their outcomes, highlighting key features and benefits
+- Relate to requirements - when discussing achievements and progress, keep it focused on/relate them back to business requirements
+- Explain design decisions - summarise important technical or architectural designs where relevant, whilst avoiding overlong technical rabbit holes which detract from presenting the product
+- Address quality - show how you followed a sound development process and engineering practices to ensure a quality product
+- Be honest about any solution limitations - as well as challenges encountered, and how you overcame them
+- Prepare for and encourage feedback - invite the client to ask questions or suggest potential future refinements, anticipating likely concerns or queries in advance
+
+It's also typical to deliver a demonstration of the product to the client,
+demonstrating the key features and highlighting how - in practical terms - the software will provide value to the client.
+It's important to not only focus on the software's desired functionality, but also the requestd non-functional characteristics of what is being delivered,
+e.g. documentation and reproducibility of results.
+
+Many of the points above also apply to delivering an effective demonstation, but also consider the following:
+
+- Plan a simple, clear narrative - structure the demo around a small set of simple and realistic scenarios or tasks whilst highlighting benefits, instead of covering unrelated features
+- Use realistic data - demonstrate the system using meaningful data or scenarios that reflect real use
+- Explain what you are doing - talk through each step so the client understands what is happening, how the software works, and why it matters
+- Keep the timing under control - cover the most compelling aspects of the demo first, so you have the option of cutting less important benefits if you run out of time
+- Practice the demo beforehand - rehearse the sequence to avoid the "demo curse", and exclamations of "it hasn't done that before!"
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Group Exercise: Strengths and Weaknesses
+
+20 mins.
+
+(10 mins) In your teams discuss, decide and note down in your group shared documents what you think the strengths are for:
+
+- Your developed software product
+- How you developed the software within using the agile Scrum approach
+- How effectively you worked as a team
+- How well you employed the software engineering practices, tools, and techniques taught throughout the course
+
+(10 mins) Cover the same points above, but this time focus on your weaknesses, and what you could have done better.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
