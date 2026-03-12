@@ -18,7 +18,16 @@ There is data for both Arabica and Robusta beans, across many countries and prof
 
 ## Software Setup
 
-Please open the dropdown for your operating system and follow the setup instructions.  Then, look below the dropdowns and follow the 'Additional Git Setup' instructions too.
+To participate in this course you will need the following installed on your machine:
+
+- Bash shell (Linux, Mac) or Git Bash for Windows
+- Git version control (available from the Bash shell or Git Bash for Windows)
+- Python version 3.8 or above (accessible from your terminal)
+- Microsoft Visual Studio Code version 1.98 or above (or another IDE if you're already comfortable working with it)
+
+If you do not have these installed, see below for installation instructions.
+Please open the tab for your operating system and follow the setup instructions.
+Then, look below the tab and follow the 'Visual Studio Code' and 'Additional Git Setup' instructions too.
 
 :::::::::::::::: spoiler
 
@@ -141,6 +150,14 @@ bash Anaconda3-2021.11-Linux-x86_64.sh
 Answer ‘yes’ to allow the installer to initialize Anaconda3 in your .bashrc.
 ::::::::::::::::::::::::
 
+### Visual Studio Code
+
+*Note: If you're comfortable working in a different IDE, you're welcome to use this instead.*
+
+We will use Microsoft Visual Studio Code (VS Code) as an Integrated Development Environment (IDE) to type and execute Python code and run command line terminal and Git commands (through its integrations with the tools we have installed separately so far). 
+
+Make sure to [download VS Code](https://code.visualstudio.com/Download) for your platform.
+
 ### Additional Git Setup
 
 #### Setting up Git
@@ -168,6 +185,7 @@ You can check your settings at any time:
 ```bash
  git config --list
 ```
+
 
 #### GitHub
 
