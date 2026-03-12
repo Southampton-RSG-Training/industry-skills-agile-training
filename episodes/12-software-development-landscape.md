@@ -37,7 +37,7 @@ With your partner, discuss the following question: What's the difference between
 Consider your own experiences, for example:
 
 -   University modules
--   Work placements or interships
+-   Work placements or internships
 -   Personal or group projects
 
 ::: solution
@@ -193,7 +193,7 @@ Disadvantages
 ::: callout
 When developing ultrasound systems, [Siemens Healthineers](https://www.mdpi.com/2079-9292/13/11/2051) used a combination of V-Model and Agile (SAFe, SCRUM, Kanban) to balance regulatory compliance with flexibility.
 
-The V-Model and Product Lifecycle Process provided the backbone, defining phases, milestones, and quality gates for verification, validation, and documentation, while Agile teams delivered iteratively within those phases.
+The V-Model and Product Lifecycle Process defined phases, milestones, and quality gates for verification, validation, and documentation, while Agile teams delivered iteratively within those phases.
 
 Each Agile increment was aligned to V-Model requirements, meaning that each increment included test evidence, documentation, and traceability, as well as the software itself.
 
@@ -371,6 +371,7 @@ AgilePM also follows the core values of the Agile Manifesto:
 4. Responding to change over following a plan.
 
 There are foundation and practitioner certifications available for Agile Project Management through [APMG International](https://apmg-international.com/).  The foundation stage focuses on understanding the Agile framework whereas the practitioner stage transitions the understanding into effective application of the Agile framework to real-life projects.
+
 ### PRINCE2
 
 PRINCE2 (PRojects IN Controlled Environments) is the world's most practiced method for project management ([Axelos](https://www.axelos.com/)), it's a flexible method that guides you through the essentials of managing any project. PRINCE2 was developed by the UK government for information systems projects and is currently maintained by Axelos.
