@@ -1,7 +1,7 @@
 ---
 title: "5.1 Prepare to Deliver"
-teaching: 0
-exercises: 0
+teaching: 25
+exercises: 35
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -24,8 +24,9 @@ exercises: 0
 Earlier in the course we covered the importance of effective communication with clients.
 This is also important when presenting delivery of a final solution - as a completed project - to clients,
 since it provides the ultimate opportunity to clearly demonstrate the value of the product and show how it meets the client's requirements and goals. 
-They allow the development team to explain key design decisions, highlight features,
-and show how the software can be used in practice, helping to build trust and confidence in the solution.
+
+Such presentations allow the development team to explain key design decisions, highlight features,
+and showcase how the software can be used in practice, helping to build trust and confidence in the solution.
 The presentation also creates a space for feedback, questions, and clarification, ensuring that the client understands the delivered system and that any final issues or expectations can be addressed.
 
 :::::::::::::::::::::::::::::::::::::::  challenge
@@ -102,22 +103,64 @@ Many of the points above also apply to delivering an effective demonstation, but
 - Keep the timing under control - cover the most compelling aspects of the demo first, so you have the option of cutting less important benefits if you run out of time
 - Practice the demo beforehand - rehearse the sequence to avoid the "demo curse", and exclamations of "it hasn't done that before!"
 
+## Panel Scoring Criteria
+
+### Presentation and Product Demonstration (30%)
+
+- Is it a clear and understandable presentation?
+- Is there a logical flow and structure to the presentation?
+- How engaging was the presentation?
+- How effectively, and to what extent, were presentation duties divided well across team members?
+- As a team, how effectively did the group handle the Q&A?
+
+### Agile-based teamwork (30%)
+
+- Is there a clear definition and distribution of roles across the team?
+- Generally, how well did the group appear to work together as a team in the project? e.g.
+- Communication, task delegation, identify and address challenges
+- To what extent, and how well, did the team employ the Scrum agile approach, techniques, and practices taught throughout the course? e.g.
+  - Techniques: user stories, MoSCoW prioritisation, task estimation, sprints, backlog refinement
+  - Meetings: sprint planning meetings, daily scrum meetings, sprint review, sprint retrospective
+  - Artifacts: product backlog, sprint backlog, definition of done
+- How effectively did the team make use of the client meeting? e.g. manage the agenda, clarify and prioritise requirements, manage expectations
+- To what extent did the team take on board any advice given by their mentor?
+
+### End product (20%)
+
+- To what extent does the product achieve the stated goals of the project? e.g. to what extent is the developed software
+  - Usable for its intended purpose?
+  - Reusable, modifiable and extensible?
+
+### Software engineering practices (20%)
+
+- To what extent, and how well, did the team employ the software engineering techniques, tools, and practices taught throughout the course? e.g. Git collaborative workflow (inc. pull requests and code review), automated unit testing, continuous integration, documentation, release management
+Was the team's choice of software licence well justified?
+
 :::::::::::::::::::::::::::::::::::::::  challenge
 
-## Group Exercise: Strengths and Weaknesses
+## Group Exercise: Nosce te Ipsum - Know Thyself
 
 20 mins.
 
-(10 mins) In your teams discuss, decide and note down in your group shared documents what you think the strengths are for:
+Similarly to retrospectives conducted after a single sprint,
+when preparing for a client presentation it really helps to reflect and identify where you have done well overall throughout the project,
+and what could have gone better.
+This feeds into your planning, and helps to ensure you play to your strengths whilst mitigating your weaknesses.
 
-- Your developed software product
-- How you developed the software within using the agile Scrum approach
-- How effectively you worked as a team
+(10 mins) Think back to your sprint retrospectives and general experiences.
+In your teams discuss, decide and note down in your group shared document what you think your key strengths are for each of these areas of the scoring criteria:
+
+- Your developed software product and how it meets the clients needs
+- How you developed the software within using the agile Scrum approach (and how effectively you worked as a team)
 - How well you employed the software engineering practices, tools, and techniques taught throughout the course
 
-(10 mins) Cover the same points above, but this time focus on your weaknesses, and what you could have done better.
+Aim to roughly order each list, putting the most compelling, strongest items at the top.
+Given the small scale of the group project, feel free to embellish slightly!
+
+(10 mins) Repeat the above activity, but this time focus on your weaknesses, and what you could have done better.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 :::::::::::::::::::::::::::::::::::::: keypoints
 
