@@ -6,7 +6,10 @@ exercises: 35
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- FIXME
+- What should you do (and not do) when presenting to others?
+- How should you communicate with a non-technical audience?
+- What should be included in the project presentation?
+- What are the scoring criteria for the presentation?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -203,7 +206,7 @@ the presentation should include (but aren't limited to):
 - Brief recap of the project goals
 - How the product meets the stated goals of the project
 - How the team employed the Scrum agile approach, techniques, and practices
-- How the team employed software engineering practices
+- How the team employed software engineering tools and practices
 - Short demonstration of the product, highlighting how it meets the project goals
 - Short Q&A session at the end
 
@@ -211,6 +214,13 @@ the presentation should include (but aren't limited to):
 
 :::::::::::::::::::::::::::::::::::::: keypoints
 
-- FIXME
+- Client presentations demonstrate the final value of the delivered software and how it meets client requirements and goals.
+- Presentations provide an opportunity for questions, feedback, and clarification from the client.
+- Effective presentations should have a clear narrative and logical structure.
+- Focus on value, usability, and business impact rather than excessive technical detail.
+- Briefly explain important design choices and development quality practices.
+- Be transparent about limitations or challenges and how they were addressed.
+- A product demonstration should show realistic scenarios, clear explanations, and meaningful data.
+- Preparation and practice are essential to ensure a smooth, engaging, and well-timed presentation.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
