@@ -139,7 +139,7 @@ The Scrum Master reminded the team to consider the Definition of Done and ensure
 
 The Scrum Team meet each day to inspect progress toward the Sprint Goal, adapt the Sprint Backlog and adjust plans for upcoming work.
 
-The Daily Scrum isn’t just a status update, it helps the Scrum Team:
+The Daily Scrum Meeting helps the Scrum Team:
 
 -   See progress toward the Sprint Goal
 -   Surface and solve problems faster
