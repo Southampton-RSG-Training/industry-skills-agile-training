@@ -87,8 +87,7 @@ These guide the Scrum Team's work, actions and behaviour.
 4.  Respect - Every team member is valued as capable and autonomous. Scrum works best in an environment of mutual respect.
 5.  Courage - Scrum Team members need courage to tackle hard problems and speak truthfully.
 
-Scrum isn't just a set of meetings and roles.
-Scrum only works when the team truly adopts the values it was built to support.
+Scrum only works when the team adopts the values it was built to support.
 
 ::: callout
 *“Scrum is the framework I built to put those values into practice. There is no methodology.”* - Jeff Sutherland (co-creator of Scrum)
@@ -157,32 +156,6 @@ Discuss in small groups the following questions:
 -   How did it affect the outcome?
 :::
 
-:::: challenge
-
-## Group Exercise: Inspecting and Adapting
-
-3 mins.
-
-During a Daily Stand-Up Meeting, inspecting the progress on the project reveals some problems:
-
--   A developer has created a front-end component which displays some output from an API endpoint, but the endpoint doesn't currently exist and isn't scheduled for the current Sprint.  The Developer can't continue with the rest of their work until this endpoint is in place.
--   When discussing their planned work, the group notices that two developers are working on elements that heavily depend on each other - if one isn't compatible with the other, the software won't work. 
--   One developer is scheduled to work on a large task over the next couple of days, which is critical to the rest of the group's work.  However, the developer is going on holiday the next day.
-
-**Can you suggest a possible adaptation for each of the problems?**
-
-::: solution
-
-Suggested **adaptations** (others are also possible):
-
--   Talk to the Product Owner to determine whether the creation of this API endpoint can be moved to the current Sprint and decide which tasks could be deprioritised to enable this.
--   The two developers decide to set up co-working sessions using pair programming and whiteboard design to ensure that the components are compatible.
--   Reassign the large task to another developer and assign the developer who's going on holiday to smaller task(s) that can be finished in less than a day. 
-
-:::
-
-::::
-
 
 # Scrum Artifacts and Commitments
 
@@ -238,12 +211,12 @@ The Product Backlog is your ever-evolving list of features and ideas:
 
 
 Some items are critical (like the rules), others are stretch goals (like custom miniatures).
-The backlog helps your team stay focused on building toward the big idea.
+
 :::
 
 ## Sprint Backlog
 
-The Sprint Backlog is the game plan for the current block of work and is created at the start of each Sprint, during the Sprint Planning Meeting.
+The Sprint Backlog is the plan for the current block of work and is created at the start of each Sprint, during the Sprint Planning Meeting.
 It includes:
 
 -   A Sprint Goal.
