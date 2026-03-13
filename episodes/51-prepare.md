@@ -80,6 +80,21 @@ Second video:
 Given the technical nature of developing a software solution,
 presenting a final product to a non-technical audience can prove a challenge!
 
+::::::::::::::::::::::::::::::::::::: callout
+
+## Focus on Value!
+
+Clients are typically more interested in how the software meets their requirements, solves their problems,
+and delivers benefits to their organisation.
+Excessive technical explanations can make the presentation difficult to follow and will distract from the key messages,
+and risk losing the audience's engagement,
+which is especially true if they do not have a technical background.
+
+Instead, keep the presentation focused on functionality, usability, and business impact,
+using clear language and demonstrations that show how the system supports the client’s goals.
+
+:::::::::::::::::::::::::::::::::::::::::::::
+
 A successful client presentation clearly communicates the outcome of a project,
 and effectively demonstrates how the developed software meets the client's requirements and objectives.
 They provide an opportunity to showcase the functionality and value of the solution, explain key design decisions,
