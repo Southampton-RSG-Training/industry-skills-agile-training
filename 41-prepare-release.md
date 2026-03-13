@@ -254,7 +254,7 @@ or [tl;dr Legal](https://tldrlegal.com/) sites can help.
 For this lesson we'll need to create a new GitHub repository based on the contents of another repository.
 
 1. Once logged into GitHub in a web browser,
-go to https://github.com/carpentries-incubator/bbrs-software-project
+go to https://github.com/softwaresaved/industry-skills-prepare-release
 1. Select `Use this template`, and then select `Create a new repository` from the dropdown menu
 1. On the next screen, ensure your personal GitHub account is selected in the `Owner` field, and fill in `Repository name` with `industry-skills-prepare-release`
 1. Ensure the repository is set to `Public`
