@@ -538,7 +538,7 @@ Include brief sections on:
 
 Once complete, use `python3 -m mkdocs serve` to view and check your updated index file.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Once you are happy with the documentation site, you can deploy it to GitHub Pages so that others can access it online.
 Do to this:
