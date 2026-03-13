@@ -1,7 +1,7 @@
 ---
 title: "4.1 Preparing Code for Release"
 teaching: 38
-exercises: 7
+exercises: 17
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -376,8 +376,6 @@ def read_json_to_dataframe(input_file):
 
 Here we can see a concise description of the function, which takes a path to an input file in JSON format, loads that file into a Pandas dataframe, cleans the data so it's usable, and returns that resulting dataframe.
 
-FIXME: add short exercise
-
 ## Documenting a Repository
 
 ### Project Documentation
@@ -523,6 +521,25 @@ plugins:
 
 Then we can render the documentation site locally again with `mkdocs serve`, the input parameters and return values of the `load_csv` function are now nicely formatted in a table.
 
+:::::::::::::::::::::::::::::::::::::::  challenge
+
+## Solo Exercise: Edit `index.md`
+
+10 mins.
+
+Like GitHub repository READMEs, `mkdocs` documentation pages also use Markdown.
+Using the `README.md` as a reference,
+change the `docs/index.md` file to briefly reflect how to use the tool.
+Include brief sections on:
+
+- Pre-requisites
+- Usage
+- Running tests
+
+Once complete, use `python3 -m mkdocs serve` to view and check your updated index file.
+
+:::::::::::::::::::::::::::::::::::::::  challenge
+
 Once you are happy with the documentation site, you can deploy it to GitHub Pages so that others can access it online.
 Do to this:
 
@@ -536,14 +553,16 @@ git commit -m "Add documentation with MKDocs"
 To deploy the documentation to GitHub Pages, you can use the following command:
 
 ```bash
-mkdocs gh-deploy
+python3 -m mkdocs gh-deploy
 ```
 
 This command assumes you have access to the GitHub repository of the current project.
 It will automatically create a new branch called `gh-pages` in your repository,
 which will contain the static files of your documentation site, and push this branch to GitHub.
 
-FIXME: add bit on showing the generated docs, with screenshot
+Once built on GitHub, you can view the generated repository documentation by going to https://github-username.github.io/industry-skills-prepare-release/.
+
+![mkdocs documentation viewable in GitHub repository](fig/mkdocs-deploy.png)
 
 
 ## Tagging a Release in GitHub
@@ -617,11 +636,14 @@ An industrial outfit will have their own policies, approaches and tools for docu
 but the principles here are transferrable and the important part is the continual (and normalised) process of coding, documenting and releasing within an agile process that is repeatable and efficient.
 
 
-FIXME: for sprint, add The Software Sustainability Institute’s [guide on naming projects and products](https://www.software.ac.uk/guide/choosing-project-and-product-names) may provide some helpful pointers.
-
-
 :::::::::::::::::::::::::::::::::::::: keypoints
 
-- FIXME
+- Software reuse improves productivity, quality and development speed by building on existing code and components rather than creating everything from scratch.
+- Reuse can occur at multiple levels, including code snippets, software components, architectural designs, entire systems, and documentation.
+- Reusable software should ideally be re-runnable, repeatable, reproducible, and ultimately reusable, meaning it is understandable, maintainable, and adaptable by others.
+- Documentation is essential for reuse, helping developers understand, trust, and modify software over time.
+- Repository documentation, such as README files and supporting metadata helps users and contributors understand how to use and interact with a project.
+- Software licensing determines how code can be used, modified, and shared.
+- Creating software releases provides stable snapshots of a project, which improves reproducibility, distribution, and reuse by others.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
