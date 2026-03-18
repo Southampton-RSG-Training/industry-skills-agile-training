@@ -396,12 +396,19 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         4.2 Sprint 2 Planning Meeting
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#improving-estimation-through-structured-consensus">Improving Estimation through Structured Consensus</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -536,7 +543,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>4.2 Sprint 2 Planning Meeting</h1>
-        <p>Last updated on 2025-04-10 |
+        <p>Last updated on 2026-03-18 |
 
         <a href="https://github.com/Southampton-RSG-Training/industry-skills-agile-training/edit/main/episodes/42-sprint-2-planning-meeting.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -555,7 +562,9 @@
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>FIXME</li>
+<ul><li>What methods exist to help a team reach a consensus on
+estimates?</li>
+<li>What is planning (or Scrum) poker?</li>
 </ul></div>
 </div>
 </div>
@@ -563,14 +572,190 @@
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>Devise a sprint backlog for sprint 2 from the updated product
+<ul><li>Apply a group planning poker technique for estimating the size of
+each task</li>
+<li>Devise a sprint backlog for sprint 2 from the updated product
 backlog</li>
-<li>Apply a technique for estimating the size of each task (e.g. scrum
-poker)</li>
-<li>Prioritise the work using MoSCoW</li>
 </ul></div>
 </div>
 </div>
+</div>
+</div>
+<section><h2 class="section-heading" id="improving-estimation-through-structured-consensus">Improving Estimation through Structured Consensus<a class="anchor" aria-label="anchor" href="#improving-estimation-through-structured-consensus"></a></h2>
+<hr class="half-width"><p>We’ve looked at t-shirt estimation as a quick technique for
+estimating task effort, particularly early in the planning cycles.
+However, for projects with more complex requirements a more structured
+approach that is based on team consensus can prove more effective.</p>
+<p>Scrum (or planning) poker is a method for estimation that helps a
+Scrum team arrive at a consensus of effort (or complexity) for a given
+user story or requirement. In Scrum estimation sessions, each team
+member has a deck of cards containing story point values (often based on
+the Fibonacci sequence). When estimating a user story or requirement,
+everyone selects a card privately and reveals it at the same time,
+similar to players revealing cards in poker.</p>
+<p>Usually moderated by the Product Owner or Scrum Master, it has a
+number of benefits:</p>
+<ul><li>It helps make the activity interactive and engaging</li>
+<li>Encourages team discussion, as differences in estimation prompt
+useful conversations about the work</li>
+<li>The simultaneous reveal prevents people from being influenced by
+others’ estimates, encouraging more independent and honest
+assessments</li>
+<li>Increases shared understanding of the backlog and reduces
+assumptions, since the team collectively clarifies the requirements, as
+well as their complexity and risks</li>
+<li>Improves estimation accuracy, since multiple perspectives often lead
+to more realism in estimates</li>
+</ul><p>This approach typically occurs before Sprint Planning, but also
+proves useful whenever team consensus on an estimate is required.</p>
+<p>The team needs to agree on what each story point card value means,
+and serves as a baseline for estimation meetings. For the purposes of
+this training and the time constraints of the next sprint, let’s use the
+following <em>story point matrix</em>, which uses scaled down time
+effort estimates for each card:</p>
+<table class="table"><colgroup><col width="20%"><col width="20%"><col width="21%"><col width="36%"></colgroup><thead><tr class="header"><th>Story Points</th>
+<th>Relative Size</th>
+<th>Typical Effort</th>
+<th>Characteristics / Example</th>
+</tr></thead><tbody><tr class="odd"><td>1/2</td>
+<td>Extremely Small</td>
+<td>&lt; 2 mins</td>
+<td>Minor change, small bug fix, simple configuration update</td>
+</tr><tr class="even"><td>1</td>
+<td>Very Small</td>
+<td>&lt; 5 mins</td>
+<td>Minor change, small bug fix, simple configuration update</td>
+</tr><tr class="odd"><td>2</td>
+<td>Small</td>
+<td>10 mins</td>
+<td>Small code change, minor enhancement, simple UI adjustment</td>
+</tr><tr class="even"><td>3</td>
+<td>Small–Medium</td>
+<td>15 mins</td>
+<td>Straightforward feature with minimal complexity</td>
+</tr><tr class="odd"><td>5</td>
+<td>Medium</td>
+<td>25 mins</td>
+<td>Feature requiring multiple steps or moderate logic</td>
+</tr><tr class="even"><td>8</td>
+<td>Medium–Large</td>
+<td>40 mins</td>
+<td>More complex feature with dependencies or testing required</td>
+</tr><tr class="odd"><td>13</td>
+<td>Large</td>
+<td>65 mins</td>
+<td>Complex functionality with multiple components</td>
+</tr><tr class="even"><td>20</td>
+<td>Very Large</td>
+<td>&gt; 100 mins</td>
+<td>Major feature; often a candidate to break into smaller stories</td>
+</tr><tr class="odd"><td>40+</td>
+<td>Too Large</td>
+<td>Too big to estimate</td>
+<td>Should be split into smaller user stories before sprint
+planning</td>
+</tr></tbody></table><p>The process works as follows:</p>
+<p><strong>Setup:</strong> All team members are given an identical set
+of cards containing the values: 0, 1/2, 1, 2, 3, 5, 8, 13, 20, 40, and
+100. These are typically aligned with the Fibonacci sequence. They often
+portray abstract “story points” as an approximation of the complexity of
+a given task, although some teams use them as direct time estimates for
+how long that task takes to complete.</p>
+<ol style="list-style-type: decimal"><li><p>The Product Owner/Scrum Master briefly explains a user story or
+requirement from the backlog.</p></li>
+<li><p>The development team asks questions to ensure everyone
+understands its scope and gets an accurate sense of the work that needs
+to be done to complete that specific item.</p></li>
+<li><p>Each team member chooses an estimate privately, selecting one of
+their cards.</p></li>
+<li><p>Everyone reveals their estimates simultaneously, to prevent
+anchoring or influence from others.</p></li>
+<li><p>If there is consensus and everyone reveals the same estimate,
+that becomes the official estimate for that backlog item and is
+recorded.</p></li>
+<li><p>If there are differing opinions about these initial estimates,
+the team members with the highest and lowest estimates take some time to
+discuss why they those that specific number. Following this, everyone
+reselects their cards, and the process repeats until the team reaches a
+reasonable consensus.</p></li>
+</ol><p>This process continues until all backlog items have been
+estimated.</p>
+<div id="group-exercise-play-scrum-poker" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="group-exercise-play-scrum-poker" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Play Scrum Poker</h3>
+<div class="callout-content">
+<p>20 mins.</p>
+<p>Conduct a planning poker exercise in your team.</p>
+<p>Instead of using physical cards, use the free <a href="https://firepoker.app/#/" class="external-link">Firepoker</a> online tool:</p>
+<ol style="list-style-type: decimal"><li>Either the Product Owner or Scrum Master role assumes the role of
+moderator</li>
+<li>The Moderator:
+<ul><li>Creates a new game by selecting <code>Play now</code>, adding in
+some game details and selecting <code>Create game</code>
+</li>
+<li>Copies the browser URL from the next page into the shared document
+so the other team members can access it in their own browser</li>
+<li>Selects the <code>Free-form</code> tab on the page, and copies in
+the requirement issue number and title from the backlog, and selects
+<code>Add story</code>
+</li>
+</ul></li>
+<li>Everyone in the team (including the Moderator) vote by selecting
+their estimate from the cards.</li>
+<li>Once everyone has voted, everyone’s selections are automatically
+revealed to all</li>
+<li>If there isn’t total consensus, discuss the lowest and highest
+estimates from those that suggested them, and repeat the voting until a
+consensus is reached. he Moderator ensures that discussions are kept
+brief so the exercise finishes within the allotted time</li>
+<li>The Moderator enters the consensus value into the backlog item issue
+on GitHub as a comment</li>
+</ol><p>Continue the exercise until all backlog items have been
+estimated.</p>
+<p>NB: don’t press <code>Back</code> on your browser, since it will
+terminate the poker voting session and you’ll need to reopen it from the
+link!</p>
+</div>
+</div>
+</div>
+<div id="group-exercise-sprint-2-planning-for-coffee-beans-analysis" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="group-exercise-sprint-2-planning-for-coffee-beans-analysis" class="callout-inner">
+<h3 class="callout-title">Group Exercise: Sprint 2 Planning for Coffee
+Beans Analysis</h3>
+<div class="callout-content">
+<p>20 mins.</p>
+<p>Conduct the Sprint Planning Meeting for Sprint 2 of the Coffee Beans
+Analysis Project.</p>
+<p><strong>Roles</strong></p>
+<ul><li>One person should be Scrum Master. You are the servant leader who
+helps the group apply Scrum effectively, removes blockers and improves
+flow for the Scrum Team.</li>
+<li>One person should role play as the Product Owner. You should
+represent the interests of the client throughout the meeting.</li>
+<li>The rest of the group should be developers. <strong>The Scrum Master
+and acting Product Owner can also be developers.</strong>
+</li>
+</ul><p><strong>Questions for Sprint Planning</strong></p>
+<p>Remember to answer the following questions during the Sprint Planning
+Meeting:</p>
+<ul><li>Why is this Sprint valuable?</li>
+<li>What can be Done this Sprint?</li>
+<li>How will the chosen work get Done?</li>
+</ul><p>The output from your Sprint Planning Meeting should be your Sprint 2
+Backlog including:</p>
+<ul><li>A Sprint Goal</li>
+<li>The subset of items from the Product Backlog that you will work on
+this Sprint</li>
+<li>A plan for delivering the Increment by the end of the Sprint</li>
+</ul></div>
 </div>
 </div>
 <div id="keypoints1" class="callout keypoints">
@@ -580,7 +765,12 @@ poker)</li>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>FIXME</li>
+<ul><li>Planning Poker makes estimation sessions interactive and encourages
+active team participation.</li>
+<li>Simultaneous estimation reduces bias and helps clarify requirements,
+complexity, and risks.</li>
+<li>Collaborative discussion improves shared understanding of the
+backlog and leads to more realistic estimates.</li>
 </ul></div>
 </div>
 </div>
@@ -588,10 +778,7 @@ poker)</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="41-prepare-release.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="43-sprint-2-work.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -650,9 +837,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://Southampton-RSG-Training.github.io/industry-skills-agile-training/42-sprint-2-planning-meeting.html",
   "identifier": "https://Southampton-RSG-Training.github.io/industry-skills-agile-training/42-sprint-2-planning-meeting.html",
-  "dateCreated": "2026-03-13",
-  "dateModified": "2025-04-10",
-  "datePublished": "2026-03-17"
+  "dateCreated": "2026-03-18",
+  "dateModified": "2026-03-18",
+  "datePublished": "2026-03-18"
 }
 
   </script><script>
