@@ -25,9 +25,13 @@ exercises: 190
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Running an Effective Sprint 
+## Working Effectively in a Team
 
-- Video from RSEs about how to conduct effective sprints and work effectively in a team
+In a professional environment, you will nearly always need to work with other people.  In the following video we'll hear from the Research Software Engineering group at the University of Birmingham about their processes for working effectively in teams. 
+
+[Video - Working Effectively in a Team](https://www.youtube.com/watch?v=_EWRp5jASuw) (19 mins)
+
+## Running an Effective Sprint 
 
 A Sprint is a focused period of work during which the Scrum Team collaborates to deliver a usable increment of the product. Success depends on clear communication, taking shared ownership for the product, and steady progress toward the Sprint Goal.
 
