@@ -1,7 +1,7 @@
 ---
 title: "4.1 Preparing Code for Release"
-teaching: 38
-exercises: 17
+teaching: 60
+exercises: 15
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 

@@ -222,10 +222,10 @@ Note that unlike the 3-way merge, `SquashCommitG` only has one parent, `F`,
 so does not preserve the link to the commits on the feature branch upon which `SquashCommitG` is based.
 This has caused some to consider squash commits harmful,
 since that part of the commit history is lost.
+
 For this reason, squash commits are handy when you want to clean up a commit history from a short-lived feature branch prior to merging to `main`,
 but problematic with longer lived branches or when maintaining commit history is important.
 
-FIXME: verify squash commit has only 1 parent when using a squash-merged PR
 
 ## Summary
 
@@ -239,9 +239,6 @@ Here is a little comparison of the three merge strategies we have covered so far
 | When it works     | Only works if there are no new commits on the main branch        | Works for diverging branches | Works for diverging branches | Works for diverging branches |
 | Rewrites history? | Does not rewrite commit history | Rewrites commit history | Does not rewrite commit history | Does not rewrite commit history |
 
-FIXME: callout
-
-FIXME: challenge - which approach suits your use of version control in most cases? and scenarios for when to and when not to squash merge: twenty people giving many commits to a single feature branch (i.e. want to keep history), simple changes that need to revert (i.e. changing colours back and forth, or testing)
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 

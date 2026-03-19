@@ -78,7 +78,8 @@ Second video:
 
 ## Delivering an Effective Client Presentation
 
-> - Presenting to a non-technical audience video - Simon Hettrick
+Watch [this video](https://youtu.be/y9AE1HLeoc0) by Professor Simon Hettrick,
+on presenting to a non-technical audience.
 
 Given the technical nature of developing a software solution,
 presenting a final product to a non-technical audience can prove a challenge!
