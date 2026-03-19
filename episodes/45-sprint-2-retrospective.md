@@ -22,18 +22,18 @@ exercises: 0
 
 ::: challenge
 
-## Group Exercise: Sprint 1 Retrospective
+## Group Exercise: Sprint 2 Retrospective
 
 (15 minutes)
 
-In your Scrum Team, reflect on Sprint 1 by answering the following questions:
+In your Scrum Team, reflect on Sprint 2 by answering the following questions:
 
 - What went well during this Sprint?
 - What challenges or obstacles did the Scrum Team face?
 - How did our prioritisation strategy work?
 - Were our effort estimates accurate? And if not, why?
 
-Document your responses and identify at least two actionable improvements that can be applied in Sprint 2.
+Document your responses and identify at least two actionable improvements that can be applied in (a hypothetical) future sprint.
 
 Share your reflections are actionable improvements with the other groups.
 :::

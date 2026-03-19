@@ -26,7 +26,7 @@ You may find it useful to refer back to the [material on sprint reviews](32-spri
 
 ## Prepare for the Sprint Review
 
-Take 30 minutes to prepare for the Sprint 1 Review.
+Take 30 minutes to prepare for the Sprint 2 Review.
 
 - Prepare your demonstration and decide who will present each element
 - Write a structure (or agenda) for the meeting
