@@ -6,13 +6,14 @@ exercises: 0
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- 
+- How to choose a product name?
 - How do we run Sprint Review meetings again?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
+- Choose three candidate names for your software product
 - Participate in a Sprint review meeting
 - Verify sprint backlog against definition of done
 
