@@ -1575,7 +1575,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-13-requirements-and-user-stories"><p>Content from <a href="13-requirements-and-user-stories.html">1.3 User Stories and Capturing Project Requirements</a></p>
 <hr>
-<p>Last updated on 2025-10-15 |
+<p>Last updated on 2026-03-19 |
 
         <a href="https://github.com/Southampton-RSG-Training/industry-skills-agile-training/edit/main/episodes/13-requirements-and-user-stories.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1707,7 +1707,7 @@ four user stories using this format:</p>
 <p>As a <em>[type of user]</em>, I want <em>[an action]</em> so that
 <em>[benefit]</em>.</p>
 </blockquote>
-<p>Hint: focus on the user needs, not what may be implementated.</p>
+<p>Hint: focus on the user needs, not what may be implemented.</p>
 </div>
 </div>
 </div>
@@ -2521,7 +2521,8 @@ of issue.</li>
 <p>For our purposes it would be good to label some issues as a new
 <code>feature</code> as well (as opposed to an <code>enhancement</code>
 of existing code), so have one member of the team add this as a new type
-of label and use that where appropriate.</p>
+of label and use that where appropriate. <strong>Note</strong>: ensure
+only one member of the team adds the new label!</p>
 <p>Be sure to add a suitable (and concise) description for the
 issue.</p>
 </div>
@@ -3142,7 +3143,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-15-collaborative-workflow"><p>Content from <a href="15-collaborative-workflow.html">1.5 Collaborative Workflow: Branches and Merging Strategies</a></p>
 <hr>
-<p>Last updated on 2025-10-15 |
+<p>Last updated on 2026-03-19 |
 
         <a href="https://github.com/Southampton-RSG-Training/industry-skills-agile-training/edit/main/episodes/15-collaborative-workflow.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3267,7 +3268,7 @@ exercise!</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Advantages:</p>
 <ul>
@@ -3428,13 +3429,11 @@ resulting in a cleaner main branch history.</p>
 one parent, <code>F</code>, so does not preserve the link to the commits
 on the feature branch upon which <code>SquashCommitG</code> is based.
 This has caused some to consider squash commits harmful, since that part
-of the commit history is lost. For this reason, squash commits are handy
-when you want to clean up a commit history from a short-lived feature
-branch prior to merging to <code>main</code>, but problematic with
-longer lived branches or when maintaining commit history is
-important.</p>
-<p>FIXME: verify squash commit has only 1 parent when using a
-squash-merged PR</p>
+of the commit history is lost.</p>
+<p>For this reason, squash commits are handy when you want to clean up a
+commit history from a short-lived feature branch prior to merging to
+<code>main</code>, but problematic with longer lived branches or when
+maintaining commit history is important.</p>
 </div>
 </section><section><h2 class="section-heading" id="summary">Summary<a class="anchor" aria-label="anchor" href="#summary"></a>
 </h2>
@@ -3494,12 +3493,6 @@ covered so far.</p>
 </tr>
 </tbody>
 </table>
-<p>FIXME: callout</p>
-<p>FIXME: challenge - which approach suits your use of version control
-in most cases? and scenarios for when to and when not to squash merge:
-twenty people giving many commits to a single feature branch (i.e. want
-to keep history), simple changes that need to revert (i.e. changing
-colours back and forth, or testing)</p>
 <div id="group-exercise-merging---what-are-the-risks" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -3520,7 +3513,7 @@ branches in a team environment.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Here are several non-exhaustive reasons:</p>
 <ul>
@@ -6328,7 +6321,7 @@ improved?</strong></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p><strong>1. What aspects of the Sprint Planning went
 well?</strong></p>
@@ -6427,7 +6420,7 @@ their day and are aware of any dependencies or issues.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Useful information exchanged and possible outcomes from the
 meeting:</p>
@@ -6454,7 +6447,7 @@ they could take.</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Developer 1 </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <ul>
 <li>I’m planning to develop a user interface for viewing user
@@ -6475,7 +6468,7 @@ tasks.</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
   <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Developer 2 </h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
 <ul>
 <li>Yesterday I developed an API endpoint for fetching user information.
@@ -6497,7 +6490,7 @@ failing, does anyone know why this is?</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler3" aria-expanded="false" aria-controls="collapseSpoiler3">
   <h3 class="accordion-header" id="headingSpoiler3">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Developer 3 </h3>
 </button>
-<div id="collapseSpoiler3" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler3" aria-labelledby="headingSpoiler3">
+<div id="collapseSpoiler3" class="accordion-collapse collapse" aria-labelledby="headingSpoiler3" data-bs-parent="#accordionSpoiler3">
 <div class="accordion-body">
 <ul>
 <li>Yesterday I changed one of the calculations in the app (as was
@@ -7646,7 +7639,7 @@ progress.”</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Effective — Demonstrates real work and invites stakeholder
@@ -7745,7 +7738,7 @@ items that could be created from this feedback.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Possible backlog items include:</p>
 <ul>
@@ -8343,7 +8336,7 @@ any links that you are not going to use.
 </div>
 </div></section><section id="aio-41-prepare-release"><p>Content from <a href="41-prepare-release.html">4.1 Preparing Code for Release</a></p>
 <hr>
-<p>Last updated on 2026-03-13 |
+<p>Last updated on 2026-03-19 |
 
         <a href="https://github.com/Southampton-RSG-Training/industry-skills-agile-training/edit/main/episodes/41-prepare-release.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -8439,7 +8432,7 @@ architectures.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>Increases productivity by using pre-built components, instead of
@@ -8673,7 +8666,7 @@ software that isn’t licensed?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Since software is automatically under copyright, without a licence no
 one may:</p>
@@ -9841,7 +9834,7 @@ any links that you are not going to use.
 </div>
 </div></section><section id="aio-51-prepare"><p>Content from <a href="51-prepare.html">5.1 Prepare to Deliver</a></p>
 <hr>
-<p>Last updated on 2026-03-13 |
+<p>Last updated on 2026-03-19 |
 
         <a href="https://github.com/Southampton-RSG-Training/industry-skills-agile-training/edit/main/episodes/51-prepare.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -9921,7 +9914,7 @@ good presentation - identify the good techniques</a></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>First video:</p>
 <ul>
@@ -9958,11 +9951,8 @@ presentation</li>
 <section><h2 class="section-heading" id="delivering-an-effective-client-presentation">Delivering an Effective Client Presentation<a class="anchor" aria-label="anchor" href="#delivering-an-effective-client-presentation"></a>
 </h2>
 <hr class="half-width">
-<blockquote>
-<ul>
-<li>Presenting to a non-technical audience video - Simon Hettrick</li>
-</ul>
-</blockquote>
+<p>Watch <a href="https://youtu.be/y9AE1HLeoc0" class="external-link">this video</a> by
+Professor Simon Hettrick, on presenting to a non-technical audience.</p>
 <p>Given the technical nature of developing a software solution,
 presenting a final product to a non-technical audience can prove a
 challenge!</p>
@@ -10345,9 +10335,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://Southampton-RSG-Training.github.io/industry-skills-agile-training/aio.html",
   "identifier": "https://Southampton-RSG-Training.github.io/industry-skills-agile-training/aio.html",
-  "dateCreated": "2026-03-18",
-  "dateModified": "2026-03-18",
-  "datePublished": "2026-03-18"
+  "dateCreated": "2026-03-19",
+  "dateModified": "2026-03-19",
+  "datePublished": "2026-03-19"
 }
 
   </script><script>
