@@ -91,7 +91,7 @@ From the above scenario, create at least four user stories using this format:
 
 > As a *[type of user]*, I want *[an action]* so that *[benefit]*.
 
-Hint: focus on the user needs, not what may be implementated.
+Hint: focus on the user needs, not what may be implemented.
 
 :::::::::::::::  solution
 
@@ -537,6 +537,7 @@ assigning an appropriate label to classify the type of issue.
 For our purposes it would be good to label some issues as a new `feature` as well
 (as opposed to an `enhancement` of existing code),
 so have one member of the team add this as a new type of label and use that where appropriate.
+**Note**: ensure only one member of the team adds the new label!
 
 Be sure to add a suitable (and concise) description for the issue.
 
