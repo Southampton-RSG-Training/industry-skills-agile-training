@@ -42,6 +42,9 @@ Make sure each team member selects at least one issue to begin working on.
 
 You will now begin Sprint 2.
 
+As well as the sprint items you'll be working on, keep a note of how long each task actually took in the backlog for each item.
+You can use this information (together with the logged estimates) later to produce a burndown chart as discussed previously.
+
 You will have 2 hours (not including lunch!) to work collaboratively to deliver an Increment that you can demonstrate to the client.
 Focus on making steady, visible progress and communicating regularly with your team.
 
