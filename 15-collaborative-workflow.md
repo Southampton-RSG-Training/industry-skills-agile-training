@@ -7,7 +7,6 @@ exercises: 10
 :::::::::::::::::::::::::::::::::::::: questions
  
 - What's the relationship between development infrastructure and process?
-- How access to GitHub repositories without needing a password?
 - What is a feature branch, and why are they used?
 - Describe the benefits and risks of using feature branches
 - What are the options for merging branch commits into a baseline branch?
@@ -18,7 +17,6 @@ exercises: 10
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Describe how workflow relates to process
-- Set up SSH passwordless access to GitHub
 - Describe the purpose of branches in a repository
 - Define the elements of a feature-branch workflow
 - Describe four major strategies for merging branches
