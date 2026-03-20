@@ -283,6 +283,23 @@ We also need to switch to a particular branch in the repository for this episode
 git switch 07-software-documentation
 ```
 
+## Preparing Code for Release: Experiences from Established RSEs
+
+Watch [this video](https://www.youtube.com/watch?v=fIJuGf4F9wQ),
+where established Research Software Engineers discuss their experiences related to releasing code,
+what can help, and the consequences of not giving it due consideration or effort.
+They respond to the following questions:
+
+- Can you describe a situation when poor documentation caused problems for your team? What was missing?
+- Conversely, what is the best README you have come across, and what made it genuinely useful in practice?
+- When preparing a repository for its first public release, what do you check before you are comfortable making it visible?
+- How has using a tool such as MKDocs changed the way you approach documentation, if at all?
+- Have you experienced confusion or conflict around licensing in a research project? What happened, and what did you learn?
+- What is the most common misunderstanding you see people have about software licences?
+- Encountering code with no (or inappropriate) licenses
+- Lessons learned about tagging releases on GitHub
+- How their own practices around documentation and releasing software changed with experience
+
 ## Examining the Example Code
 
 Let's take a look at the example code, which resides in a single `eva_data_analysis.py` script by opening this in an editor.
