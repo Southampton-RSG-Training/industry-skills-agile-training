@@ -14,6 +14,10 @@ Alongside the taught sessions, you’ll work in a team on a simulated client pro
 
 This is a new lesson built with [The Carpentries Workbench][workbench]. 
 
+### Pilot Timetable
+
+![](fig/timetable.png){alt="timetable for the pilot workshop"}
+
 
 [workbench]: https://carpentries.github.io/sandpaper-docs
 
