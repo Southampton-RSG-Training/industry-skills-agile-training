@@ -507,7 +507,7 @@ Let's first create `docs/api.md` with the following content:
 ```markdown
 # API Reference
 
-:::analyse-coffee
+:::eva_data_analysis
 ```
 
 Apart from the title, there is only one line `:::eva_data_analysis` in this file.
