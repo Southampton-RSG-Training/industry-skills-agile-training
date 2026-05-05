@@ -681,7 +681,7 @@ four user stories using this format:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Here are some example user stories:</p>
 <p>Business owner:</p>
@@ -744,34 +744,34 @@ types, mobile applications and embedded software. They may appear
 similar, but examining the environments in which they are developed and
 operate uncovers many differences that need to be accounted for in order
 for the software to be fit for purpose.</p>
-<table class="table"><colgroup><col width="26%"><col width="30%"><col width="42%"></colgroup><thead><tr class="header"><th>Concern</th>
+<table class="table"><colgroup><col width="26%"><col width="30%"><col width="42%"></colgroup><thead><tr><th>Concern</th>
 <th>Mobile Apps</th>
 <th>Embedded Software</th>
-</tr></thead><tbody><tr class="odd"><td>Platform</td>
+</tr></thead><tbody><tr><td>Platform</td>
 <td>Work on range of mobile hardware and iOS/Android operating
 systems</td>
 <td>Exact specification of hardware is known - often not necessary to
 support multiple devices; typically low power</td>
-</tr><tr class="even"><td>Development Language</td>
+</tr><tr><td>Development Language</td>
 <td>Typically written in one of the higher-level platform preferred
 languages (e.g. Java, Kotlin, Swift)</td>
 <td>Typically lower-level language (e.g. C) for better control of
 resources</td>
-</tr><tr class="odd"><td>Compilation</td>
+</tr><tr><td>Compilation</td>
 <td>Users will not (usually) modify / compile the software</td>
 <td>Users will not (usually) modify / compile the software</td>
-</tr><tr class="even"><td>Installation</td>
+</tr><tr><td>Installation</td>
 <td>Usually distributed via a controlled app store</td>
 <td>Usually distributed pre-installed on a physical device</td>
-</tr><tr class="odd"><td>Interface</td>
+</tr><tr><td>Interface</td>
 <td>Must have graphical interface suitable for a touch display</td>
 <td>May have no user interface, or interface may be physical
 buttons</td>
-</tr><tr class="even"><td>Documentation</td>
+</tr><tr><td>Documentation</td>
 <td>Probably in the software itself or on a Web page</td>
 <td>Documentation probably in a technical manual with a separate user
 manual</td>
-</tr><tr class="odd"><td>Uptime</td>
+</tr><tr><td>Uptime</td>
 <td>May not run continuously due to restarts</td>
 <td>May need to run continuously for the lifetime of the device</td>
 </tr></tbody></table><p>Therefore, whilst a single piece of software may provide the same
@@ -800,7 +800,7 @@ of?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Some typical classes of non-functional categories include:</p>
 <ul><li>Security: how do we ensure a user is authenticated and authorised to
@@ -962,94 +962,94 @@ e.g. “bag_weight” contains data in both kilograms and pounds</p>
 <h3 id="data-dictionary">Data Dictionary<a class="anchor" aria-label="anchor" href="#data-dictionary"></a></h3>
 <p>We have created a simplified version of the dataset, which contains
 the following variables:</p>
-<table class="table"><colgroup><col width="26%"><col width="11%"><col width="61%"></colgroup><thead><tr class="header"><th>Variable</th>
+<table class="table"><colgroup><col width="26%"><col width="11%"><col width="61%"></colgroup><thead><tr><th>Variable</th>
 <th>Class</th>
 <th>Description</th>
-</tr></thead><tbody><tr class="odd"><td>species</td>
+</tr></thead><tbody><tr><td>species</td>
 <td>character</td>
 <td>Species of coffee bean (arabica or robusta)</td>
-</tr><tr class="even"><td>owner</td>
+</tr><tr><td>owner</td>
 <td>character</td>
 <td>Owner of the farm</td>
-</tr><tr class="odd"><td>country_of_origin</td>
+</tr><tr><td>country_of_origin</td>
 <td>character</td>
 <td>Where the bean came from</td>
-</tr><tr class="even"><td>farm_name</td>
+</tr><tr><td>farm_name</td>
 <td>character</td>
 <td>Name of the farm</td>
-</tr><tr class="odd"><td>lot_number</td>
+</tr><tr><td>lot_number</td>
 <td>character</td>
 <td>Lot number of the beans tested</td>
-</tr><tr class="even"><td>mill</td>
+</tr><tr><td>mill</td>
 <td>character</td>
 <td>Mill where the beans were processed</td>
-</tr><tr class="odd"><td>company</td>
+</tr><tr><td>company</td>
 <td>character</td>
 <td>Company name</td>
-</tr><tr class="even"><td>altitude</td>
+</tr><tr><td>altitude</td>
 <td>character</td>
 <td>Altitude</td>
-</tr><tr class="odd"><td>region</td>
+</tr><tr><td>region</td>
 <td>character</td>
 <td>Region where bean came from</td>
-</tr><tr class="even"><td>producer</td>
+</tr><tr><td>producer</td>
 <td>character</td>
 <td>Producer of the roasted bean</td>
-</tr><tr class="odd"><td>number_of_bags</td>
+</tr><tr><td>number_of_bags</td>
 <td>double</td>
 <td>Number of bags tested</td>
-</tr><tr class="even"><td>bag_weight</td>
+</tr><tr><td>bag_weight</td>
 <td>character</td>
 <td>Bag weight tested</td>
-</tr><tr class="odd"><td>in_country_partner</td>
+</tr><tr><td>in_country_partner</td>
 <td>character</td>
 <td>Partner for the country</td>
-</tr><tr class="even"><td>harvest_year</td>
+</tr><tr><td>harvest_year</td>
 <td>character</td>
 <td>When the beans were harvested (year)</td>
-</tr><tr class="odd"><td>grading_date</td>
+</tr><tr><td>grading_date</td>
 <td>character</td>
 <td>When the beans were graded</td>
-</tr><tr class="even"><td>owner_1</td>
+</tr><tr><td>owner_1</td>
 <td>character</td>
 <td>Who owns the beans</td>
-</tr><tr class="odd"><td>variety</td>
+</tr><tr><td>variety</td>
 <td>character</td>
 <td>Variety of the beans</td>
-</tr><tr class="even"><td>processing_method</td>
+</tr><tr><td>processing_method</td>
 <td>character</td>
 <td>Method for processing</td>
-</tr><tr class="odd"><td>aroma</td>
+</tr><tr><td>aroma</td>
 <td>double</td>
 <td>Aroma grade</td>
-</tr><tr class="even"><td>flavor</td>
+</tr><tr><td>flavor</td>
 <td>double</td>
 <td>Flavor grade</td>
-</tr><tr class="odd"><td>aftertaste</td>
+</tr><tr><td>aftertaste</td>
 <td>double</td>
 <td>Aftertaste grade</td>
-</tr><tr class="even"><td>acidity</td>
+</tr><tr><td>acidity</td>
 <td>double</td>
 <td>Acidity grade</td>
-</tr><tr class="odd"><td>body</td>
+</tr><tr><td>body</td>
 <td>double</td>
 <td>Body grade</td>
-</tr><tr class="even"><td>balance</td>
+</tr><tr><td>balance</td>
 <td>double</td>
 <td>Balance grade</td>
-</tr><tr class="odd"><td>uniformity</td>
+</tr><tr><td>uniformity</td>
 <td>double</td>
 <td>Uniformity grade</td>
-</tr><tr class="even"><td>clean_cup</td>
+</tr><tr><td>clean_cup</td>
 <td>double</td>
 <td>Clean cup grade</td>
-</tr><tr class="odd"><td>sweetness</td>
+</tr><tr><td>sweetness</td>
 <td>double</td>
 <td>Sweetness grade</td>
-</tr><tr class="even"><td>cupper_points</td>
+</tr><tr><td>cupper_points</td>
 <td>double</td>
 <td>Cupper Points (higher score = superior quality)</td>
-</tr><tr class="odd"><td>moisture</td>
+</tr><tr><td>moisture</td>
 <td>double</td>
 <td>Moisture Grade</td>
 </tr></tbody></table></div>
@@ -1133,7 +1133,7 @@ user type or persona.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Some examples:</p>
 <ul><li>As a coffee provider, I want to understand from which suppliers to
@@ -1302,7 +1302,7 @@ requirement.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>In general, a good requirement is:</p>
 <ul><li>Clear and concise - there shouldn’t be any confusion regarding its
@@ -1443,7 +1443,7 @@ any links that you are not going to use.
   "identifier": "https://Southampton-RSG-Training.github.io/industry-skills-agile-training/instructor/13-requirements-and-user-stories.html",
   "dateCreated": "2026-03-20",
   "dateModified": "2026-03-19",
-  "datePublished": "2026-04-28"
+  "datePublished": "2026-05-05"
 }
 
   </script><script>

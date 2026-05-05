@@ -857,7 +857,7 @@ difference between writing code and engineering software?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Programmers or coders tend to focus on one part of software
 development: implementation, more than any other. In academic research,
@@ -923,7 +923,7 @@ have already been done)</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>The typical stages of a software development process are:</p>
 <ul>
@@ -1479,7 +1479,7 @@ team performance</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>Software development</li>
@@ -1709,7 +1709,7 @@ four user stories using this format:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Here are some example user stories:</p>
 <p>Business owner:</p>
@@ -1790,49 +1790,49 @@ for the software to be fit for purpose.</p>
 <col width="30%">
 <col width="42%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Concern</th>
 <th>Mobile Apps</th>
 <th>Embedded Software</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Platform</td>
 <td>Work on range of mobile hardware and iOS/Android operating
 systems</td>
 <td>Exact specification of hardware is known - often not necessary to
 support multiple devices; typically low power</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Development Language</td>
 <td>Typically written in one of the higher-level platform preferred
 languages (e.g. Java, Kotlin, Swift)</td>
 <td>Typically lower-level language (e.g. C) for better control of
 resources</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Compilation</td>
 <td>Users will not (usually) modify / compile the software</td>
 <td>Users will not (usually) modify / compile the software</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Installation</td>
 <td>Usually distributed via a controlled app store</td>
 <td>Usually distributed pre-installed on a physical device</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Interface</td>
 <td>Must have graphical interface suitable for a touch display</td>
 <td>May have no user interface, or interface may be physical
 buttons</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Documentation</td>
 <td>Probably in the software itself or on a Web page</td>
 <td>Documentation probably in a technical manual with a separate user
 manual</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Uptime</td>
 <td>May not run continuously due to restarts</td>
 <td>May need to run continuously for the lifetime of the device</td>
@@ -1865,7 +1865,7 @@ of?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Some typical classes of non-functional categories include:</p>
 <ul>
@@ -2050,153 +2050,153 @@ the following variables:</p>
 <col width="11%">
 <col width="61%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Variable</th>
 <th>Class</th>
 <th>Description</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>species</td>
 <td>character</td>
 <td>Species of coffee bean (arabica or robusta)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>owner</td>
 <td>character</td>
 <td>Owner of the farm</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>country_of_origin</td>
 <td>character</td>
 <td>Where the bean came from</td>
 </tr>
-<tr class="even">
+<tr>
 <td>farm_name</td>
 <td>character</td>
 <td>Name of the farm</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>lot_number</td>
 <td>character</td>
 <td>Lot number of the beans tested</td>
 </tr>
-<tr class="even">
+<tr>
 <td>mill</td>
 <td>character</td>
 <td>Mill where the beans were processed</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>company</td>
 <td>character</td>
 <td>Company name</td>
 </tr>
-<tr class="even">
+<tr>
 <td>altitude</td>
 <td>character</td>
 <td>Altitude</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>region</td>
 <td>character</td>
 <td>Region where bean came from</td>
 </tr>
-<tr class="even">
+<tr>
 <td>producer</td>
 <td>character</td>
 <td>Producer of the roasted bean</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>number_of_bags</td>
 <td>double</td>
 <td>Number of bags tested</td>
 </tr>
-<tr class="even">
+<tr>
 <td>bag_weight</td>
 <td>character</td>
 <td>Bag weight tested</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>in_country_partner</td>
 <td>character</td>
 <td>Partner for the country</td>
 </tr>
-<tr class="even">
+<tr>
 <td>harvest_year</td>
 <td>character</td>
 <td>When the beans were harvested (year)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>grading_date</td>
 <td>character</td>
 <td>When the beans were graded</td>
 </tr>
-<tr class="even">
+<tr>
 <td>owner_1</td>
 <td>character</td>
 <td>Who owns the beans</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>variety</td>
 <td>character</td>
 <td>Variety of the beans</td>
 </tr>
-<tr class="even">
+<tr>
 <td>processing_method</td>
 <td>character</td>
 <td>Method for processing</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>aroma</td>
 <td>double</td>
 <td>Aroma grade</td>
 </tr>
-<tr class="even">
+<tr>
 <td>flavor</td>
 <td>double</td>
 <td>Flavor grade</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>aftertaste</td>
 <td>double</td>
 <td>Aftertaste grade</td>
 </tr>
-<tr class="even">
+<tr>
 <td>acidity</td>
 <td>double</td>
 <td>Acidity grade</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>body</td>
 <td>double</td>
 <td>Body grade</td>
 </tr>
-<tr class="even">
+<tr>
 <td>balance</td>
 <td>double</td>
 <td>Balance grade</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>uniformity</td>
 <td>double</td>
 <td>Uniformity grade</td>
 </tr>
-<tr class="even">
+<tr>
 <td>clean_cup</td>
 <td>double</td>
 <td>Clean cup grade</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>sweetness</td>
 <td>double</td>
 <td>Sweetness grade</td>
 </tr>
-<tr class="even">
+<tr>
 <td>cupper_points</td>
 <td>double</td>
 <td>Cupper Points (higher score = superior quality)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>moisture</td>
 <td>double</td>
 <td>Moisture Grade</td>
@@ -2291,7 +2291,7 @@ user type or persona.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Some examples:</p>
 <ul>
@@ -2473,7 +2473,7 @@ requirement.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>In general, a good requirement is:</p>
 <ul>
@@ -2825,33 +2825,33 @@ speed, and collaboration in early stages of a project where details are
 often vague.</p>
 <p>Some example sizes might be:</p>
 <table class="table">
-<thead><tr class="header">
+<thead><tr>
 <th>Size</th>
 <th>Description</th>
 <th>Rough time estimate</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>XS</td>
 <td>Very quick and easy</td>
 <td>&lt; 1 day</td>
 </tr>
-<tr class="even">
+<tr>
 <td>S</td>
 <td>Small effort</td>
 <td>1-2 days</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>M</td>
 <td>Medium effort</td>
 <td>2-4 days</td>
 </tr>
-<tr class="even">
+<tr>
 <td>L</td>
 <td>Large effort</td>
 <td>5-7 days</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>XL</td>
 <td>Very large or unclear</td>
 <td>-</td>
@@ -2874,33 +2874,33 @@ Product Backlog</h3>
 issues in your product backlog, noting down your estimates. Use the
 following categories, which have a greatly reduced time scale:</p>
 <table class="table">
-<thead><tr class="header">
+<thead><tr>
 <th>Size</th>
 <th>Description</th>
 <th>Rough time estimate</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>XS</td>
 <td>Very quick and easy</td>
 <td>&lt; 10 mins</td>
 </tr>
-<tr class="even">
+<tr>
 <td>S</td>
 <td>Small effort</td>
 <td>10-30 mins</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>M</td>
 <td>Medium effort</td>
 <td>1-2 hours</td>
 </tr>
-<tr class="even">
+<tr>
 <td>L</td>
 <td>Large effort</td>
 <td>2-5 hours</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>XL</td>
 <td>Very large or unclear</td>
 <td>-</td>
@@ -3259,7 +3259,7 @@ exercise!</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Advantages:</p>
 <ul>
@@ -3439,7 +3439,7 @@ covered so far.</p>
 <col width="21%">
 <col width="16%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th></th>
 <th>Fast Forward</th>
 <th>Rebasing</th>
@@ -3447,35 +3447,35 @@ covered so far.</p>
 <th>Squash Merge</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>History</td>
 <td>Maintains linear history</td>
 <td>Maintains linear history</td>
 <td>Non-linear history (commit with 2 parents)</td>
 <td>Linear history (commit with 1 parent)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Effect on main</td>
 <td>No new commits on main</td>
 <td>New commits on main</td>
 <td>New commits on main</td>
 <td>One new commit on main</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Merge commit?</td>
 <td>Avoids merge commits</td>
 <td>Avoids merge commits</td>
 <td>Uses merge commits</td>
 <td>Avoids merge commits</td>
 </tr>
-<tr class="even">
+<tr>
 <td>When it works</td>
 <td>Only works if there are no new commits on the main branch</td>
 <td>Works for diverging branches</td>
 <td>Works for diverging branches</td>
 <td>Works for diverging branches</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Rewrites history?</td>
 <td>Does not rewrite commit history</td>
 <td>Rewrites commit history</td>
@@ -3504,7 +3504,7 @@ branches in a team environment.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Here are several non-exhaustive reasons:</p>
 <ul>
@@ -3790,7 +3790,7 @@ e.g.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>For example, on a Mac:</p>
 <div class="codewrapper">
@@ -3876,7 +3876,7 @@ to that member.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>For example:</p>
 <figure><img src="fig/collab-workflow-add-issue.png" alt="Adding a new GitHub issue to the group repository for writing a description to the README, ensuring it has a quick summary, is assigned to someone, and has a documentation label" class="figure mx-auto d-block"></figure>
@@ -4719,7 +4719,7 @@ calling <code>factorial</code> with 5 equals the expected result of
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Add to <code>tests/test_factorial.py</code>:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -6312,7 +6312,7 @@ improved?</strong></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p><strong>1. What aspects of the Sprint Planning went
 well?</strong></p>
@@ -6411,7 +6411,7 @@ their day and are aware of any dependencies or issues.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Useful information exchanged and possible outcomes from the
 meeting:</p>
@@ -6438,7 +6438,7 @@ they could take.</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
   <h3 class="accordion-header" id="headingSpoiler1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Developer 1 </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
 <ul>
 <li>I’m planning to develop a user interface for viewing user
@@ -6459,7 +6459,7 @@ tasks.</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
   <h3 class="accordion-header" id="headingSpoiler2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Developer 2 </h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
 <div class="accordion-body">
 <ul>
 <li>Yesterday I developed an API endpoint for fetching user information.
@@ -6481,7 +6481,7 @@ failing, does anyone know why this is?</li>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler3" aria-expanded="false" aria-controls="collapseSpoiler3">
   <h3 class="accordion-header" id="headingSpoiler3">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div> Developer 3 </h3>
 </button>
-<div id="collapseSpoiler3" class="accordion-collapse collapse" aria-labelledby="headingSpoiler3" data-bs-parent="#accordionSpoiler3">
+<div id="collapseSpoiler3" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler3" aria-labelledby="headingSpoiler3">
 <div class="accordion-body">
 <ul>
 <li>Yesterday I changed one of the calculations in the app (as was
@@ -8430,7 +8430,7 @@ architectures.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>Increases productivity by using pre-built components, instead of
@@ -8664,7 +8664,7 @@ software that isn’t licensed?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Since software is automatically under copyright, without a licence no
 one may:</p>
@@ -8929,19 +8929,19 @@ roles.</p>
 <col width="60%">
 <col width="39%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>File</th>
 <th>Description</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>README.md</td>
 <td>Provides an overview of the project. It can either include inline
 information or pointers to separate installation instructions and
 dependencies, usage instructions for running the code or example use
 cases, links to other metadata files and technical documentation</td>
 </tr>
-<tr class="even">
+<tr>
 <td>CONTRIBUTING.md</td>
 <td>Explains to developers how to contribute code to the project
 including processes and standards that should be followed. It typically
@@ -8949,22 +8949,22 @@ explains how to report issues, propose changes, submit pull requests,
 follow coding standards, and adhere to the project’s workflow (such as
 branching strategies or review processes).</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>CODE_OF_CONDUCT.md</td>
 <td>Defines expected standards of conduct when engaging in a software
 project</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LICENSE</td>
 <td>Defines the legal terms of using, modifying and distributing the
 code</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>CITATION.cff</td>
 <td>Provides instructions on how to cite the code, e.g. referencing a
 technical paper</td>
 </tr>
-<tr class="even">
+<tr>
 <td>AUTHORS.md</td>
 <td>Provides information on who authored the code</td>
 </tr>
@@ -9386,62 +9386,62 @@ effort estimates for each card:</p>
 <col width="21%">
 <col width="36%">
 </colgroup>
-<thead><tr class="header">
+<thead><tr>
 <th>Story Points</th>
 <th>Relative Size</th>
 <th>Typical Effort</th>
 <th>Characteristics / Example</th>
 </tr></thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1/2</td>
 <td>Extremely Small</td>
 <td>&lt; 2 mins</td>
 <td>Minor change, small bug fix, simple configuration update</td>
 </tr>
-<tr class="even">
+<tr>
 <td>1</td>
 <td>Very Small</td>
 <td>&lt; 5 mins</td>
 <td>Minor change, small bug fix, simple configuration update</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>2</td>
 <td>Small</td>
 <td>10 mins</td>
 <td>Small code change, minor enhancement, simple UI adjustment</td>
 </tr>
-<tr class="even">
+<tr>
 <td>3</td>
 <td>Small–Medium</td>
 <td>15 mins</td>
 <td>Straightforward feature with minimal complexity</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>5</td>
 <td>Medium</td>
 <td>25 mins</td>
 <td>Feature requiring multiple steps or moderate logic</td>
 </tr>
-<tr class="even">
+<tr>
 <td>8</td>
 <td>Medium–Large</td>
 <td>40 mins</td>
 <td>More complex feature with dependencies or testing required</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>13</td>
 <td>Large</td>
 <td>65 mins</td>
 <td>Complex functionality with multiple components</td>
 </tr>
-<tr class="even">
+<tr>
 <td>20</td>
 <td>Very Large</td>
 <td>&gt; 100 mins</td>
 <td>Major feature; often a candidate to break into smaller stories</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>40+</td>
 <td>Too Large</td>
 <td>Too big to estimate</td>
@@ -10090,7 +10090,7 @@ good presentation - identify the good techniques</a></li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>First video:</p>
 <ul>
@@ -10512,8 +10512,8 @@ any links that you are not going to use.
   "url": "https://Southampton-RSG-Training.github.io/industry-skills-agile-training/aio.html",
   "identifier": "https://Southampton-RSG-Training.github.io/industry-skills-agile-training/aio.html",
   "dateCreated": "2026-03-20",
-  "dateModified": "2026-04-28",
-  "datePublished": "2026-04-28"
+  "dateModified": "2026-05-05",
+  "datePublished": "2026-05-05"
 }
 
   </script><script>
