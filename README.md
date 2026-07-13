@@ -23,7 +23,7 @@ Original authors and current maintainers:
 
 ### Contact
 
-To get in touch with the lesson maintainers, email [P.K.Broadbent@soton.ac.uk] and [sc16@soton.ac.uk].
+To get in touch with the lesson maintainers, email [pkb1r22@soton.ac.uk] and [sc16@soton.ac.uk].
 
 ### Acknowledgments
 
