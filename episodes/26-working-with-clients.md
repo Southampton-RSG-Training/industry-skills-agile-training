@@ -124,7 +124,7 @@ Ask questions about anything that's not clear so that you have an understanding 
 
 15 mins.
 
-Re-read the project brief for the coffee beans project.  
+Re-read the [project brief for the coffee beans project](files/coffee-beans-project-brief.pdf) 
 
 First, individually, take a few minutes to think about what is unclear to you in the project brief and formulate a list of questions for the client.
 
