@@ -146,9 +146,10 @@ Ensure that everyone gets a chance to add at least one issue!
 You may see that the added issues don't display their labels by default.
 This is particularly useful, so to do that:
 
-1. Select the drop down next to `View 1` (a down pointing arrow)
-1. Select `Fields`, then select `Labels` from the `Hidden fields`
-1. Select `Save` on the pop=up that appears
+1. Select the cog + `View` icon on the right
+1. Select `Fields`, then select the checkbox for `Labels` from the list of fields
+1. Select `Save View`
+1. Select `Save` in the confirmation pop-up that appears (so the change is visible to everyone)
 
 ![](fig/github-board-display-labels.png){alt='Display labels on board issues' .image-with-shadow width="1000px"}
 
