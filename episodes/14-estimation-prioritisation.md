@@ -229,8 +229,8 @@ Use the following categories, which have a greatly reduced time scale:
 |----- |-------------|---------------------|
 | XS | Very quick and easy | < 10 mins  |
 | S  | Small effort        | 10-30 mins |
-| M  | Medium effort       | 1-2 hours |
-| L  | Large effort        | 2-5 hours |
+| M  | Medium effort       | 30 mins - 2 hours |
+| L  | Large effort        | 2 - 5 hours |
 | XL | Very large or unclear | - |
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
