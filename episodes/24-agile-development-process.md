@@ -1,7 +1,7 @@
 ---
 title: "2.4 The Agile Development Process"
-teaching: 0
-exercises: 0
+teaching: 25
+exercises: 15
 ---
 
 ::: questions
@@ -28,16 +28,12 @@ exercises: 0
 
 # Scrum Philosophy
 
-Scrum is an iterative and incremental approach.
+Scrum is is an **iterative** approach meaning that work is done in repeated cycles. 
+Scrum is also **incremental**, with pieces of work building on one another. 
 
-Scrum is intentionally **minimalist**. It defines only what is essential to implement Scrum theory, encouraging teams to build on it and adapt it to their context.
+Scrum is intentionally incomplete: it defines only what is essential to implement Scrum theory, encouraging teams to build on it and adapt it to their context. Scrum can be used alongside or around existing practices, processes and frameworks. 
 
-Scrum is deliberately **incomplete**.It doesn't provide detailed instructions, but instead provides a structure to guide interactions and relationships.
-
-Scrum can be used alongside or around existing practices, processes and frameworks. 
-
-Just as important as the visible elements of Scrum, such as the Scrum Team Roles, Events and Artifacts, are the underlying values and philosophy of Scrum.  For Scrum to work effectively, you need to adopt a mindset and way of working that is underpinned by certain values and actions. 
-
+However, for Scrum to work effectively, you need to adopt a mindset and way of working that is underpinned by certain values and actions. 
 These are defined in the Scrum Guide as the Principles, Values and Pillars.  
 
 They can be depicted as a temple with the key principles of Empiricism and Lean Thinking as the foundations, the Values as the steps, and the Pillars holding up the roof of the temple.  The Scrum Events (i.e. everything that happens in the Sprint) can be thought of as part of the 'roof', and will only run effectively when the pillars, steps, and foundations are in place.
@@ -63,7 +59,7 @@ We've just introduced some key concepts of Scrum philosophy.  To reinforce your 
 
 1.  It is intentionally \_\_\_\_\_\_\_\_\_\_, meaning it provides only the essential structure and leaves room for adaptation.
 2.  Scrum is based on \_\_\_\_\_\_\_\_\_\_, which means knowledge comes from experience and decisions are based on observation.
-3.  It also draws on \_\_\_\_\_\_\_\_\_\_ thinking, which emphasizes reducing waste and maximizing value.
+3.  It also draws on \_\_\_\_\_\_\_\_\_\_ thinking, which emphasises reducing waste and maximising value.
 4.  Scrum is both \_\_\_\_\_\_\_\_\_\_ and \_\_\_\_\_\_\_\_\_\_, allowing teams to inspect and adapt regularly.
 
 ::: solution
@@ -103,8 +99,7 @@ Scrum only works when the team adopts the values it was built to support.
 
 Discuss the following questions with your partner:
 
--   Which Scrum Value do you think you would find hardest to put into practice?
--   Why?
+-   Which Scrum Value do you think you would find hardest to put into practice? Why?
 -   How could a team support each other in developing that Scrum Value?
 :::
 
@@ -144,26 +139,15 @@ The software company Fujitsu and the Post Office were aware of these serious iss
 This highlights the disastrous consequences that a lack of transparency can have.  
 :::
 
-::: discussion
-## Group Exercise: What happens when the Pillar of Transparency Crumbles?
-
-3 mins.
-
-Discuss in small groups the following questions:
-
--   What’s an example of “transparency” you’ve seen - or failed to see - in a previous project?
-
--   How did it affect the outcome?
-:::
-
 
 # Scrum Artifacts and Commitments
 
 
-The Scrum Artifacts are tangible items that provide transparency about the work being done. They are the Scrum Team's source of truth.
+The Scrum Artifacts are (virtual) objects that provide transparency about the work being done. They are the Scrum Team's source of truth.
 They make visible what's being worked on, why it matters, and how close you are to delivering value.
 
-There are three key Artifacts in Scrum: the **Product Backlog**, **Sprint Backlog** and **Increment**. Each Artifact comes with a commitment that helps to keep the team focused and aligned
+There are three key Artifacts in Scrum: the **Product Backlog**, **Sprint Backlog** and **Increment**. 
+Each Artifact is associated with a commitment (goal) to focus on the Scrum Team on where the project is heading.
 
 ![](fig/scrum_artifacts.png){alt='diagram of scrum philosophy, values, pillars and artifacts stacked on top of each other in the shape of a temple with the roof of the temple highlighted and scrum artifacts written on it'}
 
@@ -171,25 +155,21 @@ There are three key Artifacts in Scrum: the **Product Backlog**, **Sprint Backlo
 
 The Product Backlog is an ordered list of everything the product might need including features, fixes, experiments, and improvements.
 It evolves constantly based on things like feedback, market shifts, and changing stakeholder goals.
+The Product Backlog belongs to the Product Owner, but anyone can contribute ideas.
 
--   The Product Backlog belongs to the Product Owner, but anyone can contribute ideas.
--   Helps the team to understand what might come next in the product's development.
--   Refined continuously so that items are clear, provide value and ready when needed.
 
 ### Commitment: Product Goal
 
-The Product Goal is the long-term vision for the product, a clear destination that the team is moving toward over time.
+The Product Goal is the long-term vision for the product.
 
 ::: callout
 ## Designing a Board Game: The Solent Voyage
 
 Imagine you have an idea to create a board game 'The Solent Voyage', about a ship that sailed from Southampton in Roman times.
 
-The Product Goal is like your big vision:
+The Product Goal is:
 
-“Create a complete, balanced, and fun strategy board game that 4 friends can play in under an hour.”
-
-You may not know all the mechanics or artwork details yet, but you know what success looks like: something playable, sharable, and maybe even publishable.
+“Create a fun board game that 4 friends can play in under an hour.”
 
 The Product Backlog is your ever-evolving list of features and ideas:
 
@@ -224,23 +204,11 @@ It includes:
 -   An actionable plan for delivering a working increment by the end of the Sprint.
 
 The Sprint Backlog is owned and maintained by the Developers.
-It is likely to evolve as the team learns more about the current work but should always stay grounded in the Sprint Goal.
 
 ### Commitment: Sprint Goal
 
-The Sprint Goal is a single objective for the current Sprint and should be the primary focus of the Scrum Team.
+The Sprint Goal is the primary objective for the current Sprint.
 
-::: callout
-## The Start of the Solent Voyage
-
-You’re not building the whole game at once - during the first Sprint, you’re aiming for a step towards the overall goal.
-
-For example, your Sprint Goal might be: “Test the basic turn system with 2 players using paper placeholders.”
-
-From this Sprint Goal you would create your Sprint Backlog, which would include all the tasks needed to achieve this goal.
-
-If you completed all the items in the Sprint Backlog, you would still be far from achieving the Product Goal, but your Sprint Goal is a stepping stone in the right direction.
-:::
 
 :::: challenge
 ## Group Exercise: Sprint Backlog for the Sail Away
@@ -272,52 +240,34 @@ Your Sprint Backlog might include:
 
 The Increment is the result of the Scrum Team's work during the Sprint and is a working, usable part of the product that meets any quality criteria that have been agreed.
 
-The Increment should be:
-
--   Integrated with the rest of the product
--   Tested 
--   Reviewed
--   Potentially releasable
-
 The Increment includes the sum of all previous Increments and so it increases in value after every Sprint.
 
 ### Commitment: Definition of Done
 
-The Definition of Done is a a formal description of the state that the Increment should be in to meet the quality measures required for the product.
+In Scrum, the quality criteria that an Increment must meet are called the Definition of Done.
 
-You could think of the increment as being like a brick in a wall.
-The Definition of Done would be a checklist to ensure that the brick is strong, stable, and usable in the wall.
-
-::: callout
-## The Maiden Voyage
-
-At the end of the Sprint, your team has a working prototype.
-The artwork might be rough and the game play might be unbalanced, but it can be played and evaluated.
-
-That's your Increment: an overly simple and incomplete, but usable, version of the game that brings you closer to your Product Goal.
-
-If the Increment meets the Definition of Done, it will become part of the growing, evolving game.
-
-Next Sprint, you might improve the experience further, possibly by expanding the the map area for the game, balancing roles, or designing better cards.
-:::
-
-:::: challenge
-## Group Exercise: Voyage Complete?
-
-5 mins.
-
-The Definition of Done is an important checklist of the quality standards that each Increment must meet.
-
-Discuss and write down a possible Definition of Done for the Solent Voyage project?
-
-::: solution
-
-The Definition of Done in this case might be:
+The Definition of Done for the Solent Voyage might be:
 
 -   The rules are clear enough to play without additional explanation.
 -   The components labelled and functional.
 -   The test players complete a game.
 -   Any bugs or confusing moments were documented.
+
+
+:::: challenge
+## Group Exercise: Coffee Beans Project Definition of Done
+
+5 mins.
+
+Discuss a Definition of Done for your team to use during the Coffee Beans Analysis Project and write it in your team's shared document 
+
+::: solution
+
+Your Definition of Done might require the Increment to be:
+
+-   Integrated with the rest of the product
+-   Passing some tests
+-   Reviewed by another team member
 
 :::
 
@@ -326,7 +276,7 @@ The Definition of Done in this case might be:
 
 # Scrum Team
 
-The Scrum Team has a simple structure, with no sub-teams and no hierarchies, just one self-managing unit working toward a common goal.
+The Scrum Team has a simple structure of one self-managing unit working toward a common goal. Scrum teams deliberately don't have a hierarchical structure to allow team members to make decisions and adapt quickly, without waiting for permission from higher-ups.
 
 A Scrum Team includes:
 
@@ -334,19 +284,14 @@ A Scrum Team includes:
 -   One Product Owner
 -   One Scrum Master
 
-::: callout
-## Why no hierarchy?
-
-Because Agile processes do best when teams make decisions and adapt quickly, without waiting for permission from higher-ups.
-:::
 
 ## Developers
 
 In a software development project, most developers will probably be software engineers, but developers could also be designers, testers, data analysts or any other role doing work to turn ideas into a working product.
 
--   They are **committed to quality**, and collectively responsible for delivering Done work.
+-   They are collectively responsible for delivering Done work.
 -   They decide **how** to accomplish the Sprint Goal.
--   They collaborate, inspect, and adapt.
+-   They create the work, inspect it, and adapt based on client or team member feedback.
 
 You could think of developers as the engine of the team.
 
@@ -387,7 +332,6 @@ In practice, Scrum Team roles are often flexible. Each person doesn't necessaril
 For instance:
 
 -   The Scrum Master role might rotate between several developers.
-
 -   One person could even take on all three roles for a solo project. 
 
 Scrum defines the roles but teams can adapt them to fit their context.
@@ -395,14 +339,14 @@ Scrum defines the roles but teams can adapt them to fit their context.
 :::
 
 ::: challenge
-## Group Exercise: Getting in the Mindset of a Scrum Team Member
+## Group Exercise: Getting in the Mindset of a Scrum Master
 
 5 mins.
 
-Pick one of the Scrum Team roles and discuss within your group:
+Discuss within your group:
 
+-   What skills or mindset would you need to succeed in the role of Scrum Master?
 -   What challenges might you face in the role?
--   What skills or mindset would you need to succeed in the role?
 
 :::
 
