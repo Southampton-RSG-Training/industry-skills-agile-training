@@ -379,15 +379,6 @@ so not all steps may be complete yet.
 
 ![](fig/ci-workflow-log.png){alt="Log of finished workflow run"}
 
-:::::::::::::::::::::::::::::::::::::::::  callout
-
-## What's the `Annotations` Box?
-
-The annotations box contains 
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
 If we drill down by selecting the `Test with pytest` entry,
 we'll get a breakdown of the thing we're really interested in,
 that shows us that our tests were successful!
