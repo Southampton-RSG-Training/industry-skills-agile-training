@@ -381,25 +381,6 @@ For the purposes of this training exercise, assume there is only a total of 7 ho
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
-
-## (If time) Group Demonstration Exercise
-
-10 mins.
-
-Firstly, as a group:
-
-- Nominate one person (or many!) to briefly demonstrate their product backlog board to the class
-- Nominate one person to take short notes of the discussion
-
-For 5 minutes, briefly discuss what to present in a maximum about 2 minutes,
-in terms of the chosen layout of the board, key findings, usefulness, and challenges of developing your issues and boards.
-A list of very short key points is fine!
-
-Each group presents to the class for 2 minutes each.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
-
 
 :::::::::::::::::::::::::::::::::::::: keypoints
  
