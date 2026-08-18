@@ -103,7 +103,7 @@ Originally, the acronym stood for *Yet Another Markup Language*,
 but since it's not actually used for document markup,
 it's acronym meaning was changed to *YAML Aint Markup Language*.
 
-### A Quick Intro to YAML
+### (Optional) A Quick Intro to YAML
 
 :::::::::::::::::::::::::::::::::::::: instructor
 
@@ -225,53 +225,78 @@ jobs:
 
   build-and-test:
 
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: ["ubuntu-latest", "macos-latest", "windows-latest"]
+        python-version: ["3.11", "3.12", "3.13"]
 ```
 
 Here, we define these in YAML as a nested structure.
 
 We only have one job in this workflow called `build-and-test`,
 but we may have many.
-We also specify the operating systems on which we want this job to run.
-In this case, only the latest version of Linux Ubuntu,
-but we could supply others too (such as Windows, or Mac OS).
 
-When the workflow is triggered,
-our job will run within a `runner`,
-which you can think of as a freshly installed instance of a machine running the operating system we indicate (in this case Ubuntu).
+We may choose to run a single job within this workflow,
+corresponding to a particular OS and Python version.
+But let's consider a more useful case,
+where we specify a *strategy* of what we want to test, which contains a
+`matrix` of operating systems and Python versions within this CI job.
+This will launch a CI job run for each permutation - or cell - within
+this matrix, testing our code across all these platforms simultaneously.
+In this case, with 3 operating systems and 3 versions of Python, this
+means a total of 9 CI jobs that will run.
 
-Let's now supply the concrete things we want to do in our workflow.
-We can think of this as the things we need to set up and run on a fresh machine.
+We use `${{ }}` to reference configuration values from the matrix.
+Therefore, we then are able to use `${{ matrix.os }}` and `${{
+matrix.python-version }}` in our workflow to reference these
+configuration possibilities instead of using hardcoded values.
+
+When the workflow is triggered, on a `push` in this case, our job will
+run as a number of these jobs, each within a `runner`, which you can
+think of as a freshly installed instance of a machine running the
+operating system we indicate (in this case Ubuntu).
+
+Let's now supply the concrete things we want to do in our workflow. We
+can think of this as the things we need to set up and run on a fresh
+machine.
 So within our workflow, we'll need to:
 
+- Specify the OS for this job run
 - Check out our code repository
-- Install Python
+- Install the version of Python for this run
 - Install our Python dependencies (which is just `pytest` in this case)
 - Run `pytest` over our set of tests
 
 We can define these as follows:
 
 ```yaml
+    runs-on: ${{ matrix.os }}
+
     steps:
 
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
 
-    - name: Set up Python 3.11
-      uses: actions/setup-python@v5
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v7
       with:
-        python-version: "3.11"
+        python-version: ${{ matrix.python-version }}
 ```
 
-We first use GitHub Actions (indicated by `uses: actions/`),
-which are small tools we use to perform something specific.
+Note that `-` indicates an ordered list item, in this case a list of
+steps to perform.
+
+After specifying the OS type to use, we use GitHub Actions (indicated by
+`uses: actions/`) to perform more complex tasks, which are small tools
+we use to perform something specific.
 In this case, we use:
 
 - `checkout` - to checkout the repository into our runner
 - `setup-python` - to set up a specific version of Python
 
 Note that the `name` entries are descriptive text and can be anything,
-but it's good to make them meaningful since they are what will appear in our build reports as we'll see later.
+but it's good to make them meaningful since they are what will appear in
+our build reports as we'll see later.
 
 ```yaml
     - name: Install Python dependencies
@@ -329,7 +354,7 @@ Since the workflow is triggered on each `git push`,
 if we go back to our main repository page,
 we should see either of the following next to the most recent commit displayed just above the directory contents:
 
-- An orange circle - the CI workflow is currently running
+- An orange circle - the CI workflow is currently running (if you click on this, it will give you a breakdown of the status of each of the jobs running)
 - A green tick - the CI workflow has successfully completed
 - A red cross - the CI workflow has failed due to an error
 
@@ -340,16 +365,28 @@ This page also shows a historical log of any other previous workflow runs too.
 
 ![](fig/ci-github-actions-list.png){alt="GitHub list of GitHub Actions"}
 
-We can also view a complete log of the output from workflow runs,
-by selecting the first (and only) entry at the top of this list.
-This will then display a list of our `job`s (in this case only `build-and-test`).
-If we select `build-and-test` we'll see an in-progress log of our workflow run,
+We can also view a complete log of the output from workflow runs, by
+selecting the first (and only) entry at the top of this list.
+This will
+then display a list of our `job`s (in this case the separate
+`build-and-test` job runs for each of the separate OS/Python version
+permutations).
+If we select the first one, we'll see an in-progress log of that job run,
 separated into separate collapsed steps that we may expand to view further detail.
 Each of the steps is named from the `name` labels we gave each step.
 Note that the workflow may still be running at this point,
 so not all steps may be complete yet.
 
 ![](fig/ci-workflow-log.png){alt="Log of finished workflow run"}
+
+:::::::::::::::::::::::::::::::::::::::::  callout
+
+## What's the `Annotations` Box?
+
+The annotations box contains 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 If we drill down by selecting the `Test with pytest` entry,
 we'll get a breakdown of the thing we're really interested in,
@@ -372,7 +409,9 @@ we should see the workflow execute successfully as before - so we know our chang
 
 Our workflow will now be triggered every time a change to our code is pushed to our GitHub repository,
 which means that our code is now always being checked against our tests.
-Although we must remember to check the workflow log for this to have value. 
+When using build matrices as we've described, this represents a particularly powerful and efficient way to test code across 
+multiple platforms.
+However, we must remember to check the workflow log for this to have value. 
 We also need to be sure that our tests sufficiently verify the behaviour of our code as it evolves,
 so we should ensure we update our tests as necessary,
 and adding new tests as required to verify new functionality.
