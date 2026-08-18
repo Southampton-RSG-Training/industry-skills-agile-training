@@ -95,8 +95,6 @@ CD helps streamline the release process for packages or applications, for exampl
 
 ## Defining a CI Workflow for GitHub Actions
 
-### How to Describe a Github Actions Workflow?
-
 Now before we move on to defining our workflow in GitHub Actions,
 we'll take a very brief look at a language used to describe its workflows,
 called YAML.
@@ -104,6 +102,15 @@ called YAML.
 Originally, the acronym stood for *Yet Another Markup Language*,
 but since it's not actually used for document markup,
 it's acronym meaning was changed to *YAML Aint Markup Language*.
+
+### A Quick Intro to YAML
+
+:::::::::::::::::::::::::::::::::::::: instructor
+
+Typically skip this intro to YAML, and cover it ad-hoc within the
+practical bit since learners seem to grasp this very quickly.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 Essentially, YAML is based around key value pairs, for example:
 
@@ -200,6 +207,9 @@ name: run-unit-tests
 on: push
 ```
 
+Note the use of key value pairs here to specify these aspects,
+a core part of the language.
+
 So here our workflow will run when changes are pushed to the repository.
 There are [other events](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows) we might specify instead (or as well) if we wanted,
 but this is the most common.
@@ -218,7 +228,9 @@ jobs:
     runs-on: ubuntu-latest
 ```
 
-We only have one job in this workflow,
+Here, we define these in YAML as a nested structure.
+
+We only have one job in this workflow called `build-and-test`,
 but we may have many.
 We also specify the operating systems on which we want this job to run.
 In this case, only the latest version of Linux Ubuntu,
