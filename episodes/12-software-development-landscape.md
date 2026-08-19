@@ -60,11 +60,13 @@ Someone who is engineering software takes a wider view.  They would likely consi
 Thinking about software engineering from that wider view, there are some typical stages that a software development project would go through.
 
 :::: challenge
-## Class Exercise: Stages of a Project
+## Group Exercise: Stages of a Project
 
 3 mins.
 
 **What are the typical stages of a software development project?** (Assume that the broader project management aspects have already been done)
+
+Discuss in your groups the six typical stages of a software project and fill in the blanks below, the first letter of each has been given:
 
 -   R___________
 -   D_____
@@ -91,6 +93,8 @@ The typical stages of a software development process are:
 These stages are followed implicitly or explicitly in every software project but there are many different ways to arrange them.
 
 The stages may be arranged according to an established model of software development.
+
+We will cover three models of software development in this episode: Waterfall, V-Model, and Agile.
 
 ## Models of Software Development
 
@@ -248,8 +252,6 @@ Although these methods were developed in the 1990s, before the Agile Manifesto, 
 Amazon embodies the Agile principle of customer collaboration through relentless feedback-driven iteration.
 
 Amazon systematically gathers and acts on customer feedback to continually refine its products, and small, agile teams rapidly prototype and test ideas.
-
-This Agile model has driven Amazon's extensive expansion into e-commerce, cloud (AWS), smart devices, and subscription services.
 :::
 
 Advantages of Iterative Development:
@@ -263,14 +265,6 @@ Disadvantages of Iterative Development:
 
 -   Without fully determined requirements and design, software can become messy or 'hacky' if quality control standards are not maintained
 -   Since not all requirements are defined from the start, unforeseen changes may arise during the development process which require revision of the software architecture, costing more time in the long run.
-
-::: callout
-The [UK's Universal Credit welfare reform project](https://www.computerweekly.com/news/2240185166/Universal-Credit-will-cost-taxpayers-128bn) demonstrates that estimating timings and delivery costs can be challenging when using an Agile delivery method.
-
-The project was initially budgeted at £2.2 billion but is estimated to have cost £15-16 billion.
-
-Originally due to complete by 2017, the project end date is now 2028.
-:::
 
 
 ## Which Model to Choose?
@@ -336,17 +330,6 @@ In Scrum:
 
 ![](fig/scrum_simplified.png){alt="simplified diagram of scrum with arrows showing that the product backlog is broken down into sprint backlogs and these are worked on throughout a sprint to create an increment of value"}
 
-::: callout
-## Scrum Buzzwords Decoded
-
--   Product Owner - responsible for maximising the value of the product.
--   Product Backlog - Ordered list of what is needed to improve the product.
--   Increment of Value - a concrete stepping stone toward the Product Goal.
--   Scrum Team - one Scrum Master, one Product Owner, and Developers (we'll discuss what each of these roles does later in the course).
--   Sprint Backlog - the set of Product Backlog items selected for the Sprint.
--   Sprint - Fixed-length events of one month or less in which the work gets done.
-:::
-
 Later in this course we will talk more about Scrum so that you are able to use it to run your own Sprints on a project.
 
 ## Scrum vs Project Management
@@ -378,7 +361,12 @@ PRINCE2 (PRojects IN Controlled Environments) is the world's most practiced meth
 
 PRINCE2 is more heavyweight than AgilePM and is often used in sectors where governance and documentation are priorities.
 
-PRINCE2 is built on seven principles, seven themes and seven processes.
+There are foundation and practitioner certifications in PRINCE2 available.  Similar to the AgilePM certification, understanding of the PRINCE2 framework is the goal of the foundation stage and application is the goal of the practitioner stage.
+It's possible to combine Agile and PRINCE2, and there is even an 'Agile PRINCE2' qualification.
+
+::: callout
+
+## PRINCE2: seven principles, seven themes and seven processes
 
 **Seven Principles (The Why)**
 
@@ -411,10 +399,8 @@ PRINCE2 is built on seven principles, seven themes and seven processes.
 -   Managing stage boundaries
 -   Closing a project
 
+:::
 
-There are foundation and practitioner certifications in PRINCE2 available.  Similar to the AgilePM certification, understanding of the PRINCE2 framework is the goal of the foundation stage and application is the goal of the practitioner stage.
-
-It's possible to combine Agile and PRINCE2, and there is even an 'Agile PRINCE2' qualification.
 
 
 :::: challenge
@@ -422,28 +408,21 @@ It's possible to combine Agile and PRINCE2, and there is even an 'Agile PRINCE2'
 
 Below is a list of tasks, discuss whether each task belongs in software development models or project management models:
 
-1.  Writing and testing code for a new feature
-2.  Designing the software architecture for a system
-3.  Creating a risk mitigation plan for project delivery
-4.  Allocating team members across multiple concurrent projects
-5.  Refactoring legacy code to improve maintainability
-6.  Tracking project progress against the Gantt chart
-7.  Setting up a version control system (e.g. Git)
-8.  Reviewing whether the project is on track to meet its deadline and budget
-9.  Leading a daily stand-up meeting
-10. Leading a group retrospective to reflect on project outcomes and team performance
+1.  Designing the software architecture for a system
+2.  Creating a risk mitigation plan for project delivery
+3.  Allocating team members across multiple concurrent projects
+4.  Setting up a version control system (e.g. Git)
+5.  Leading a daily stand-up meeting
+6.  Leading a group retrospective to reflect on project outcomes and team performance
 
 ::: solution
+
 1.  Software development
-2.  Software development
+2.  Project management
 3.  Project management
-4.  Project management
-5.  Software development
-6.  Project management
-7.  Software development
-8.  Project management
-9.  Could be either
-10. Could be either
+4.  Software development
+5.  Could be either
+6.  Could be either
 :::
 ::::
 
