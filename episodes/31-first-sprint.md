@@ -48,13 +48,17 @@ Before getting started on the work today, hold a short Daily Scrum Meeting to ma
 
 (10 minutes)
 
-In your team, review the Sprint 1 Backlog and discuss:
+In the Daily Scrum Meeting, usually each developer would cover:
 
-- Which issue will each person begin working on?
-- Are there any dependencies between tasks?
-- Does everyone have a clear starting point?
+-   What you did yesterday
+-   What you plan to do today
+-   Anything that's blocking you
 
-Make sure each team member selects at least one issue to begin working on.
+As this is the first Sprint, no need to cover what you did yesterday.
+
+Reminder - The Daily Scrum Meeting is not typically an open discussion. The Scrum Master (from the Sprint Planning Meeting yesterday) should facilitate the meeting, making sure that everyone gets a chance to speak in rotation.
+
+Make sure each team member has a task to begin working on at the start of the Sprint.
 
 :::
 
