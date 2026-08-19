@@ -474,11 +474,23 @@ Remember to answer the following questions during the Sprint Planning Meeting:
 -   What can be Done this Sprint?
 -   How will the chosen work get Done?
 
-The output from your Sprint Planning Meeting should be your Sprint Backlog including:
+The output from your Sprint Planning Meeting should be:
 
 -   A Sprint Goal
 -   The subset of items from the Product Backlog that you will work on this Sprint
 -   A plan for delivering the Increment by the end of the Sprint
+
+:::
+
+::: callout
+
+## Reminder: Creating a Sprint Backlog in GitHub
+
+To create a sprint backlog using GitHub issues:
+
+- Create a new label e.g. 'Sprint 1' 
+- Apply the label to the GitHub issues selected for Sprint 1
+- Filter your issues to include only those with the label 'Sprint 1'
 
 :::
 

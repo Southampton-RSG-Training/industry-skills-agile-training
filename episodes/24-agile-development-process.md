@@ -236,6 +236,18 @@ Your Sprint Backlog might include:
 
 ::::
 
+::: callout
+
+## Creating a Sprint Backlog in GitHub
+
+To create a sprint backlog using GitHub issues:
+
+- Create a new label e.g. 'Sprint 1' 
+- Apply the label to the GitHub issues selected for Sprint 1
+- Filter your issues to include only those with the label 'Sprint 1'
+
+:::
+
 ## Increment
 
 The Increment is the result of the Scrum Team's work during the Sprint and is a working, usable part of the product that meets any quality criteria that have been agreed.
