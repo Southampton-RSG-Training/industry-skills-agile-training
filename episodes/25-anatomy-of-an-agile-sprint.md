@@ -158,7 +158,13 @@ Assign one person to the Scrum Master role, they are responsible for keeping the
 
 Assign the three other group members to developer roles: Developer 1, Developer 2, or Developer 3.  
 
-Each developer should read the information under their section below but none of the others.  This information may be important to others in the Scrum Team.
+Each developer should read the information under their section below but none of the others. These notes for each developer are like words in a script for a performance - for your eyes only until you read them out (i.e. don't discuss beforehand).
+
+During the meeting, each person should use their information to tell the rest of the team:
+
+-   What you did yesterday
+-   What you plan to do today
+-   Anything that's blocking you
 
 During the meeting, the developers should exchange information so that all developers end the meeting with no blockers, a clear plan for their day and are aware of any dependencies or issues.
 
@@ -180,6 +186,7 @@ Useful information exchanged and possible outcomes from the meeting:
 ::: spoiler
 ## Developer 1
 
+-   I've just come back from holiday.
 -   I'm planning to develop a user interface for viewing user information from our app.  However, I can see that the API endpoint for fetching user information isn't complete yet.  Any idea when that will be ready? This is a high priority task.
 -   Today I've also planned to create user interface components for the registration, login, and admin dashboard. These are lower priority tasks.
 -   I have more tasks than I can realistically get through today.
