@@ -27,6 +27,21 @@ exercises: 190
 
 ## Working Effectively in a Team
 
+::: challenge
+## Pairs Exercise: Characteristics of Good Teams
+
+(5 minutes)
+
+Think of the **best** team you've ever been part of.  It could be a team from a group project, a job, a sports team, anything you like.
+
+Take turns to tell your partner:
+
+*What was something your 'best team' did particularly well?*
+
+Write down one word that sums up what made **your partner's** 'best team' work well (e.g. honest, fun, encouraging...). 
+
+:::
+
 In a professional environment, you will nearly always need to work with other people.  In the following video we'll hear from the Research Software Engineering group at the University of Birmingham about their processes for working effectively in teams. 
 
 [Video - Working Effectively in a Team](https://www.youtube.com/watch?v=_EWRp5jASuw) (19 mins)
