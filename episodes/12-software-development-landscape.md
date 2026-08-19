@@ -212,8 +212,8 @@ For example:
 -   The design of a key algorithm may need changing, leading to a need to change the implementation
 -   A mistake is could be found during deployment which requires changes to the implementation
 
-In iterative development, a large application is built in smaller, manageable parts called iterations.
-Each iteration includes planning, design, development, and testing, and produces a working version of the product.
+In iterative development, a large application is built in repeated cycles of work.
+Each iteration might include a selection of planning, design, development, and testing, and produces a working version of the product.
 Unlike the Waterfall and V models, where the entire product is developed at once, iterative development adds features incrementally, with each cycle enhancing the functionality of the product.
 
 ![](fig/iterative.png){alt="image of iterative software development"}
