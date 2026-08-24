@@ -1,7 +1,7 @@
 ---
 title: "2.5 Anatomy of an Agile Sprint"
-teaching: 0
-exercises: 0
+teaching: 20
+exercises: 10
 ---
 
 ::: questions
@@ -72,65 +72,51 @@ Time-boxing the meeting keeps the discussion focussed and allows the Scrum Team 
 
 
 :::: challenge
-## Group Exercise: Puppy Playdate Planner
+## Group Exercise: Coffee Shop App
 
-10 mins.
+5 mins
 
-Read the following scenario about the Puppy Playdate Planner app and discuss the questions at the end.
+Read the scenario and discuss the questions with your group.
 
-**Sprint Planning Meeting Scenario**
+Scenario: 
 
-Imagine your Scrum Team is working on the Puppy Playdate Planner app.
-The Product Goal is: “Help puppy owners connect and organise playdates easily.”
+A Scrum Team is building an app so customers can order coffee ahead of pickup.
 
-During Sprint Planning, the team agreed on this Sprint Goal: “Enable creation of puppy profiles and the functionality to search for nearby puppies.”
+During Sprint Planning, the team agreed on this Sprint Goal: "Let customers order their coffee before arriving at the shop."
 
-They selected these Product Backlog items for the Sprint:
+They selected one Product Backlog item for the Sprint: "Customers can build an order and pay in the app."
 
--   Puppy profiles (breed, age, personality, photo upload)
--   Location-based search for nearby puppy owners
--   Basic UI for profile creation and search results
+The Developers broke this into three tasks:
 
-The Developers planned these tasks:
+- Build the menu and "add to order" screen
+- Add a payment step
+- Test the full ordering flow
 
--   Design user interface wireframes and mockups
--   Develop backend APIs for profiles and search
--   Implement photo upload and location filtering
--   Write unit and integration tests
--   Conduct peer reviews and usability testing
+While planning, one Developer mentioned they'd never built a payment feature before and weren't sure how long it would take. The team moved on without addressing this.
 
-The Scrum Master noticed that the team did not discuss messaging or playdate scheduling features and expressed concern that the Product Owner hadn’t clarified their priority or timing.
+Questions:
 
-Some Developers were unsure how much work they could complete due to unfamiliarity with the photo upload and location technologies.
-
-The Scrum Master reminded the team to consider the Definition of Done and ensure the Increment would be fully integrated and tested.
-
-**Questions:**
-
-**1. Which aspects of the Sprint Planning Meeting went well?**
-
-**2. Which aspects of the Sprint Planning Meeting could be improved?**
-
+- What are some potential issues with how this was handled?
+- What could the team have done instead?
 
 ::: solution
-**1. What aspects of the Sprint Planning went well?**
 
--   Clear Sprint Goal aligned with the Product Goal.
--   Thoughtful breakdown of Product Backlog items into concrete tasks.
--   Inclusion of testing and peer reviews highlights focus on quality.
--   Scrum Master emphasised the Definition of Done, reinforcing standards.
--   Open discussion of team capacity and challenges with new technologies.
+**What are some potential issues with how this was handled?**
 
-**2. What aspects of this Sprint Planning Meeting could be improved?**
+- Time estimates may be unreliable if the developer has no experience with payment feature. 
+- It's better to make a plan for potential issues during the Sprint Planning Meeting rather than when the actual issue arises.
+- The developer will likely feel uncertain and unsupported at the start of the Sprint. 
+- If a Developer raises a concern and it's brushed past, they may be less likely to speak up next time.
 
--   Discuss important features that will be developed in later sprints, such as messaging and scheduling, to make sure that they can be integrated into the current work.
--   Check with the product owner on feature prioritisation and roadmap.
--   Plan to manage risks related to unfamiliar technologies.
--   Discuss dependencies for each task to make sure no developer is likely to become blocked.
--   Form a mitigation strategy for uncertainties in capacity estimation.
--   Express the Sprint Goal in terms of user outcomes, instead of focusing on features, for example: *“Allow puppy owners to create profiles and easily find playdate partners nearby to start connecting.”*
+**What could the team have done instead?**
 
+- Pause and discuss it there and then
+- Break the payment task down further, separating a research task (time-boxed investigation) from the actual build, so the unknown is isolated rather than baked into one big estimate.
+- Pair the unfamiliar Developer with someone who has relevant experience, or bring in outside help/documentation review as part of the plan.
+- **Adjust the plan or scope if the risk is significant e.g., agree that if the payment step turns out to be too complex, the team will de-scope to "menu and order building only" this Sprint and add payment next Sprint.
+- Note it as a risk to watch, even if the team decides to proceed as planned so that the whole team (especially the Scrum Master) can watch for signs of trouble early rather than being surprised later.
 :::
+
 ::::
 
 ## Daily Scrum Meeting
@@ -172,7 +158,13 @@ Assign one person to the Scrum Master role, they are responsible for keeping the
 
 Assign the three other group members to developer roles: Developer 1, Developer 2, or Developer 3.  
 
-Each developer should read the information under their section below but none of the others.  This information may be important to others in the Scrum Team.
+Each developer should read the information under their section below but none of the others. These notes for each developer are like words in a script for a performance - for your eyes only until you read them out (i.e. don't discuss beforehand).
+
+During the meeting, each person should use their information to tell the rest of the team:
+
+-   What you did yesterday
+-   What you plan to do today
+-   Anything that's blocking you
 
 During the meeting, the developers should exchange information so that all developers end the meeting with no blockers, a clear plan for their day and are aware of any dependencies or issues.
 
@@ -194,6 +186,7 @@ Useful information exchanged and possible outcomes from the meeting:
 ::: spoiler
 ## Developer 1
 
+-   I've just come back from holiday.
 -   I'm planning to develop a user interface for viewing user information from our app.  However, I can see that the API endpoint for fetching user information isn't complete yet.  Any idea when that will be ready? This is a high priority task.
 -   Today I've also planned to create user interface components for the registration, login, and admin dashboard. These are lower priority tasks.
 -   I have more tasks than I can realistically get through today.
