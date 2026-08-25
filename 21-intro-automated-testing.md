@@ -199,6 +199,34 @@ python -m pip install pytest
 If we wish to deactivate a virtual environment, we can use `deactivate` on the command line,
 and reactivate it later using the same command we did before.
 
+What we should also do is add this `pytest` package as a dependency to
+the repository, so others (including ourselves in the future) are able
+to create the same Python environment as we have now.
+
+There a number of ways to capture this information, but one of the most
+straightforward is to store them within a `requirements.txt` file:
+
+```bash
+python -m pip freeze > requirements.txt
+```
+
+We can see from the contents of this file that there is a list of
+packages (`pytest`, and package dependencies related to it).
+To recreate this environment at a future date, we could then do:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+We should also add this to our repository:
+
+```bash
+git add requirements.txt
+git commit -m "Add dependencies"
+git push
+```
+
+
 ## Running the Tests
 
 As it turns out, this code repository already has a test.
