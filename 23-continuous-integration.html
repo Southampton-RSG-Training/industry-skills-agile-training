@@ -539,7 +539,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>2.3 Using Continuous Integration</h1>
-        <p>Last updated on 2025-10-15 |
+        <p>Last updated on 2026-08-25 |
 
         <a href="https://github.com/Southampton-RSG-Training/industry-skills-agile-training/edit/main/episodes/23-continuous-integration.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -686,15 +686,16 @@ server for download, making it easier and faster to get working updates
 into the hands of users with minimal manual intervention.</p>
 </div>
 </section><section><h2 class="section-heading" id="defining-a-ci-workflow-for-github-actions">Defining a CI Workflow for GitHub Actions<a class="anchor" aria-label="anchor" href="#defining-a-ci-workflow-for-github-actions"></a></h2>
-<hr class="half-width"><div class="section level3">
-<h3 id="how-to-describe-a-github-actions-workflow">How to Describe a Github Actions Workflow?<a class="anchor" aria-label="anchor" href="#how-to-describe-a-github-actions-workflow"></a></h3>
-<p>Now before we move on to defining our workflow in GitHub Actions,
+<hr class="half-width"><p>Now before we move on to defining our workflow in GitHub Actions,
 we’ll take a very brief look at a language used to describe its
 workflows, called YAML.</p>
 <p>Originally, the acronym stood for <em>Yet Another Markup
 Language</em>, but since it’s not actually used for document markup,
 it’s acronym meaning was changed to <em>YAML Aint Markup
 Language</em>.</p>
+<div class="section level3">
+<h3 id="optional-a-quick-intro-to-yaml">(Optional) A Quick Intro to YAML<a class="anchor" aria-label="anchor" href="#optional-a-quick-intro-to-yaml"></a></h3>
+
 <p>Essentially, YAML is based around key value pairs, for example:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -789,6 +790,8 @@ the workflow to run:</p>
 <span id="cb7-2"><a href="#cb7-2" tabindex="-1" aria-label="code-block-7-2"></a></span>
 <span id="cb7-3"><a href="#cb7-3" tabindex="-1" aria-label="code-block-7-3"></a><span class="fu">on</span><span class="kw">:</span><span class="at"> push</span></span></code></pre>
 </div>
+<p>Note the use of key value pairs here to specify these aspects, a core
+part of the language.</p>
 <p>So here our workflow will run when changes are pushed to the
 repository. There are <a href="https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows" class="external-link">other
 events</a> we might specify instead (or as well) if we wanted, but this
@@ -806,21 +809,39 @@ command, or obtaining code from a repository).</p>
 <span id="cb8-2"><a href="#cb8-2" tabindex="-1" aria-label="code-block-8-2"></a></span>
 <span id="cb8-3"><a href="#cb8-3" tabindex="-1" aria-label="code-block-8-3"></a><span class="at">  </span><span class="fu">build-and-test</span><span class="kw">:</span></span>
 <span id="cb8-4"><a href="#cb8-4" tabindex="-1" aria-label="code-block-8-4"></a></span>
-<span id="cb8-5"><a href="#cb8-5" tabindex="-1" aria-label="code-block-8-5"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span></code></pre>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1" aria-label="code-block-8-5"></a><span class="at">    </span><span class="fu">strategy</span><span class="kw">:</span></span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1" aria-label="code-block-8-6"></a><span class="at">      </span><span class="fu">matrix</span><span class="kw">:</span></span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1" aria-label="code-block-8-7"></a><span class="at">        </span><span class="fu">os</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">"ubuntu-latest"</span><span class="kw">,</span><span class="at"> </span><span class="st">"macos-latest"</span><span class="kw">,</span><span class="at"> </span><span class="st">"windows-latest"</span><span class="kw">]</span></span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1" aria-label="code-block-8-8"></a><span class="at">        </span><span class="fu">python-version</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">"3.11"</span><span class="kw">,</span><span class="at"> </span><span class="st">"3.12"</span><span class="kw">,</span><span class="at"> </span><span class="st">"3.13"</span><span class="kw">]</span></span></code></pre>
 </div>
-<p>We only have one job in this workflow, but we may have many. We also
-specify the operating systems on which we want this job to run. In this
-case, only the latest version of Linux Ubuntu, but we could supply
-others too (such as Windows, or Mac OS).</p>
-<p>When the workflow is triggered, our job will run within a
+<p>Here, we define these in YAML as a nested structure.</p>
+<p>We only have one job in this workflow called
+<code>build-and-test</code>, but we may have many.</p>
+<p>We may choose to run a single job within this workflow, corresponding
+to a particular OS and Python version. But let’s consider a more useful
+case, where we specify a <em>strategy</em> of what we want to test,
+which contains a <code>matrix</code> of operating systems and Python
+versions within this CI job. This will launch a CI job run for each
+permutation - or cell - within this matrix, testing our code across all
+these platforms simultaneously. In this case, with 3 operating systems
+and 3 versions of Python, this means a total of 9 CI jobs that will
+run.</p>
+<p>We use <code>${{ }}</code> to reference configuration values from the
+matrix. Therefore, we then are able to use <code>${{ matrix.os }}</code>
+and <code>${{ matrix.python-version }}</code> in our workflow to
+reference these configuration possibilities instead of using hardcoded
+values.</p>
+<p>When the workflow is triggered, on a <code>push</code> in this case,
+our job will run as a number of these jobs, each within a
 <code>runner</code>, which you can think of as a freshly installed
 instance of a machine running the operating system we indicate (in this
 case Ubuntu).</p>
 <p>Let’s now supply the concrete things we want to do in our workflow.
 We can think of this as the things we need to set up and run on a fresh
 machine. So within our workflow, we’ll need to:</p>
-<ul><li>Check out our code repository</li>
-<li>Install Python</li>
+<ul><li>Specify the OS for this job run</li>
+<li>Check out our code repository</li>
+<li>Install the version of Python for this run</li>
 <li>Install our Python dependencies (which is just <code>pytest</code>
 in this case)</li>
 <li>Run <code>pytest</code> over our set of tests</li>
@@ -828,19 +849,24 @@ in this case)</li>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1" tabindex="-1" aria-label="code-block-9-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1" tabindex="-1" aria-label="code-block-9-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ${{ matrix.os }}</span></span>
 <span id="cb9-2"><a href="#cb9-2" tabindex="-1" aria-label="code-block-9-2"></a></span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1" aria-label="code-block-9-3"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Checkout repository</span></span>
-<span id="cb9-4"><a href="#cb9-4" tabindex="-1" aria-label="code-block-9-4"></a><span class="at">      </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
-<span id="cb9-5"><a href="#cb9-5" tabindex="-1" aria-label="code-block-9-5"></a></span>
-<span id="cb9-6"><a href="#cb9-6" tabindex="-1" aria-label="code-block-9-6"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Python 3.11</span></span>
-<span id="cb9-7"><a href="#cb9-7" tabindex="-1" aria-label="code-block-9-7"></a><span class="at">      </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/setup-python@v5</span></span>
-<span id="cb9-8"><a href="#cb9-8" tabindex="-1" aria-label="code-block-9-8"></a><span class="at">      </span><span class="fu">with</span><span class="kw">:</span></span>
-<span id="cb9-9"><a href="#cb9-9" tabindex="-1" aria-label="code-block-9-9"></a><span class="at">        </span><span class="fu">python-version</span><span class="kw">:</span><span class="at"> </span><span class="st">"3.11"</span></span></code></pre>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1" aria-label="code-block-9-3"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1" aria-label="code-block-9-4"></a></span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1" aria-label="code-block-9-5"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Checkout repository</span></span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1" aria-label="code-block-9-6"></a><span class="at">      </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v7</span></span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1" aria-label="code-block-9-7"></a></span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1" aria-label="code-block-9-8"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Python ${{ matrix.python-version }}</span></span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1" aria-label="code-block-9-9"></a><span class="at">      </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/setup-python@v7</span></span>
+<span id="cb9-10"><a href="#cb9-10" tabindex="-1" aria-label="code-block-9-10"></a><span class="at">      </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb9-11"><a href="#cb9-11" tabindex="-1" aria-label="code-block-9-11"></a><span class="at">        </span><span class="fu">python-version</span><span class="kw">:</span><span class="at"> ${{ matrix.python-version }}</span></span></code></pre>
 </div>
-<p>We first use GitHub Actions (indicated by
-<code>uses: actions/</code>), which are small tools we use to perform
-something specific. In this case, we use:</p>
+<p>Note that <code>-</code> indicates an ordered list item, in this case
+a list of steps to perform.</p>
+<p>After specifying the OS type to use, we use GitHub Actions (indicated
+by <code>uses: actions/</code>) to perform more complex tasks, which are
+small tools we use to perform something specific. In this case, we
+use:</p>
 <ul><li>
 <code>checkout</code> - to checkout the repository into our
 runner</li>
@@ -906,7 +932,9 @@ Since the workflow is triggered on each <code>git push</code>, if we go
 back to our main repository page, we should see either of the following
 next to the most recent commit displayed just above the directory
 contents:</p>
-<ul><li>An orange circle - the CI workflow is currently running</li>
+<ul><li>An orange circle - the CI workflow is currently running (if you
+click on this, it will give you a breakdown of the status of each of the
+jobs running)</li>
 <li>A green tick - the CI workflow has successfully completed</li>
 <li>A red cross - the CI workflow has failed due to an error</li>
 </ul><figure><img src="fig/ci-workflow-complete.png" alt="GitHub repository page indicating a successfully completed workflow run" class="figure mx-auto d-block"></figure><p>For more detail we can check the progress of a running workflow by
@@ -914,13 +942,14 @@ selecting <code>Actions</code> in the top navigation bar. This page also
 shows a historical log of any other previous workflow runs too.</p>
 <figure><img src="fig/ci-github-actions-list.png" alt="GitHub list of GitHub Actions" class="figure mx-auto d-block"></figure><p>We can also view a complete log of the output from workflow runs, by
 selecting the first (and only) entry at the top of this list. This will
-then display a list of our <code>job</code>s (in this case only
-<code>build-and-test</code>). If we select <code>build-and-test</code>
-we’ll see an in-progress log of our workflow run, separated into
-separate collapsed steps that we may expand to view further detail. Each
-of the steps is named from the <code>name</code> labels we gave each
-step. Note that the workflow may still be running at this point, so not
-all steps may be complete yet.</p>
+then display a list of our <code>job</code>s (in this case the separate
+<code>build-and-test</code> job runs for each of the separate OS/Python
+version permutations). If we select the first one, we’ll see an
+in-progress log of that job run, separated into separate collapsed steps
+that we may expand to view further detail. Each of the steps is named
+from the <code>name</code> labels we gave each step. Note that the
+workflow may still be running at this point, so not all steps may be
+complete yet.</p>
 <figure><img src="fig/ci-workflow-log.png" alt="Log of finished workflow run" class="figure mx-auto d-block"></figure><p>If we drill down by selecting the <code>Test with pytest</code>
 entry, we’ll get a breakdown of the thing we’re really interested in,
 that shows us that our tests were successful!</p>
@@ -937,11 +966,13 @@ before - so we know our change hasn’t broken anything.</p>
 </section><section><h2 class="section-heading" id="summary">Summary<a class="anchor" aria-label="anchor" href="#summary"></a></h2>
 <hr class="half-width"><p>Our workflow will now be triggered every time a change to our code is
 pushed to our GitHub repository, which means that our code is now always
-being checked against our tests. Although we must remember to check the
-workflow log for this to have value. We also need to be sure that our
-tests sufficiently verify the behaviour of our code as it evolves, so we
-should ensure we update our tests as necessary, and adding new tests as
-required to verify new functionality.</p>
+being checked against our tests. When using build matrices as we’ve
+described, this represents a particularly powerful and efficient way to
+test code across multiple platforms. However, we must remember to check
+the workflow log for this to have value. We also need to be sure that
+our tests sufficiently verify the behaviour of our code as it evolves,
+so we should ensure we update our tests as necessary, and adding new
+tests as required to verify new functionality.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -1033,8 +1064,8 @@ any links that you are not going to use.
   "url": "https://Southampton-RSG-Training.github.io/industry-skills-agile-training/23-continuous-integration.html",
   "identifier": "https://Southampton-RSG-Training.github.io/industry-skills-agile-training/23-continuous-integration.html",
   "dateCreated": "2026-08-19",
-  "dateModified": "2025-10-15",
-  "datePublished": "2026-08-19"
+  "dateModified": "2026-08-25",
+  "datePublished": "2026-08-25"
 }
 
   </script><script>

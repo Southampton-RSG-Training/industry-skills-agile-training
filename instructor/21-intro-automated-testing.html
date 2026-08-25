@@ -540,7 +540,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>2.1 Introduction to Automated Testing</h1>
-        <p>Last updated on 2025-10-15 |
+        <p>Last updated on 2026-08-25 |
 
         <a href="https://github.com/Southampton-RSG-Training/industry-skills-agile-training/edit/main/episodes/21-intro-automated-testing.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -830,19 +830,47 @@ are similar tools for available for Ruby, Java and JavaScript.</li>
 <p>If we wish to deactivate a virtual environment, we can use
 <code>deactivate</code> on the command line, and reactivate it later
 using the same command we did before.</p>
+<p>What we should also do is add this <code>pytest</code> package as a
+dependency to the repository, so others (including ourselves in the
+future) are able to create the same Python environment as we have
+now.</p>
+<p>There a number of ways to capture this information, but one of the
+most straightforward is to store them within a
+<code>requirements.txt</code> file:</p>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1" aria-label="code-block-8-1"></a><span class="ex">python</span> <span class="at">-m</span> pip freeze <span class="op">&gt;</span> requirements.txt</span></code></pre>
+</div>
+<p>We can see from the contents of this file that there is a list of
+packages (<code>pytest</code>, and package dependencies related to it).
+To recreate this environment at a future date, we could then do:</p>
+<div class="codewrapper sourceCode" id="cb9">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1" aria-label="code-block-9-1"></a><span class="ex">python</span> <span class="at">-m</span> pip install <span class="at">-r</span> requirements.txt</span></code></pre>
+</div>
+<p>We should also add this to our repository:</p>
+<div class="codewrapper sourceCode" id="cb10">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1" aria-label="code-block-10-1"></a><span class="fu">git</span> add requirements.txt</span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1" aria-label="code-block-10-2"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add dependencies"</span></span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1" aria-label="code-block-10-3"></a><span class="fu">git</span> push</span></code></pre>
+</div>
 </section><section><h2 class="section-heading" id="running-the-tests">Running the Tests<a class="anchor" aria-label="anchor" href="#running-the-tests"></a></h2>
 <hr class="half-width"><p>As it turns out, this code repository already has a test. Navigate to
 the repository’s <code>tests</code> directory, and open a file called
 <code>test_factorial.py</code>:</p>
-<div class="codewrapper sourceCode" id="cb8">
+<div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" tabindex="-1" aria-label="code-block-8-1"></a><span class="im">import</span> pytest</span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1" aria-label="code-block-8-2"></a><span class="im">from</span> mymath.factorial <span class="im">import</span> factorial</span>
-<span id="cb8-3"><a href="#cb8-3" tabindex="-1" aria-label="code-block-8-3"></a></span>
-<span id="cb8-4"><a href="#cb8-4" tabindex="-1" aria-label="code-block-8-4"></a></span>
-<span id="cb8-5"><a href="#cb8-5" tabindex="-1" aria-label="code-block-8-5"></a><span class="kw">def</span> test_3():</span>
-<span id="cb8-6"><a href="#cb8-6" tabindex="-1" aria-label="code-block-8-6"></a>    <span class="cf">assert</span> factorial(<span class="dv">3</span>) <span class="op">==</span> <span class="dv">6</span></span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" tabindex="-1" aria-label="code-block-11-1"></a><span class="im">import</span> pytest</span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1" aria-label="code-block-11-2"></a><span class="im">from</span> mymath.factorial <span class="im">import</span> factorial</span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1" aria-label="code-block-11-3"></a></span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1" aria-label="code-block-11-4"></a></span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1" aria-label="code-block-11-5"></a><span class="kw">def</span> test_3():</span>
+<span id="cb11-6"><a href="#cb11-6" tabindex="-1" aria-label="code-block-11-6"></a>    <span class="cf">assert</span> factorial(<span class="dv">3</span>) <span class="op">==</span> <span class="dv">6</span></span></code></pre>
 </div>
 <p>Now, we using a Python unit test framework called
 <code>pytest</code>. There are other such frameworks for Python,
@@ -857,10 +885,10 @@ with the argument 3, and checking it equals 6. We use a Python
 not, the test will fail.</p>
 <p>So how do we run this test? In the shell, we can run this test by
 ensuring we’re in the repository’s root directory, and running:</p>
-<div class="codewrapper sourceCode" id="cb9">
+<div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1" aria-label="code-block-9-1"></a><span class="ex">python</span> <span class="at">-m</span> pytest tests/test_factorial.py </span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1" aria-label="code-block-12-1"></a><span class="ex">python</span> <span class="at">-m</span> pytest tests/test_factorial.py </span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -890,10 +918,10 @@ by editing the <code>tests/test_factorial.py</code> file, changing the
 expected result of <code>factorial(3)</code> to be <code>10</code>, and
 saving the file.</p>
 <p>We’ll rerun our tests slightly differently than last time:</p>
-<div class="codewrapper sourceCode" id="cb11">
+<div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1" aria-label="code-block-11-1"></a><span class="ex">python</span> <span class="at">-m</span> pytest <span class="at">-v</span> tests/test_factorial.py</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1" aria-label="code-block-14-1"></a><span class="ex">python</span> <span class="at">-m</span> pytest <span class="at">-v</span> tests/test_factorial.py</span></code></pre>
 </div>
 <p>In this case, we add <code>-v</code> for more verbose output, giving
 us detailed results test-by-test.</p>
@@ -928,10 +956,10 @@ true.</p>
 <p>Let’s now change our faulty test back by editing the file again,
 changing the <code>10</code> back to <code>6</code>, and re-run our
 tests:</p>
-<div class="codewrapper sourceCode" id="cb13">
+<div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1" aria-label="code-block-13-1"></a><span class="ex">python</span> <span class="at">-m</span> pytest <span class="at">-v</span> tests/test_factorial.py</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1" aria-label="code-block-16-1"></a><span class="ex">python</span> <span class="at">-m</span> pytest <span class="at">-v</span> tests/test_factorial.py</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1052,8 +1080,8 @@ any links that you are not going to use.
   "url": "https://Southampton-RSG-Training.github.io/industry-skills-agile-training/instructor/21-intro-automated-testing.html",
   "identifier": "https://Southampton-RSG-Training.github.io/industry-skills-agile-training/instructor/21-intro-automated-testing.html",
   "dateCreated": "2026-08-19",
-  "dateModified": "2025-10-15",
-  "datePublished": "2026-08-19"
+  "dateModified": "2026-08-25",
+  "datePublished": "2026-08-25"
 }
 
   </script><script>
