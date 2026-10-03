@@ -1,7 +1,7 @@
 ---
 title: "2.6 Working with Clients"
-teaching: 0
-exercises: 0
+teaching: 60
+exercises: 90
 ---
  
 :::::::::::::::::::::::::::::::::::::: questions
@@ -26,20 +26,23 @@ exercises: 0
  
 # Communicating with Clients
 
-
-![Illustration by Muhammad Noor on Unsplash](fig/communicating_with_clients.png){alt='Illustration of two people at a table with laptops'}
-
-
 One of the most important skills for a software engineer working in industry is the ability to communicate effectively with clients. At the end of this episode, you will conduct a meeting with one of the helpers who will be role playing as the client for the Coffee Beans Analysis Project. 
 
 Clear communication builds trust, prevents expensive misunderstandings, and ensures that the business goals and technical implementation are aligned.
 
 While this course is focused on software engineering, the points that we'll cover can be applied to any project.
 
- 
-## Speaking the Same Language
+This episode covers three aspects to consider when communicating with clients:
 
-![Photo by zhendong wang on Unsplash](fig/speaking_different_languages.jpg){alt='photo of speach bubbles with words in different languages'}
+1. Understanding the product and each other
+2. Discussing prioritisation
+3. Setting realistic expectations
+
+At the end of this episode we will guide you through the process of preparing for the kickoff meeting with the client later this afternoon.
+
+## Understanding the Product and Each Other
+
+![Illustration by Muhammad Noor on Unsplash](fig/communicating_with_clients.png){alt='Illustration of two people at a table with laptops'}
 
 **Scenario:**
 You’re in a meeting with a client and explain, *“We’re planning to refactor the backend and upgrade the framework so we can implement the auth flow asynchronously. That should make deployments cleaner.”* The client nods politely but later admits they didn’t understand a word. They leave the meeting unclear on what's being done, why it's needed, or how it affects their goals.
@@ -65,8 +68,6 @@ To bridge this gap, and build shared understanding, try the following techniques
 - **Use visuals to support understanding.**  
   Diagrams, such as flowcharts, can help convey complex ideas without relying on jargon.
 
-By learning to speak the client’s language you build their trust, enable better decision making, and avoid frustration on both sides.
-
 
 ::: challenge
 
@@ -87,6 +88,84 @@ Practice overcoming the expert awareness gap by explaining a familiar topic clea
 5. Swap roles and repeat the exercise so both of you get a chance to explain and to listen.
 
 :::
+
+As well as making sure the client can understand you, you also need to make sure you correctly interpret what the client is saying. 
+
+
+**Scenario:**
+During a planning meeting, a client tells the team: “We want the site to feel modern and fast.” No one asks for clarification. The designers choose a sleek, minimal style with bold colours, and the developers focus on performance optimisations to reduce load times to under 500ms.  However, at the next review, the client is unhappy. By “modern,” they actually meant visually similar to Apple’s aesthetic. And by “fast,” they didn’t mean technical speed, but a user journey with fewer steps. The team now need to rework major parts of the product, wasting both time and budget.
+
+
+-   **Ask for specifics when things are vague**  
+  Use follow-up questions to make abstract requests concrete.  
+  *“When you say ‘fast’, do you mean page loads under 1 second, or fewer clicks to reach key information?”*
+
+-   **Probe when clients say, “use your judgement”**  
+  If the client doesn’t know exactly what they want, try asking:  
+  *“What don’t you want?”* or  
+  *“Can you show me an example of something you like or something you don’t like?”*
+
+-   **Summarise and confirm**  
+  Restate what you’ve heard to confirm your understanding.  
+  *“So just to confirm, you’d like the dashboard to show data from the last 7 days by default?”*
+
+-   **Document everything clearly**  
+  Use written follow-ups like email recaps or meeting notes to reinforce shared understanding. These also create a useful reference point.
+
+-   **Admit when you’re unsure**  
+  *“I’m not sure I follow, please could you walk me through an example?”*  
+
+
+Often there will be elements of the project brief that aren't clear to you. 
+Ask questions about anything that's not clear so that you have an understanding of the project that matches the client's as closely as possible.
+
+::: challenge
+## Group Exercise: Questions about the Coffee Beans Project Brief
+
+15 mins.
+
+Re-read the [project brief for the coffee beans project](files/coffee-beans-project-brief.pdf) 
+
+First, individually, take a few minutes to think about what is unclear to you in the project brief and formulate a list of questions for the client.
+
+Then, discuss your questions as a group and form a combined list of all your questions.
+:::
+
+## Discussing Prioritisation
+
+**Scenario:**
+A client approaches your team with a vision for a meal-planning app. They want ingredients shopping integration, dietary preference tracking, AI-generated recipes, video tutorials, and a sleek mobile interface, all delivered within eight weeks. The client insists each feature is essential. Without clear prioritisation, the team attempts to build everything and ends up delivering an unstable app that fails to meet user expectations. The client is disappointed, and trust is damaged.
+
+This kind of situation is common. Clients are often enthusiastic and ambitious, but may not understand the trade-offs involved. 
+
+There’s rarely enough time or budget to build every requested feature. Prioritisation helps focus resources on what truly matters, ensuring that:
+
+-   The product can launch on time.
+-   Key user needs are met early.
+-   The team can iterate and improve based on real feedback.
+
+![Photo by airfocus on Unsplash](fig/prioritisation.jpg){alt='two people arranging sticky notes on a board'}
+
+
+### Tools for Prioritisation: MoSCoW
+
+As we introduced earlier, you can use the **MoSCoW method** to help clients prioritise features:
+
+- **Must haves** – Essential for the product to function.
+- **Should haves** – Important, but not critical for launch.
+- **Could haves** – Desirable extras, only if time allows.
+- **Won’t haves (for now)** – Deferred until a later phase.
+
+### The Minimum Viable Product (MVP)
+
+Introducing the concept of the **Minimum Viable Product (MVP)** can help clients to prioritise by thinking about what’s essential first.
+
+The **MVP** is a basic, working version of the product that delivers the product's core value. It's not the final product, but it’s enough to test with users and validate the idea.
+
+For instance, imagine that the client wants you to build a car.  The core value is a structure with wheels that can get you from A to B, so the MVP might be a skateboard.
+
+![By Teemu - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=65494330](fig/minimum_viable_product.png){alt='diagram of a car mvp'}
+
 
 ## Setting Realistic Expectations
 
@@ -111,57 +190,12 @@ Setting realistic expectations is one of the most important parts of client comm
   *“Let me check with the team and get back to you this afternoon.”*
 
 - **Be honest about trade-offs and limitations**  
-  For example:  
   *“We can deliver this in two weeks, but without automated testing. If you want it tested properly, we’ll need an extra week.”*
   
+- **Watch out for scope (requirement) creep**
+It's common for new features or changes to be added during the project.  However, if this isn't managed, it can derail progress and increase risk. Help clients make informed decisions by explaining the impact of changes e.g. *“We can do X by Friday, or Y by next week.  What’s more important to you?”*
   
-
-### Watch Out for Scope Creep
-
-![Photo by Patti Black on Unsplash](fig/scope_creep.jpg){alt='snail creeping along a log'}
-
-**Scope creep**, also known as *requirement creep*, happens when new features or changes are added during the project without adjusting time or budget. If this isn't managed, it can derail progress and increase risk.
-
-Help clients make informed decisions by explaining:
-
-- **The Project Management Triangle**  
-  You can have two of the following:  
-  Fast, Cheap, or Good - but rarely all three at once.
-
-- **Impact of changes**  
-  Rather than saying *“That’s not possible,”* present options:  
-  *“We can do X by Friday, or Y by next week.  What’s more important to you?”*
-
-- **Cost of adding features**  
-  Be clear about how additional features may delay delivery, increase complexity, or reduce testing time.
-
-- **Stay neutral and solution-focused**  
-  Avoid blame or emotional language. Stick to the facts and guide clients toward trade-offs based on their priorities.
-
-
-By setting realistic expectations from the start, you're managing risk, building your client's confidence in your team and keeping the project on track.
-
-
-::: challenge
-
-## Group Exercise: Responding to Scope Creep
-
-10 mins.
-
-Your team has already agreed with the client on the project's scope and timeline. You're midway through the first sprint when the client sends an email saying:
-
-“We’ve been thinking, and we’d really like to add a feature that allows users to share their progress with friends. Can we fit that in before the demo next week?”
-
-This new feature was not in the original backlog and has design, development, and testing implications.
-
-Discuss your response to the client, using the principles outlined above, and then draft a short email that:
-
--   Acknowledges the client's request positively and professionally;
--   Explains the impact of the new feature on timeline, scope and/or risk;
--   Presents options (e.g. delay another feature, extend the deadline, or push the feature to the next iteration);
-
-:::
-
+  
 
 :::callout
 ## Techniques for Setting Expectations
@@ -189,157 +223,29 @@ Sprints are a example of timeboxing.  You might also timebox a product backlog i
 
 :::
 
-## Discussing Prioritisation
-
-**Scenario:**
-A client approaches your team with a vision for a meal-planning app. They want grocery shopping integration, dietary preference tracking, AI-generated recipes, video tutorials, and a sleek mobile interface, all delivered within eight weeks. You explain that the scope is too large for the timeline, but the client insists each feature is essential. Without clear prioritisation, the team attempts to build everything and ends up delivering an unstable app that fails to meet user expectations. The client is disappointed, and trust is damaged.
-
-This kind of situation is common. Clients are often enthusiastic and ambitious, but may not understand the trade-offs involved. That’s why **clear prioritisation discussions** are essential.
-
-![Photo by airfocus on Unsplash](fig/prioritisation.jpg){alt='two people arranging sticky notes on a board'}
-
-### Why Prioritisation Matters
-
-There’s rarely enough time or budget to build every requested feature. Prioritisation helps focus resources on what truly matters, ensuring that:
-
--   The product can launch on time.
--   Key user needs are met early.
--   The team can iterate and improve based on real feedback.
-
-Introducing the concept of the **Minimum Viable Product (MVP)** can help clients shift from “everything now” to “what’s essential first.”
 
 
-### The MVP: A Strategic Starting Point
 
-The **MVP** is a basic, working version of the product that delivers the product's core value. It's not the final product, but it’s enough to test with users and validate the idea.
-
-For instance, imagine that the client wants you to build a car.  The core value is a structure with wheels that can get you from A to B, so the MVP might be a skateboard.
-
-![By Teemu - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=65494330](fig/minimum_viable_product.png){alt='diagram of a car mvp'}
-
-### Tools for Prioritisation: MoSCoW
-
-Use the **MoSCoW method** to help clients classify features:
-
-- **Must haves** – Essential for the product to function.
-- **Should haves** – Important, but not critical for launch.
-- **Could haves** – Desirable extras, only if time allows.
-- **Won’t haves (for now)** – Deferred until a later phase.
-
-This framework encourages honest, collaborative conversations about what really matters, and helps avoid overcommitting.
-
-
-### Facilitating Prioritisation
-
--   Use visuals (roadmaps, feature lists) to support the discussion.
--   Frame prioritisation in terms of client goals:  *“Which features will help you learn the most from your first users?”*
--   Be prepared to explain technical dependencies (e.g. why Feature A must come before Feature B).
--   Remind clients that starting small doesn’t mean thinking small - a more complex product can be built on top of the MVP but only when the bare essentials are in place.
-
-By leading productive prioritisation conversations, you help clients make better decisions, reduce risk, and increase the likelihood of a successful product launch.
-
-
-::: challenge
-
-## Solo Exercise: From Product Vision to MVP
-
-5 mins.
-
-Your client wants to launch a DIY pizza kit delivered to customers' homes. The big vision includes:
-
--   Artisan dough, sauce, and toppings
--   Vegan and gluten-free options
--   A recipe booklet with tips and tricks
--   Fancy packaging and branding
--   App integration with cooking videos
--   Optional dessert add-ons
--   Custom topping selections
--   Subscription bundles
-
-But:
-
-They have a tight budget and want to test the idea in the first month with a basic version.
-
-Your task is to develop their MVP: What’s the simplest product they can launch that still gives customers the core experience of “making your own pizza at home”?
-
-List the components that should be included in the MVP version of the DIY pizza kit.
-:::
-
-## Reaching Clarity
-
-![Photo by Paul Pastourmatzis on Unsplash](fig/reaching_clarity.jpg){alt='a hand reaching toward a clear lake'}
-
-**Scenario:**
-During a planning meeting, a client tells the team: “We want the site to feel modern and fast.” No one asks for clarification. The designers choose a sleek, minimal style with bold colours, and the developers focus on performance optimisations to reduce load times to under 500ms.  However, at the next review, the client is unhappy. By “modern,” they actually meant visually similar to Apple’s aesthetic. And by “fast,” they didn’t mean technical speed, but a user journey with fewer steps. The team now need to rework major parts of the product, wasting both time and budget.
-
-
-### Why Reaching Clarity Matters
-
-Small misunderstandings can grow into major issues if left unchecked. Assumptions on either side can lead to missed expectations, rework, and a loss of client trust. It’s far better to pause and ask than to move forward on unclear instructions.
-
-
-### Methods for Improving Clarity
-
--   **Ask for specifics when things are vague**  
-  Use follow-up questions to make abstract requests concrete.  
-  For example:  
-  *“When you say ‘fast’, do you mean page loads under 1 second, or fewer clicks to reach key information?”*
-
--   **Probe when clients say, “use your judgement”**  
-  If the client doesn’t know exactly what they want, try asking:  
-  *“What don’t you want?”* or  
-  *“Can you show me an example of something you like or something you don’t like?”*
-
--   **Summarise and confirm**  
-  Restate what you’ve heard to confirm your understanding.  
-  Example:  
-  *“So just to confirm, you’d like the dashboard to show data from the last 7 days by default?”*
-
--   **Document everything clearly**  
-  Use written follow-ups like email recaps or meeting notes to reinforce shared understanding. These also create a useful reference point.
-
--   **Admit when you’re unsure**  
-  It’s okay to say:  
-  *“I’m not sure I follow, please could you walk me through an example?”*  
-  Honesty prevents costly mistakes later.
-
-
-::: challenge
-## Group Exercise: Questions about the Coffee Beans Project Brief
-
-15 mins.
-
-Re-read the project brief for the coffee beans project.  
-
-First, individually, take a few minutes to think about what is unclear to you in the project brief and formulate a list of questions for the client.
-
-Then, discuss your questions as a group and form a combined list of all your questions.
-:::
-
-# Designing a Kickoff Meeting
-
-## Objectives of a Kickoff Meeting
+## Kickoff Meeting
 
 The three key objectives of a kickoff meeting are:
 
--   **Agree prioritised requirements**: Work with the client to review and prioritise the product backlog. While the final decision rests with the client, prioritisation should be a two-way conversation. Developers should feel confident advocating for items they believe are critical, especially technical tasks that may not appear important to non-technical stakeholders but are essential for enabling future features or maintaining system stability.
--   **Set expectations**: Establish a shared understanding of what will be delivered, when, and to what standard. This includes clarifying timelines, defining the scope of work for early iterations (such as the MVP), and agreeing on communication channels and response times. Setting clear expectations upfront helps reduce misunderstandings and prevents scope creep later in the project.
--   **Resolve ambiguity**: Clarify any unclear or vague requirements before development begins. This may involve asking the client to define specific terms, provide examples, or explain business rules in detail. The goal is to remove guesswork and ensure that both the development team and the client share the same understanding of what is being built and why.
+- Clarify any unclear or vague requirements (understand each other and the product).
+- Agree prioritised requirements
+- Set expectations for the timeline and scope
 
-## Anatomy of an Agenda
+### Agenda
 
-![Illustration by Round Icons on Unsplash](fig/agenda.png){alt='illustration of a clipboard'}
+Every good meeting should have an agenda which maps out the key points that the meeting should cover.  A well-structured agenda helps to keep the meeting focused, efficient and productive.  An agenda for a kickoff meeting should include the following elements:
 
-Every good meeting should have an agenda which maps out the key points that the meeting should cover.  A well-structured agenda helps to keep the meeting focused, efficient and productive.  An agenda for a kickoff meeting would usually include the following elements:
-
-### Introductions & context
+**Introductions & context**
 
 -   Introduce all participants of the meeting, including their roles and responsibilities.
 -   Briefly explain why this project is happening.
 -   Allow the client to describe the problem from their perspective.
 -   Establish an open and collaborative atmosphere.
 
-### Clarification of Brief and Identification of Gaps
+**Clarification of brief**
 
 Use your list of questions for the client in this section of the meeting
 
@@ -350,14 +256,13 @@ Use your list of questions for the client in this section of the meeting
 -   Identify dependencies, risks, or areas where the team needs more detail.
 -   Record all unanswered questions and agree who will follow up with answers.
 
-### Prioritisation and MVP Discussion
+**Prioritisation**
 
 -   Help the client decide which features are essential for launch and which can wait.
 -   Use techniques such as MoSCoW to prioritise backlog items.
 -   Introduce the concept of a minimum viable product if necessary.
 
-
-### Expectations and Timelines
+**Expectations and Timelines**
 
 -   Agree what will be delivered (after Sprint 1 and in the final presentation).
 -   Agree on the format of the product you will deliver.
@@ -366,17 +271,16 @@ Use your list of questions for the client in this section of the meeting
 
 Note: Be conservative in time estimates to allow for unforeseen delays.
 
-### Summary of decisions
+**Summary of decisions**
 
--   Recap all major decisions (e.g., MVP scope, timelines).
+-   Recap all major decisions.
 -   Review any open questions and note who will investigate and provide answers, and by when.
--   Clarify how and when a summary of this meeting will be shared (e.g., post-meeting email, shared document).
 -   End the meeting by inviting final questions or concerns and confirming that the client is happy and confident about the plan.
 
 ::: challenge
-## Group Exercise: Agenda Assembly
+## Group Exercise: Create your Kickoff Meeting Agenda
 
-15 mins.
+20 mins.
 
 Create an agenda for a 30 minute kickoff meeting with the client for the Coffee Beans Analysis project.  
 
@@ -395,14 +299,13 @@ Use the structure above to develop your agenda ensuring it:
 
 ![Photo by Mapbox on Unsplash](fig/chairing_the_meeting.jpg){alt='four people in a meeting'}
 
-In a client meeting, the software development team should take responsibility for leading the meeting. 
+In a client meeting, the **software development team should take responsibility for leading the meeting**. 
 
 As an analogy, when an electrician comes to your house, they don’t expect you to explain wiring protocols, instead they ask questions to diagnose the problem and recommend solutions. 
 
-Similarly, the development team should guide the meeting to get the clarity they need to do their job. Clients often don’t know what’s important to developers.  They may focus on the appearance of the product or general ideas rather than technical details. It's your job to lead the discussion towards finding the details you need.  You could use diagrams, examples, or “what-if” scenarios to help clients think through their needs.  Make sure you get the information you need from the meeting.  Don't assume that the client will volunteer all necessary information - you may need to draw it out of them through asking lots of questions.
+Clients often don’t know what’s important to developers.  They may focus on the appearance of the product or general ideas rather than technical details. It's your job to lead the discussion towards finding the details you need. Make sure you get the information you need from the meeting.  Don't assume that the client will volunteer all necessary information - you may need to draw it out of them through asking lots of questions.
 
-
-You would normally have one person to chair the meeting, it's their job to ensure that the meeting stays on track and follows the agenda. However, for the Coffee Beans Project client meeting, everyone in the should have an opportunity to chair a section of the meeting.  Split up the agenda and allocate each section to a different person in your group. See this as an opportunity to practice chairing a meeting - an opportunity which you might not have until several years into your career. There's absolutely nothing at stake so have fun with it, enjoy the process, and don’t worry if something goes wrong. 
+You would normally have one person to chair the meeting, it's their job to ensure that the meeting stays on track and follows the agenda. However, **for the Coffee Beans Project client meeting, everyone in the should have an opportunity to chair a section of the meeting**.  Split up the agenda and allocate each section to a different person in your group. See this as an opportunity to practice chairing a meeting - an opportunity which you might not have until several years into your career. There's absolutely nothing at stake, so have fun with it, enjoy the process, and don’t worry if something goes wrong. 
 
 
 
@@ -464,7 +367,7 @@ Conduct the Sprint Planning Meeting for Sprint 1 of the Coffee Beans Analysis Pr
 
 -   One person should be Scrum Master.  You are the servant leader who helps the group apply Scrum effectively, removes blockers and improves flow for the Scrum Team.
 -   One person should role play as the Product Owner.  You should represent the interests of the client throughout the meeting.
--   The rest of the group should be developers.  **The Scrum Master and acting Product Owner can also be developers.**
+-   The rest of the group should be developers.  The Scrum Master and acting Product Owner can also be developers.
 
 **Questions for Sprint Planning**
 
