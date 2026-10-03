@@ -21,6 +21,13 @@ exercises: 75
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+::: instructor
+
+- Explicitly note the expected end time of the meeting, and ask for a member of each team to ensure they keep to time.
+- Prep the clients in parallel with the teaching, i.e. one instructor teaching, one prepping the clients.
+
+:::
+
 ## Sprint Review
 
 ![](fig/scrum_review.png){alt='diagram of scrum events and artifacts with sprint review highlighted'}
@@ -145,13 +152,14 @@ Take 30 minutes to prepare for the Sprint 1 Review.
 - Write a structure (or agenda) for the meeting
 - Consider how your progress has moved the project toward the Product Goal
 - Prepare any questions you have for the client
-- Decide who will take on each role
+- Decide who will ensure the meeting keeps to time. 
 
 :::
 
 ## Sprint 1 Review Meeting
 
 Teams conduct the Sprint Review meeting with the clients (30 mins).
+
 
 
 ## Update Product Backlog

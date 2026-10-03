@@ -55,19 +55,7 @@ In your Scrum Team, reflect on Sprint 1 by answering the following questions:
 
 Document your responses and identify at least two actionable improvements that can be applied in Sprint 2.
 
-Share your reflections are actionable improvements with the other groups.
 :::
-
-## Burndown Charts
-
-A burndown chart is a graph that shows the amount of work left to complete against the time remaining for the project (or for the sprint). The estimated amount of time that tasks will take is on the y axis and time is on the x axis. Burndown charts are often used in Scrum and other agile processes. 
-
-There are two lines on the chart: the **'ideal work remaining line'** and the **'actual work remaining line'**. If the actual work line is below the ideal work line, there is less work remaining than was originally predicted and the project is ahead of schedule. Whereas, if the actual work line is above the ideal work line, there is more work remaining than was originally predicted and the project is behind schedule. 
-
-![I8abug, CC BY-SA 3.0 via Wikimedia Commons](fig/Burn_down_chart.png){alt='A burn down chart showing the ideal work line and the actual work line and the start/end points for a completed iteration.'}
-
-
-**In the next Sprint, keep a note of how long you estimated each task would take, how long it actually took, and the time at which you completed the task so that you can create a burndown chart for Sprint 2.**
 
 
 :::::::::::::::::::::::::::::::::::::: keypoints
